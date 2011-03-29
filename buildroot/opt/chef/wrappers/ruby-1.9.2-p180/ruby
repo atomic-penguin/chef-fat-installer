@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [[ -s "/opt/chef/environments/ruby-1.9.2-p180" ]] ; then
+  source "/opt/chef/environments/ruby-1.9.2-p180"
+  exec ruby "$@"
+else
+  echo "ERROR: Missing RVM environment file: '/opt/chef/environments/ruby-1.9.2-p180'" >&2
+  exit 1
+fi
+  

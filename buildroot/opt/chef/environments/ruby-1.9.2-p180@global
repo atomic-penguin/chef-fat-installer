@@ -1,0 +1,18 @@
+export PATH="/opt/chef/gems/ruby-1.9.2-p180@global/bin:/opt/chef/gems/ruby-1.9.2-p180@global/bin:/opt/chef/rubies/ruby-1.9.2-p180/bin:/usr/local/bin:$PATH"
+rvm_path='/opt/chef'
+export rvm_path
+RUBY_VERSION='ruby-1.9.2-p180'
+export RUBY_VERSION
+GEM_HOME='/opt/chef/gems/ruby-1.9.2-p180@global'
+export GEM_HOME
+GEM_PATH='/opt/chef/gems/ruby-1.9.2-p180@global:/opt/chef/gems/ruby-1.9.2-p180@global'
+export GEM_PATH
+MY_RUBY_HOME='/opt/chef/rubies/ruby-1.9.2-p180'
+export MY_RUBY_HOME
+IRBRC='/opt/chef/rubies/ruby-1.9.2-p180/.irbrc'
+export IRBRC
+rvm_ruby_string='ruby-1.9.2-p180'
+export rvm_ruby_string
+rvm_gemset_name='global'
+export rvm_gemset_name
+unset MAGLEV_HOME

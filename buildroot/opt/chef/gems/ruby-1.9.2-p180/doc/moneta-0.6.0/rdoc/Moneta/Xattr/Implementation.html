@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: Moneta::Xattr::Implementation</title>
+
+	<link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../../lib/moneta/xattr_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/moneta/xattr.rb">lib/moneta/xattr.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-%5B%5D">#[]</a></li>
+					
+					<li><a href="#method-i-%5B%5D%3D">#[]=</a></li>
+					
+					<li><a href="#method-i-clear">#clear</a></li>
+					
+					<li><a href="#method-i-delete">#delete</a></li>
+					
+					<li><a href="#method-i-has_key%3F">#has_key?</a></li>
+					
+					<li><a href="#method-i-key%3F">#key?</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../../README.html">README</a></li>
+				
+					<li class="file"><a href="../../TODO.html">TODO</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../../Moneta.html">Moneta</a></li>
+				
+					<li><a href="../../Moneta/BasicFile.html">Moneta::BasicFile</a></li>
+				
+					<li><a href="../../Moneta/BasicRufus.html">Moneta::BasicRufus</a></li>
+				
+					<li><a href="../../Moneta/BasicSDBM.html">Moneta::BasicSDBM</a></li>
+				
+					<li><a href="../../Moneta/Berkeley.html">Moneta::Berkeley</a></li>
+				
+					<li><a href="../../Moneta/Berkeley/Implementation.html">Moneta::Berkeley::Implementation</a></li>
+				
+					<li><a href="../../Moneta/Couch.html">Moneta::Couch</a></li>
+				
+					<li><a href="../../Moneta/DataMapper.html">Moneta::DataMapper</a></li>
+				
+					<li><a href="../../Moneta/DataMapper/Expiration.html">Moneta::DataMapper::Expiration</a></li>
+				
+					<li><a href="../../Moneta/DataMapper/Implementation.html">Moneta::DataMapper::Implementation</a></li>
+				
+					<li><a href="../../Moneta/Defaults.html">Moneta::Defaults</a></li>
+				
+					<li><a href="../../Moneta/Expiration.html">Moneta::Expiration</a></li>
+				
+					<li><a href="../../Moneta/Expires.html">Moneta::Expires</a></li>
+				
+					<li><a href="../../Moneta/File.html">Moneta::File</a></li>
+				
+					<li><a href="../../Moneta/File/Expiration.html">Moneta::File::Expiration</a></li>
+				
+					<li><a href="../../Moneta/File/Implementation.html">Moneta::File::Implementation</a></li>
+				
+					<li><a href="../../Moneta/LMC.html">Moneta::LMC</a></li>
+				
+					<li><a href="../../Moneta/LMC/Implementation.html">Moneta::LMC::Implementation</a></li>
+				
+					<li><a href="../../Moneta/Memcache.html">Moneta::Memcache</a></li>
+				
+					<li><a href="../../Moneta/Memory.html">Moneta::Memory</a></li>
+				
+					<li><a href="../../Moneta/MongoDB.html">Moneta::MongoDB</a></li>
+				
+					<li><a href="../../Moneta/Redis.html">Moneta::Redis</a></li>
+				
+					<li><a href="../../Moneta/Rufus.html">Moneta::Rufus</a></li>
+				
+					<li><a href="../../Moneta/S3.html">Moneta::S3</a></li>
+				
+					<li><a href="../../Moneta/SDBM.html">Moneta::SDBM</a></li>
+				
+					<li><a href="../../Moneta/StringExpires.html">Moneta::StringExpires</a></li>
+				
+					<li><a href="../../Moneta/Tyrant.html">Moneta::Tyrant</a></li>
+				
+					<li><a href="../../Moneta/Tyrant/Expiration.html">Moneta::Tyrant::Expiration</a></li>
+				
+					<li><a href="../../Moneta/Tyrant/Implementation.html">Moneta::Tyrant::Implementation</a></li>
+				
+					<li><a href="../../Moneta/Xattr.html">Moneta::Xattr</a></li>
+				
+					<li><a href="../../Moneta/Xattr/Implementation.html">Moneta::Xattr::Implementation</a></li>
+				
+					<li><a href="../../MonetaHash.html">MonetaHash</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">Moneta::Xattr::Implementation</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%5B%5D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">[]</span><span
+						class="method-args">(key)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/moneta/xattr.rb, line 32</span>
+32:       <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">key</span>)
+33:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">key?</span>(<span class="ruby-identifier">key</span>)
+34:         <span class="ruby-constant">Marshal</span>.<span class="ruby-identifier">load</span>(<span class="ruby-ivar">@hash</span>.<span class="ruby-identifier">get</span>(<span class="ruby-identifier">key</span>))
+35:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%5B%5D%3D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">[]=</span><span
+						class="method-args">(key, value)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/moneta/xattr.rb, line 37</span>
+37:       <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]=</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)
+38:         <span class="ruby-ivar">@hash</span>.<span class="ruby-identifier">set</span>(<span class="ruby-identifier">key</span>, <span class="ruby-constant">Marshal</span>.<span class="ruby-identifier">dump</span>(<span class="ruby-identifier">value</span>))
+39:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="clear-method" class="method-detail ">
+				<a name="method-i-clear"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">clear</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="clear-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/moneta/xattr.rb, line 48</span>
+48:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">clear</span>
+49:         <span class="ruby-ivar">@hash</span>.<span class="ruby-identifier">list</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span>
+50:           <span class="ruby-ivar">@hash</span>.<span class="ruby-identifier">remove</span>(<span class="ruby-identifier">item</span>)
+51:         <span class="ruby-keyword kw">end</span>
+52:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="delete-method" class="method-detail ">
+				<a name="method-i-delete"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">delete</span><span
+						class="method-args">(key)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="delete-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/moneta/xattr.rb, line 41</span>
+41:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">delete</span>(<span class="ruby-identifier">key</span>)
+42:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">key?</span>(<span class="ruby-identifier">key</span>)
+43:         <span class="ruby-identifier">value</span> = <span class="ruby-keyword kw">self</span>[<span class="ruby-identifier">key</span>]
+44:         <span class="ruby-ivar">@hash</span>.<span class="ruby-identifier">remove</span>(<span class="ruby-identifier">key</span>)
+45:         <span class="ruby-identifier">value</span>
+46:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="has-key--method" class="method-detail method-alias">
+				<a name="method-i-has_key%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">has_key?</span><span
+						class="method-args">(key)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+				</div>
+
+				
+
+				
+				<div class="aliases">
+          Alias for: <a href="Implementation.html#method-i-key%3F">key?</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="key--method" class="method-detail ">
+				<a name="method-i-key%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">key?</span><span
+						class="method-args">(key)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="key--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/moneta/xattr.rb, line 26</span>
+26:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">key?</span>(<span class="ruby-identifier">key</span>)
+27:         <span class="ruby-ivar">@hash</span>.<span class="ruby-identifier">list</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">key</span>)
+28:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Implementation.html#method-i-has_key%3F">has_key?</a>
+				</div>
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

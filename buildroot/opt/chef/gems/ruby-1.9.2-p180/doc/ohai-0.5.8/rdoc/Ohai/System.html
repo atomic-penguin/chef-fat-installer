@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Ohai::System</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/ohai/system_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/ohai/system.rb">lib/ohai/system.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="../Object.html">Object</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-json_create">::json_create</a></li>
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-Array18">#Array18</a></li>
+					
+					<li><a href="#method-i-%5B%5D">#[]</a></li>
+					
+					<li><a href="#method-i-%5B%5D%3D">#[]=</a></li>
+					
+					<li><a href="#method-i-_require_plugin">#_require_plugin</a></li>
+					
+					<li><a href="#method-i-all_plugins">#all_plugins</a></li>
+					
+					<li><a href="#method-i-attribute%3F">#attribute?</a></li>
+					
+					<li><a href="#method-i-attributes_print">#attributes_print</a></li>
+					
+					<li><a href="#method-i-collect_providers">#collect_providers</a></li>
+					
+					<li><a href="#method-i-each">#each</a></li>
+					
+					<li><a href="#method-i-from">#from</a></li>
+					
+					<li><a href="#method-i-from_with_regex">#from_with_regex</a></li>
+					
+					<li><a href="#method-i-get_attribute">#get_attribute</a></li>
+					
+					<li><a href="#method-i-json_pretty_print">#json_pretty_print</a></li>
+					
+					<li><a href="#method-i-method_missing">#method_missing</a></li>
+					
+					<li><a href="#method-i-provides">#provides</a></li>
+					
+					<li><a href="#method-i-refresh_plugins">#refresh_plugins</a></li>
+					
+					<li><a href="#method-i-require_plugin">#require_plugin</a></li>
+					
+					<li><a href="#method-i-set">#set</a></li>
+					
+					<li><a href="#method-i-set_attribute">#set_attribute</a></li>
+					
+					<li><a href="#method-i-to_json">#to_json</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+			<div id="includes-section" class="section">
+				<h3 class="section-header">Included Modules</h3>
+				<ul class="link-list">
+				
+				
+					<li><a class="include" href="Mixin/FromFile.html">Ohai::Mixin::FromFile</a></li>
+				
+				
+				
+					<li><a class="include" href="Mixin/Command.html">Ohai::Mixin::Command</a></li>
+				
+				
+				</ul>
+			</div>
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Ohai.html">Ohai</a></li>
+				
+					<li><a href="../Ohai/Application.html">Ohai::Application</a></li>
+				
+					<li><a href="../Ohai/Config.html">Ohai::Config</a></li>
+				
+					<li><a href="../Ohai/Exceptions.html">Ohai::Exceptions</a></li>
+				
+					<li><a href="../Ohai/Exceptions/Exec.html">Ohai::Exceptions::Exec</a></li>
+				
+					<li><a href="../Ohai/Log.html">Ohai::Log</a></li>
+				
+					<li><a href="../Ohai/Mixin.html">Ohai::Mixin</a></li>
+				
+					<li><a href="../Ohai/Mixin/Command.html">Ohai::Mixin::Command</a></li>
+				
+					<li><a href="../Ohai/Mixin/FromFile.html">Ohai::Mixin::FromFile</a></li>
+				
+					<li><a href="../Ohai/System.html">Ohai::System</a></li>
+				
+					<li><a href="../Object.html">Object</a></li>
+				
+					<li><a href="../String.html">String</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Ohai::System</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="data-attribute-method" class="method-detail">
+				<a name="data"></a>
+				
+				<a name="data="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">data</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="seen-plugins-attribute-method" class="method-detail">
+				<a name="seen_plugins"></a>
+				
+				<a name="seen_plugins="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">seen_plugins</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="json-create-method" class="method-detail ">
+				<a name="method-c-json_create"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">json_create</span><span
+						class="method-args">(o)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Create an <a href="System.html">Ohai::System</a> from JSON
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="json-create-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 238</span>
+238:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">json_create</span>(<span class="ruby-identifier">o</span>)
+239:       <span class="ruby-identifier">ohai</span> = <span class="ruby-identifier">new</span>
+240:       <span class="ruby-identifier">o</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+241:         <span class="ruby-identifier">ohai</span>.<span class="ruby-identifier">data</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">key</span> <span class="ruby-operator">==</span> <span class="ruby-value str">&quot;json_class&quot;</span>
+242:       <span class="ruby-keyword kw">end</span>
+243:       <span class="ruby-identifier">ohai</span>
+244:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 43</span>
+43:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>
+44:       <span class="ruby-ivar">@data</span> = <span class="ruby-constant">Mash</span>.<span class="ruby-identifier">new</span>
+45:       <span class="ruby-ivar">@seen_plugins</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+46:       <span class="ruby-ivar">@providers</span> = <span class="ruby-constant">Mash</span>.<span class="ruby-identifier">new</span>
+47:       <span class="ruby-ivar">@plugin_path</span> = <span class="ruby-value str">&quot;&quot;</span>
+48:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%5B%5D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">[]</span><span
+						class="method-args">(key)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 50</span>
+50:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">key</span>)
+51:       <span class="ruby-ivar">@data</span>[<span class="ruby-identifier">key</span>]
+52:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%5B%5D%3D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">[]=</span><span
+						class="method-args">(key, value)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 54</span>
+54:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]=</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)
+55:       <span class="ruby-ivar">@data</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span>
+56:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="-require-plugin-method" class="method-detail method-alias">
+				<a name="method-i-_require_plugin"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">_require_plugin</span><span
+						class="method-args">(plugin_name, force=false)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Sneaky!  Lets us stub out <a
+href="System.html#method-i-require_plugin">require_plugin</a> when testing
+plugins, but still call the real <a
+href="System.html#method-i-require_plugin">require_plugin</a> to kick the
+whole thing off.
+</p>
+					
+
+					
+				</div>
+
+				
+
+				
+				<div class="aliases">
+          Alias for: <a href="System.html#method-i-require_plugin">require_plugin</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="all-plugins-method" class="method-detail ">
+				<a name="method-i-all_plugins"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">all_plugins</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="all-plugins-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 114</span>
+114:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">all_plugins</span>
+115:       <span class="ruby-identifier">require_plugin</span>(<span class="ruby-value str">'os'</span>)
+116: 
+117:       <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span>[<span class="ruby-value">:plugin_path</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">path</span><span class="ruby-operator">|</span>
+118:         [
+119:           <span class="ruby-constant">Dir</span>[<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">path</span>, <span class="ruby-value str">'*'</span>)],
+120:           <span class="ruby-constant">Dir</span>[<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">path</span>, <span class="ruby-ivar">@data</span>[<span class="ruby-value">:os</span>], <span class="ruby-value str">'**'</span>, <span class="ruby-value str">'*'</span>)]
+121:         ].<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">file</span><span class="ruby-operator">|</span>
+122:           <span class="ruby-identifier">file_regex</span> = <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;#{path}#{File::SEPARATOR}(.+).rb$&quot;</span>)
+123:           <span class="ruby-identifier">md</span> = <span class="ruby-identifier">file_regex</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">file</span>)
+124:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">md</span>
+125:             <span class="ruby-identifier">plugin_name</span> = <span class="ruby-identifier">md</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">gsub</span>(<span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">SEPARATOR</span>, <span class="ruby-value str">&quot;::&quot;</span>)
+126:             <span class="ruby-identifier">require_plugin</span>(<span class="ruby-identifier">plugin_name</span>) <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@seen_plugins</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">plugin_name</span>)
+127:           <span class="ruby-keyword kw">end</span>
+128:         <span class="ruby-keyword kw">end</span>
+129:       <span class="ruby-keyword kw">end</span>
+130:       <span class="ruby-keyword kw">unless</span> <span class="ruby-constant">RUBY_PLATFORM</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/mswin|mingw32|windows/</span>
+131:         <span class="ruby-comment cmt"># Catch any errant children who need to be reaped</span>
+132:         <span class="ruby-keyword kw">begin</span>
+133:           <span class="ruby-keyword kw">true</span> <span class="ruby-keyword kw">while</span> <span class="ruby-constant">Process</span>.<span class="ruby-identifier">wait</span>(<span class="ruby-value">1</span>, <span class="ruby-constant">Process</span><span class="ruby-operator">::</span><span class="ruby-constant">WNOHANG</span>)
+134:         <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">ECHILD</span>
+135:         <span class="ruby-keyword kw">end</span>
+136:       <span class="ruby-keyword kw">end</span>
+137:       <span class="ruby-keyword kw">true</span>
+138:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="attribute--method" class="method-detail ">
+				<a name="method-i-attribute%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">attribute?</span><span
+						class="method-args">(name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="attribute--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 64</span>
+64:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">attribute?</span>(<span class="ruby-identifier">name</span>)
+65:       <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">name</span>)
+66:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="attributes-print-method" class="method-detail ">
+				<a name="method-i-attributes_print"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">attributes_print</span><span
+						class="method-args">(a)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="attributes-print-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 225</span>
+225:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">attributes_print</span>(<span class="ruby-identifier">a</span>)
+226:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-node">&quot;I cannot find an attribute named #{a}!&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">a</span>)
+227:       <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">a</span>
+228:       <span class="ruby-keyword kw">when</span> <span class="ruby-constant">Hash</span>,<span class="ruby-constant">Mash</span>,<span class="ruby-constant">Array</span>
+229:         <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">pretty_generate</span>(<span class="ruby-ivar">@data</span>[<span class="ruby-identifier">a</span>])
+230:       <span class="ruby-keyword kw">when</span> <span class="ruby-constant">String</span>
+231:         <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">pretty_generate</span>(<span class="ruby-ivar">@data</span>[<span class="ruby-identifier">a</span>].<span class="ruby-identifier">to_a</span>)
+232:       <span class="ruby-keyword kw">else</span>
+233:         <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-node">&quot;I can only generate JSON for Hashes, Mashes, Arrays and Strings. You fed me a #{@data[a].class}!&quot;</span>
+234:       <span class="ruby-keyword kw">end</span>
+235:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="collect-providers-method" class="method-detail ">
+				<a name="method-i-collect_providers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">collect_providers</span><span
+						class="method-args">(providers)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="collect-providers-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 140</span>
+140:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">collect_providers</span>(<span class="ruby-identifier">providers</span>)
+141:       <span class="ruby-identifier">refreshments</span> = []
+142:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">providers</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Mash</span>)
+143:         <span class="ruby-identifier">providers</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">provider</span><span class="ruby-operator">|</span>
+144:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">provider</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;_providers&quot;</span>)
+145:             <span class="ruby-identifier">refreshments</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">providers</span>[<span class="ruby-identifier">provider</span>]
+146:           <span class="ruby-keyword kw">else</span>
+147:             <span class="ruby-identifier">refreshments</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">collect_providers</span>(<span class="ruby-identifier">providers</span>[<span class="ruby-identifier">provider</span>])
+148:           <span class="ruby-keyword kw">end</span>
+149:         <span class="ruby-keyword kw">end</span>
+150:       <span class="ruby-keyword kw">else</span>
+151:         <span class="ruby-identifier">refreshments</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">providers</span>
+152:       <span class="ruby-keyword kw">end</span>
+153:       <span class="ruby-identifier">refreshments</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">uniq</span>
+154:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="each-method" class="method-detail ">
+				<a name="method-i-each"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">each</span><span
+						class="method-args">(&block)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="each-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 58</span>
+58:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">each</span>(&amp;<span class="ruby-identifier">block</span>)
+59:       <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+60:         <span class="ruby-identifier">block</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)
+61:       <span class="ruby-keyword kw">end</span>
+62:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="from-method" class="method-detail ">
+				<a name="method-i-from"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">from</span><span
+						class="method-args">(cmd)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="from-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 72</span>
+72:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">from</span>(<span class="ruby-identifier">cmd</span>)
+73:       <span class="ruby-identifier">status</span>, <span class="ruby-identifier">stdout</span>, <span class="ruby-identifier">stderr</span> = <span class="ruby-identifier">run_command</span>(<span class="ruby-value">:command</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cmd</span>)
+74:       <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">stdout</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">stdout</span>.<span class="ruby-identifier">empty?</span>
+75:       <span class="ruby-identifier">stdout</span>.<span class="ruby-identifier">chomp!</span>.<span class="ruby-identifier">strip</span>
+76:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="from-with-regex-method" class="method-detail ">
+				<a name="method-i-from_with_regex"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">from_with_regex</span><span
+						class="method-args">(cmd, *regex_list)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Set the value equal to the stdout of the command, plus run through a regex
+- the first piece of match data is the value.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="from-with-regex-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 95</span>
+ 95:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">from_with_regex</span>(<span class="ruby-identifier">cmd</span>, *<span class="ruby-identifier">regex_list</span>)
+ 96:       <span class="ruby-identifier">regex_list</span>.<span class="ruby-identifier">flatten</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">regex</span><span class="ruby-operator">|</span>
+ 97:         <span class="ruby-identifier">status</span>, <span class="ruby-identifier">stdout</span>, <span class="ruby-identifier">stderr</span> = <span class="ruby-identifier">run_command</span>(<span class="ruby-value">:command</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cmd</span>)
+ 98:         <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">stdout</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">stdout</span>.<span class="ruby-identifier">empty?</span>
+ 99:         <span class="ruby-identifier">stdout</span>.<span class="ruby-identifier">chomp!</span>.<span class="ruby-identifier">strip</span>
+100:         <span class="ruby-identifier">md</span> = <span class="ruby-identifier">stdout</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">regex</span>)
+101:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">md</span>[<span class="ruby-value">1</span>]
+102:       <span class="ruby-keyword kw">end</span>
+103:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-attribute-method" class="method-detail ">
+				<a name="method-i-get_attribute"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_attribute</span><span
+						class="method-args">(name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="get-attribute-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 110</span>
+110:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_attribute</span>(<span class="ruby-identifier">name</span>)
+111:       <span class="ruby-ivar">@data</span>[<span class="ruby-identifier">name</span>]
+112:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="json-pretty-print-method" class="method-detail ">
+				<a name="method-i-json_pretty_print"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">json_pretty_print</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Pretty Print this object as JSON
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="json-pretty-print-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 221</span>
+221:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">json_pretty_print</span>
+222:       <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">pretty_generate</span>(<span class="ruby-ivar">@data</span>)
+223:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="method-missing-method" class="method-detail ">
+				<a name="method-i-method_missing"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">method_missing</span><span
+						class="method-args">(name, *args)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="method-missing-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 246</span>
+246:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">method_missing</span>(<span class="ruby-identifier">name</span>, *<span class="ruby-identifier">args</span>)
+247:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">get_attribute</span>(<span class="ruby-identifier">name</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+248: 
+249:       <span class="ruby-identifier">set_attribute</span>(<span class="ruby-identifier">name</span>, *<span class="ruby-identifier">args</span>)
+250:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="provides-method" class="method-detail ">
+				<a name="method-i-provides"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">provides</span><span
+						class="method-args">(*paths)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="provides-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 78</span>
+78:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">provides</span>(*<span class="ruby-identifier">paths</span>)
+79:       <span class="ruby-identifier">paths</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">path</span><span class="ruby-operator">|</span>
+80:         <span class="ruby-identifier">parts</span> = <span class="ruby-identifier">path</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'/'</span>)
+81:         <span class="ruby-identifier">h</span> = <span class="ruby-ivar">@providers</span>
+82:         <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">parts</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+83:           <span class="ruby-identifier">parts</span>.<span class="ruby-identifier">shift</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">parts</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+84:           <span class="ruby-identifier">parts</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">part</span><span class="ruby-operator">|</span>
+85:             <span class="ruby-identifier">h</span>[<span class="ruby-identifier">part</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">Mash</span>.<span class="ruby-identifier">new</span>
+86:             <span class="ruby-identifier">h</span> = <span class="ruby-identifier">h</span>[<span class="ruby-identifier">part</span>]
+87:           <span class="ruby-keyword kw">end</span>
+88:         <span class="ruby-keyword kw">end</span>
+89:         <span class="ruby-identifier">h</span>[<span class="ruby-value">:_providers</span>] <span class="ruby-operator">||=</span> []
+90:         <span class="ruby-identifier">h</span>[<span class="ruby-value">:_providers</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@plugin_path</span>
+91:       <span class="ruby-keyword kw">end</span>
+92:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="refresh-plugins-method" class="method-detail ">
+				<a name="method-i-refresh_plugins"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">refresh_plugins</span><span
+						class="method-args">(path = '/')</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="refresh-plugins-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 156</span>
+156:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">refresh_plugins</span>(<span class="ruby-identifier">path</span> = <span class="ruby-value str">'/'</span>)
+157:       <span class="ruby-identifier">parts</span> = <span class="ruby-identifier">path</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">'/'</span>)
+158:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">parts</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+159:         <span class="ruby-identifier">h</span> = <span class="ruby-ivar">@providers</span>
+160:       <span class="ruby-keyword kw">else</span>
+161:         <span class="ruby-identifier">parts</span>.<span class="ruby-identifier">shift</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">parts</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+162:         <span class="ruby-identifier">h</span> = <span class="ruby-ivar">@providers</span>
+163:         <span class="ruby-identifier">parts</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">part</span><span class="ruby-operator">|</span>
+164:           <span class="ruby-keyword kw">break</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">h</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">part</span>)
+165:           <span class="ruby-identifier">h</span> = <span class="ruby-identifier">h</span>[<span class="ruby-identifier">part</span>]
+166:         <span class="ruby-keyword kw">end</span>
+167:       <span class="ruby-keyword kw">end</span>
+168: 
+169:       <span class="ruby-identifier">refreshments</span> = <span class="ruby-identifier">collect_providers</span>(<span class="ruby-identifier">h</span>)
+170:       <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Refreshing plugins: #{refreshments.join(&quot;, &quot;)}&quot;</span>)
+171: 
+172:       <span class="ruby-identifier">refreshments</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span>
+173:         <span class="ruby-ivar">@seen_plugins</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">r</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@seen_plugins</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">r</span>)
+174:       <span class="ruby-keyword kw">end</span>
+175:       <span class="ruby-identifier">refreshments</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span>
+176:         <span class="ruby-identifier">require_plugin</span>(<span class="ruby-identifier">r</span>) <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@seen_plugins</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">r</span>)
+177:       <span class="ruby-keyword kw">end</span>
+178:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="require-plugin-method" class="method-detail ">
+				<a name="method-i-require_plugin"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">require_plugin</span><span
+						class="method-args">(plugin_name, force=false)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="require-plugin-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 180</span>
+180:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">require_plugin</span>(<span class="ruby-identifier">plugin_name</span>, <span class="ruby-identifier">force</span>=<span class="ruby-keyword kw">false</span>)
+181:       <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">force</span>
+182:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@seen_plugins</span>[<span class="ruby-identifier">plugin_name</span>]
+183:       <span class="ruby-keyword kw">end</span>
+184: 
+185:       <span class="ruby-keyword kw">if</span> <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span>[<span class="ruby-value">:disabled_plugins</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">plugin_name</span>)
+186:         <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Skipping disabled plugin #{plugin_name}&quot;</span>)
+187:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+188:       <span class="ruby-keyword kw">end</span>
+189: 
+190:       <span class="ruby-ivar">@plugin_path</span> = <span class="ruby-identifier">plugin_name</span>
+191: 
+192:       <span class="ruby-identifier">filename</span> = <span class="ruby-node">&quot;#{plugin_name.gsub(&quot;::&quot;, File::SEPARATOR)}.rb&quot;</span>
+193: 
+194:       <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span>[<span class="ruby-value">:plugin_path</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">path</span><span class="ruby-operator">|</span>
+195:         <span class="ruby-identifier">check_path</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">filename</span>))
+196:         <span class="ruby-keyword kw">begin</span>
+197:           <span class="ruby-ivar">@seen_plugins</span>[<span class="ruby-identifier">plugin_name</span>] = <span class="ruby-keyword kw">true</span>
+198:           <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Loading plugin #{plugin_name}&quot;</span>)
+199:           <span class="ruby-identifier">from_file</span>(<span class="ruby-identifier">check_path</span>)
+200:           <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
+201:         <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">IOError</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+202:           <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;No #{plugin_name} at #{check_path}&quot;</span>)
+203:         <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span>,<span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">ENOENT</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+204:           <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Plugin #{plugin_name} threw exception #{e.inspect} #{e.backtrace.join(&quot;\n&quot;)}&quot;</span>)
+205:         <span class="ruby-keyword kw">end</span>
+206:       <span class="ruby-keyword kw">end</span>
+207:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="System.html#method-i-_require_plugin">_require_plugin</a>
+				</div>
+				
+
+				
+			</div>
+
+		
+			<div id="set-method" class="method-detail ">
+				<a name="method-i-set"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">set</span><span
+						class="method-args">(name, *value)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="set-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 68</span>
+68:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">set</span>(<span class="ruby-identifier">name</span>, *<span class="ruby-identifier">value</span>)
+69:       <span class="ruby-identifier">set_attribute</span>(<span class="ruby-identifier">name</span>, *<span class="ruby-identifier">value</span>)
+70:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="set-attribute-method" class="method-detail ">
+				<a name="method-i-set_attribute"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">set_attribute</span><span
+						class="method-args">(name, *values)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="set-attribute-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 105</span>
+105:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">set_attribute</span>(<span class="ruby-identifier">name</span>, *<span class="ruby-identifier">values</span>)
+106:       <span class="ruby-ivar">@data</span>[<span class="ruby-identifier">name</span>] = <span class="ruby-constant">Array18</span>(*<span class="ruby-identifier">values</span>)
+107:       <span class="ruby-ivar">@data</span>[<span class="ruby-identifier">name</span>]
+108:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="to-json-method" class="method-detail ">
+				<a name="method-i-to_json"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">to_json</span><span
+						class="method-args">(*a)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Serialize this object as a hash
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="to-json-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 214</span>
+214:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_json</span>(*<span class="ruby-identifier">a</span>)
+215:       <span class="ruby-identifier">output</span> = <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">clone</span>
+216:       <span class="ruby-identifier">output</span>[<span class="ruby-value str">&quot;json_class&quot;</span>] = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">name</span>
+217:       <span class="ruby-identifier">output</span>.<span class="ruby-identifier">to_json</span>(*<span class="ruby-identifier">a</span>)
+218:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="-rray--method" class="method-detail ">
+				<a name="method-i-Array18"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">Array18</span><span
+						class="method-args">(*args)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="-rray--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/system.rb, line 254</span>
+254:     <span class="ruby-keyword kw">def</span> <span class="ruby-constant">Array18</span>(*<span class="ruby-identifier">args</span>)
+255:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">empty?</span>
+256:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">first</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+257:       <span class="ruby-keyword kw">return</span> *<span class="ruby-identifier">args</span>
+258:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

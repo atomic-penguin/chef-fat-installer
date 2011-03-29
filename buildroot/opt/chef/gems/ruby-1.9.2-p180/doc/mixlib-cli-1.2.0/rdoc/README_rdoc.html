@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+	<title>File: README.rdoc [mixlib-cli-1.2.0 Documentation]</title>
+
+	<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file">
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Mixlib.html">Mixlib</a></li>
+				
+					<li><a href="./Mixlib/CLI.html">Mixlib::CLI</a></li>
+				
+					<li><a href="./Mixlib/CLI/ClassMethods.html">Mixlib::CLI::ClassMethods</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h2><a href="Mixlib/CLI.html">Mixlib::CLI</a></h2>
+<p>
+<a href="Mixlib/CLI.html">Mixlib::CLI</a> provides a class-based command
+line option parsing object, like the one used in Chef, Ohai and Relish.  To
+use in your project:
+</p>
+<pre>
+  require 'rubygems'
+  require 'mixlib/cli'
+  
+  class MyCLI
+    include Mixlib::CLI
+
+    option :config_file, 
+      :short =&gt; &quot;-c CONFIG&quot;,
+      :long  =&gt; &quot;--config CONFIG&quot;,
+      :default =&gt; 'config.rb',
+      :description =&gt; &quot;The configuration file to use&quot;
+      
+    option :log_level, 
+      :short =&gt; &quot;-l LEVEL&quot;,
+      :long  =&gt; &quot;--log_level LEVEL&quot;,
+      :description =&gt; &quot;Set the log level (debug, info, warn, error, fatal)&quot;,
+      :required =&gt; true,
+      :proc =&gt; Proc.new { |l| l.to_sym }
+      
+    option :help,
+      :short =&gt; &quot;-h&quot;,
+      :long =&gt; &quot;--help&quot;,
+      :description =&gt; &quot;Show this message&quot;,
+      :on =&gt; :tail,
+      :boolean =&gt; true,
+      :show_options =&gt; true,
+      :exit =&gt; 0
+
+  end
+  
+  # ARGV = [ '-c', 'foo.rb', '-l', 'debug' ]
+  cli = MyCLI.new
+  cli.parse_options
+  cli.config[:config_file] # 'foo.rb'
+  cli.config[:log_level]   # :debug
+  
+</pre>
+<p>
+If you are using this in conjunction with Mixlib::Config, you can do
+something like this (building on the above definition):
+</p>
+<pre>
+  class MyConfig
+    extend(Mixlib::Config)
+    
+    log_level   :info
+    config_file &quot;default.rb&quot;
+  end
+  
+  class MyCLI
+    def run(argv=ARGV)
+      parse_options(argv)
+      MyConfig.merge!(config)
+    end
+  end
+  
+  c = MyCLI.new
+  # ARGV = [ '-l', 'debug' ]
+  c.run
+  MyConfig[:log_level] # :debug
+  
+</pre>
+<p>
+Available arguments to &#8216;option&#8217;:
+</p>
+<table>
+<tr><td valign="top">:short</td><td><p>
+The short option, just like from optparse. Example: &#8220;-l LEVEL&#8220;
+</p>
+</td></tr>
+<tr><td valign="top">:long</td><td><p>
+The long option, just like from optparse.  Example: &#8220;&#8212;level
+LEVEL&#8220;
+</p>
+</td></tr>
+<tr><td valign="top">:description</td><td><p>
+The description for this item, just like from optparse.
+</p>
+</td></tr>
+<tr><td valign="top">:default</td><td><p>
+A default value for this option
+</p>
+</td></tr>
+<tr><td valign="top">:required</td><td><p>
+Prints a message informing the user of the missing requirement, and exits. 
+Default is false.
+</p>
+</td></tr>
+<tr><td valign="top">:on</td><td><p>
+Set to :tail to appear at the end, or :head to appear at the top.
+</p>
+</td></tr>
+<tr><td valign="top">:boolean</td><td><p>
+If this option takes no arguments, set this to true.
+</p>
+</td></tr>
+<tr><td valign="top">:show_options</td><td><p>
+If you want the option list printed when this option is called, set this to
+true.
+</p>
+</td></tr>
+<tr><td valign="top">:exit</td><td><p>
+Exit your program with the exit code when this option is specified.
+Example: 0
+</p>
+</td></tr>
+<tr><td valign="top">:proc</td><td><p>
+If set, the configuration value will be set to the return value of this
+proc.
+</p>
+</td></tr>
+</table>
+<h3>New in 1.2.0</h3>
+<p>
+We no longer destructively manipulate ARGV.
+</p>
+<p>
+Have fun!
+</p>
+
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
+

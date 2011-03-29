@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: HighLine::SystemExtensions</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/highline/system_extensions_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/highline/system_extensions.rb">lib/highline/system_extensions.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-get_character">#get_character</a></li>
+					
+					<li><a href="#method-i-get_character">#get_character</a></li>
+					
+					<li><a href="#method-i-get_character">#get_character</a></li>
+					
+					<li><a href="#method-i-get_character">#get_character</a></li>
+					
+					<li><a href="#method-i-raw_no_echo_mode">#raw_no_echo_mode</a></li>
+					
+					<li><a href="#method-i-restore_mode">#restore_mode</a></li>
+					
+					<li><a href="#method-i-terminal_size">#terminal_size</a></li>
+					
+					<li><a href="#method-i-terminal_size">#terminal_size</a></li>
+					
+					<li><a href="#method-i-terminal_size">#terminal_size</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../CHANGELOG.html">CHANGELOG</a></li>
+				
+					<li class="file"><a href="../INSTALL.html">INSTALL</a></li>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README.html">README</a></li>
+				
+					<li class="file"><a href="../TODO.html">TODO</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../HighLine.html">HighLine</a></li>
+				
+					<li><a href="../HighLine/ColorScheme.html">HighLine::ColorScheme</a></li>
+				
+					<li><a href="../HighLine/Menu.html">HighLine::Menu</a></li>
+				
+					<li><a href="../HighLine/Question.html">HighLine::Question</a></li>
+				
+					<li><a href="../HighLine/Question/NoAutoCompleteMatch.html">HighLine::Question::NoAutoCompleteMatch</a></li>
+				
+					<li><a href="../HighLine/QuestionError.html">HighLine::QuestionError</a></li>
+				
+					<li><a href="../HighLine/SampleColorScheme.html">HighLine::SampleColorScheme</a></li>
+				
+					<li><a href="../HighLine/SystemExtensions.html">HighLine::SystemExtensions</a></li>
+				
+					<li><a href="../IO.html">IO</a></li>
+				
+					<li><a href="../Kernel.html">Kernel</a></li>
+				
+					<li><a href="../Object.html">Object</a></li>
+				
+					<li><a href="../String.html">String</a></li>
+				
+					<li><a href="../StringIO.html">StringIO</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">HighLine::SystemExtensions</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="JRUBY">JRUBY</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="CHARACTER_MODE">CHARACTER_MODE</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="CHARACTER_MODE">CHARACTER_MODE</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="CHARACTER_MODE">CHARACTER_MODE</a></dt>
+				
+				<dd class="description"><p>
+work correctly in JRuby manually installing the ffi-ncurses gem is the only
+way to get highline to operate correctly in JRuby. The ncurses library is
+only present on unix platforms so this is not a solution for using highline
+in JRuby on windows.
+</p></dd>
+				
+			
+				<dt><a name="CHARACTER_MODE">CHARACTER_MODE</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="get-character-method" class="method-detail ">
+				<a name="method-i-get_character"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_character</span><span
+						class="method-args">( input = STDIN )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Windows savvy getc().
+</p>
+<p>
+<b>WARNING</b>:  This method ignores <tt>input</tt> and reads one character
+from <tt>STDIN</tt>!
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-character-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/highline/system_extensions.rb, line 37</span>
+37:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_character</span>( <span class="ruby-identifier">input</span> = <span class="ruby-constant">STDIN</span> )
+38:         <span class="ruby-constant">Win32API</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;crtdll&quot;</span>, <span class="ruby-value str">&quot;_getch&quot;</span>, [ ], <span class="ruby-value str">&quot;L&quot;</span>).<span class="ruby-constant">Call</span>
+39:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-character-method" class="method-detail ">
+				<a name="method-i-get_character"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_character</span><span
+						class="method-args">( input = STDIN )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+ncurses savvy getc().  (JRuby choice.)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-character-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline/system_extensions.rb, line 100</span>
+100:           <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_character</span>( <span class="ruby-identifier">input</span> = <span class="ruby-constant">STDIN</span> )
+101:             <span class="ruby-constant">FFI</span><span class="ruby-operator">::</span><span class="ruby-constant">NCurses</span>.<span class="ruby-identifier">initscr</span>
+102:             <span class="ruby-constant">FFI</span><span class="ruby-operator">::</span><span class="ruby-constant">NCurses</span>.<span class="ruby-identifier">cbreak</span>
+103:             <span class="ruby-keyword kw">begin</span>
+104:               <span class="ruby-constant">FFI</span><span class="ruby-operator">::</span><span class="ruby-constant">NCurses</span>.<span class="ruby-identifier">curs_set</span> <span class="ruby-value">0</span>
+105:               <span class="ruby-identifier">input</span>.<span class="ruby-identifier">getbyte</span>
+106:             <span class="ruby-keyword kw">ensure</span>
+107:               <span class="ruby-constant">FFI</span><span class="ruby-operator">::</span><span class="ruby-constant">NCurses</span>.<span class="ruby-identifier">endwin</span>
+108:             <span class="ruby-keyword kw">end</span>
+109:           <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-character-method" class="method-detail ">
+				<a name="method-i-get_character"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_character</span><span
+						class="method-args">( input = STDIN )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Unix savvy getc().  (First choice.)
+</p>
+<p>
+<b>WARNING</b>:  This method requires the &#8220;termios&#8221; library!
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-character-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/highline/system_extensions.rb, line 72</span>
+72:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_character</span>( <span class="ruby-identifier">input</span> = <span class="ruby-constant">STDIN</span> )
+73:           <span class="ruby-identifier">old_settings</span> = <span class="ruby-constant">Termios</span>.<span class="ruby-identifier">getattr</span>(<span class="ruby-identifier">input</span>)
+74: 
+75:           <span class="ruby-identifier">new_settings</span>                     =  <span class="ruby-identifier">old_settings</span>.<span class="ruby-identifier">dup</span>
+76:           <span class="ruby-identifier">new_settings</span>.<span class="ruby-identifier">c_lflag</span>             <span class="ruby-operator">&amp;=</span> <span class="ruby-operator">~</span>(<span class="ruby-constant">Termios</span><span class="ruby-operator">::</span><span class="ruby-constant">ECHO</span> <span class="ruby-operator">|</span> <span class="ruby-constant">Termios</span><span class="ruby-operator">::</span><span class="ruby-constant">ICANON</span>)
+77:           <span class="ruby-identifier">new_settings</span>.<span class="ruby-identifier">c_cc</span>[<span class="ruby-constant">Termios</span><span class="ruby-operator">::</span><span class="ruby-constant">VMIN</span>] =  <span class="ruby-value">1</span>
+78: 
+79:           <span class="ruby-keyword kw">begin</span>
+80:             <span class="ruby-constant">Termios</span>.<span class="ruby-identifier">setattr</span>(<span class="ruby-identifier">input</span>, <span class="ruby-constant">Termios</span><span class="ruby-operator">::</span><span class="ruby-constant">TCSANOW</span>, <span class="ruby-identifier">new_settings</span>)
+81:             <span class="ruby-identifier">input</span>.<span class="ruby-identifier">getbyte</span>
+82:           <span class="ruby-keyword kw">ensure</span>
+83:             <span class="ruby-constant">Termios</span>.<span class="ruby-identifier">setattr</span>(<span class="ruby-identifier">input</span>, <span class="ruby-constant">Termios</span><span class="ruby-operator">::</span><span class="ruby-constant">TCSANOW</span>, <span class="ruby-identifier">old_settings</span>)
+84:           <span class="ruby-keyword kw">end</span>
+85:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-character-method" class="method-detail ">
+				<a name="method-i-get_character"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_character</span><span
+						class="method-args">( input = STDIN )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Unix savvy getc().  (Second choice.)
+</p>
+<p>
+<b>WARNING</b>:  This method requires the external &#8220;stty&#8221;
+program!
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-character-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline/system_extensions.rb, line 126</span>
+126:           <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_character</span>( <span class="ruby-identifier">input</span> = <span class="ruby-constant">STDIN</span> )
+127:             <span class="ruby-identifier">raw_no_echo_mode</span>
+128: 
+129:             <span class="ruby-keyword kw">begin</span>
+130:               <span class="ruby-identifier">input</span>.<span class="ruby-identifier">getbyte</span>
+131:             <span class="ruby-keyword kw">ensure</span>
+132:               <span class="ruby-identifier">restore_mode</span>
+133:             <span class="ruby-keyword kw">end</span>
+134:           <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="raw-no-echo-mode-method" class="method-detail ">
+				<a name="method-i-raw_no_echo_mode"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">raw_no_echo_mode</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switched the input mode to raw and disables echo.
+</p>
+<p>
+<b>WARNING</b>:  This method requires the external &#8220;stty&#8221;
+program!
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="raw-no-echo-mode-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline/system_extensions.rb, line 141</span>
+141:           <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">raw_no_echo_mode</span>
+142:             <span class="ruby-ivar">@state</span> = <span class="ruby-value">`stty -g`</span>
+143:             <span class="ruby-identifier">system</span> <span class="ruby-value str">&quot;stty raw -echo -icanon isig&quot;</span>
+144:           <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="restore-mode-method" class="method-detail ">
+				<a name="method-i-restore_mode"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">restore_mode</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Restores a previously saved input mode.
+</p>
+<p>
+<b>WARNING</b>:  This method requires the external &#8220;stty&#8221;
+program!
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="restore-mode-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline/system_extensions.rb, line 151</span>
+151:           <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">restore_mode</span>
+152:             <span class="ruby-identifier">system</span> <span class="ruby-node">&quot;stty #{@state}&quot;</span>
+153:           <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="terminal-size-method" class="method-detail ">
+				<a name="method-i-terminal_size"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">terminal_size</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+A Windows savvy method to fetch the console columns, and rows.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="terminal-size-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/highline/system_extensions.rb, line 42</span>
+42:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">terminal_size</span>
+43:         <span class="ruby-identifier">m_GetStdHandle</span>               = <span class="ruby-constant">Win32API</span>.<span class="ruby-identifier">new</span>( <span class="ruby-value str">'kernel32'</span>,
+44:                                                      <span class="ruby-value str">'GetStdHandle'</span>,
+45:                                                      [<span class="ruby-value str">'L'</span>],
+46:                                                      <span class="ruby-value str">'L'</span> )
+47:         <span class="ruby-identifier">m_GetConsoleScreenBufferInfo</span> = <span class="ruby-constant">Win32API</span>.<span class="ruby-identifier">new</span>(
+48:           <span class="ruby-value str">'kernel32'</span>, <span class="ruby-value str">'GetConsoleScreenBufferInfo'</span>, [<span class="ruby-value str">'L'</span>, <span class="ruby-value str">'P'</span>], <span class="ruby-value str">'L'</span>
+49:         )
+50: 
+51:         <span class="ruby-identifier">format</span>        = <span class="ruby-value str">'SSSSSssssSS'</span>
+52:         <span class="ruby-identifier">buf</span>           = ([<span class="ruby-value">0</span>] * <span class="ruby-identifier">format</span>.<span class="ruby-identifier">size</span>).<span class="ruby-identifier">pack</span>(<span class="ruby-identifier">format</span>)
+53:         <span class="ruby-identifier">stdout_handle</span> = <span class="ruby-identifier">m_GetStdHandle</span>.<span class="ruby-identifier">call</span>(<span class="ruby-value">0xFFFFFFF5</span>)
+54:         
+55:         <span class="ruby-identifier">m_GetConsoleScreenBufferInfo</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">stdout_handle</span>, <span class="ruby-identifier">buf</span>)
+56:         <span class="ruby-identifier">bufx</span>, <span class="ruby-identifier">bufy</span>, <span class="ruby-identifier">curx</span>, <span class="ruby-identifier">cury</span>, <span class="ruby-identifier">wattr</span>,
+57:         <span class="ruby-identifier">left</span>, <span class="ruby-identifier">top</span>, <span class="ruby-identifier">right</span>, <span class="ruby-identifier">bottom</span>, <span class="ruby-identifier">maxx</span>, <span class="ruby-identifier">maxy</span> = <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">unpack</span>(<span class="ruby-identifier">format</span>)
+58:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">right</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">left</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-identifier">bottom</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">top</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+59:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="terminal-size-method" class="method-detail ">
+				<a name="method-i-terminal_size"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">terminal_size</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+A ncurses savvy method to fetch the console columns, and rows.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="terminal-size-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline/system_extensions.rb, line 160</span>
+160:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">terminal_size</span>
+161:           <span class="ruby-identifier">size</span> = [<span class="ruby-value">80</span>, <span class="ruby-value">40</span>]
+162:           <span class="ruby-constant">FFI</span><span class="ruby-operator">::</span><span class="ruby-constant">NCurses</span>.<span class="ruby-identifier">initscr</span>
+163:           <span class="ruby-keyword kw">begin</span>
+164:             <span class="ruby-identifier">size</span> = <span class="ruby-constant">FFI</span><span class="ruby-operator">::</span><span class="ruby-constant">NCurses</span>.<span class="ruby-identifier">getmaxyx</span>(<span class="ruby-identifier">stdscr</span>).<span class="ruby-identifier">reverse</span>
+165:           <span class="ruby-keyword kw">ensure</span>
+166:             <span class="ruby-constant">FFI</span><span class="ruby-operator">::</span><span class="ruby-constant">NCurses</span>.<span class="ruby-identifier">endwin</span>
+167:           <span class="ruby-keyword kw">end</span>
+168:           <span class="ruby-identifier">size</span>
+169:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="terminal-size-method" class="method-detail ">
+				<a name="method-i-terminal_size"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">terminal_size</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+A Unix savvy method using stty that to fetch the console columns, and rows.
+&#8230; stty does not work in JRuby
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="terminal-size-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline/system_extensions.rb, line 173</span>
+173:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">terminal_size</span>
+174:           <span class="ruby-keyword kw">if</span> <span class="ruby-regexp re">/solaris/</span> <span class="ruby-operator">=~</span> <span class="ruby-constant">RUBY_PLATFORM</span> <span class="ruby-keyword kw">and</span>
+175:             <span class="ruby-value">`stty`</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/\brows = (\d+).*\bcolumns = (\d+)/</span>
+176:             [<span class="ruby-node">$2</span>, <span class="ruby-node">$1</span>].<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">to_i</span> }
+177:           <span class="ruby-keyword kw">else</span>
+178:             <span class="ruby-value">`stty size`</span>.<span class="ruby-identifier">split</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">to_i</span> }.<span class="ruby-identifier">reverse</span>
+179:           <span class="ruby-keyword kw">end</span>
+180:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: Erubis::Basic::Converter</title>
+
+	<link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../../lib/erubis/converter_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/erubis/converter.rb">lib/erubis/converter.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-pattern_regexp">::pattern_regexp</a></li>
+					
+					<li><a href="#method-i-add_expr">#add_expr</a></li>
+					
+					<li><a href="#method-i-convert_input">#convert_input</a></li>
+					
+					<li><a href="#method-i-init_converter">#init_converter</a></li>
+					
+					<li><a href="#method-i-pattern_regexp">#pattern_regexp</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+			<div id="includes-section" class="section">
+				<h3 class="section-header">Included Modules</h3>
+				<ul class="link-list">
+				
+				
+					<li><a class="include" href="../Converter.html">Erubis::Converter</a></li>
+				
+				
+				</ul>
+			</div>
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../../Erubis.html">Erubis</a></li>
+				
+					<li><a href="../../Erubis/ArrayBufferEruby.html">Erubis::ArrayBufferEruby</a></li>
+				
+					<li><a href="../../Erubis/ArrayEruby.html">Erubis::ArrayEruby</a></li>
+				
+					<li><a href="../../Erubis/Basic.html">Erubis::Basic</a></li>
+				
+					<li><a href="../../Erubis/Basic/Converter.html">Erubis::Basic::Converter</a></li>
+				
+					<li><a href="../../Erubis/Basic/Engine.html">Erubis::Basic::Engine</a></li>
+				
+					<li><a href="../../Erubis/BiPatternEruby.html">Erubis::BiPatternEruby</a></li>
+				
+					<li><a href="../../Erubis/CGenerator.html">Erubis::CGenerator</a></li>
+				
+					<li><a href="../../Erubis/CommandOptionError.html">Erubis::CommandOptionError</a></li>
+				
+					<li><a href="../../Erubis/Converter.html">Erubis::Converter</a></li>
+				
+					<li><a href="../../Erubis/DeleteIndentEruby.html">Erubis::DeleteIndentEruby</a></li>
+				
+					<li><a href="../../Erubis/Ec.html">Erubis::Ec</a></li>
+				
+					<li><a href="../../Erubis/Ejava.html">Erubis::Ejava</a></li>
+				
+					<li><a href="../../Erubis/Ejavascript.html">Erubis::Ejavascript</a></li>
+				
+					<li><a href="../../Erubis/Engine.html">Erubis::Engine</a></li>
+				
+					<li><a href="../../Erubis/Eperl.html">Erubis::Eperl</a></li>
+				
+					<li><a href="../../Erubis/Ephp.html">Erubis::Ephp</a></li>
+				
+					<li><a href="../../Erubis/ErboutEruby.html">Erubis::ErboutEruby</a></li>
+				
+					<li><a href="../../Erubis/ErubisError.html">Erubis::ErubisError</a></li>
+				
+					<li><a href="../../Erubis/Eruby.html">Erubis::Eruby</a></li>
+				
+					<li><a href="../../Erubis/EscapedEc.html">Erubis::EscapedEc</a></li>
+				
+					<li><a href="../../Erubis/EscapedEjava.html">Erubis::EscapedEjava</a></li>
+				
+					<li><a href="../../Erubis/EscapedEjavascript.html">Erubis::EscapedEjavascript</a></li>
+				
+					<li><a href="../../Erubis/EscapedEperl.html">Erubis::EscapedEperl</a></li>
+				
+					<li><a href="../../Erubis/EscapedEphp.html">Erubis::EscapedEphp</a></li>
+				
+					<li><a href="../../Erubis/EscapedEruby.html">Erubis::EscapedEruby</a></li>
+				
+					<li><a href="../../Erubis/EscapedEscheme.html">Erubis::EscapedEscheme</a></li>
+				
+					<li><a href="../../Erubis/Escheme.html">Erubis::Escheme</a></li>
+				
+					<li><a href="../../Erubis/Evaluator.html">Erubis::Evaluator</a></li>
+				
+					<li><a href="../../Erubis/FastEruby.html">Erubis::FastEruby</a></li>
+				
+					<li><a href="../../Erubis/Generator.html">Erubis::Generator</a></li>
+				
+					<li><a href="../../Erubis/HeaderFooterEruby.html">Erubis::HeaderFooterEruby</a></li>
+				
+					<li><a href="../../Erubis/Helpers.html">Erubis::Helpers</a></li>
+				
+					<li><a href="../../Erubis/Helpers/RailsFormHelper.html">Erubis::Helpers::RailsFormHelper</a></li>
+				
+					<li><a href="../../Erubis/Helpers/RailsHelper.html">Erubis::Helpers::RailsHelper</a></li>
+				
+					<li><a href="../../Erubis/Helpers/RailsHelper/TemplateConverter.html">Erubis::Helpers::RailsHelper::TemplateConverter</a></li>
+				
+					<li><a href="../../Erubis/InterpolationEruby.html">Erubis::InterpolationEruby</a></li>
+				
+					<li><a href="../../Erubis/JavaGenerator.html">Erubis::JavaGenerator</a></li>
+				
+					<li><a href="../../Erubis/JavascriptGenerator.html">Erubis::JavascriptGenerator</a></li>
+				
+					<li><a href="../../Erubis/Main.html">Erubis::Main</a></li>
+				
+					<li><a href="../../Erubis/NoCodeEruby.html">Erubis::NoCodeEruby</a></li>
+				
+					<li><a href="../../Erubis/NoTextEruby.html">Erubis::NoTextEruby</a></li>
+				
+					<li><a href="../../Erubis/NotSupportedError.html">Erubis::NotSupportedError</a></li>
+				
+					<li><a href="../../Erubis/OptimizedEruby.html">Erubis::OptimizedEruby</a></li>
+				
+					<li><a href="../../Erubis/OptimizedGenerator.html">Erubis::OptimizedGenerator</a></li>
+				
+					<li><a href="../../Erubis/OptimizedXmlEruby.html">Erubis::OptimizedXmlEruby</a></li>
+				
+					<li><a href="../../Erubis/PI.html">Erubis::PI</a></li>
+				
+					<li><a href="../../Erubis/PI/Converter.html">Erubis::PI::Converter</a></li>
+				
+					<li><a href="../../Erubis/PI/Ec.html">Erubis::PI::Ec</a></li>
+				
+					<li><a href="../../Erubis/PI/Ejava.html">Erubis::PI::Ejava</a></li>
+				
+					<li><a href="../../Erubis/PI/Ejavascript.html">Erubis::PI::Ejavascript</a></li>
+				
+					<li><a href="../../Erubis/PI/Engine.html">Erubis::PI::Engine</a></li>
+				
+					<li><a href="../../Erubis/PI/Eperl.html">Erubis::PI::Eperl</a></li>
+				
+					<li><a href="../../Erubis/PI/Ephp.html">Erubis::PI::Ephp</a></li>
+				
+					<li><a href="../../Erubis/PI/Eruby.html">Erubis::PI::Eruby</a></li>
+				
+					<li><a href="../../Erubis/PI/Escheme.html">Erubis::PI::Escheme</a></li>
+				
+					<li><a href="../../Erubis/PI/TinyEruby.html">Erubis::PI::TinyEruby</a></li>
+				
+					<li><a href="../../Erubis/PercentLineEruby.html">Erubis::PercentLineEruby</a></li>
+				
+					<li><a href="../../Erubis/PerlGenerator.html">Erubis::PerlGenerator</a></li>
+				
+					<li><a href="../../Erubis/PhpGenerator.html">Erubis::PhpGenerator</a></li>
+				
+					<li><a href="../../Erubis/PrintEnabledEruby.html">Erubis::PrintEnabledEruby</a></li>
+				
+					<li><a href="../../Erubis/PrintOutEruby.html">Erubis::PrintOutEruby</a></li>
+				
+					<li><a href="../../Erubis/PrintOutSimplifiedEruby.html">Erubis::PrintOutSimplifiedEruby</a></li>
+				
+					<li><a href="../../Erubis/RubyEvaluator.html">Erubis::RubyEvaluator</a></li>
+				
+					<li><a href="../../Erubis/RubyGenerator.html">Erubis::RubyGenerator</a></li>
+				
+					<li><a href="../../Erubis/SchemeGenerator.html">Erubis::SchemeGenerator</a></li>
+				
+					<li><a href="../../Erubis/SimplifiedEruby.html">Erubis::SimplifiedEruby</a></li>
+				
+					<li><a href="../../Erubis/StdoutEruby.html">Erubis::StdoutEruby</a></li>
+				
+					<li><a href="../../Erubis/StdoutSimplifiedEruby.html">Erubis::StdoutSimplifiedEruby</a></li>
+				
+					<li><a href="../../Erubis/StringBufferEruby.html">Erubis::StringBufferEruby</a></li>
+				
+					<li><a href="../../Erubis/StringIOEruby.html">Erubis::StringIOEruby</a></li>
+				
+					<li><a href="../../Erubis/TinyEruby.html">Erubis::TinyEruby</a></li>
+				
+					<li><a href="../../Erubis/XmlEruby.html">Erubis::XmlEruby</a></li>
+				
+					<li><a href="../../Erubis/XmlHelper.html">Erubis::XmlHelper</a></li>
+				
+					<li><a href="../../ActionView.html">ActionView</a></li>
+				
+					<li><a href="../../ActionView/TemplateHandlers/ErubisHandler.html">ActionView::TemplateHandlers::ErubisHandler</a></li>
+				
+					<li><a href="../../ERB.html">ERB</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">Erubis::Basic::Converter</h1>
+
+		<div id="description">
+			<p>
+basic converter which supports &#8217;<% &#8230; %>&#8217; notation.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="DEFAULT_REGEXP">DEFAULT_REGEXP</a></dt>
+				
+				<dd class="description"><p>
+<a href="Converter.html#DEFAULT_REGEXP">DEFAULT_REGEXP</a> = /(.*?)(^[
+t]*)?<%(=+|#)?(.*?)-?%>([ t]*r?n)?/m <a
+href="Converter.html#DEFAULT_REGEXP">DEFAULT_REGEXP</a> = /(^[
+t]*)?<%(=+|#)?(.*?)-?%>([ t]*r?n)?/m <a
+href="Converter.html#DEFAULT_REGEXP">DEFAULT_REGEXP</a> =
+/<%(=+|#)?(.*?)-?%>([ t]*r?n)?/m
+</p></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="pattern-attribute-method" class="method-detail">
+				<a name="pattern"></a>
+				
+				<a name="pattern="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">pattern</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="trim-attribute-method" class="method-detail">
+				<a name="trim"></a>
+				
+				<a name="trim="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">trim</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="protected-class-method-details" class="method-section section">
+			<h3 class="section-header">Protected Class Methods</h3>
+
+		
+			<div id="pattern-regexp-method" class="method-detail ">
+				<a name="method-c-pattern_regexp"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">pattern_regexp</span><span
+						class="method-args">(pattern)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+return regexp of pattern to parse eRuby script
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="pattern-regexp-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/converter.rb, line 112</span>
+112:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">pattern_regexp</span>(<span class="ruby-identifier">pattern</span>)
+113:       <span class="ruby-ivar">@prefix</span>, <span class="ruby-ivar">@postfix</span> = <span class="ruby-identifier">pattern</span>.<span class="ruby-identifier">split</span>()   <span class="ruby-comment cmt"># '&lt;% %&gt;' =&gt; '&lt;%', '%&gt;'</span>
+114:       <span class="ruby-comment cmt">#return /(.*?)(^[ \t]*)?#{@prefix}(=+|\#)?(.*?)-?#{@postfix}([ \t]*\r?\n)?/m</span>
+115:       <span class="ruby-comment cmt">#return /(^[ \t]*)?#{@prefix}(=+|\#)?(.*?)-?#{@postfix}([ \t]*\r?\n)?/m</span>
+116:       <span class="ruby-keyword kw">return</span> <span class="ruby-node">/#{@prefix}(=+|-|\#|%)?(.*?)([-=])?#{@postfix}([ \t]*\r?\n)?/</span>
+117:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="add-expr-method" class="method-detail ">
+				<a name="method-i-add_expr"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">add_expr</span><span
+						class="method-args">(src, code, indicator)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+add expression code to src
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="add-expr-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/converter.rb, line 176</span>
+176:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">add_expr</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">code</span>, <span class="ruby-identifier">indicator</span>)
+177:       <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">indicator</span>
+178:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">'='</span>
+179:         <span class="ruby-ivar">@escape</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">add_expr_escaped</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">code</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">add_expr_literal</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">code</span>)
+180:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">'=='</span>
+181:         <span class="ruby-ivar">@escape</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">add_expr_literal</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">code</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">add_expr_escaped</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">code</span>)
+182:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">'==='</span>
+183:         <span class="ruby-identifier">add_expr_debug</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">code</span>)
+184:       <span class="ruby-keyword kw">end</span>
+185:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="convert-input-method" class="method-detail ">
+				<a name="method-i-convert_input"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">convert_input</span><span
+						class="method-args">(src, input)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="convert-input-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/converter.rb, line 127</span>
+127:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">convert_input</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">input</span>)
+128:       <span class="ruby-identifier">pat</span> = <span class="ruby-ivar">@pattern</span>
+129:       <span class="ruby-identifier">regexp</span> = <span class="ruby-identifier">pat</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">pat</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'&lt;% %&gt;'</span> <span class="ruby-operator">?</span> <span class="ruby-constant">DEFAULT_REGEXP</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">pattern_regexp</span>(<span class="ruby-identifier">pat</span>)
+130:       <span class="ruby-identifier">pos</span> = <span class="ruby-value">0</span>
+131:       <span class="ruby-identifier">is_bol</span> = <span class="ruby-keyword kw">true</span>     <span class="ruby-comment cmt"># is beginning of line</span>
+132:       <span class="ruby-identifier">input</span>.<span class="ruby-identifier">scan</span>(<span class="ruby-identifier">regexp</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">indicator</span>, <span class="ruby-identifier">code</span>, <span class="ruby-identifier">tailch</span>, <span class="ruby-identifier">rspace</span><span class="ruby-operator">|</span>
+133:         <span class="ruby-identifier">match</span> = <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">last_match</span>()
+134:         <span class="ruby-identifier">len</span>  = <span class="ruby-identifier">match</span>.<span class="ruby-identifier">begin</span>(<span class="ruby-value">0</span>) <span class="ruby-operator">-</span> <span class="ruby-identifier">pos</span>
+135:         <span class="ruby-identifier">text</span> = <span class="ruby-identifier">input</span>[<span class="ruby-identifier">pos</span>, <span class="ruby-identifier">len</span>]
+136:         <span class="ruby-identifier">pos</span>  = <span class="ruby-identifier">match</span>.<span class="ruby-identifier">end</span>(<span class="ruby-value">0</span>)
+137:         <span class="ruby-identifier">ch</span>   = <span class="ruby-identifier">indicator</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">indicator</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">:</span> <span class="ruby-keyword kw">nil</span>
+138:         <span class="ruby-identifier">lspace</span> = <span class="ruby-identifier">ch</span> <span class="ruby-operator">==</span> <span class="ruby-value">==</span> <span class="ruby-operator">?</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">detect_spaces_at_bol</span>(<span class="ruby-identifier">text</span>, <span class="ruby-identifier">is_bol</span>)
+139:         <span class="ruby-identifier">is_bol</span> = <span class="ruby-identifier">rspace</span> <span class="ruby-operator">?</span> <span class="ruby-keyword kw">true</span> <span class="ruby-operator">:</span> <span class="ruby-keyword kw">false</span>
+140:         <span class="ruby-identifier">add_text</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">text</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">text</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">text</span>.<span class="ruby-identifier">empty?</span>
+141:         <span class="ruby-comment cmt">## * when '&lt;%= %&gt;', do nothing</span>
+142:         <span class="ruby-comment cmt">## * when '&lt;% %&gt;' or '&lt;%# %&gt;', delete spaces iff only spaces are around '&lt;% %&gt;'</span>
+143:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">ch</span> <span class="ruby-operator">==</span> <span class="ruby-value">==</span>              <span class="ruby-comment cmt"># &lt;%= %&gt;</span>
+144:           <span class="ruby-identifier">rspace</span> = <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">tailch</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">tailch</span>.<span class="ruby-identifier">empty?</span>
+145:           <span class="ruby-identifier">add_text</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">lspace</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">lspace</span>
+146:           <span class="ruby-identifier">add_expr</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">code</span>, <span class="ruby-identifier">indicator</span>)
+147:           <span class="ruby-identifier">add_text</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">rspace</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">rspace</span>
+148:         <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">ch</span> <span class="ruby-operator">==</span> <span class="ruby-value">\#\</span>          <span class="ruby-comment cmt"># &lt;%# %&gt;</span>
+149:           <span class="ruby-identifier">n</span> = <span class="ruby-identifier">code</span>.<span class="ruby-identifier">count</span>(<span class="ruby-value str">&quot;\n&quot;</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">rspace</span> <span class="ruby-operator">?</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>)
+150:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@trim</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">lspace</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">rspace</span>
+151:             <span class="ruby-identifier">add_stmt</span>(<span class="ruby-identifier">src</span>, <span class="ruby-value str">&quot;\n&quot;</span> * <span class="ruby-identifier">n</span>)
+152:           <span class="ruby-keyword kw">else</span>
+153:             <span class="ruby-identifier">add_text</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">lspace</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">lspace</span>
+154:             <span class="ruby-identifier">add_stmt</span>(<span class="ruby-identifier">src</span>, <span class="ruby-value str">&quot;\n&quot;</span> * <span class="ruby-identifier">n</span>)
+155:             <span class="ruby-identifier">add_text</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">rspace</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">rspace</span>
+156:           <span class="ruby-keyword kw">end</span>
+157:         <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">ch</span> <span class="ruby-operator">==</span> <span class="ruby-value">%%</span>           <span class="ruby-comment cmt"># &lt;%% %&gt;</span>
+158:           <span class="ruby-identifier">s</span> = <span class="ruby-node">&quot;#{lspace}#{@prefix||='&lt;%'}#{code}#{tailch}#{@postfix||='%&gt;'}#{rspace}&quot;</span>
+159:           <span class="ruby-identifier">add_text</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">s</span>)
+160:         <span class="ruby-keyword kw">else</span>                     <span class="ruby-comment cmt"># &lt;% %&gt;</span>
+161:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@trim</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">lspace</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">rspace</span>
+162:             <span class="ruby-identifier">add_stmt</span>(<span class="ruby-identifier">src</span>, <span class="ruby-node">&quot;#{lspace}#{code}#{rspace}&quot;</span>)
+163:           <span class="ruby-keyword kw">else</span>
+164:             <span class="ruby-identifier">add_text</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">lspace</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">lspace</span>
+165:             <span class="ruby-identifier">add_stmt</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">code</span>)
+166:             <span class="ruby-identifier">add_text</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">rspace</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">rspace</span>
+167:           <span class="ruby-keyword kw">end</span>
+168:         <span class="ruby-keyword kw">end</span>
+169:       <span class="ruby-keyword kw">end</span>
+170:       <span class="ruby-comment cmt">#rest = $' || input                        # ruby1.8</span>
+171:       <span class="ruby-identifier">rest</span> = <span class="ruby-identifier">pos</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">input</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">input</span>[<span class="ruby-identifier">pos</span><span class="ruby-operator">..</span><span class="ruby-value">1</span>]   <span class="ruby-comment cmt"># ruby1.9</span>
+172:       <span class="ruby-identifier">add_text</span>(<span class="ruby-identifier">src</span>, <span class="ruby-identifier">rest</span>)
+173:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="init-converter-method" class="method-detail ">
+				<a name="method-i-init_converter"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">init_converter</span><span
+						class="method-args">(properties={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="init-converter-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/converter.rb, line 103</span>
+103:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">init_converter</span>(<span class="ruby-identifier">properties</span>={})
+104:       <span class="ruby-keyword kw">super</span>(<span class="ruby-identifier">properties</span>)
+105:       <span class="ruby-ivar">@pattern</span> = <span class="ruby-identifier">properties</span>[<span class="ruby-value">:pattern</span>]
+106:       <span class="ruby-ivar">@trim</span>    = <span class="ruby-identifier">properties</span>[<span class="ruby-value">:trim</span>] <span class="ruby-operator">!=</span> <span class="ruby-keyword kw">false</span>
+107:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="pattern-regexp-method" class="method-detail ">
+				<a name="method-i-pattern_regexp"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">pattern_regexp</span><span
+						class="method-args">(pattern)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+return regexp of pattern to parse eRuby script
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="pattern-regexp-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/converter.rb, line 112</span>
+112:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">pattern_regexp</span>(<span class="ruby-identifier">pattern</span>)
+113:       <span class="ruby-ivar">@prefix</span>, <span class="ruby-ivar">@postfix</span> = <span class="ruby-identifier">pattern</span>.<span class="ruby-identifier">split</span>()   <span class="ruby-comment cmt"># '&lt;% %&gt;' =&gt; '&lt;%', '%&gt;'</span>
+114:       <span class="ruby-comment cmt">#return /(.*?)(^[ \t]*)?#{@prefix}(=+|\#)?(.*?)-?#{@postfix}([ \t]*\r?\n)?/m</span>
+115:       <span class="ruby-comment cmt">#return /(^[ \t]*)?#{@prefix}(=+|\#)?(.*?)-?#{@postfix}([ \t]*\r?\n)?/m</span>
+116:       <span class="ruby-keyword kw">return</span> <span class="ruby-node">/#{@prefix}(=+|-|\#|%)?(.*?)([-=])?#{@postfix}([ \t]*\r?\n)?/</span>
+117:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

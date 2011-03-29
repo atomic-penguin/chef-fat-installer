@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+	<title>Module: RestClient::Exceptions</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/restclient/exceptions_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/restclient/exceptions.rb">lib/restclient/exceptions.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../RestClient.html">RestClient</a></li>
+				
+					<li><a href="../RestClient/AbstractResponse.html">RestClient::AbstractResponse</a></li>
+				
+					<li><a href="../RestClient/Exception.html">RestClient::Exception</a></li>
+				
+					<li><a href="../RestClient/ExceptionWithResponse.html">RestClient::ExceptionWithResponse</a></li>
+				
+					<li><a href="../RestClient/Exceptions.html">RestClient::Exceptions</a></li>
+				
+					<li><a href="../RestClient/Payload.html">RestClient::Payload</a></li>
+				
+					<li><a href="../RestClient/Payload/Base.html">RestClient::Payload::Base</a></li>
+				
+					<li><a href="../RestClient/Payload/Multipart.html">RestClient::Payload::Multipart</a></li>
+				
+					<li><a href="../RestClient/Payload/Streamed.html">RestClient::Payload::Streamed</a></li>
+				
+					<li><a href="../RestClient/Payload/UrlEncoded.html">RestClient::Payload::UrlEncoded</a></li>
+				
+					<li><a href="../RestClient/RawResponse.html">RestClient::RawResponse</a></li>
+				
+					<li><a href="../RestClient/Redirect.html">RestClient::Redirect</a></li>
+				
+					<li><a href="../RestClient/Redirect.html">RestClient::Redirect</a></li>
+				
+					<li><a href="../RestClient/Request.html">RestClient::Request</a></li>
+				
+					<li><a href="../RestClient/RequestFailed.html">RestClient::RequestFailed</a></li>
+				
+					<li><a href="../RestClient/RequestFailed.html">RestClient::RequestFailed</a></li>
+				
+					<li><a href="../RestClient/Resource.html">RestClient::Resource</a></li>
+				
+					<li><a href="../RestClient/Response.html">RestClient::Response</a></li>
+				
+					<li><a href="../RestClient/ResponseForException.html">RestClient::ResponseForException</a></li>
+				
+					<li><a href="../RestClient/SSLCertificateNotVerified.html">RestClient::SSLCertificateNotVerified</a></li>
+				
+					<li><a href="../RestClient/ServerBrokeConnection.html">RestClient::ServerBrokeConnection</a></li>
+				
+					<li><a href="../MIME.html">MIME</a></li>
+				
+					<li><a href="../MIME/Types.html">MIME::Types</a></li>
+				
+					<li><a href="../Net.html">Net</a></li>
+				
+					<li><a href="../Net/HTTP.html">Net::HTTP</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">RestClient::Exceptions</h1>
+
+		<div id="description">
+			<p>
+We will a create an exception for each status code, see <a
+href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a>
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="EXCEPTIONS_MAP">EXCEPTIONS_MAP</a></dt>
+				
+				<dd class="description"><p>
+Map http status codes to the corresponding exception class
+</p></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

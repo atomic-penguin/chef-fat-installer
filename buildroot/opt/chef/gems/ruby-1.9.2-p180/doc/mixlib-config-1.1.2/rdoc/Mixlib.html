@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+	<title>Module: Mixlib</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/mixlib/config_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/mixlib/config.rb">lib/mixlib/config.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+			<div id="namespace-list-section" class="section">
+				<h3 class="section-header">Namespace</h3>
+				<ul class="link-list">
+					
+					<li><span class="type">MODULE</span> <a href="Mixlib/Config.html">Mixlib::Config</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-%5B%5D">#[]</a></li>
+					
+					<li><a href="#method-i-%5B%5D%3D">#[]=</a></li>
+					
+					<li><a href="#method-i-config_attr_writer">#config_attr_writer</a></li>
+					
+					<li><a href="#method-i-configure">#configure</a></li>
+					
+					<li><a href="#method-i-from_file">#from_file</a></li>
+					
+					<li><a href="#method-i-has_key%3F">#has_key?</a></li>
+					
+					<li><a href="#method-i-hash_dup">#hash_dup</a></li>
+					
+					<li><a href="#method-i-internal_set">#internal_set</a></li>
+					
+					<li><a href="#method-i-keys">#keys</a></li>
+					
+					<li><a href="#method-i-merge%21">#merge!</a></li>
+					
+					<li><a href="#method-i-method_missing">#method_missing</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Mixlib.html">Mixlib</a></li>
+				
+					<li><a href="./Mixlib/Config.html">Mixlib::Config</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">Mixlib</h1>
+
+		<div id="description">
+			<table>
+<tr><td valign="top">Author</td><td><p>
+Adam Jacob (<adam@opscode.com>)
+</p>
+</td></tr>
+<tr><td valign="top">Author</td><td><p>
+Nuo Yan (<nuo@opscode.com>)
+</p>
+</td></tr>
+<tr><td valign="top">Author</td><td><p>
+Christopher Brown (<cb@opscode.com>)
+</p>
+</td></tr>
+<tr><td valign="top">Copyright</td><td><p>
+Copyright &#169; 2008 Opscode, Inc.
+</p>
+</td></tr>
+<tr><td valign="top">License</td><td><p>
+Apache License, Version 2.0
+</p>
+</td></tr>
+</table>
+<p>
+Licensed under the Apache License, Version 2.0 (the &#8220;License&#8221;);
+you may not use this file except in compliance with the License. You may
+obtain a copy of the License at
+</p>
+<pre>
+    http://www.apache.org/licenses/LICENSE-2.0
+</pre>
+<p>
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &#8220;AS IS&#8221;
+BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied. See the License for the specific language governing permissions
+and limitations under the License.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%5B%5D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">[]</span><span
+						class="method-args">(config_option)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Get the value of a configuration option
+</p>
+<h3>Parameters</h3>
+<table>
+<tr><td valign="top">config_option<Symbol></td><td><p>
+The configuration option to return
+</p>
+</td></tr>
+</table>
+<h3>Returns</h3>
+<table>
+<tr><td valign="top">value</td><td><p>
+The value of the configuration option
+</p>
+</td></tr>
+</table>
+<h3>Raises</h3>
+<table>
+<tr><td valign="top"><ArgumentError></td><td><p>
+If the configuration option does not exist
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/config.rb, line 58</span>
+58:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">config_option</span>)
+59:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">configuration</span>[<span class="ruby-identifier">config_option</span>.<span class="ruby-identifier">to_sym</span>]
+60:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%5B%5D%3D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">[]=</span><span
+						class="method-args">(config_option, value)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Set the value of a configuration option
+</p>
+<h3>Parameters</h3>
+<table>
+<tr><td valign="top">config_option<Symbol></td><td><p>
+The configuration option to set (within the [])
+</p>
+</td></tr>
+<tr><td valign="top">value</td><td><p>
+The value for the configuration option
+</p>
+</td></tr>
+</table>
+<h3>Returns</h3>
+<table>
+<tr><td valign="top">value</td><td><p>
+The new value of the configuration option
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/config.rb, line 70</span>
+70:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]=</span>(<span class="ruby-identifier">config_option</span>, <span class="ruby-identifier">value</span>)
+71:       <span class="ruby-identifier">internal_set</span>(<span class="ruby-identifier">config_option</span>,<span class="ruby-identifier">value</span>)
+72:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="config-attr-writer-method" class="method-detail ">
+				<a name="method-i-config_attr_writer"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">config_attr_writer</span><span
+						class="method-args">(method_symbol, &blk)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+metaprogramming to ensure that the slot for method_symbol  gets set to
+value after any other logic is run
+</p>
+<h3>Parameters</h3>
+<table>
+<tr><td valign="top">method_symbol<Symbol></td><td><p>
+Name of the method (variable setter)
+</p>
+</td></tr>
+<tr><td valign="top">blk<Block></td><td><p>
+logic block to run in setting slot method_symbol to value
+</p>
+</td></tr>
+<tr><td valign="top">value<Object></td><td><p>
+Value to be set in config hash
+</p>
+</td></tr>
+</table>
+<pre>
+         </pre>
+					
+
+					
+					<div class="method-source-code"
+						id="config-attr-writer-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/config.rb, line 138</span>
+138:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">config_attr_writer</span>(<span class="ruby-identifier">method_symbol</span>, &amp;<span class="ruby-identifier">blk</span>)
+139:       <span class="ruby-identifier">meta</span> = <span class="ruby-keyword kw">class</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword kw">self</span>; <span class="ruby-keyword kw">self</span>; <span class="ruby-keyword kw">end</span>
+140:       <span class="ruby-identifier">method_name</span> = <span class="ruby-node">&quot;#{method_symbol.to_s}=&quot;</span>.<span class="ruby-identifier">to_sym</span>
+141:       <span class="ruby-identifier">meta</span>.<span class="ruby-identifier">send</span> <span class="ruby-value">:define_method</span>, <span class="ruby-identifier">method_name</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+142:         <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">configuration</span>[<span class="ruby-identifier">method_symbol</span>] = <span class="ruby-identifier">blk</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">value</span>)
+143:       <span class="ruby-keyword kw">end</span>
+144:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="configure-method" class="method-detail ">
+				<a name="method-i-configure"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">configure</span><span
+						class="method-args">(&block)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Pass Mixlib::Config.configure() a block, and it will yield
+self.configuration.
+</p>
+<h3>Parameters</h3>
+<table>
+<tr><td valign="top"><block></td><td><p>
+A block that is sent self.configuration as its argument
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="configure-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/config.rb, line 44</span>
+44:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">configure</span>(&amp;<span class="ruby-identifier">block</span>)
+45:       <span class="ruby-identifier">block</span>.<span class="ruby-identifier">call</span>(<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">configuration</span>)
+46:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="from-file-method" class="method-detail ">
+				<a name="method-i-from_file"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">from_file</span><span
+						class="method-args">(filename)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Loads a given ruby file, and runs instance_eval against it in the context
+of the current  object.  
+</p>
+<p>
+Raises an IOError if the file cannot be found, or is not readable.
+</p>
+<h3>Parameters</h3>
+<table>
+<tr><td valign="top"><string></td><td><p>
+A filename to read from
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="from-file-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/config.rb, line 36</span>
+36:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">from_file</span>(<span class="ruby-identifier">filename</span>)
+37:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">instance_eval</span>(<span class="ruby-constant">IO</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">filename</span>), <span class="ruby-identifier">filename</span>, <span class="ruby-value">1</span>)
+38:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="has-key--method" class="method-detail ">
+				<a name="method-i-has_key%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">has_key?</span><span
+						class="method-args">(key)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Check if <a href="Mixlib/Config.html">Mixlib::Config</a> has a
+configuration option.
+</p>
+<h3>Parameters</h3>
+<table>
+<tr><td valign="top">key<Symbol></td><td><p>
+The configuration option to check for
+</p>
+</td></tr>
+</table>
+<h3>Returns</h3>
+<table>
+<tr><td valign="top"><True></td><td><p>
+If the configuration option exists
+</p>
+</td></tr>
+<tr><td valign="top"><False></td><td><p>
+If the configuration option does not exist
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="has-key--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/config.rb, line 82</span>
+82:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">key</span>)
+83:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">configuration</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-identifier">key</span>.<span class="ruby-identifier">to_sym</span>)
+84:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="hash-dup-method" class="method-detail ">
+				<a name="method-i-hash_dup"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">hash_dup</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a shallow copy of the internal hash
+</p>
+<h3>Returns</h3>
+<p>
+result of Hash#dup
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="hash-dup-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/config.rb, line 109</span>
+109:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hash_dup</span>
+110:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">configuration</span>.<span class="ruby-identifier">dup</span>
+111:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="keys-method" class="method-detail ">
+				<a name="method-i-keys"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">keys</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the set of config hash keys
+</p>
+<h3>Returns</h3>
+<p>
+result of Hash#keys
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="keys-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/config.rb, line 101</span>
+101:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">keys</span>
+102:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">configuration</span>.<span class="ruby-identifier">keys</span>
+103:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="merge--method" class="method-detail ">
+				<a name="method-i-merge%21"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">merge!</span><span
+						class="method-args">(hash)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Merge an incoming hash with our config options
+</p>
+<h3>Parameters</h3>
+<table>
+<tr><td valign="top">hash<Hash></td><td><p>
+The incoming hash
+</p>
+</td></tr>
+</table>
+<h3>Returns</h3>
+<p>
+result of Hash#merge!
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="merge--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/config.rb, line 93</span>
+93:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">merge!</span>(<span class="ruby-identifier">hash</span>)
+94:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">configuration</span>.<span class="ruby-identifier">merge!</span>(<span class="ruby-identifier">hash</span>)
+95:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="method-missing-method" class="method-detail ">
+				<a name="method-i-method_missing"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">method_missing</span><span
+						class="method-args">(method_symbol, *args)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Allows for simple lookups and setting of configuration options via method
+calls on <a href="Mixlib/Config.html">Mixlib::Config</a>.  If there any
+arguments to the method, they are used to set the value of the
+configuration option.  Otherwise, it&#8217;s a simple get operation.
+</p>
+<h3>Parameters</h3>
+<table>
+<tr><td valign="top">method_symbol<Symbol></td><td><p>
+The method called.  Must match a configuration option.
+</p>
+</td></tr>
+<tr><td valign="top">*args</td><td><p>
+Any arguments passed to the method
+</p>
+</td></tr>
+</table>
+<h3>Returns</h3>
+<table>
+<tr><td valign="top">value</td><td><p>
+The value of the configuration option.
+</p>
+</td></tr>
+</table>
+<h3>Raises</h3>
+<table>
+<tr><td valign="top"><ArgumentError></td><td><p>
+If the method_symbol does not match a configuration option.
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="method-missing-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/config.rb, line 159</span>
+159:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">method_missing</span>(<span class="ruby-identifier">method_symbol</span>, *<span class="ruby-identifier">args</span>)
+160:       <span class="ruby-identifier">num_args</span> = <span class="ruby-identifier">args</span>.<span class="ruby-identifier">length</span>
+161:       <span class="ruby-comment cmt"># Setting</span>
+162:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">num_args</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+163:         <span class="ruby-identifier">method_symbol</span> = <span class="ruby-node">$1</span>.<span class="ruby-identifier">to_sym</span> <span class="ruby-keyword kw">unless</span> (<span class="ruby-identifier">method_symbol</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/(.+)=$/</span>).<span class="ruby-identifier">nil?</span>
+164:         <span class="ruby-identifier">internal_set</span> <span class="ruby-identifier">method_symbol</span>, (<span class="ruby-identifier">num_args</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">:</span> <span class="ruby-identifier">args</span>)
+165:       <span class="ruby-keyword kw">end</span>
+166:       
+167:       <span class="ruby-comment cmt"># Returning</span>
+168:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">configuration</span>[<span class="ruby-identifier">method_symbol</span>]        
+169: 
+170:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="protected-instance-method-details" class="method-section section">
+			<h3 class="section-header">Protected Instance Methods</h3>
+
+		
+			<div id="internal-set-method" class="method-detail ">
+				<a name="method-i-internal_set"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">internal_set</span><span
+						class="method-args">(method_symbol,value)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Internal dispatch setter, calling either the real defined method or setting
+the hash value directly
+</p>
+<h3>Parameters</h3>
+<table>
+<tr><td valign="top">method_symbol<Symbol></td><td><p>
+Name of the method (variable setter)
+</p>
+</td></tr>
+<tr><td valign="top">value<Object></td><td><p>
+Value to be set in config hash
+</p>
+</td></tr>
+</table>
+<pre>
+     </pre>
+					
+
+					
+					<div class="method-source-code"
+						id="internal-set-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/config.rb, line 120</span>
+120:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">internal_set</span>(<span class="ruby-identifier">method_symbol</span>,<span class="ruby-identifier">value</span>)
+121:       <span class="ruby-identifier">method_name</span> = <span class="ruby-identifier">method_symbol</span>.<span class="ruby-identifier">id2name</span>
+122:       <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-node">&quot;#{method_name}=&quot;</span>.<span class="ruby-identifier">to_sym</span>)
+123:         <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">send</span>(<span class="ruby-node">&quot;#{method_name}=&quot;</span>, <span class="ruby-identifier">value</span>)
+124:       <span class="ruby-keyword kw">else</span>
+125:         <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">configuration</span>[<span class="ruby-identifier">method_symbol</span>] = <span class="ruby-identifier">value</span>
+126:       <span class="ruby-keyword kw">end</span>
+127:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

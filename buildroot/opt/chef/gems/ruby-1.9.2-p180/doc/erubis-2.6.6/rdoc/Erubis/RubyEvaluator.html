@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: Erubis::RubyEvaluator</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/erubis/evaluator_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/erubis/evaluator.rb">lib/erubis/evaluator.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-def_method">#def_method</a></li>
+					
+					<li><a href="#method-i-evaluate">#evaluate</a></li>
+					
+					<li><a href="#method-i-result">#result</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+			<div id="includes-section" class="section">
+				<h3 class="section-header">Included Modules</h3>
+				<ul class="link-list">
+				
+				
+					<li><span class="include">Evaluator</span></li>
+				
+				
+				</ul>
+			</div>
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Erubis.html">Erubis</a></li>
+				
+					<li><a href="../Erubis/ArrayBufferEruby.html">Erubis::ArrayBufferEruby</a></li>
+				
+					<li><a href="../Erubis/ArrayEruby.html">Erubis::ArrayEruby</a></li>
+				
+					<li><a href="../Erubis/Basic.html">Erubis::Basic</a></li>
+				
+					<li><a href="../Erubis/Basic/Converter.html">Erubis::Basic::Converter</a></li>
+				
+					<li><a href="../Erubis/Basic/Engine.html">Erubis::Basic::Engine</a></li>
+				
+					<li><a href="../Erubis/BiPatternEruby.html">Erubis::BiPatternEruby</a></li>
+				
+					<li><a href="../Erubis/CGenerator.html">Erubis::CGenerator</a></li>
+				
+					<li><a href="../Erubis/CommandOptionError.html">Erubis::CommandOptionError</a></li>
+				
+					<li><a href="../Erubis/Converter.html">Erubis::Converter</a></li>
+				
+					<li><a href="../Erubis/DeleteIndentEruby.html">Erubis::DeleteIndentEruby</a></li>
+				
+					<li><a href="../Erubis/Ec.html">Erubis::Ec</a></li>
+				
+					<li><a href="../Erubis/Ejava.html">Erubis::Ejava</a></li>
+				
+					<li><a href="../Erubis/Ejavascript.html">Erubis::Ejavascript</a></li>
+				
+					<li><a href="../Erubis/Engine.html">Erubis::Engine</a></li>
+				
+					<li><a href="../Erubis/Eperl.html">Erubis::Eperl</a></li>
+				
+					<li><a href="../Erubis/Ephp.html">Erubis::Ephp</a></li>
+				
+					<li><a href="../Erubis/ErboutEruby.html">Erubis::ErboutEruby</a></li>
+				
+					<li><a href="../Erubis/ErubisError.html">Erubis::ErubisError</a></li>
+				
+					<li><a href="../Erubis/Eruby.html">Erubis::Eruby</a></li>
+				
+					<li><a href="../Erubis/EscapedEc.html">Erubis::EscapedEc</a></li>
+				
+					<li><a href="../Erubis/EscapedEjava.html">Erubis::EscapedEjava</a></li>
+				
+					<li><a href="../Erubis/EscapedEjavascript.html">Erubis::EscapedEjavascript</a></li>
+				
+					<li><a href="../Erubis/EscapedEperl.html">Erubis::EscapedEperl</a></li>
+				
+					<li><a href="../Erubis/EscapedEphp.html">Erubis::EscapedEphp</a></li>
+				
+					<li><a href="../Erubis/EscapedEruby.html">Erubis::EscapedEruby</a></li>
+				
+					<li><a href="../Erubis/EscapedEscheme.html">Erubis::EscapedEscheme</a></li>
+				
+					<li><a href="../Erubis/Escheme.html">Erubis::Escheme</a></li>
+				
+					<li><a href="../Erubis/Evaluator.html">Erubis::Evaluator</a></li>
+				
+					<li><a href="../Erubis/FastEruby.html">Erubis::FastEruby</a></li>
+				
+					<li><a href="../Erubis/Generator.html">Erubis::Generator</a></li>
+				
+					<li><a href="../Erubis/HeaderFooterEruby.html">Erubis::HeaderFooterEruby</a></li>
+				
+					<li><a href="../Erubis/Helpers.html">Erubis::Helpers</a></li>
+				
+					<li><a href="../Erubis/Helpers/RailsFormHelper.html">Erubis::Helpers::RailsFormHelper</a></li>
+				
+					<li><a href="../Erubis/Helpers/RailsHelper.html">Erubis::Helpers::RailsHelper</a></li>
+				
+					<li><a href="../Erubis/Helpers/RailsHelper/TemplateConverter.html">Erubis::Helpers::RailsHelper::TemplateConverter</a></li>
+				
+					<li><a href="../Erubis/InterpolationEruby.html">Erubis::InterpolationEruby</a></li>
+				
+					<li><a href="../Erubis/JavaGenerator.html">Erubis::JavaGenerator</a></li>
+				
+					<li><a href="../Erubis/JavascriptGenerator.html">Erubis::JavascriptGenerator</a></li>
+				
+					<li><a href="../Erubis/Main.html">Erubis::Main</a></li>
+				
+					<li><a href="../Erubis/NoCodeEruby.html">Erubis::NoCodeEruby</a></li>
+				
+					<li><a href="../Erubis/NoTextEruby.html">Erubis::NoTextEruby</a></li>
+				
+					<li><a href="../Erubis/NotSupportedError.html">Erubis::NotSupportedError</a></li>
+				
+					<li><a href="../Erubis/OptimizedEruby.html">Erubis::OptimizedEruby</a></li>
+				
+					<li><a href="../Erubis/OptimizedGenerator.html">Erubis::OptimizedGenerator</a></li>
+				
+					<li><a href="../Erubis/OptimizedXmlEruby.html">Erubis::OptimizedXmlEruby</a></li>
+				
+					<li><a href="../Erubis/PI.html">Erubis::PI</a></li>
+				
+					<li><a href="../Erubis/PI/Converter.html">Erubis::PI::Converter</a></li>
+				
+					<li><a href="../Erubis/PI/Ec.html">Erubis::PI::Ec</a></li>
+				
+					<li><a href="../Erubis/PI/Ejava.html">Erubis::PI::Ejava</a></li>
+				
+					<li><a href="../Erubis/PI/Ejavascript.html">Erubis::PI::Ejavascript</a></li>
+				
+					<li><a href="../Erubis/PI/Engine.html">Erubis::PI::Engine</a></li>
+				
+					<li><a href="../Erubis/PI/Eperl.html">Erubis::PI::Eperl</a></li>
+				
+					<li><a href="../Erubis/PI/Ephp.html">Erubis::PI::Ephp</a></li>
+				
+					<li><a href="../Erubis/PI/Eruby.html">Erubis::PI::Eruby</a></li>
+				
+					<li><a href="../Erubis/PI/Escheme.html">Erubis::PI::Escheme</a></li>
+				
+					<li><a href="../Erubis/PI/TinyEruby.html">Erubis::PI::TinyEruby</a></li>
+				
+					<li><a href="../Erubis/PercentLineEruby.html">Erubis::PercentLineEruby</a></li>
+				
+					<li><a href="../Erubis/PerlGenerator.html">Erubis::PerlGenerator</a></li>
+				
+					<li><a href="../Erubis/PhpGenerator.html">Erubis::PhpGenerator</a></li>
+				
+					<li><a href="../Erubis/PrintEnabledEruby.html">Erubis::PrintEnabledEruby</a></li>
+				
+					<li><a href="../Erubis/PrintOutEruby.html">Erubis::PrintOutEruby</a></li>
+				
+					<li><a href="../Erubis/PrintOutSimplifiedEruby.html">Erubis::PrintOutSimplifiedEruby</a></li>
+				
+					<li><a href="../Erubis/RubyEvaluator.html">Erubis::RubyEvaluator</a></li>
+				
+					<li><a href="../Erubis/RubyGenerator.html">Erubis::RubyGenerator</a></li>
+				
+					<li><a href="../Erubis/SchemeGenerator.html">Erubis::SchemeGenerator</a></li>
+				
+					<li><a href="../Erubis/SimplifiedEruby.html">Erubis::SimplifiedEruby</a></li>
+				
+					<li><a href="../Erubis/StdoutEruby.html">Erubis::StdoutEruby</a></li>
+				
+					<li><a href="../Erubis/StdoutSimplifiedEruby.html">Erubis::StdoutSimplifiedEruby</a></li>
+				
+					<li><a href="../Erubis/StringBufferEruby.html">Erubis::StringBufferEruby</a></li>
+				
+					<li><a href="../Erubis/StringIOEruby.html">Erubis::StringIOEruby</a></li>
+				
+					<li><a href="../Erubis/TinyEruby.html">Erubis::TinyEruby</a></li>
+				
+					<li><a href="../Erubis/XmlEruby.html">Erubis::XmlEruby</a></li>
+				
+					<li><a href="../Erubis/XmlHelper.html">Erubis::XmlHelper</a></li>
+				
+					<li><a href="../ActionView.html">ActionView</a></li>
+				
+					<li><a href="../ActionView/TemplateHandlers/ErubisHandler.html">ActionView::TemplateHandlers::ErubisHandler</a></li>
+				
+					<li><a href="../ERB.html">ERB</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">Erubis::RubyEvaluator</h1>
+
+		<div id="description">
+			<p>
+evaluator for Ruby
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="def-method-method" class="method-detail ">
+				<a name="method-i-def_method"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">def_method</span><span
+						class="method-args">(object, method_name, filename=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+if object is an Class or Module then define instance method to it, else
+define singleton method to it.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="def-method-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/erubis/evaluator.rb, line 79</span>
+79:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">def_method</span>(<span class="ruby-identifier">object</span>, <span class="ruby-identifier">method_name</span>, <span class="ruby-identifier">filename</span>=<span class="ruby-keyword kw">nil</span>)
+80:       <span class="ruby-identifier">m</span> = <span class="ruby-identifier">object</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Module</span>) <span class="ruby-operator">?</span> <span class="ruby-value">:module_eval</span> <span class="ruby-operator">:</span> <span class="ruby-value">:instance_eval</span>
+81:       <span class="ruby-identifier">object</span>.<span class="ruby-identifier">__send__</span>(<span class="ruby-identifier">m</span>, <span class="ruby-node">&quot;def #{method_name}; #{@src}; end&quot;</span>, <span class="ruby-identifier">filename</span> <span class="ruby-operator">||</span> <span class="ruby-ivar">@filename</span> <span class="ruby-operator">||</span> <span class="ruby-value str">'(erubis)'</span>)
+82:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="evaluate-method" class="method-detail ">
+				<a name="method-i-evaluate"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">evaluate</span><span
+						class="method-args">(_context=Context.new)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+invoke context.instance_eval(@src)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="evaluate-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/erubis/evaluator.rb, line 69</span>
+69:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">evaluate</span>(<span class="ruby-identifier">_context</span>=<span class="ruby-constant">Context</span>.<span class="ruby-identifier">new</span>)
+70:       <span class="ruby-identifier">_context</span> = <span class="ruby-constant">Context</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">_context</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">_context</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+71:       <span class="ruby-comment cmt">#return _context.instance_eval(@src, @filename || '(erubis)')</span>
+72:       <span class="ruby-comment cmt">#@_proc ||= eval(&quot;proc { #{@src} }&quot;, Erubis::EMPTY_BINDING, @filename || '(erubis)')</span>
+73:       <span class="ruby-ivar">@_proc</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">eval</span>(<span class="ruby-node">&quot;proc { #{@src} }&quot;</span>, <span class="ruby-identifier">binding</span>(), <span class="ruby-ivar">@filename</span> <span class="ruby-operator">||</span> <span class="ruby-value str">'(erubis)'</span>)
+74:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">_context</span>.<span class="ruby-identifier">instance_eval</span>(&amp;<span class="ruby-ivar">@_proc</span>)
+75:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="result-method" class="method-detail ">
+				<a name="method-i-result"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">result</span><span
+						class="method-args">(_binding_or_hash=TOPLEVEL_BINDING)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+eval(@src) with binding object
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="result-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/erubis/evaluator.rb, line 53</span>
+53:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">result</span>(<span class="ruby-identifier">_binding_or_hash</span>=<span class="ruby-constant">TOPLEVEL_BINDING</span>)
+54:       <span class="ruby-identifier">_arg</span> = <span class="ruby-identifier">_binding_or_hash</span>
+55:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">_arg</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+56:         <span class="ruby-identifier">_b</span> = <span class="ruby-identifier">binding</span>()
+57:         <span class="ruby-identifier">eval</span> <span class="ruby-identifier">_arg</span>.<span class="ruby-identifier">collect</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot;#{k} = _arg[#{k.inspect}]; &quot;</span>}.<span class="ruby-identifier">join</span>, <span class="ruby-identifier">_b</span>
+58:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">_arg</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Binding</span>)
+59:         <span class="ruby-identifier">_b</span> = <span class="ruby-identifier">_arg</span>
+60:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">_arg</span>.<span class="ruby-identifier">nil?</span>
+61:         <span class="ruby-identifier">_b</span> = <span class="ruby-identifier">binding</span>()
+62:       <span class="ruby-keyword kw">else</span>
+63:         <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;#{self.class.name}#result(): argument should be Binding or Hash but passed #{_arg.class.name} object.&quot;</span>)
+64:       <span class="ruby-keyword kw">end</span>
+65:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">eval</span>(<span class="ruby-ivar">@src</span>, <span class="ruby-identifier">_b</span>, (<span class="ruby-ivar">@filename</span> <span class="ruby-operator">||</span> <span class="ruby-value str">'(erubis'</span>))
+66:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

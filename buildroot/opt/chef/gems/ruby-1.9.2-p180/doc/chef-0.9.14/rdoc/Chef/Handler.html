@@ -1,0 +1,1725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Chef::Handler</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/chef/handler_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/chef/handler.rb">lib/chef/handler.rb</a></li>
+					
+						<li><a href="../lib/chef/handler/json_file_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/chef/handler/json_file.rb">lib/chef/handler/json_file.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="../Object.html">Object</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+			<div id="namespace-list-section" class="section">
+				<h3 class="section-header">Namespace</h3>
+				<ul class="link-list">
+					
+					<li><span class="type">CLASS</span> <a href="Handler/JsonFile.html">Chef::Handler::JsonFile</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-exception_handlers">::exception_handlers</a></li>
+					
+					<li><a href="#method-c-report_handlers">::report_handlers</a></li>
+					
+					<li><a href="#method-c-run_exception_handlers">::run_exception_handlers</a></li>
+					
+					<li><a href="#method-c-run_report_handlers">::run_report_handlers</a></li>
+					
+					<li><a href="#method-i-all_resources">#all_resources</a></li>
+					
+					<li><a href="#method-i-backtrace">#backtrace</a></li>
+					
+					<li><a href="#method-i-data">#data</a></li>
+					
+					<li><a href="#method-i-elapsed_time">#elapsed_time</a></li>
+					
+					<li><a href="#method-i-end_time">#end_time</a></li>
+					
+					<li><a href="#method-i-exception">#exception</a></li>
+					
+					<li><a href="#method-i-failed%3F">#failed?</a></li>
+					
+					<li><a href="#method-i-node">#node</a></li>
+					
+					<li><a href="#method-i-report">#report</a></li>
+					
+					<li><a href="#method-i-run_context">#run_context</a></li>
+					
+					<li><a href="#method-i-run_report_safely">#run_report_safely</a></li>
+					
+					<li><a href="#method-i-run_report_unsafe">#run_report_unsafe</a></li>
+					
+					<li><a href="#method-i-start_time">#start_time</a></li>
+					
+					<li><a href="#method-i-success%3F">#success?</a></li>
+					
+					<li><a href="#method-i-updated_resources">#updated_resources</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Chef.html">Chef</a></li>
+				
+					<li><a href="../Chef/ApiClient.html">Chef::ApiClient</a></li>
+				
+					<li><a href="../Chef/Application.html">Chef::Application</a></li>
+				
+					<li><a href="../Chef/Application/Client.html">Chef::Application::Client</a></li>
+				
+					<li><a href="../Chef/Application/Knife.html">Chef::Application::Knife</a></li>
+				
+					<li><a href="../Chef/Application/Solo.html">Chef::Application::Solo</a></li>
+				
+					<li><a href="../Chef/Certificate.html">Chef::Certificate</a></li>
+				
+					<li><a href="../Chef/Checksum.html">Chef::Checksum</a></li>
+				
+					<li><a href="../Chef/ChecksumCache.html">Chef::ChecksumCache</a></li>
+				
+					<li><a href="../Chef/Client.html">Chef::Client</a></li>
+				
+					<li><a href="../Chef/Config.html">Chef::Config</a></li>
+				
+					<li><a href="../Chef/Cookbook.html">Chef::Cookbook</a></li>
+				
+					<li><a href="../Chef/Cookbook/FileSystemFileVendor.html">Chef::Cookbook::FileSystemFileVendor</a></li>
+				
+					<li><a href="../Chef/Cookbook/FileVendor.html">Chef::Cookbook::FileVendor</a></li>
+				
+					<li><a href="../Chef/Cookbook/Metadata.html">Chef::Cookbook::Metadata</a></li>
+				
+					<li><a href="../Chef/Cookbook/Metadata/Version.html">Chef::Cookbook::Metadata::Version</a></li>
+				
+					<li><a href="../Chef/Cookbook/RemoteFileVendor.html">Chef::Cookbook::RemoteFileVendor</a></li>
+				
+					<li><a href="../Chef/Cookbook/SyntaxCheck.html">Chef::Cookbook::SyntaxCheck</a></li>
+				
+					<li><a href="../Chef/CookbookCollection.html">Chef::CookbookCollection</a></li>
+				
+					<li><a href="../Chef/CookbookLoader.html">Chef::CookbookLoader</a></li>
+				
+					<li><a href="../Chef/CookbookSiteStreamingUploader.html">Chef::CookbookSiteStreamingUploader</a></li>
+				
+					<li><a href="../Chef/CookbookUploader.html">Chef::CookbookUploader</a></li>
+				
+					<li><a href="../Chef/CookbookVersion.html">Chef::CookbookVersion</a></li>
+				
+					<li><a href="../Chef/CouchDB.html">Chef::CouchDB</a></li>
+				
+					<li><a href="../Chef/Daemon.html">Chef::Daemon</a></li>
+				
+					<li><a href="../Chef/DataBag.html">Chef::DataBag</a></li>
+				
+					<li><a href="../Chef/DataBagItem.html">Chef::DataBagItem</a></li>
+				
+					<li><a href="../Chef/Exceptions.html">Chef::Exceptions</a></li>
+				
+					<li><a href="../Chef/Exceptions/AmbiguousRunlistSpecification.html">Chef::Exceptions::AmbiguousRunlistSpecification</a></li>
+				
+					<li><a href="../Chef/Exceptions/Application.html">Chef::Exceptions::Application</a></li>
+				
+					<li><a href="../Chef/Exceptions/AttributeNotFound.html">Chef::Exceptions::AttributeNotFound</a></li>
+				
+					<li><a href="../Chef/Exceptions/CannotDetermineNodeName.html">Chef::Exceptions::CannotDetermineNodeName</a></li>
+				
+					<li><a href="../Chef/Exceptions/CannotWritePrivateKey.html">Chef::Exceptions::CannotWritePrivateKey</a></li>
+				
+					<li><a href="../Chef/Exceptions/CommandTimeout.html">Chef::Exceptions::CommandTimeout</a></li>
+				
+					<li><a href="../Chef/Exceptions/ConfigurationError.html">Chef::Exceptions::ConfigurationError</a></li>
+				
+					<li><a href="../Chef/Exceptions/CookbookNotFound.html">Chef::Exceptions::CookbookNotFound</a></li>
+				
+					<li><a href="../Chef/Exceptions/CouchDBNotFound.html">Chef::Exceptions::CouchDBNotFound</a></li>
+				
+					<li><a href="../Chef/Exceptions/Cron.html">Chef::Exceptions::Cron</a></li>
+				
+					<li><a href="../Chef/Exceptions/DsclCommandFailed.html">Chef::Exceptions::DsclCommandFailed</a></li>
+				
+					<li><a href="../Chef/Exceptions/Env.html">Chef::Exceptions::Env</a></li>
+				
+					<li><a href="../Chef/Exceptions/ErlCall.html">Chef::Exceptions::ErlCall</a></li>
+				
+					<li><a href="../Chef/Exceptions/Exec.html">Chef::Exceptions::Exec</a></li>
+				
+					<li><a href="../Chef/Exceptions/FileNotFound.html">Chef::Exceptions::FileNotFound</a></li>
+				
+					<li><a href="../Chef/Exceptions/Group.html">Chef::Exceptions::Group</a></li>
+				
+					<li><a href="../Chef/Exceptions/GroupIDNotFound.html">Chef::Exceptions::GroupIDNotFound</a></li>
+				
+					<li><a href="../Chef/Exceptions/IllegalChecksumRevert.html">Chef::Exceptions::IllegalChecksumRevert</a></li>
+				
+					<li><a href="../Chef/Exceptions/InvalidCommandOption.html">Chef::Exceptions::InvalidCommandOption</a></li>
+				
+					<li><a href="../Chef/Exceptions/InvalidHomeDirectory.html">Chef::Exceptions::InvalidHomeDirectory</a></li>
+				
+					<li><a href="../Chef/Exceptions/InvalidPrivateKey.html">Chef::Exceptions::InvalidPrivateKey</a></li>
+				
+					<li><a href="../Chef/Exceptions/InvalidResourceReference.html">Chef::Exceptions::InvalidResourceReference</a></li>
+				
+					<li><a href="../Chef/Exceptions/InvalidResourceSpecification.html">Chef::Exceptions::InvalidResourceSpecification</a></li>
+				
+					<li><a href="../Chef/Exceptions/Link.html">Chef::Exceptions::Link</a></li>
+				
+					<li><a href="../Chef/Exceptions/MissingLibrary.html">Chef::Exceptions::MissingLibrary</a></li>
+				
+					<li><a href="../Chef/Exceptions/MissingParentDirectory.html">Chef::Exceptions::MissingParentDirectory</a></li>
+				
+					<li><a href="../Chef/Exceptions/MissingRole.html">Chef::Exceptions::MissingRole</a></li>
+				
+					<li><a href="../Chef/Exceptions/Mount.html">Chef::Exceptions::Mount</a></li>
+				
+					<li><a href="../Chef/Exceptions/Override.html">Chef::Exceptions::Override</a></li>
+				
+					<li><a href="../Chef/Exceptions/Package.html">Chef::Exceptions::Package</a></li>
+				
+					<li><a href="../Chef/Exceptions/PrivateKeyMissing.html">Chef::Exceptions::PrivateKeyMissing</a></li>
+				
+					<li><a href="../Chef/Exceptions/RedirectLimitExceeded.html">Chef::Exceptions::RedirectLimitExceeded</a></li>
+				
+					<li><a href="../Chef/Exceptions/RequestedUIDUnavailable.html">Chef::Exceptions::RequestedUIDUnavailable</a></li>
+				
+					<li><a href="../Chef/Exceptions/ResourceNotFound.html">Chef::Exceptions::ResourceNotFound</a></li>
+				
+					<li><a href="../Chef/Exceptions/RoleNotFound.html">Chef::Exceptions::RoleNotFound</a></li>
+				
+					<li><a href="../Chef/Exceptions/Route.html">Chef::Exceptions::Route</a></li>
+				
+					<li><a href="../Chef/Exceptions/SearchIndex.html">Chef::Exceptions::SearchIndex</a></li>
+				
+					<li><a href="../Chef/Exceptions/Service.html">Chef::Exceptions::Service</a></li>
+				
+					<li><a href="../Chef/Exceptions/ShellCommandFailed.html">Chef::Exceptions::ShellCommandFailed</a></li>
+				
+					<li><a href="../Chef/Exceptions/SolrConnectionError.html">Chef::Exceptions::SolrConnectionError</a></li>
+				
+					<li><a href="../Chef/Exceptions/UnresolvableGitReference.html">Chef::Exceptions::UnresolvableGitReference</a></li>
+				
+					<li><a href="../Chef/Exceptions/UnsupportedAction.html">Chef::Exceptions::UnsupportedAction</a></li>
+				
+					<li><a href="../Chef/Exceptions/User.html">Chef::Exceptions::User</a></li>
+				
+					<li><a href="../Chef/Exceptions/UserIDNotFound.html">Chef::Exceptions::UserIDNotFound</a></li>
+				
+					<li><a href="../Chef/Exceptions/ValidationFailed.html">Chef::Exceptions::ValidationFailed</a></li>
+				
+					<li><a href="../Chef/FileAccessControl.html">Chef::FileAccessControl</a></li>
+				
+					<li><a href="../Chef/FileCache.html">Chef::FileCache</a></li>
+				
+					<li><a href="../Chef/Handler.html">Chef::Handler</a></li>
+				
+					<li><a href="../Chef/Handler/JsonFile.html">Chef::Handler::JsonFile</a></li>
+				
+					<li><a href="../Chef/IndexQueue.html">Chef::IndexQueue</a></li>
+				
+					<li><a href="../Chef/IndexQueue/AmqpClient.html">Chef::IndexQueue::AmqpClient</a></li>
+				
+					<li><a href="../Chef/IndexQueue/Consumer.html">Chef::IndexQueue::Consumer</a></li>
+				
+					<li><a href="../Chef/IndexQueue/Consumer/ClassMethods.html">Chef::IndexQueue::Consumer::ClassMethods</a></li>
+				
+					<li><a href="../Chef/IndexQueue/Indexable.html">Chef::IndexQueue::Indexable</a></li>
+				
+					<li><a href="../Chef/IndexQueue/Indexable/ClassMethods.html">Chef::IndexQueue::Indexable::ClassMethods</a></li>
+				
+					<li><a href="../Chef/JSONCompat.html">Chef::JSONCompat</a></li>
+				
+					<li><a href="../Chef/Knife.html">Chef::Knife</a></li>
+				
+					<li><a href="../Chef/Knife/BlueboxImagesList.html">Chef::Knife::BlueboxImagesList</a></li>
+				
+					<li><a href="../Chef/Knife/BlueboxServerCreate.html">Chef::Knife::BlueboxServerCreate</a></li>
+				
+					<li><a href="../Chef/Knife/BlueboxServerDelete.html">Chef::Knife::BlueboxServerDelete</a></li>
+				
+					<li><a href="../Chef/Knife/BlueboxServerList.html">Chef::Knife::BlueboxServerList</a></li>
+				
+					<li><a href="../Chef/Knife/Bootstrap.html">Chef::Knife::Bootstrap</a></li>
+				
+					<li><a href="../Chef/Knife/ClientBulkDelete.html">Chef::Knife::ClientBulkDelete</a></li>
+				
+					<li><a href="../Chef/Knife/ClientCreate.html">Chef::Knife::ClientCreate</a></li>
+				
+					<li><a href="../Chef/Knife/ClientDelete.html">Chef::Knife::ClientDelete</a></li>
+				
+					<li><a href="../Chef/Knife/ClientEdit.html">Chef::Knife::ClientEdit</a></li>
+				
+					<li><a href="../Chef/Knife/ClientList.html">Chef::Knife::ClientList</a></li>
+				
+					<li><a href="../Chef/Knife/ClientReregister.html">Chef::Knife::ClientReregister</a></li>
+				
+					<li><a href="../Chef/Knife/ClientShow.html">Chef::Knife::ClientShow</a></li>
+				
+					<li><a href="../Chef/Knife/Configure.html">Chef::Knife::Configure</a></li>
+				
+					<li><a href="../Chef/Knife/ConfigureClient.html">Chef::Knife::ConfigureClient</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookBulkDelete.html">Chef::Knife::CookbookBulkDelete</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookCreate.html">Chef::Knife::CookbookCreate</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookDelete.html">Chef::Knife::CookbookDelete</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookDownload.html">Chef::Knife::CookbookDownload</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookList.html">Chef::Knife::CookbookList</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookMetadata.html">Chef::Knife::CookbookMetadata</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookMetadataFromFile.html">Chef::Knife::CookbookMetadataFromFile</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookShow.html">Chef::Knife::CookbookShow</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookSiteDownload.html">Chef::Knife::CookbookSiteDownload</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookSiteList.html">Chef::Knife::CookbookSiteList</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookSiteSearch.html">Chef::Knife::CookbookSiteSearch</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookSiteShare.html">Chef::Knife::CookbookSiteShare</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookSiteShow.html">Chef::Knife::CookbookSiteShow</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookSiteUnshare.html">Chef::Knife::CookbookSiteUnshare</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookSiteVendor.html">Chef::Knife::CookbookSiteVendor</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookTest.html">Chef::Knife::CookbookTest</a></li>
+				
+					<li><a href="../Chef/Knife/CookbookUpload.html">Chef::Knife::CookbookUpload</a></li>
+				
+					<li><a href="../Chef/Knife/DataBagCreate.html">Chef::Knife::DataBagCreate</a></li>
+				
+					<li><a href="../Chef/Knife/DataBagDelete.html">Chef::Knife::DataBagDelete</a></li>
+				
+					<li><a href="../Chef/Knife/DataBagEdit.html">Chef::Knife::DataBagEdit</a></li>
+				
+					<li><a href="../Chef/Knife/DataBagFromFile.html">Chef::Knife::DataBagFromFile</a></li>
+				
+					<li><a href="../Chef/Knife/DataBagList.html">Chef::Knife::DataBagList</a></li>
+				
+					<li><a href="../Chef/Knife/DataBagShow.html">Chef::Knife::DataBagShow</a></li>
+				
+					<li><a href="../Chef/Knife/Ec2InstanceData.html">Chef::Knife::Ec2InstanceData</a></li>
+				
+					<li><a href="../Chef/Knife/Ec2ServerCreate.html">Chef::Knife::Ec2ServerCreate</a></li>
+				
+					<li><a href="../Chef/Knife/Ec2ServerDelete.html">Chef::Knife::Ec2ServerDelete</a></li>
+				
+					<li><a href="../Chef/Knife/Ec2ServerList.html">Chef::Knife::Ec2ServerList</a></li>
+				
+					<li><a href="../Chef/Knife/Exec.html">Chef::Knife::Exec</a></li>
+				
+					<li><a href="../Chef/Knife/IndexRebuild.html">Chef::Knife::IndexRebuild</a></li>
+				
+					<li><a href="../Chef/Knife/NodeBulkDelete.html">Chef::Knife::NodeBulkDelete</a></li>
+				
+					<li><a href="../Chef/Knife/NodeCreate.html">Chef::Knife::NodeCreate</a></li>
+				
+					<li><a href="../Chef/Knife/NodeDelete.html">Chef::Knife::NodeDelete</a></li>
+				
+					<li><a href="../Chef/Knife/NodeEdit.html">Chef::Knife::NodeEdit</a></li>
+				
+					<li><a href="../Chef/Knife/NodeFromFile.html">Chef::Knife::NodeFromFile</a></li>
+				
+					<li><a href="../Chef/Knife/NodeList.html">Chef::Knife::NodeList</a></li>
+				
+					<li><a href="../Chef/Knife/NodeRunListAdd.html">Chef::Knife::NodeRunListAdd</a></li>
+				
+					<li><a href="../Chef/Knife/NodeRunListRemove.html">Chef::Knife::NodeRunListRemove</a></li>
+				
+					<li><a href="../Chef/Knife/NodeShow.html">Chef::Knife::NodeShow</a></li>
+				
+					<li><a href="../Chef/Knife/RackspaceServerCreate.html">Chef::Knife::RackspaceServerCreate</a></li>
+				
+					<li><a href="../Chef/Knife/RackspaceServerDelete.html">Chef::Knife::RackspaceServerDelete</a></li>
+				
+					<li><a href="../Chef/Knife/RackspaceServerList.html">Chef::Knife::RackspaceServerList</a></li>
+				
+					<li><a href="../Chef/Knife/RecipeList.html">Chef::Knife::RecipeList</a></li>
+				
+					<li><a href="../Chef/Knife/RoleBulkDelete.html">Chef::Knife::RoleBulkDelete</a></li>
+				
+					<li><a href="../Chef/Knife/RoleCreate.html">Chef::Knife::RoleCreate</a></li>
+				
+					<li><a href="../Chef/Knife/RoleDelete.html">Chef::Knife::RoleDelete</a></li>
+				
+					<li><a href="../Chef/Knife/RoleEdit.html">Chef::Knife::RoleEdit</a></li>
+				
+					<li><a href="../Chef/Knife/RoleFromFile.html">Chef::Knife::RoleFromFile</a></li>
+				
+					<li><a href="../Chef/Knife/RoleList.html">Chef::Knife::RoleList</a></li>
+				
+					<li><a href="../Chef/Knife/RoleShow.html">Chef::Knife::RoleShow</a></li>
+				
+					<li><a href="../Chef/Knife/Search.html">Chef::Knife::Search</a></li>
+				
+					<li><a href="../Chef/Knife/SlicehostImagesList.html">Chef::Knife::SlicehostImagesList</a></li>
+				
+					<li><a href="../Chef/Knife/SlicehostServerCreate.html">Chef::Knife::SlicehostServerCreate</a></li>
+				
+					<li><a href="../Chef/Knife/SlicehostServerDelete.html">Chef::Knife::SlicehostServerDelete</a></li>
+				
+					<li><a href="../Chef/Knife/SlicehostServerList.html">Chef::Knife::SlicehostServerList</a></li>
+				
+					<li><a href="../Chef/Knife/Ssh.html">Chef::Knife::Ssh</a></li>
+				
+					<li><a href="../Chef/Knife/Status.html">Chef::Knife::Status</a></li>
+				
+					<li><a href="../Chef/Knife/TerremarkServerCreate.html">Chef::Knife::TerremarkServerCreate</a></li>
+				
+					<li><a href="../Chef/Knife/TerremarkServerDelete.html">Chef::Knife::TerremarkServerDelete</a></li>
+				
+					<li><a href="../Chef/Knife/TerremarkServerList.html">Chef::Knife::TerremarkServerList</a></li>
+				
+					<li><a href="../Chef/Knife/WindowsBootstrap.html">Chef::Knife::WindowsBootstrap</a></li>
+				
+					<li><a href="../Chef/Log.html">Chef::Log</a></li>
+				
+					<li><a href="../Chef/Log/Formatter.html">Chef::Log::Formatter</a></li>
+				
+					<li><a href="../Chef/Mixin.html">Chef::Mixin</a></li>
+				
+					<li><a href="../Chef/Mixin/CheckHelper.html">Chef::Mixin::CheckHelper</a></li>
+				
+					<li><a href="../Chef/Mixin/Checksum.html">Chef::Mixin::Checksum</a></li>
+				
+					<li><a href="../Chef/Mixin/Command.html">Chef::Mixin::Command</a></li>
+				
+					<li><a href="../Chef/Mixin/Command/Unix.html">Chef::Mixin::Command::Unix</a></li>
+				
+					<li><a href="../Chef/Mixin/Command/Windows.html">Chef::Mixin::Command::Windows</a></li>
+				
+					<li><a href="../Chef/Mixin/ConvertToClassName.html">Chef::Mixin::ConvertToClassName</a></li>
+				
+					<li><a href="../Chef/Mixin/CreatePath.html">Chef::Mixin::CreatePath</a></li>
+				
+					<li><a href="../Chef/Mixin/DeepMerge.html">Chef::Mixin::DeepMerge</a></li>
+				
+					<li><a href="../Chef/Mixin/DeepMerge/InvalidParameter.html">Chef::Mixin::DeepMerge::InvalidParameter</a></li>
+				
+					<li><a href="../Chef/Mixin/Deprecation.html">Chef::Mixin::Deprecation</a></li>
+				
+					<li><a href="../Chef/Mixin/Deprecation/DeprecatedInstanceVariable.html">Chef::Mixin::Deprecation::DeprecatedInstanceVariable</a></li>
+				
+					<li><a href="../Chef/Mixin/Deprecation/DeprecatedObjectProxyBase.html">Chef::Mixin::Deprecation::DeprecatedObjectProxyBase</a></li>
+				
+					<li><a href="../Chef/Mixin/FindPreferredFile.html">Chef::Mixin::FindPreferredFile</a></li>
+				
+					<li><a href="../Chef/Mixin/FromFile.html">Chef::Mixin::FromFile</a></li>
+				
+					<li><a href="../Chef/Mixin/Language.html">Chef::Mixin::Language</a></li>
+				
+					<li><a href="../Chef/Mixin/Language/PlatformDependentValue.html">Chef::Mixin::Language::PlatformDependentValue</a></li>
+				
+					<li><a href="../Chef/Mixin/LanguageIncludeAttribute.html">Chef::Mixin::LanguageIncludeAttribute</a></li>
+				
+					<li><a href="../Chef/Mixin/LanguageIncludeRecipe.html">Chef::Mixin::LanguageIncludeRecipe</a></li>
+				
+					<li><a href="../Chef/Mixin/ParamsValidate.html">Chef::Mixin::ParamsValidate</a></li>
+				
+					<li><a href="../Chef/Mixin/RecipeDefinitionDSLCore.html">Chef::Mixin::RecipeDefinitionDSLCore</a></li>
+				
+					<li><a href="../Chef/Mixin/ShellOut.html">Chef::Mixin::ShellOut</a></li>
+				
+					<li><a href="../Chef/Mixin/Template.html">Chef::Mixin::Template</a></li>
+				
+					<li><a href="../Chef/Mixin/Template/ChefContext.html">Chef::Mixin::Template::ChefContext</a></li>
+				
+					<li><a href="../Chef/Mixin/Template/TemplateError.html">Chef::Mixin::Template::TemplateError</a></li>
+				
+					<li><a href="../Chef/Mixin/XMLEscape.html">Chef::Mixin::XMLEscape</a></li>
+				
+					<li><a href="../Chef/Mixin/XMLEscape/FastXS.html">Chef::Mixin::XMLEscape::FastXS</a></li>
+				
+					<li><a href="../Chef/Mixin/XMLEscape/PureRuby.html">Chef::Mixin::XMLEscape::PureRuby</a></li>
+				
+					<li><a href="../Chef/MultipartStream.html">Chef::MultipartStream</a></li>
+				
+					<li><a href="../Chef/Node.html">Chef::Node</a></li>
+				
+					<li><a href="../Chef/Node/Attribute.html">Chef::Node::Attribute</a></li>
+				
+					<li><a href="../Chef/OpenIDRegistration.html">Chef::OpenIDRegistration</a></li>
+				
+					<li><a href="../Chef/Platform.html">Chef::Platform</a></li>
+				
+					<li><a href="../Chef/Provider.html">Chef::Provider</a></li>
+				
+					<li><a href="../Chef/Provider/Breakpoint.html">Chef::Provider::Breakpoint</a></li>
+				
+					<li><a href="../Chef/Provider/CookbookFile.html">Chef::Provider::CookbookFile</a></li>
+				
+					<li><a href="../Chef/Provider/Cron.html">Chef::Provider::Cron</a></li>
+				
+					<li><a href="../Chef/Provider/Cron/Solaris.html">Chef::Provider::Cron::Solaris</a></li>
+				
+					<li><a href="../Chef/Provider/Deploy.html">Chef::Provider::Deploy</a></li>
+				
+					<li><a href="../Chef/Provider/Deploy/Revision.html">Chef::Provider::Deploy::Revision</a></li>
+				
+					<li><a href="../Chef/Provider/Deploy/Timestamped.html">Chef::Provider::Deploy::Timestamped</a></li>
+				
+					<li><a href="../Chef/Provider/Directory.html">Chef::Provider::Directory</a></li>
+				
+					<li><a href="../Chef/Provider/Env.html">Chef::Provider::Env</a></li>
+				
+					<li><a href="../Chef/Provider/Env/Windows.html">Chef::Provider::Env::Windows</a></li>
+				
+					<li><a href="../Chef/Provider/ErlCall.html">Chef::Provider::ErlCall</a></li>
+				
+					<li><a href="../Chef/Provider/Execute.html">Chef::Provider::Execute</a></li>
+				
+					<li><a href="../Chef/Provider/File.html">Chef::Provider::File</a></li>
+				
+					<li><a href="../Chef/Provider/Git.html">Chef::Provider::Git</a></li>
+				
+					<li><a href="../Chef/Provider/Group.html">Chef::Provider::Group</a></li>
+				
+					<li><a href="../Chef/Provider/Group/Dscl.html">Chef::Provider::Group::Dscl</a></li>
+				
+					<li><a href="../Chef/Provider/Group/Gpasswd.html">Chef::Provider::Group::Gpasswd</a></li>
+				
+					<li><a href="../Chef/Provider/Group/Groupadd.html">Chef::Provider::Group::Groupadd</a></li>
+				
+					<li><a href="../Chef/Provider/Group/Pw.html">Chef::Provider::Group::Pw</a></li>
+				
+					<li><a href="../Chef/Provider/Group/Usermod.html">Chef::Provider::Group::Usermod</a></li>
+				
+					<li><a href="../Chef/Provider/Group/Windows.html">Chef::Provider::Group::Windows</a></li>
+				
+					<li><a href="../Chef/Provider/HttpRequest.html">Chef::Provider::HttpRequest</a></li>
+				
+					<li><a href="../Chef/Provider/Ifconfig.html">Chef::Provider::Ifconfig</a></li>
+				
+					<li><a href="../Chef/Provider/Link.html">Chef::Provider::Link</a></li>
+				
+					<li><a href="../Chef/Provider/Log.html">Chef::Provider::Log</a></li>
+				
+					<li><a href="../Chef/Provider/Log/ChefLog.html">Chef::Provider::Log::ChefLog</a></li>
+				
+					<li><a href="../Chef/Provider/Mdadm.html">Chef::Provider::Mdadm</a></li>
+				
+					<li><a href="../Chef/Provider/Mount.html">Chef::Provider::Mount</a></li>
+				
+					<li><a href="../Chef/Provider/Mount/Mount.html">Chef::Provider::Mount::Mount</a></li>
+				
+					<li><a href="../Chef/Provider/Mount/Windows.html">Chef::Provider::Mount::Windows</a></li>
+				
+					<li><a href="../Chef/Provider/Ohai.html">Chef::Provider::Ohai</a></li>
+				
+					<li><a href="../Chef/Provider/Package.html">Chef::Provider::Package</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Apt.html">Chef::Provider::Package::Apt</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Dpkg.html">Chef::Provider::Package::Dpkg</a></li>
+				
+					<li><a href="../Chef/Provider/Package/EasyInstall.html">Chef::Provider::Package::EasyInstall</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Freebsd.html">Chef::Provider::Package::Freebsd</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Macports.html">Chef::Provider::Package::Macports</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Pacman.html">Chef::Provider::Package::Pacman</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Portage.html">Chef::Provider::Package::Portage</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Rpm.html">Chef::Provider::Package::Rpm</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Rubygems.html">Chef::Provider::Package::Rubygems</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Rubygems/AlternateGemEnvironment.html">Chef::Provider::Package::Rubygems::AlternateGemEnvironment</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Rubygems/CurrentGemEnvironment.html">Chef::Provider::Package::Rubygems::CurrentGemEnvironment</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Rubygems/GemEnvironment.html">Chef::Provider::Package::Rubygems::GemEnvironment</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Solaris.html">Chef::Provider::Package::Solaris</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Yum.html">Chef::Provider::Package::Yum</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Yum/YumCache.html">Chef::Provider::Package::Yum::YumCache</a></li>
+				
+					<li><a href="../Chef/Provider/Package/Zypper.html">Chef::Provider::Package::Zypper</a></li>
+				
+					<li><a href="../Chef/Provider/RemoteDirectory.html">Chef::Provider::RemoteDirectory</a></li>
+				
+					<li><a href="../Chef/Provider/RemoteFile.html">Chef::Provider::RemoteFile</a></li>
+				
+					<li><a href="../Chef/Provider/Route.html">Chef::Provider::Route</a></li>
+				
+					<li><a href="../Chef/Provider/RubyBlock.html">Chef::Provider::RubyBlock</a></li>
+				
+					<li><a href="../Chef/Provider/Script.html">Chef::Provider::Script</a></li>
+				
+					<li><a href="../Chef/Provider/Service.html">Chef::Provider::Service</a></li>
+				
+					<li><a href="../Chef/Provider/Service/Arch.html">Chef::Provider::Service::Arch</a></li>
+				
+					<li><a href="../Chef/Provider/Service/Debian.html">Chef::Provider::Service::Debian</a></li>
+				
+					<li><a href="../Chef/Provider/Service/Freebsd.html">Chef::Provider::Service::Freebsd</a></li>
+				
+					<li><a href="../Chef/Provider/Service/Gentoo.html">Chef::Provider::Service::Gentoo</a></li>
+				
+					<li><a href="../Chef/Provider/Service/Init.html">Chef::Provider::Service::Init</a></li>
+				
+					<li><a href="../Chef/Provider/Service/Insserv.html">Chef::Provider::Service::Insserv</a></li>
+				
+					<li><a href="../Chef/Provider/Service/Redhat.html">Chef::Provider::Service::Redhat</a></li>
+				
+					<li><a href="../Chef/Provider/Service/Simple.html">Chef::Provider::Service::Simple</a></li>
+				
+					<li><a href="../Chef/Provider/Service/Solaris.html">Chef::Provider::Service::Solaris</a></li>
+				
+					<li><a href="../Chef/Provider/Service/Upstart.html">Chef::Provider::Service::Upstart</a></li>
+				
+					<li><a href="../Chef/Provider/Service/Windows.html">Chef::Provider::Service::Windows</a></li>
+				
+					<li><a href="../Chef/Provider/Subversion.html">Chef::Provider::Subversion</a></li>
+				
+					<li><a href="../Chef/Provider/Template.html">Chef::Provider::Template</a></li>
+				
+					<li><a href="../Chef/Provider/User.html">Chef::Provider::User</a></li>
+				
+					<li><a href="../Chef/Provider/User/Dscl.html">Chef::Provider::User::Dscl</a></li>
+				
+					<li><a href="../Chef/Provider/User/Pw.html">Chef::Provider::User::Pw</a></li>
+				
+					<li><a href="../Chef/Provider/User/Useradd.html">Chef::Provider::User::Useradd</a></li>
+				
+					<li><a href="../Chef/Provider/User/Windows.html">Chef::Provider::User::Windows</a></li>
+				
+					<li><a href="../Chef/REST.html">Chef::REST</a></li>
+				
+					<li><a href="../Chef/REST/AuthCredentials.html">Chef::REST::AuthCredentials</a></li>
+				
+					<li><a href="../Chef/REST/CookieJar.html">Chef::REST::CookieJar</a></li>
+				
+					<li><a href="../Chef/REST/RESTRequest.html">Chef::REST::RESTRequest</a></li>
+				
+					<li><a href="../Chef/Recipe.html">Chef::Recipe</a></li>
+				
+					<li><a href="../Chef/Resource.html">Chef::Resource</a></li>
+				
+					<li><a href="../Chef/Resource/AptPackage.html">Chef::Resource::AptPackage</a></li>
+				
+					<li><a href="../Chef/Resource/Bash.html">Chef::Resource::Bash</a></li>
+				
+					<li><a href="../Chef/Resource/Breakpoint.html">Chef::Resource::Breakpoint</a></li>
+				
+					<li><a href="../Chef/Resource/CookbookFile.html">Chef::Resource::CookbookFile</a></li>
+				
+					<li><a href="../Chef/Resource/Cron.html">Chef::Resource::Cron</a></li>
+				
+					<li><a href="../Chef/Resource/Csh.html">Chef::Resource::Csh</a></li>
+				
+					<li><a href="../Chef/Resource/Deploy.html">Chef::Resource::Deploy</a></li>
+				
+					<li><a href="../Chef/Resource/DeployBranch.html">Chef::Resource::DeployBranch</a></li>
+				
+					<li><a href="../Chef/Resource/DeployRevision.html">Chef::Resource::DeployRevision</a></li>
+				
+					<li><a href="../Chef/Resource/Directory.html">Chef::Resource::Directory</a></li>
+				
+					<li><a href="../Chef/Resource/DpkgPackage.html">Chef::Resource::DpkgPackage</a></li>
+				
+					<li><a href="../Chef/Resource/EasyInstallPackage.html">Chef::Resource::EasyInstallPackage</a></li>
+				
+					<li><a href="../Chef/Resource/Env.html">Chef::Resource::Env</a></li>
+				
+					<li><a href="../Chef/Resource/ErlCall.html">Chef::Resource::ErlCall</a></li>
+				
+					<li><a href="../Chef/Resource/Execute.html">Chef::Resource::Execute</a></li>
+				
+					<li><a href="../Chef/Resource/File.html">Chef::Resource::File</a></li>
+				
+					<li><a href="../Chef/Resource/FreebsdPackage.html">Chef::Resource::FreebsdPackage</a></li>
+				
+					<li><a href="../Chef/Resource/GemPackage.html">Chef::Resource::GemPackage</a></li>
+				
+					<li><a href="../Chef/Resource/Git.html">Chef::Resource::Git</a></li>
+				
+					<li><a href="../Chef/Resource/Group.html">Chef::Resource::Group</a></li>
+				
+					<li><a href="../Chef/Resource/HttpRequest.html">Chef::Resource::HttpRequest</a></li>
+				
+					<li><a href="../Chef/Resource/Ifconfig.html">Chef::Resource::Ifconfig</a></li>
+				
+					<li><a href="../Chef/Resource/Link.html">Chef::Resource::Link</a></li>
+				
+					<li><a href="../Chef/Resource/Log.html">Chef::Resource::Log</a></li>
+				
+					<li><a href="../Chef/Resource/MacportsPackage.html">Chef::Resource::MacportsPackage</a></li>
+				
+					<li><a href="../Chef/Resource/Mdadm.html">Chef::Resource::Mdadm</a></li>
+				
+					<li><a href="../Chef/Resource/Mount.html">Chef::Resource::Mount</a></li>
+				
+					<li><a href="../Chef/Resource/Notification.html">Chef::Resource::Notification</a></li>
+				
+					<li><a href="../Chef/Resource/Ohai.html">Chef::Resource::Ohai</a></li>
+				
+					<li><a href="../Chef/Resource/Package.html">Chef::Resource::Package</a></li>
+				
+					<li><a href="../Chef/Resource/PacmanPackage.html">Chef::Resource::PacmanPackage</a></li>
+				
+					<li><a href="../Chef/Resource/Perl.html">Chef::Resource::Perl</a></li>
+				
+					<li><a href="../Chef/Resource/PortagePackage.html">Chef::Resource::PortagePackage</a></li>
+				
+					<li><a href="../Chef/Resource/Python.html">Chef::Resource::Python</a></li>
+				
+					<li><a href="../Chef/Resource/RemoteDirectory.html">Chef::Resource::RemoteDirectory</a></li>
+				
+					<li><a href="../Chef/Resource/RemoteFile.html">Chef::Resource::RemoteFile</a></li>
+				
+					<li><a href="../Chef/Resource/Route.html">Chef::Resource::Route</a></li>
+				
+					<li><a href="../Chef/Resource/RpmPackage.html">Chef::Resource::RpmPackage</a></li>
+				
+					<li><a href="../Chef/Resource/Ruby.html">Chef::Resource::Ruby</a></li>
+				
+					<li><a href="../Chef/Resource/RubyBlock.html">Chef::Resource::RubyBlock</a></li>
+				
+					<li><a href="../Chef/Resource/Scm.html">Chef::Resource::Scm</a></li>
+				
+					<li><a href="../Chef/Resource/Script.html">Chef::Resource::Script</a></li>
+				
+					<li><a href="../Chef/Resource/Service.html">Chef::Resource::Service</a></li>
+				
+					<li><a href="../Chef/Resource/SolarisPackage.html">Chef::Resource::SolarisPackage</a></li>
+				
+					<li><a href="../Chef/Resource/Subversion.html">Chef::Resource::Subversion</a></li>
+				
+					<li><a href="../Chef/Resource/Template.html">Chef::Resource::Template</a></li>
+				
+					<li><a href="../Chef/Resource/TimestampedDeploy.html">Chef::Resource::TimestampedDeploy</a></li>
+				
+					<li><a href="../Chef/Resource/User.html">Chef::Resource::User</a></li>
+				
+					<li><a href="../Chef/Resource/YumPackage.html">Chef::Resource::YumPackage</a></li>
+				
+					<li><a href="../Chef/ResourceCollection.html">Chef::ResourceCollection</a></li>
+				
+					<li><a href="../Chef/ResourceCollection/StepableIterator.html">Chef::ResourceCollection::StepableIterator</a></li>
+				
+					<li><a href="../Chef/ResourceDefinition.html">Chef::ResourceDefinition</a></li>
+				
+					<li><a href="../Chef/ResourceDefinitionList.html">Chef::ResourceDefinitionList</a></li>
+				
+					<li><a href="../Chef/Role.html">Chef::Role</a></li>
+				
+					<li><a href="../Chef/RunContext.html">Chef::RunContext</a></li>
+				
+					<li><a href="../Chef/RunList.html">Chef::RunList</a></li>
+				
+					<li><a href="../Chef/RunList/RunListExpansion.html">Chef::RunList::RunListExpansion</a></li>
+				
+					<li><a href="../Chef/RunList/RunListExpansionFromAPI.html">Chef::RunList::RunListExpansionFromAPI</a></li>
+				
+					<li><a href="../Chef/RunList/RunListExpansionFromCouchDB.html">Chef::RunList::RunListExpansionFromCouchDB</a></li>
+				
+					<li><a href="../Chef/RunList/RunListExpansionFromDisk.html">Chef::RunList::RunListExpansionFromDisk</a></li>
+				
+					<li><a href="../Chef/RunList/RunListItem.html">Chef::RunList::RunListItem</a></li>
+				
+					<li><a href="../Chef/RunStatus.html">Chef::RunStatus</a></li>
+				
+					<li><a href="../Chef/Runner.html">Chef::Runner</a></li>
+				
+					<li><a href="../Chef/Sandbox.html">Chef::Sandbox</a></li>
+				
+					<li><a href="../Chef/Search.html">Chef::Search</a></li>
+				
+					<li><a href="../Chef/Search/Query.html">Chef::Search::Query</a></li>
+				
+					<li><a href="../Chef/ShellOut.html">Chef::ShellOut</a></li>
+				
+					<li><a href="../Chef/StreamPart.html">Chef::StreamPart</a></li>
+				
+					<li><a href="../Chef/StreamingCookbookUploader.html">Chef::StreamingCookbookUploader</a></li>
+				
+					<li><a href="../Chef/StringPart.html">Chef::StringPart</a></li>
+				
+					<li><a href="../Chef/Util.html">Chef::Util</a></li>
+				
+					<li><a href="../Chef/Util/FileEdit.html">Chef::Util::FileEdit</a></li>
+				
+					<li><a href="../Chef/Util/Windows.html">Chef::Util::Windows</a></li>
+				
+					<li><a href="../Chef/Util/Windows/NetGroup.html">Chef::Util::Windows::NetGroup</a></li>
+				
+					<li><a href="../Chef/Util/Windows/NetUse.html">Chef::Util::Windows::NetUse</a></li>
+				
+					<li><a href="../Chef/Util/Windows/NetUser.html">Chef::Util::Windows::NetUser</a></li>
+				
+					<li><a href="../Chef/Util/Windows/Volume.html">Chef::Util::Windows::Volume</a></li>
+				
+					<li><a href="../Chef/WebUIUser.html">Chef::WebUIUser</a></li>
+				
+					<li><a href="../Shef.html">Shef</a></li>
+				
+					<li><a href="../Shef/ClientSession.html">Shef::ClientSession</a></li>
+				
+					<li><a href="../Shef/DoppelGangerClient.html">Shef::DoppelGangerClient</a></li>
+				
+					<li><a href="../Shef/DoppelGangerSession.html">Shef::DoppelGangerSession</a></li>
+				
+					<li><a href="../Shef/Extensions.html">Shef::Extensions</a></li>
+				
+					<li><a href="../Shef/Extensions/FalseClass.html">Shef::Extensions::FalseClass</a></li>
+				
+					<li><a href="../Shef/Extensions/ObjectCoreExtensions.html">Shef::Extensions::ObjectCoreExtensions</a></li>
+				
+					<li><a href="../Shef/Extensions/String.html">Shef::Extensions::String</a></li>
+				
+					<li><a href="../Shef/Extensions/Symbol.html">Shef::Extensions::Symbol</a></li>
+				
+					<li><a href="../Shef/Extensions/TrueClass.html">Shef::Extensions::TrueClass</a></li>
+				
+					<li><a href="../Shef/ModelWrapper.html">Shef::ModelWrapper</a></li>
+				
+					<li><a href="../Shef/NamedDataBagWrapper.html">Shef::NamedDataBagWrapper</a></li>
+				
+					<li><a href="../Shef/Options.html">Shef::Options</a></li>
+				
+					<li><a href="../Shef/ShefREST.html">Shef::ShefREST</a></li>
+				
+					<li><a href="../Shef/ShefSession.html">Shef::ShefSession</a></li>
+				
+					<li><a href="../Shef/SoloSession.html">Shef::SoloSession</a></li>
+				
+					<li><a href="../Shef/StandAloneSession.html">Shef::StandAloneSession</a></li>
+				
+					<li><a href="../Moneta.html">Moneta</a></li>
+				
+					<li><a href="../Moneta/Defaults.html">Moneta::Defaults</a></li>
+				
+					<li><a href="../Dir.html">Dir</a></li>
+				
+					<li><a href="../Numeric.html">Numeric</a></li>
+				
+					<li><a href="../Object.html">Object</a></li>
+				
+					<li><a href="../Regexp.html">Regexp</a></li>
+				
+					<li><a href="../String.html">String</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Chef::Handler</h1>
+
+		<div id="description">
+			<h2><a href="Handler.html">Chef::Handler</a></h2>
+<p>
+The base class for an Exception or Notification <a
+href="Handler.html">Handler</a>. Create your own handler by subclassing <a
+href="Handler.html">Chef::Handler</a>. When a <a
+href="../Chef.html">Chef</a> run fails with an uncaught Exception, <a
+href="../Chef.html">Chef</a> will set the <tt><a
+href="Handler.html#run_status">run_status</a></tt> on your handler and call
+<tt>report</tt>
+</p>
+<h3>Example:</h3>
+<pre>
+  require 'net/smtp'
+
+  module MyOrg
+    class OhNoes &lt; Chef::Handler
+
+      def report
+        # Create the email message
+        message  = &quot;From: Your Name &lt;your@mail.address&gt;\n&quot;
+        message &lt;&lt; &quot;To: Destination Address &lt;someone@example.com&gt;\n&quot;
+        message &lt;&lt; &quot;Subject: Chef Run Failure\n&quot;
+        message &lt;&lt; &quot;Date: #{Time.now.rfc2822}\n\n&quot;
+
+        # The Node is available as +node+
+        message &lt;&lt; &quot;Chef run failed on #{node.name}\n&quot;
+        # +run_status+ is a value object with all of the run status data
+        message &lt;&lt; &quot;#{run_status.formatted_exception}\n&quot;
+        # Join the backtrace lines. Coerce to an array just in case.
+        message &lt;&lt; Array(backtrace).join(&quot;\n&quot;)
+
+        # Send the email
+        Net::SMTP.start('your.smtp.server', 25) do |smtp|
+          smtp.send_message message, 'from@address', 'to@address'
+        end
+      end
+
+    end
+  end</pre>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="run-status-attribute-method" class="method-detail">
+				<a name="run_status"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">run_status</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+The <a href="RunStatus.html">Chef::RunStatus</a> object containing data
+about the <a href="../Chef.html">Chef</a> run.
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="exception-handlers-method" class="method-detail ">
+				<a name="method-c-exception_handlers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">exception_handlers</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The list of currently configured exception handlers
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="exception-handlers-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 82</span>
+82:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">exception_handlers</span>
+83:       <span class="ruby-constant">Array</span>(<span class="ruby-constant">Chef</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span>[<span class="ruby-value">:exception_handlers</span>])
+84:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="report-handlers-method" class="method-detail ">
+				<a name="method-c-report_handlers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">report_handlers</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The list of currently configured report handlers
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="report-handlers-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 61</span>
+61:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">report_handlers</span>
+62:       <span class="ruby-constant">Array</span>(<span class="ruby-constant">Chef</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span>[<span class="ruby-value">:report_handlers</span>])
+63:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="run-exception-handlers-method" class="method-detail ">
+				<a name="method-c-run_exception_handlers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">run_exception_handlers</span><span
+						class="method-args">(run_status)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Run the exception handlers. Usually will be called by a notification from
+<a href="Client.html">Chef::Client</a> when the run fails.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="run-exception-handlers-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 88</span>
+88:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">run_exception_handlers</span>(<span class="ruby-identifier">run_status</span>)
+89:       <span class="ruby-constant">Chef</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">error</span>(<span class="ruby-value str">&quot;Running exception handlers&quot;</span>)
+90:       <span class="ruby-identifier">exception_handlers</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">handler</span><span class="ruby-operator">|</span>
+91:         <span class="ruby-identifier">handler</span>.<span class="ruby-identifier">run_report_safely</span>(<span class="ruby-identifier">run_status</span>)
+92:       <span class="ruby-keyword kw">end</span>
+93:       <span class="ruby-constant">Chef</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">error</span>(<span class="ruby-value str">&quot;Exception handlers complete&quot;</span>)
+94:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="run-report-handlers-method" class="method-detail ">
+				<a name="method-c-run_report_handlers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">run_report_handlers</span><span
+						class="method-args">(run_status)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Run the report handlers. This will usually be called by a notification from
+<a href="Client.html">Chef::Client</a>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="run-report-handlers-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 67</span>
+67:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">run_report_handlers</span>(<span class="ruby-identifier">run_status</span>)
+68:       <span class="ruby-constant">Chef</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">info</span>(<span class="ruby-value str">&quot;Running report handlers&quot;</span>)
+69:       <span class="ruby-identifier">report_handlers</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">handler</span><span class="ruby-operator">|</span>
+70:         <span class="ruby-identifier">handler</span>.<span class="ruby-identifier">run_report_safely</span>(<span class="ruby-identifier">run_status</span>)
+71:       <span class="ruby-keyword kw">end</span>
+72:       <span class="ruby-constant">Chef</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">info</span>(<span class="ruby-value str">&quot;Report handlers complete&quot;</span>)
+73:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="all-resources-method" class="method-detail ">
+				<a name="method-i-all_resources"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">all_resources</span><span
+						class="method-args"></span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+An Array containing all resources in the chef run&#8217;s
+resource_collection
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="all-resources-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 154</span>
+154:     <span class="ruby-identifier">def_delegator</span> <span class="ruby-value">:@run_status</span>, <span class="ruby-value">:all_resources</span>
+</pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="backtrace-method" class="method-detail ">
+				<a name="method-i-backtrace"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">backtrace</span><span
+						class="method-args"></span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The backtrace captured by the uncaught exception that terminated the chef
+run, or nil if the run completed successfully
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="backtrace-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 142</span>
+142:     <span class="ruby-identifier">def_delegator</span> <span class="ruby-value">:@run_status</span>, <span class="ruby-value">:backtrace</span>
+</pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="data-method" class="method-detail ">
+				<a name="method-i-data"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">data</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the Hash representation of the <a
+href="Handler.html#run_status">run_status</a>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="data-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 201</span>
+201:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">data</span>
+202:       <span class="ruby-ivar">@run_status</span>.<span class="ruby-identifier">to_hash</span>
+203:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="elapsed-time-method" class="method-detail ">
+				<a name="method-i-elapsed_time"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">elapsed_time</span><span
+						class="method-args"></span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The time elapsed between the start and finish of the chef run
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="elapsed-time-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 122</span>
+122:     <span class="ruby-identifier">def_delegator</span> <span class="ruby-value">:@run_status</span>, <span class="ruby-value">:elapsed_time</span>
+</pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="end-time-method" class="method-detail ">
+				<a name="method-i-end_time"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">end_time</span><span
+						class="method-args"></span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The time the chef run ended
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="end-time-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 116</span>
+116:     <span class="ruby-identifier">def_delegator</span> <span class="ruby-value">:@run_status</span>, <span class="ruby-value">:end_time</span>
+</pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="exception-method" class="method-detail ">
+				<a name="method-i-exception"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">exception</span><span
+						class="method-args"></span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The uncaught Exception that terminated the chef run, or nil if the run
+completed successfully
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="exception-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 135</span>
+135:     <span class="ruby-identifier">def_delegator</span> <span class="ruby-value">:@run_status</span>, <span class="ruby-value">:exception</span>
+</pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="failed--method" class="method-detail ">
+				<a name="method-i-failed%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">failed?</span><span
+						class="method-args"></span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Did the chef run fail? True if the chef run raised an uncaught exception
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="failed--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 173</span>
+173:     <span class="ruby-identifier">def_delegator</span> <span class="ruby-value">:@run_status</span>, <span class="ruby-value">:failed?</span>
+</pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="node-method" class="method-detail ">
+				<a name="method-i-node"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">node</span><span
+						class="method-args"></span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The <a href="Node.html">Chef::Node</a> for this client run
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="node-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 148</span>
+148:     <span class="ruby-identifier">def_delegator</span> <span class="ruby-value">:@run_status</span>, <span class="ruby-value">:node</span>
+</pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="report-method" class="method-detail ">
+				<a name="method-i-report"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">report</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The main entry point for report handling. Subclasses should override this
+method with their own report handling logic.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="report-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 177</span>
+177:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">report</span>
+178:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="run-context-method" class="method-detail ">
+				<a name="method-i-run_context"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">run_context</span><span
+						class="method-args"></span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The <a href="RunContext.html">Chef::RunContext</a> object used by the chef
+run
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="run-context-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 128</span>
+128:     <span class="ruby-identifier">def_delegator</span> <span class="ruby-value">:@run_status</span>, <span class="ruby-value">:run_context</span>
+</pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="run-report-safely-method" class="method-detail ">
+				<a name="method-i-run_report_safely"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">run_report_safely</span><span
+						class="method-args">(run_status)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Runs the report handler, rescuing and logging any errors it may cause. This
+ensures that all handlers get a chance to run even if one fails. This
+method should not be overridden by subclasses unless you know what
+you&#8217;re doing.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="run-report-safely-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 184</span>
+184:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">run_report_safely</span>(<span class="ruby-identifier">run_status</span>)
+185:       <span class="ruby-identifier">run_report_unsafe</span>(<span class="ruby-identifier">run_status</span>)
+186:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+187:       <span class="ruby-constant">Chef</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">error</span>(<span class="ruby-node">&quot;Report handler #{self.class.name} raised #{e.inspect}&quot;</span>)
+188:       <span class="ruby-constant">Array</span>(<span class="ruby-identifier">e</span>.<span class="ruby-identifier">backtrace</span>).<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">line</span><span class="ruby-operator">|</span> <span class="ruby-constant">Chef</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">error</span>(<span class="ruby-identifier">line</span>) }
+189:     <span class="ruby-keyword kw">ensure</span>
+190:       <span class="ruby-ivar">@run_status</span> = <span class="ruby-keyword kw">nil</span>
+191:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="run-report-unsafe-method" class="method-detail ">
+				<a name="method-i-run_report_unsafe"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">run_report_unsafe</span><span
+						class="method-args">(run_status)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Runs the report handler without any error handling. This method should not
+be used directly except in testing.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="run-report-unsafe-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 195</span>
+195:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">run_report_unsafe</span>(<span class="ruby-identifier">run_status</span>)
+196:       <span class="ruby-ivar">@run_status</span> = <span class="ruby-identifier">run_status</span>
+197:       <span class="ruby-identifier">report</span>
+198:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="start-time-method" class="method-detail ">
+				<a name="method-i-start_time"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">start_time</span><span
+						class="method-args"></span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The time the chef run started
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="start-time-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 110</span>
+110:     <span class="ruby-identifier">def_delegator</span> <span class="ruby-value">:@run_status</span>, <span class="ruby-value">:start_time</span>
+</pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="success--method" class="method-detail ">
+				<a name="method-i-success%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">success?</span><span
+						class="method-args"></span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Was the chef run successful? True if the chef run did not raise an uncaught
+exception
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="success--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 167</span>
+167:     <span class="ruby-identifier">def_delegator</span> <span class="ruby-value">:@run_status</span>, <span class="ruby-value">:success?</span>
+</pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="updated-resources-method" class="method-detail ">
+				<a name="method-i-updated_resources"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">updated_resources</span><span
+						class="method-args"></span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+An Array containing all resources that were updated during the chef run
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="updated-resources-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/chef/handler.rb, line 160</span>
+160:     <span class="ruby-identifier">def_delegator</span> <span class="ruby-value">:@run_status</span>, <span class="ruby-value">:updated_resources</span>
+</pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

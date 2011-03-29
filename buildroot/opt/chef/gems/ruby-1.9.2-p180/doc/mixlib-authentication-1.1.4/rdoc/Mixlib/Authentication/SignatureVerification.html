@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Mixlib::Authentication::SignatureVerification</title>
+
+	<link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../../lib/mixlib/authentication/signatureverification_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/mixlib/authentication/signatureverification.rb">lib/mixlib/authentication/signatureverification.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-assert_required_headers_present">#assert_required_headers_present</a></li>
+					
+					<li><a href="#method-i-authenticate_request">#authenticate_request</a></li>
+					
+					<li><a href="#method-i-authenticate_user_request">#authenticate_user_request</a></li>
+					
+					<li><a href="#method-i-hashed_body">#hashed_body</a></li>
+					
+					<li><a href="#method-i-headers">#headers</a></li>
+					
+					<li><a href="#method-i-timestamp_within_bounds%3F">#timestamp_within_bounds?</a></li>
+					
+					<li><a href="#method-i-valid_content_hash%3F">#valid_content_hash?</a></li>
+					
+					<li><a href="#method-i-valid_request%3F">#valid_request?</a></li>
+					
+					<li><a href="#method-i-valid_signature%3F">#valid_signature?</a></li>
+					
+					<li><a href="#method-i-valid_timestamp%3F">#valid_timestamp?</a></li>
+					
+					<li><a href="#method-i-verify_content_hash">#verify_content_hash</a></li>
+					
+					<li><a href="#method-i-verify_signature">#verify_signature</a></li>
+					
+					<li><a href="#method-i-verify_timestamp">#verify_timestamp</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+			<div id="includes-section" class="section">
+				<h3 class="section-header">Included Modules</h3>
+				<ul class="link-list">
+				
+				
+					<li><a class="include" href="SignedHeaderAuth.html">Mixlib::Authentication::SignedHeaderAuth</a></li>
+				
+				
+				</ul>
+			</div>
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../../NOTICE.html">NOTICE</a></li>
+				
+					<li class="file"><a href="../../README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../../Mixlib.html">Mixlib</a></li>
+				
+					<li><a href="../../Mixlib/Authentication.html">Mixlib::Authentication</a></li>
+				
+					<li><a href="../../Mixlib/Authentication/AuthenticationError.html">Mixlib::Authentication::AuthenticationError</a></li>
+				
+					<li><a href="../../Mixlib/Authentication/Digester.html">Mixlib::Authentication::Digester</a></li>
+				
+					<li><a href="../../Mixlib/Authentication/HTTPAuthenticationRequest.html">Mixlib::Authentication::HTTPAuthenticationRequest</a></li>
+				
+					<li><a href="../../Mixlib/Authentication/Log.html">Mixlib::Authentication::Log</a></li>
+				
+					<li><a href="../../Mixlib/Authentication/MissingAuthenticationHeader.html">Mixlib::Authentication::MissingAuthenticationHeader</a></li>
+				
+					<li><a href="../../Mixlib/Authentication/SignatureVerification.html">Mixlib::Authentication::SignatureVerification</a></li>
+				
+					<li><a href="../../Mixlib/Authentication/SignedHeaderAuth.html">Mixlib::Authentication::SignedHeaderAuth</a></li>
+				
+					<li><a href="../../Mixlib/Authentication/SigningObject.html">Mixlib::Authentication::SigningObject</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Mixlib::Authentication::SignatureVerification</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="auth-request-attribute-method" class="method-detail">
+				<a name="auth_request"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">auth_request</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(request=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 55</span>
+55:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">request</span>=<span class="ruby-keyword kw">nil</span>)
+56:         <span class="ruby-ivar">@auth_request</span> = <span class="ruby-constant">HTTPAuthenticationRequest</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">request</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">request</span>
+57: 
+58:         <span class="ruby-ivar">@valid_signature</span>, <span class="ruby-ivar">@valid_timestamp</span>, <span class="ruby-ivar">@valid_content_hash</span> = <span class="ruby-keyword kw">false</span>, <span class="ruby-keyword kw">false</span>, <span class="ruby-keyword kw">false</span>
+59: 
+60:         <span class="ruby-ivar">@hashed_body</span> = <span class="ruby-keyword kw">nil</span>
+61:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="authenticate-request-method" class="method-detail ">
+				<a name="method-i-authenticate_request"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">authenticate_request</span><span
+						class="method-args">(user_secret, time_skew=(15*60))</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Takes the request, boils down the pieces we are interested in, looks up the
+user, generates a signature, and compares to the signature in the request
+</p>
+<h4>Headers</h4>
+<p>
+X-Ops-Sign: algorithm=sha256;version=1.0; X-Ops-UserId: <user_id>
+X-Ops-Timestamp: X-Ops-Content-Hash:  X-Ops-Authorization-#{line_number}
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="authenticate-request-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 78</span>
+ 78:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">authenticate_request</span>(<span class="ruby-identifier">user_secret</span>, <span class="ruby-identifier">time_skew</span>=(<span class="ruby-value">15</span>*<span class="ruby-value">60</span>))
+ 79:         <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span> <span class="ruby-node">&quot;Initializing header auth : #{request.inspect}&quot;</span>
+ 80: 
+ 81:         <span class="ruby-ivar">@user_secret</span>       = <span class="ruby-identifier">user_secret</span>
+ 82:         <span class="ruby-ivar">@allowed_time_skew</span> = <span class="ruby-identifier">time_skew</span> <span class="ruby-comment cmt"># in seconds</span>
+ 83: 
+ 84:         <span class="ruby-keyword kw">begin</span>
+ 85:           <span class="ruby-ivar">@auth_request</span>
+ 86:           
+ 87:           <span class="ruby-comment cmt">#BUGBUG Not doing anything with the signing description yet [cb]          </span>
+ 88:           <span class="ruby-identifier">parse_signing_description</span>
+ 89: 
+ 90:           <span class="ruby-identifier">verify_signature</span>
+ 91:           <span class="ruby-identifier">verify_timestamp</span>
+ 92:           <span class="ruby-identifier">verify_content_hash</span>
+ 93: 
+ 94:         <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">StandardError</span>=<span class="ruby-operator">&gt;</span><span class="ruby-identifier">se</span>
+ 95:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">AuthenticationError</span>,<span class="ruby-node">&quot;Failed to authenticate user request. Check your client key and clock: #{se.message}&quot;</span>, <span class="ruby-identifier">se</span>.<span class="ruby-identifier">backtrace</span>
+ 96:         <span class="ruby-keyword kw">end</span>
+ 97: 
+ 98:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">valid_request?</span>
+ 99:           <span class="ruby-constant">SignatureResponse</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user_id</span>)
+100:         <span class="ruby-keyword kw">else</span>
+101:           <span class="ruby-keyword kw">nil</span>
+102:         <span class="ruby-keyword kw">end</span>
+103:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="authenticate-user-request-method" class="method-detail ">
+				<a name="method-i-authenticate_user_request"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">authenticate_user_request</span><span
+						class="method-args">(request, user_lookup, time_skew=(15*60))</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="authenticate-user-request-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 64</span>
+64:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">authenticate_user_request</span>(<span class="ruby-identifier">request</span>, <span class="ruby-identifier">user_lookup</span>, <span class="ruby-identifier">time_skew</span>=(<span class="ruby-value">15</span>*<span class="ruby-value">60</span>))
+65:         <span class="ruby-ivar">@auth_request</span> = <span class="ruby-constant">HTTPAuthenticationRequest</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">request</span>)
+66:         <span class="ruby-identifier">authenticate_request</span>(<span class="ruby-identifier">user_lookup</span>, <span class="ruby-identifier">time_skew</span>)
+67:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="headers-method" class="method-detail ">
+				<a name="method-i-headers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">headers</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The authorization header is a Base64-encoded version of an RSA signature.
+The client sent it on multiple header lines, starting at index 1 - 
+X-Ops-Authorization-1, X-Ops-Authorization-2, etc. Pull them out and
+concatenate.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="headers-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 125</span>
+125:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">headers</span>
+126:         <span class="ruby-ivar">@headers</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">request</span>.<span class="ruby-identifier">env</span>.<span class="ruby-identifier">inject</span>({ }) { <span class="ruby-operator">|</span><span class="ruby-identifier">memo</span>, <span class="ruby-identifier">kv</span><span class="ruby-operator">|</span> <span class="ruby-identifier">memo</span>[<span class="ruby-node">$2</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/\-/</span>,<span class="ruby-value str">&quot;_&quot;</span>).<span class="ruby-identifier">downcase</span>.<span class="ruby-identifier">to_sym</span>] = <span class="ruby-identifier">kv</span>[<span class="ruby-value">1</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">kv</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/^(HTTP_)(.*)/</span>; <span class="ruby-identifier">memo</span> }
+127:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="valid-content-hash--method" class="method-detail ">
+				<a name="method-i-valid_content_hash%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">valid_content_hash?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="valid-content-hash--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 113</span>
+113:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">valid_content_hash?</span>
+114:         <span class="ruby-ivar">@valid_content_hash</span>
+115:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="valid-request--method" class="method-detail ">
+				<a name="method-i-valid_request%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">valid_request?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="valid-request--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 117</span>
+117:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">valid_request?</span>
+118:         <span class="ruby-identifier">valid_signature?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">valid_timestamp?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">valid_content_hash?</span>
+119:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="valid-signature--method" class="method-detail ">
+				<a name="method-i-valid_signature%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">valid_signature?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="valid-signature--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 105</span>
+105:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">valid_signature?</span>
+106:         <span class="ruby-ivar">@valid_signature</span>
+107:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="valid-timestamp--method" class="method-detail ">
+				<a name="method-i-valid_timestamp%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">valid_timestamp?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="valid-timestamp--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 109</span>
+109:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">valid_timestamp?</span>
+110:         <span class="ruby-ivar">@valid_timestamp</span>
+111:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="assert-required-headers-present-method" class="method-detail ">
+				<a name="method-i-assert_required_headers_present"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">assert_required_headers_present</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="assert-required-headers-present-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 131</span>
+131:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">assert_required_headers_present</span>
+132:         <span class="ruby-constant">MANDATORY_HEADERS</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">header</span><span class="ruby-operator">|</span>
+133:           <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">headers</span>.<span class="ruby-identifier">key?</span>(<span class="ruby-identifier">header</span>)
+134:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">MissingAuthenticationHeader</span>, <span class="ruby-node">&quot;required authentication header #{header.to_s.upcase} missing&quot;</span>
+135:           <span class="ruby-keyword kw">end</span>
+136:         <span class="ruby-keyword kw">end</span>
+137:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="hashed-body-method" class="method-detail ">
+				<a name="method-i-hashed_body"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">hashed_body</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The request signature is based on any file attached, if any. Otherwise
+it&#8217;s based on the body of the request.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="hashed-body-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 174</span>
+174:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hashed_body</span>
+175:         <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@hashed_body</span>
+176:           <span class="ruby-comment cmt"># TODO: tim: 2009-112-28: It'd be nice to remove this special case, and</span>
+177:           <span class="ruby-comment cmt"># always hash the entire request body. In the file case it would just be</span>
+178:           <span class="ruby-comment cmt"># expanded multipart text - the entire body of the POST.</span>
+179:           <span class="ruby-comment cmt">#</span>
+180:           <span class="ruby-comment cmt"># Pull out any file that was attached to this request, using multipart</span>
+181:           <span class="ruby-comment cmt"># form uploads.</span>
+182:           <span class="ruby-comment cmt"># Depending on the server we're running in, multipart form uploads are</span>
+183:           <span class="ruby-comment cmt"># handed to us differently. </span>
+184:           <span class="ruby-comment cmt"># - In Passenger (Cookbooks Community Site), the File is handed to us </span>
+185:           <span class="ruby-comment cmt">#   directly in the params hash. The name is whatever the client used, </span>
+186:           <span class="ruby-comment cmt">#   its value is therefore a File or Tempfile. </span>
+187:           <span class="ruby-comment cmt">#   e.g. request['file_param'] = File</span>
+188:           <span class="ruby-comment cmt">#   </span>
+189:           <span class="ruby-comment cmt"># - In Merb (Chef server), the File is wrapped. The original parameter </span>
+190:           <span class="ruby-comment cmt">#   name used for the file is used, but its value is a Hash. Within</span>
+191:           <span class="ruby-comment cmt">#   the hash is a name/value pair named 'file' which actually </span>
+192:           <span class="ruby-comment cmt">#   contains the Tempfile instance.</span>
+193:           <span class="ruby-comment cmt">#   e.g. request['file_param'] = { :file =&gt; Tempfile }</span>
+194:           <span class="ruby-identifier">file_param</span> = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">params</span>.<span class="ruby-identifier">values</span>.<span class="ruby-identifier">find</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:read</span>) }
+195: 
+196:           <span class="ruby-comment cmt"># No file_param; we're running in Merb, or it's just not there..</span>
+197:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">file_param</span>.<span class="ruby-identifier">nil?</span>
+198:             <span class="ruby-identifier">hash_param</span> = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">params</span>.<span class="ruby-identifier">values</span>.<span class="ruby-identifier">find</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:has_key?</span>) }  <span class="ruby-comment cmt"># Hash responds to :has_key? .</span>
+199:             <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">hash_param</span>.<span class="ruby-identifier">nil?</span>
+200:               <span class="ruby-identifier">file_param</span> = <span class="ruby-identifier">hash_param</span>.<span class="ruby-identifier">values</span>.<span class="ruby-identifier">find</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:read</span>) } <span class="ruby-comment cmt"># File/Tempfile responds to :read.</span>
+201:             <span class="ruby-keyword kw">end</span>
+202:           <span class="ruby-keyword kw">end</span>
+203: 
+204:           <span class="ruby-comment cmt"># Any file that's included in the request is hashed if it's there. Otherwise,</span>
+205:           <span class="ruby-comment cmt"># we hash the body.</span>
+206:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">file_param</span>
+207:             <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span> <span class="ruby-node">&quot;Digesting file_param: '#{file_param.inspect}'&quot;</span>
+208:             <span class="ruby-ivar">@hashed_body</span> = <span class="ruby-identifier">digester</span>.<span class="ruby-identifier">hash_file</span>(<span class="ruby-identifier">file_param</span>)
+209:           <span class="ruby-keyword kw">else</span>
+210:             <span class="ruby-identifier">body</span> = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">raw_post</span>
+211:             <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span> <span class="ruby-node">&quot;Digesting body: '#{body}'&quot;</span>
+212:             <span class="ruby-ivar">@hashed_body</span> = <span class="ruby-identifier">digester</span>.<span class="ruby-identifier">hash_string</span>(<span class="ruby-identifier">body</span>)
+213:           <span class="ruby-keyword kw">end</span>
+214:         <span class="ruby-keyword kw">end</span>
+215:         <span class="ruby-ivar">@hashed_body</span>
+216:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="timestamp-within-bounds--method" class="method-detail ">
+				<a name="method-i-timestamp_within_bounds%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">timestamp_within_bounds?</span><span
+						class="method-args">(time1, time2)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Compare the request timestamp with boundary time
+</p>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">time1<Time></td><td><p>
+minuend
+</p>
+</td></tr>
+<tr><td valign="top">time2<Time></td><td><p>
+subtrahend
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="timestamp-within-bounds--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 225</span>
+225:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">timestamp_within_bounds?</span>(<span class="ruby-identifier">time1</span>, <span class="ruby-identifier">time2</span>)
+226:         <span class="ruby-identifier">time_diff</span> = (<span class="ruby-identifier">time2</span><span class="ruby-operator">-</span><span class="ruby-identifier">time1</span>).<span class="ruby-identifier">abs</span>
+227:         <span class="ruby-identifier">is_allowed</span> = (<span class="ruby-identifier">time_diff</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@allowed_time_skew</span>)
+228:         <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span> <span class="ruby-node">&quot;Request time difference: #{time_diff}, within #{@allowed_time_skew} seconds? : #{!!is_allowed}&quot;</span>
+229:         <span class="ruby-identifier">is_allowed</span>      
+230:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="verify-content-hash-method" class="method-detail ">
+				<a name="method-i-verify_content_hash"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">verify_content_hash</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="verify-content-hash-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 160</span>
+160:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">verify_content_hash</span>
+161:         <span class="ruby-ivar">@valid_content_hash</span> = (<span class="ruby-identifier">content_hash</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">hashed_body</span>)
+162: 
+163:         <span class="ruby-comment cmt"># Keep the debug messages lined up so it's easy to scan them</span>
+164:         <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Expected content hash is: '#{hashed_body}'&quot;</span>)
+165:         <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot; Request Content Hash is: '#{content_hash}'&quot;</span>)
+166:         <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;           Hashes match?: #{@valid_content_hash}&quot;</span>)
+167: 
+168:         <span class="ruby-ivar">@valid_content_hash</span>
+169:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="verify-signature-method" class="method-detail ">
+				<a name="method-i-verify_signature"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">verify_signature</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="verify-signature-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 139</span>
+139:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">verify_signature</span>
+140:         <span class="ruby-identifier">candidate_block</span> = <span class="ruby-identifier">canonicalize_request</span>
+141:         <span class="ruby-identifier">request_decrypted_block</span> = <span class="ruby-ivar">@user_secret</span>.<span class="ruby-identifier">public_decrypt</span>(<span class="ruby-constant">Base64</span>.<span class="ruby-identifier">decode64</span>(<span class="ruby-identifier">request_signature</span>))
+142:         <span class="ruby-ivar">@valid_signature</span> = (<span class="ruby-identifier">request_decrypted_block</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">candidate_block</span>)
+143: 
+144:         <span class="ruby-comment cmt"># Keep the debug messages lined up so it's easy to scan them</span>
+145:         <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-value str">&quot;Verifying request signature:&quot;</span>)
+146:         <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot; Expected Block is: '#{candidate_block}'&quot;</span>)
+147:         <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Decrypted block is: '#{request_decrypted_block}'&quot;</span>)
+148:         <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Signatures match? : '#{@valid_signature}'&quot;</span>)
+149: 
+150:         <span class="ruby-ivar">@valid_signature</span>
+151:       <span class="ruby-keyword kw">rescue</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+152:         <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Authentication</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Failed to verify request signature: #{e.class.name}: #{e.message}&quot;</span>)
+153:         <span class="ruby-ivar">@valid_signature</span> = <span class="ruby-keyword kw">false</span>
+154:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="verify-timestamp-method" class="method-detail ">
+				<a name="method-i-verify_timestamp"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">verify_timestamp</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="verify-timestamp-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/authentication/signatureverification.rb, line 156</span>
+156:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">verify_timestamp</span>
+157:         <span class="ruby-ivar">@valid_timestamp</span> = <span class="ruby-identifier">timestamp_within_bounds?</span>(<span class="ruby-constant">Time</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">timestamp</span>), <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>)
+158:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

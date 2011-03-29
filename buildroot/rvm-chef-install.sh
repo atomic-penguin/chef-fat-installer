@@ -16,9 +16,8 @@
 # limitations under the License.
 
 RVM_DIR="/opt/chef"
-RVM_PROFILE="/etc/profile.d/rvm-chef.sh"
 CHEF_PATH="$RVM_DIR/gems/ruby-1.9.2-p180/bin"
-INIT_DIR="$RVM_DIR/gems/ruby-1.9.2-p180/gems/chef-0.9.14/distro"
+INIT_DIR="./distro"
 
 if [ -e /etc/redhat-release ]; then
   echo -en "Installing rvm pre-requisites for RHEL/CentOS/Fedora\n"
@@ -71,8 +70,6 @@ fi
 echo -en "Symlinking $CHEF_PATH/chef-client to /usr/bin\n"
 ln -s $CHEF_PATH/chef-client /usr/bin/chef-client
 
-. $RVM_PROFILE 
-
 echo
 cat << "EOF"
 = CHEF FAT INSTALLER
@@ -98,4 +95,4 @@ echo
 echo -e "----------------------------------------------------------------\n"
 echo -e "Additional components (RVM, Ruby, gems, and Chef) are copyright their respective authors.\n"
 echo -e "This Chef application deployment is provided as-is by Eric G. Wolfe\n"
-echo -e "You should be able to run chef-client -S <chef-server> now\n"
+echo -e "You should be able to run chef-client -S <chef-server> after sourcing /etc/profile.d/rvm.sh\n"

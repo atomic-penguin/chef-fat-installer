@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+ENV['GEM_HOME']=ENV['GEM_HOME'] || '/opt/chef/gems/ruby-1.9.2-p180'
+ENV['GEM_PATH']=ENV['GEM_PATH'] || '/opt/chef/gems/ruby-1.9.2-p180:/opt/chef/gems/ruby-1.9.2-p180@global'
+ENV['PATH']='/opt/chef/gems/ruby-1.9.2-p180/bin:/opt/chef/gems/ruby-1.9.2-p180@global/bin:/opt/chef/rubies/ruby-1.9.2-p180/bin:' + ENV['PATH']
+
+#--
+# Copyright 2006 by Chad Fowler, Rich Kilmer, Jim Weirich and others.
+# All rights reserved.
+# See LICENSE.txt for permissions.
+#++
+
+require 'rubygems'
+require 'rubygems/gem_runner'
+require 'rubygems/exceptions'
+
+required_version = Gem::Requirement.new ">= 1.8.6"
+
+unless required_version.satisfied_by? Gem.ruby_version then
+  abort "Expected Ruby Version #{required_version}, is #{Gem.ruby_version}"
+end
+
+args = ARGV.clone
+
+begin
+  Gem::GemRunner.new.run args
+rescue Gem::SystemExitException => e
+  exit e.exit_code
+end
+

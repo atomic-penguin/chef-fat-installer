@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>bunny-0.6.0 Documentation</title>
+
+	<link type="text/css" media="screen" href="rdoc.css" rel="stylesheet" />
+
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body class="indexpage">
+
+	
+	<h1>bunny-0.6.0 Documentation</h1>
+
+	
+	<div id="main">
+		
+<p>
+<b>GitHub</b> <b>repo</b>: <a
+href="http://github.com/celldee/bunny">github.com/celldee/bunny</a>
+</p>
+<p>
+<b>Rubyforge</b>: <a
+href="http://rubyforge.org/projects/bunny-amqp">rubyforge.org/projects/bunny-amqp</a>
+</p>
+<p>
+<b>Twitter</b>: <a
+href="http://twitter.com/bunny_amqp">twitter.com/bunny_amqp</a>
+</p>
+<p>
+<b>Google</b> <b>Group</b>: <a
+href="http://groups.google.com/group/bunny-amqp">groups.google.com/group/bunny-amqp</a>
+</p>
+<p>
+<b>Blog</b>: <a
+href="http://bunnyamqp.wordpress.com">bunnyamqp.wordpress.com</a>
+</p>
+<pre>
+     
+</pre>
+<h3>DESCRIPTION:</h3>
+<p>
+<a href="Bunny.html">Bunny</a> is an <a href="http://www.amqp.org">AMQP</a>
+(Advanced Message Queuing Protocol) client, written in Ruby, that is
+intended to allow you to interact with AMQP-compliant message
+brokers/servers such as <a href="http://www.rabbitmq.com">RabbitMQ</a> in a
+synchronous fashion.
+</p>
+<p>
+It is based on a great deal of useful code from <a
+href="http://github.com/tmm1/amqp">amqp</a> by Aman Gupta and <a
+href="http://github.com/famoseagle/carrot">Carrot</a> by Amos Elliston.
+</p>
+<p>
+You can use <a href="Bunny.html">Bunny</a> to -
+</p>
+<ul>
+<li><p>
+Create and delete exchanges
+</p>
+</li>
+<li><p>
+Create and delete queues
+</p>
+</li>
+<li><p>
+Publish and consume messages
+</p>
+</li>
+</ul>
+<p>
+<a href="Bunny.html">Bunny</a> is known to work with RabbitMQ versions
+1.5.4, 1.5.5, 1.6.0 and version 0-8 of the AMQP specification.
+</p>
+<h3>INSTALL:</h3>
+<p>
+<b>Rubyforge</b>: <tt>gem install bunny</tt>
+</p>
+<p>
+<b>Gemcutter</b>: <tt>gem install bunny</tt>
+</p>
+<p>
+<b>GitHub</b>: Current gem is not available.
+</p>
+<h3>QUICK START:</h3>
+<pre>
+   require 'bunny'
+
+   b = Bunny.new(:logging =&gt; true)
+
+   # start a communication session with the amqp server
+   b.start
+
+   # declare a queue
+   q = b.queue('test1')
+
+   # publish a message to the queue
+   q.publish('Hello everybody!')
+
+   # get message from the queue
+   msg = q.pop[:payload]
+
+   puts 'This is the message: ' + msg + &quot;\n\n&quot;
+
+   # close the connection
+   b.stop
+</pre>
+<h3>EVEN QUICKER START</h3>
+<pre>
+   require 'bunny'
+
+   # Create a direct queue named 'my_testq'
+   Bunny.run { |c| c.queue('my_testq') }
+</pre>
+<h3>OTHER:</h3>
+<p>
+Please see the <em>examples</em> directory for additional usage
+information.
+</p>
+
+	</div>
+	
+
+	
+	
+	<h2>Files</h2>
+	<ul>
+		
+			<li class="file"><a href="README_rdoc.html">README.rdoc</a></li>
+		
+	</ul>
+	
+
+	<h2 id="classes">Classes/Modules</h2>
+	<ul>
+		
+		<li class="module"><a href="Bunny.html">Bunny</a></li>
+		
+		<li class="class"><a href="Bunny/AcknowledgementError.html">Bunny::AcknowledgementError</a></li>
+		
+		<li class="class"><a href="Bunny/Channel.html">Bunny::Channel</a></li>
+		
+		<li class="class"><a href="Bunny/Channel09.html">Bunny::Channel09</a></li>
+		
+		<li class="class"><a href="Bunny/Client.html">Bunny::Client</a></li>
+		
+		<li class="class"><a href="Bunny/Client09.html">Bunny::Client09</a></li>
+		
+		<li class="class"><a href="Bunny/ConnectionError.html">Bunny::ConnectionError</a></li>
+		
+		<li class="class"><a href="Bunny/Exchange.html">Bunny::Exchange</a></li>
+		
+		<li class="class"><a href="Bunny/Exchange09.html">Bunny::Exchange09</a></li>
+		
+		<li class="class"><a href="Bunny/ForcedChannelCloseError.html">Bunny::ForcedChannelCloseError</a></li>
+		
+		<li class="class"><a href="Bunny/ForcedConnectionCloseError.html">Bunny::ForcedConnectionCloseError</a></li>
+		
+		<li class="class"><a href="Bunny/MessageError.html">Bunny::MessageError</a></li>
+		
+		<li class="class"><a href="Bunny/ProtocolError.html">Bunny::ProtocolError</a></li>
+		
+		<li class="class"><a href="Bunny/Queue.html">Bunny::Queue</a></li>
+		
+		<li class="class"><a href="Bunny/Queue09.html">Bunny::Queue09</a></li>
+		
+		<li class="class"><a href="Bunny/ServerDownError.html">Bunny::ServerDownError</a></li>
+		
+		<li class="class"><a href="Bunny/Subscription.html">Bunny::Subscription</a></li>
+		
+		<li class="class"><a href="Bunny/Subscription09.html">Bunny::Subscription09</a></li>
+		
+		<li class="class"><a href="Bunny/UnsubscribeError.html">Bunny::UnsubscribeError</a></li>
+		
+		<li class="module"><a href="Qrack.html">Qrack</a></li>
+		
+		<li class="class"><a href="Qrack/BufferOverflowError.html">Qrack::BufferOverflowError</a></li>
+		
+		<li class="class"><a href="Qrack/Channel.html">Qrack::Channel</a></li>
+		
+		<li class="class"><a href="Qrack/Client.html">Qrack::Client</a></li>
+		
+		<li class="class"><a href="Qrack/ClientTimeout.html">Qrack::ClientTimeout</a></li>
+		
+		<li class="class"><a href="Qrack/ConnectionTimeout.html">Qrack::ConnectionTimeout</a></li>
+		
+		<li class="class"><a href="Qrack/InvalidTypeError.html">Qrack::InvalidTypeError</a></li>
+		
+		<li class="class"><a href="Qrack/Queue.html">Qrack::Queue</a></li>
+		
+		<li class="class"><a href="Qrack/Subscription.html">Qrack::Subscription</a></li>
+		
+	</ul>
+
+	<h2 id="methods">Methods</h2>
+	<ul>
+		
+			<li><a href="Qrack/Subscription.html#method-c-new">::new &mdash; Qrack::Subscription</a></li>
+		
+			<li><a href="Bunny.html#method-c-new">::new &mdash; Bunny</a></li>
+		
+			<li><a href="Bunny/Channel09.html#method-c-new">::new &mdash; Bunny::Channel09</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-c-new">::new &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Queue.html#method-c-new">::new &mdash; Bunny::Queue</a></li>
+		
+			<li><a href="Qrack/Client.html#method-c-new">::new &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Bunny/Client.html#method-c-new">::new &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Exchange.html#method-c-new">::new &mdash; Bunny::Exchange</a></li>
+		
+			<li><a href="Bunny/Channel.html#method-c-new">::new &mdash; Bunny::Channel</a></li>
+		
+			<li><a href="Qrack/Channel.html#method-c-new">::new &mdash; Qrack::Channel</a></li>
+		
+			<li><a href="Bunny/Exchange09.html#method-c-new">::new &mdash; Bunny::Exchange09</a></li>
+		
+			<li><a href="Bunny/Queue09.html#method-c-new">::new &mdash; Bunny::Queue09</a></li>
+		
+			<li><a href="Bunny.html#method-c-run">::run &mdash; Bunny</a></li>
+		
+			<li><a href="Bunny.html#method-c-setup">::setup &mdash; Bunny</a></li>
+		
+			<li><a href="Bunny.html#method-c-version">::version &mdash; Bunny</a></li>
+		
+			<li><a href="Bunny/Queue.html#method-i-ack">#ack &mdash; Bunny::Queue</a></li>
+		
+			<li><a href="Bunny/Queue09.html#method-i-ack">#ack &mdash; Bunny::Queue09</a></li>
+		
+			<li><a href="Bunny/Queue.html#method-i-bind">#bind &mdash; Bunny::Queue</a></li>
+		
+			<li><a href="Bunny/Queue09.html#method-i-bind">#bind &mdash; Bunny::Queue09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-buffer">#buffer &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-buffer">#buffer &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-check_response">#check_response &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-check_response">#check_response &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Channel09.html#method-i-close">#close &mdash; Bunny::Channel09</a></li>
+		
+			<li><a href="Bunny/Channel.html#method-i-close">#close &mdash; Bunny::Channel</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-close">#close &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-close_connection">#close_connection &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-close_connection">#close_connection &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-close_socket">#close_socket &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-connected%3F">#connected? &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-connecting%3F">#connecting? &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Qrack/Queue.html#method-i-consumer_count">#consumer_count &mdash; Qrack::Queue</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-create_channel">#create_channel &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-create_channel">#create_channel &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-create_logger">#create_logger &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Bunny/Queue09.html#method-i-delete">#delete &mdash; Bunny::Queue09</a></li>
+		
+			<li><a href="Bunny/Queue.html#method-i-delete">#delete &mdash; Bunny::Queue</a></li>
+		
+			<li><a href="Bunny/Exchange09.html#method-i-delete">#delete &mdash; Bunny::Exchange09</a></li>
+		
+			<li><a href="Bunny/Exchange.html#method-i-delete">#delete &mdash; Bunny::Exchange</a></li>
+		
+			<li><a href="Bunny/Queue.html#method-i-exchange">#exchange &mdash; Bunny::Queue</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-exchange">#exchange &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Queue09.html#method-i-exchange">#exchange &mdash; Bunny::Queue09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-exchange">#exchange &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-init_connection">#init_connection &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-init_connection">#init_connection &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-logging%3D">#logging= &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Qrack/Queue.html#method-i-message_count">#message_count &mdash; Qrack::Queue</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-next_frame">#next_frame &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-next_frame">#next_frame &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-next_method">#next_method &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-next_payload">#next_payload &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Bunny/Channel.html#method-i-open">#open &mdash; Bunny::Channel</a></li>
+		
+			<li><a href="Bunny/Channel09.html#method-i-open">#open &mdash; Bunny::Channel09</a></li>
+		
+			<li><a href="Bunny/Channel09.html#method-i-open%3F">#open? &mdash; Bunny::Channel09</a></li>
+		
+			<li><a href="Bunny/Channel.html#method-i-open%3F">#open? &mdash; Bunny::Channel</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-open_connection">#open_connection &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-open_connection">#open_connection &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Queue09.html#method-i-pop">#pop &mdash; Bunny::Queue09</a></li>
+		
+			<li><a href="Bunny/Queue.html#method-i-pop">#pop &mdash; Bunny::Queue</a></li>
+		
+			<li><a href="Bunny/Exchange.html#method-i-publish">#publish &mdash; Bunny::Exchange</a></li>
+		
+			<li><a href="Qrack/Queue.html#method-i-publish">#publish &mdash; Qrack::Queue</a></li>
+		
+			<li><a href="Bunny/Exchange09.html#method-i-publish">#publish &mdash; Bunny::Exchange09</a></li>
+		
+			<li><a href="Bunny/Queue.html#method-i-purge">#purge &mdash; Bunny::Queue</a></li>
+		
+			<li><a href="Bunny/Queue09.html#method-i-purge">#purge &mdash; Bunny::Queue09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-qos">#qos &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-qos">#qos &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-queue">#queue &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-queue">#queue &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-read">#read &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-recover">#recover &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-recover">#recover &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-request_access">#request_access &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-returned_message">#returned_message &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-send_command">#send_command &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-send_frame">#send_frame &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-send_frame">#send_frame &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-send_heartbeat">#send_heartbeat &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-send_heartbeat">#send_heartbeat &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Subscription09.html#method-i-setup_consumer">#setup_consumer &mdash; Bunny::Subscription09</a></li>
+		
+			<li><a href="Bunny/Subscription.html#method-i-setup_consumer">#setup_consumer &mdash; Bunny::Subscription</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-socket">#socket &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Qrack/Subscription.html#method-i-start">#start &mdash; Qrack::Subscription</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-start">#start &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-start">#start &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-start_session">#start_session &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-start_session">#start_session &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Queue.html#method-i-status">#status &mdash; Bunny::Queue</a></li>
+		
+			<li><a href="Bunny/Queue09.html#method-i-status">#status &mdash; Bunny::Queue09</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-stop">#stop &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Bunny/Queue.html#method-i-subscribe">#subscribe &mdash; Bunny::Queue</a></li>
+		
+			<li><a href="Bunny/Queue09.html#method-i-subscribe">#subscribe &mdash; Bunny::Queue09</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-switch_channel">#switch_channel &mdash; Qrack::Client</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-tx_commit">#tx_commit &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-tx_commit">#tx_commit &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-tx_rollback">#tx_rollback &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-tx_rollback">#tx_rollback &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client.html#method-i-tx_select">#tx_select &mdash; Bunny::Client</a></li>
+		
+			<li><a href="Bunny/Client09.html#method-i-tx_select">#tx_select &mdash; Bunny::Client09</a></li>
+		
+			<li><a href="Bunny/Queue09.html#method-i-unbind">#unbind &mdash; Bunny::Queue09</a></li>
+		
+			<li><a href="Bunny/Queue.html#method-i-unbind">#unbind &mdash; Bunny::Queue</a></li>
+		
+			<li><a href="Bunny/Queue.html#method-i-unsubscribe">#unsubscribe &mdash; Bunny::Queue</a></li>
+		
+			<li><a href="Bunny/Queue09.html#method-i-unsubscribe">#unsubscribe &mdash; Bunny::Queue09</a></li>
+		
+			<li><a href="Qrack/Client.html#method-i-write">#write &mdash; Qrack::Client</a></li>
+		
+	</ul>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>

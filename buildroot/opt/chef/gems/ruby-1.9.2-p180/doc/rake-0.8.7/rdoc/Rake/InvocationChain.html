@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Rake::InvocationChain</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/rake_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/rake.rb">lib/rake.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="../Object.html">Object</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+			<div id="namespace-list-section" class="section">
+				<h3 class="section-header">Namespace</h3>
+				<ul class="link-list">
+					
+					<li><span class="type">CLASS</span> <a href="InvocationChain/EmptyInvocationChain.html">Rake::InvocationChain::EmptyInvocationChain</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-append">::append</a></li>
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-append">#append</a></li>
+					
+					<li><a href="#method-i-member%3F">#member?</a></li>
+					
+					<li><a href="#method-i-prefix">#prefix</a></li>
+					
+					<li><a href="#method-i-to_s">#to_s</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../CHANGES.html">CHANGES</a></li>
+				
+					<li class="file"><a href="../MIT-LICENSE.html">MIT-LICENSE</a></li>
+				
+					<li class="file"><a href="../README.html">README</a></li>
+				
+					<li class="file"><a href="../TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="../doc/command_line_usage_rdoc.html">command_line_usage.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/glossary_rdoc.html">glossary.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/proto_rake_rdoc.html">proto_rake.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/rakefile_rdoc.html">rakefile.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/rational_rdoc.html">rational.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_4_14_rdoc.html">rake-0.4.14.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_4_15_rdoc.html">rake-0.4.15.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_0_rdoc.html">rake-0.5.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_3_rdoc.html">rake-0.5.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_4_rdoc.html">rake-0.5.4.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_6_0_rdoc.html">rake-0.6.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_0_rdoc.html">rake-0.7.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_1_rdoc.html">rake-0.7.1.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_2_rdoc.html">rake-0.7.2.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_3_rdoc.html">rake-0.7.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_0_rdoc.html">rake-0.8.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_2_rdoc.html">rake-0.8.2.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_3_rdoc.html">rake-0.8.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_4_rdoc.html">rake-0.8.4.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_5_rdoc.html">rake-0.8.5.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_6_rdoc.html">rake-0.8.6.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_7_rdoc.html">rake-0.8.7.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Rake/AltSystem.html">Rake::AltSystem</a></li>
+				
+					<li><a href="../Rake/Application.html">Rake::Application</a></li>
+				
+					<li><a href="../Rake/Cloneable.html">Rake::Cloneable</a></li>
+				
+					<li><a href="../Rake/CompositePublisher.html">Rake::CompositePublisher</a></li>
+				
+					<li><a href="../Rake/DefaultLoader.html">Rake::DefaultLoader</a></li>
+				
+					<li><a href="../Rake/EarlyTime.html">Rake::EarlyTime</a></li>
+				
+					<li><a href="../Rake/FileCreationTask.html">Rake::FileCreationTask</a></li>
+				
+					<li><a href="../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../Rake/FileTask.html">Rake::FileTask</a></li>
+				
+					<li><a href="../Rake/FtpFile.html">Rake::FtpFile</a></li>
+				
+					<li><a href="../Rake/FtpUploader.html">Rake::FtpUploader</a></li>
+				
+					<li><a href="../Rake/GemPackageTask.html">Rake::GemPackageTask</a></li>
+				
+					<li><a href="../Rake/InvocationChain.html">Rake::InvocationChain</a></li>
+				
+					<li><a href="../Rake/InvocationChain/EmptyInvocationChain.html">Rake::InvocationChain::EmptyInvocationChain</a></li>
+				
+					<li><a href="../Rake/MakefileLoader.html">Rake::MakefileLoader</a></li>
+				
+					<li><a href="../Rake/MultiTask.html">Rake::MultiTask</a></li>
+				
+					<li><a href="../Rake/NameSpace.html">Rake::NameSpace</a></li>
+				
+					<li><a href="../Rake/PackageTask.html">Rake::PackageTask</a></li>
+				
+					<li><a href="../Rake/PseudoStatus.html">Rake::PseudoStatus</a></li>
+				
+					<li><a href="../Rake/RDocTask.html">Rake::RDocTask</a></li>
+				
+					<li><a href="../Rake/RubyForgePublisher.html">Rake::RubyForgePublisher</a></li>
+				
+					<li><a href="../Rake/RuleRecursionOverflowError.html">Rake::RuleRecursionOverflowError</a></li>
+				
+					<li><a href="../Rake/SshDirPublisher.html">Rake::SshDirPublisher</a></li>
+				
+					<li><a href="../Rake/SshFilePublisher.html">Rake::SshFilePublisher</a></li>
+				
+					<li><a href="../Rake/SshFreshDirPublisher.html">Rake::SshFreshDirPublisher</a></li>
+				
+					<li><a href="../Rake/Task.html">Rake::Task</a></li>
+				
+					<li><a href="../Rake/TaskArgumentError.html">Rake::TaskArgumentError</a></li>
+				
+					<li><a href="../Rake/TaskArguments.html">Rake::TaskArguments</a></li>
+				
+					<li><a href="../Rake/TaskLib.html">Rake::TaskLib</a></li>
+				
+					<li><a href="../Rake/TaskManager.html">Rake::TaskManager</a></li>
+				
+					<li><a href="../Rake/TestTask.html">Rake::TestTask</a></li>
+				
+					<li><a href="../Rake/Win32.html">Rake::Win32</a></li>
+				
+					<li><a href="../Rake/Win32/Win32HomeError.html">Rake::Win32::Win32HomeError</a></li>
+				
+					<li><a href="../Test.html">Test</a></li>
+				
+					<li><a href="../Test/Unit.html">Test::Unit</a></li>
+				
+					<li><a href="../Test/Unit/Collector.html">Test::Unit::Collector</a></li>
+				
+					<li><a href="../Test/Unit/Collector/Dir.html">Test::Unit::Collector::Dir</a></li>
+				
+					<li><a href="../CompositePublisher.html">CompositePublisher</a></li>
+				
+					<li><a href="../FileUtils.html">FileUtils</a></li>
+				
+					<li><a href="../Module.html">Module</a></li>
+				
+					<li><a href="../Object.html">Object</a></li>
+				
+					<li><a href="../RakeFileUtils.html">RakeFileUtils</a></li>
+				
+					<li><a href="../SshDirPublisher.html">SshDirPublisher</a></li>
+				
+					<li><a href="../SshFilePublisher.html">SshFilePublisher</a></li>
+				
+					<li><a href="../SshFreshDirPublisher.html">SshFreshDirPublisher</a></li>
+				
+					<li><a href="../String.html">String</a></li>
+				
+					<li><a href="../Sys.html">Sys</a></li>
+				
+					<li><a href="../Time.html">Time</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Rake::InvocationChain</h1>
+
+		<div id="description">
+			<pre>
+                                                                  
+</pre>
+<p>
+<a href="InvocationChain.html">InvocationChain</a> tracks the chain of task
+invocations to detect circular dependencies.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="EMPTY">EMPTY</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="append-method" class="method-detail ">
+				<a name="method-c-append"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">append</span><span
+						class="method-args">(value, chain)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="append-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake.rb, line 430</span>
+430:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">append</span>(<span class="ruby-identifier">value</span>, <span class="ruby-identifier">chain</span>)
+431:       <span class="ruby-identifier">chain</span>.<span class="ruby-identifier">append</span>(<span class="ruby-identifier">value</span>)
+432:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(value, tail)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake.rb, line 410</span>
+410:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">value</span>, <span class="ruby-identifier">tail</span>)
+411:       <span class="ruby-ivar">@value</span> = <span class="ruby-identifier">value</span>
+412:       <span class="ruby-ivar">@tail</span> = <span class="ruby-identifier">tail</span>
+413:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="append-method" class="method-detail ">
+				<a name="method-i-append"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">append</span><span
+						class="method-args">(value)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="append-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake.rb, line 419</span>
+419:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">append</span>(<span class="ruby-identifier">value</span>)
+420:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">member?</span>(<span class="ruby-identifier">value</span>)
+421:         <span class="ruby-identifier">fail</span> <span class="ruby-constant">RuntimeError</span>, <span class="ruby-node">&quot;Circular dependency detected: #{to_s} =&gt; #{value}&quot;</span>
+422:       <span class="ruby-keyword kw">end</span>
+423:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">value</span>, <span class="ruby-keyword kw">self</span>)
+424:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="member--method" class="method-detail ">
+				<a name="method-i-member%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">member?</span><span
+						class="method-args">(obj)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="member--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake.rb, line 415</span>
+415:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">member?</span>(<span class="ruby-identifier">obj</span>)
+416:       <span class="ruby-ivar">@value</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">obj</span> <span class="ruby-operator">||</span> <span class="ruby-ivar">@tail</span>.<span class="ruby-identifier">member?</span>(<span class="ruby-identifier">obj</span>)
+417:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="to-s-method" class="method-detail ">
+				<a name="method-i-to_s"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">to_s</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="to-s-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake.rb, line 426</span>
+426:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_s</span>
+427:       <span class="ruby-node">&quot;#{prefix}#{@value}&quot;</span>
+428:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="prefix-method" class="method-detail ">
+				<a name="method-i-prefix"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">prefix</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="prefix-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake.rb, line 436</span>
+436:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">prefix</span>
+437:       <span class="ruby-node">&quot;#{@tail.to_s} =&gt; &quot;</span>
+438:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

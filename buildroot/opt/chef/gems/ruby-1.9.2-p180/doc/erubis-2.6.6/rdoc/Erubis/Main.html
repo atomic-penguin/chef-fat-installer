@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Erubis::Main</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/erubis/main_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/erubis/main.rb">lib/erubis/main.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-main">::main</a></li>
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-_instance_eval">#_instance_eval</a></li>
+					
+					<li><a href="#method-i-check_syntax">#check_syntax</a></li>
+					
+					<li><a href="#method-i-collect_supported_properties">#collect_supported_properties</a></li>
+					
+					<li><a href="#method-i-do_action">#do_action</a></li>
+					
+					<li><a href="#method-i-execute">#execute</a></li>
+					
+					<li><a href="#method-i-get_classobj">#get_classobj</a></li>
+					
+					<li><a href="#method-i-get_enhancers">#get_enhancers</a></li>
+					
+					<li><a href="#method-i-intern_hash_keys">#intern_hash_keys</a></li>
+					
+					<li><a href="#method-i-load_datafiles">#load_datafiles</a></li>
+					
+					<li><a href="#method-i-manipulate_src">#manipulate_src</a></li>
+					
+					<li><a href="#method-i-parse_argv">#parse_argv</a></li>
+					
+					<li><a href="#method-i-parse_context_data">#parse_context_data</a></li>
+					
+					<li><a href="#method-i-show_enhancers">#show_enhancers</a></li>
+					
+					<li><a href="#method-i-show_properties">#show_properties</a></li>
+					
+					<li><a href="#method-i-untabify">#untabify</a></li>
+					
+					<li><a href="#method-i-usage">#usage</a></li>
+					
+					<li><a href="#method-i-version">#version</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Erubis.html">Erubis</a></li>
+				
+					<li><a href="../Erubis/ArrayBufferEruby.html">Erubis::ArrayBufferEruby</a></li>
+				
+					<li><a href="../Erubis/ArrayEruby.html">Erubis::ArrayEruby</a></li>
+				
+					<li><a href="../Erubis/Basic.html">Erubis::Basic</a></li>
+				
+					<li><a href="../Erubis/Basic/Converter.html">Erubis::Basic::Converter</a></li>
+				
+					<li><a href="../Erubis/Basic/Engine.html">Erubis::Basic::Engine</a></li>
+				
+					<li><a href="../Erubis/BiPatternEruby.html">Erubis::BiPatternEruby</a></li>
+				
+					<li><a href="../Erubis/CGenerator.html">Erubis::CGenerator</a></li>
+				
+					<li><a href="../Erubis/CommandOptionError.html">Erubis::CommandOptionError</a></li>
+				
+					<li><a href="../Erubis/Converter.html">Erubis::Converter</a></li>
+				
+					<li><a href="../Erubis/DeleteIndentEruby.html">Erubis::DeleteIndentEruby</a></li>
+				
+					<li><a href="../Erubis/Ec.html">Erubis::Ec</a></li>
+				
+					<li><a href="../Erubis/Ejava.html">Erubis::Ejava</a></li>
+				
+					<li><a href="../Erubis/Ejavascript.html">Erubis::Ejavascript</a></li>
+				
+					<li><a href="../Erubis/Engine.html">Erubis::Engine</a></li>
+				
+					<li><a href="../Erubis/Eperl.html">Erubis::Eperl</a></li>
+				
+					<li><a href="../Erubis/Ephp.html">Erubis::Ephp</a></li>
+				
+					<li><a href="../Erubis/ErboutEruby.html">Erubis::ErboutEruby</a></li>
+				
+					<li><a href="../Erubis/ErubisError.html">Erubis::ErubisError</a></li>
+				
+					<li><a href="../Erubis/Eruby.html">Erubis::Eruby</a></li>
+				
+					<li><a href="../Erubis/EscapedEc.html">Erubis::EscapedEc</a></li>
+				
+					<li><a href="../Erubis/EscapedEjava.html">Erubis::EscapedEjava</a></li>
+				
+					<li><a href="../Erubis/EscapedEjavascript.html">Erubis::EscapedEjavascript</a></li>
+				
+					<li><a href="../Erubis/EscapedEperl.html">Erubis::EscapedEperl</a></li>
+				
+					<li><a href="../Erubis/EscapedEphp.html">Erubis::EscapedEphp</a></li>
+				
+					<li><a href="../Erubis/EscapedEruby.html">Erubis::EscapedEruby</a></li>
+				
+					<li><a href="../Erubis/EscapedEscheme.html">Erubis::EscapedEscheme</a></li>
+				
+					<li><a href="../Erubis/Escheme.html">Erubis::Escheme</a></li>
+				
+					<li><a href="../Erubis/Evaluator.html">Erubis::Evaluator</a></li>
+				
+					<li><a href="../Erubis/FastEruby.html">Erubis::FastEruby</a></li>
+				
+					<li><a href="../Erubis/Generator.html">Erubis::Generator</a></li>
+				
+					<li><a href="../Erubis/HeaderFooterEruby.html">Erubis::HeaderFooterEruby</a></li>
+				
+					<li><a href="../Erubis/Helpers.html">Erubis::Helpers</a></li>
+				
+					<li><a href="../Erubis/Helpers/RailsFormHelper.html">Erubis::Helpers::RailsFormHelper</a></li>
+				
+					<li><a href="../Erubis/Helpers/RailsHelper.html">Erubis::Helpers::RailsHelper</a></li>
+				
+					<li><a href="../Erubis/Helpers/RailsHelper/TemplateConverter.html">Erubis::Helpers::RailsHelper::TemplateConverter</a></li>
+				
+					<li><a href="../Erubis/InterpolationEruby.html">Erubis::InterpolationEruby</a></li>
+				
+					<li><a href="../Erubis/JavaGenerator.html">Erubis::JavaGenerator</a></li>
+				
+					<li><a href="../Erubis/JavascriptGenerator.html">Erubis::JavascriptGenerator</a></li>
+				
+					<li><a href="../Erubis/Main.html">Erubis::Main</a></li>
+				
+					<li><a href="../Erubis/NoCodeEruby.html">Erubis::NoCodeEruby</a></li>
+				
+					<li><a href="../Erubis/NoTextEruby.html">Erubis::NoTextEruby</a></li>
+				
+					<li><a href="../Erubis/NotSupportedError.html">Erubis::NotSupportedError</a></li>
+				
+					<li><a href="../Erubis/OptimizedEruby.html">Erubis::OptimizedEruby</a></li>
+				
+					<li><a href="../Erubis/OptimizedGenerator.html">Erubis::OptimizedGenerator</a></li>
+				
+					<li><a href="../Erubis/OptimizedXmlEruby.html">Erubis::OptimizedXmlEruby</a></li>
+				
+					<li><a href="../Erubis/PI.html">Erubis::PI</a></li>
+				
+					<li><a href="../Erubis/PI/Converter.html">Erubis::PI::Converter</a></li>
+				
+					<li><a href="../Erubis/PI/Ec.html">Erubis::PI::Ec</a></li>
+				
+					<li><a href="../Erubis/PI/Ejava.html">Erubis::PI::Ejava</a></li>
+				
+					<li><a href="../Erubis/PI/Ejavascript.html">Erubis::PI::Ejavascript</a></li>
+				
+					<li><a href="../Erubis/PI/Engine.html">Erubis::PI::Engine</a></li>
+				
+					<li><a href="../Erubis/PI/Eperl.html">Erubis::PI::Eperl</a></li>
+				
+					<li><a href="../Erubis/PI/Ephp.html">Erubis::PI::Ephp</a></li>
+				
+					<li><a href="../Erubis/PI/Eruby.html">Erubis::PI::Eruby</a></li>
+				
+					<li><a href="../Erubis/PI/Escheme.html">Erubis::PI::Escheme</a></li>
+				
+					<li><a href="../Erubis/PI/TinyEruby.html">Erubis::PI::TinyEruby</a></li>
+				
+					<li><a href="../Erubis/PercentLineEruby.html">Erubis::PercentLineEruby</a></li>
+				
+					<li><a href="../Erubis/PerlGenerator.html">Erubis::PerlGenerator</a></li>
+				
+					<li><a href="../Erubis/PhpGenerator.html">Erubis::PhpGenerator</a></li>
+				
+					<li><a href="../Erubis/PrintEnabledEruby.html">Erubis::PrintEnabledEruby</a></li>
+				
+					<li><a href="../Erubis/PrintOutEruby.html">Erubis::PrintOutEruby</a></li>
+				
+					<li><a href="../Erubis/PrintOutSimplifiedEruby.html">Erubis::PrintOutSimplifiedEruby</a></li>
+				
+					<li><a href="../Erubis/RubyEvaluator.html">Erubis::RubyEvaluator</a></li>
+				
+					<li><a href="../Erubis/RubyGenerator.html">Erubis::RubyGenerator</a></li>
+				
+					<li><a href="../Erubis/SchemeGenerator.html">Erubis::SchemeGenerator</a></li>
+				
+					<li><a href="../Erubis/SimplifiedEruby.html">Erubis::SimplifiedEruby</a></li>
+				
+					<li><a href="../Erubis/StdoutEruby.html">Erubis::StdoutEruby</a></li>
+				
+					<li><a href="../Erubis/StdoutSimplifiedEruby.html">Erubis::StdoutSimplifiedEruby</a></li>
+				
+					<li><a href="../Erubis/StringBufferEruby.html">Erubis::StringBufferEruby</a></li>
+				
+					<li><a href="../Erubis/StringIOEruby.html">Erubis::StringIOEruby</a></li>
+				
+					<li><a href="../Erubis/TinyEruby.html">Erubis::TinyEruby</a></li>
+				
+					<li><a href="../Erubis/XmlEruby.html">Erubis::XmlEruby</a></li>
+				
+					<li><a href="../Erubis/XmlHelper.html">Erubis::XmlHelper</a></li>
+				
+					<li><a href="../ActionView.html">ActionView</a></li>
+				
+					<li><a href="../ActionView/TemplateHandlers/ErubisHandler.html">ActionView::TemplateHandlers::ErubisHandler</a></li>
+				
+					<li><a href="../ERB.html">ERB</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Erubis::Main</h1>
+
+		<div id="description">
+			<p>
+main class of command
+</p>
+<p>
+ex.
+</p>
+<pre>
+  Main.main(ARGV)</pre>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="main-method" class="method-detail ">
+				<a name="method-c-main"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">main</span><span
+						class="method-args">(argv=ARGV)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="main-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 39</span>
+39:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">main</span>(<span class="ruby-identifier">argv</span>=<span class="ruby-constant">ARGV</span>)
+40:       <span class="ruby-identifier">status</span> = <span class="ruby-value">0</span>
+41:       <span class="ruby-keyword kw">begin</span>
+42:         <span class="ruby-constant">Main</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-constant">ARGV</span>)
+43:       <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">CommandOptionError</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">ex</span>
+44:         <span class="ruby-identifier">$stderr</span>.<span class="ruby-identifier">puts</span> <span class="ruby-identifier">ex</span>.<span class="ruby-identifier">message</span>
+45:         <span class="ruby-identifier">status</span> = <span class="ruby-value">1</span>
+46:       <span class="ruby-keyword kw">end</span>
+47:       <span class="ruby-identifier">exit</span>(<span class="ruby-identifier">status</span>)
+48:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 50</span>
+50:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>
+51:       <span class="ruby-ivar">@single_options</span> = <span class="ruby-value str">&quot;hvxztTSbeBXNUC&quot;</span>
+52:       <span class="ruby-ivar">@arg_options</span>    = <span class="ruby-value str">&quot;pcrfKIlaE&quot;</span> <span class="ruby-comment cmt">#C</span>
+53:       <span class="ruby-ivar">@option_names</span>   = {
+54:         <span class="ruby-value str">'h'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:help</span>,
+55:         <span class="ruby-value str">'v'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:version</span>,
+56:         <span class="ruby-value str">'x'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:source</span>,
+57:         <span class="ruby-value str">'z'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:syntax</span>,
+58:         <span class="ruby-value str">'T'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:unexpand</span>,
+59:         <span class="ruby-value str">'t'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:untabify</span>,      <span class="ruby-comment cmt"># obsolete</span>
+60:         <span class="ruby-value str">'S'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:intern</span>,
+61:         <span class="ruby-value str">'b'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:bodyonly</span>,
+62:         <span class="ruby-value str">'B'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:binding</span>,
+63:         <span class="ruby-value str">'p'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:pattern</span>,
+64:         <span class="ruby-value str">'c'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:context</span>,
+65:         <span class="ruby-comment cmt">#'C' =&gt; :class,</span>
+66:         <span class="ruby-value str">'e'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:escape</span>,
+67:         <span class="ruby-value str">'r'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:requires</span>,
+68:         <span class="ruby-value str">'f'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:datafiles</span>,
+69:         <span class="ruby-value str">'K'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:kanji</span>,
+70:         <span class="ruby-value str">'I'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:includes</span>,
+71:         <span class="ruby-value str">'l'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:lang</span>,
+72:         <span class="ruby-value str">'a'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:action</span>,
+73:         <span class="ruby-value str">'E'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:enhancers</span>,
+74:         <span class="ruby-value str">'X'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:notext</span>,
+75:         <span class="ruby-value str">'N'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:linenum</span>,
+76:         <span class="ruby-value str">'U'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:unique</span>,
+77:         <span class="ruby-value str">'C'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:compact</span>,
+78:       }
+79:       <span class="ruby-identifier">assert</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@single_options</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@arg_options</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@option_names</span>.<span class="ruby-identifier">length</span>
+80:       (<span class="ruby-ivar">@single_options</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@arg_options</span>).<span class="ruby-identifier">each_byte</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ch</span><span class="ruby-operator">|</span>
+81:         <span class="ruby-identifier">assert</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@option_names</span>.<span class="ruby-identifier">key?</span>(<span class="ruby-identifier">ch</span>.<span class="ruby-identifier">chr</span>)
+82:       <span class="ruby-keyword kw">end</span>
+83:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="execute-method" class="method-detail ">
+				<a name="method-i-execute"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">execute</span><span
+						class="method-args">(argv=ARGV)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="execute-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 86</span>
+ 86:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">execute</span>(<span class="ruby-identifier">argv</span>=<span class="ruby-constant">ARGV</span>)
+ 87:       <span class="ruby-comment cmt">## parse command-line options</span>
+ 88:       <span class="ruby-identifier">options</span>, <span class="ruby-identifier">properties</span> = <span class="ruby-identifier">parse_argv</span>(<span class="ruby-identifier">argv</span>, <span class="ruby-ivar">@single_options</span>, <span class="ruby-ivar">@arg_options</span>)
+ 89:       <span class="ruby-identifier">filenames</span> = <span class="ruby-identifier">argv</span>
+ 90:       <span class="ruby-identifier">options</span>[<span class="ruby-value str">'h'</span>] = <span class="ruby-keyword kw">true</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">properties</span>[<span class="ruby-value">:help</span>]
+ 91:       <span class="ruby-identifier">opts</span> = <span class="ruby-constant">Object</span>.<span class="ruby-identifier">new</span>
+ 92:       <span class="ruby-identifier">arr</span> = <span class="ruby-ivar">@option_names</span>.<span class="ruby-identifier">collect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">ch</span>, <span class="ruby-identifier">name</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot;def #{name}; @#{name}; end\n&quot;</span> }
+ 93:       <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">instance_eval</span> <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">join</span>
+ 94:       <span class="ruby-identifier">options</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ch</span>, <span class="ruby-identifier">val</span><span class="ruby-operator">|</span>
+ 95:         <span class="ruby-identifier">name</span> = <span class="ruby-ivar">@option_names</span>[<span class="ruby-identifier">ch</span>]
+ 96:         <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">instance_variable_set</span>(<span class="ruby-node">&quot;@#{name}&quot;</span>, <span class="ruby-identifier">val</span>)
+ 97:       <span class="ruby-keyword kw">end</span>
+ 98: 
+ 99:       <span class="ruby-comment cmt">## help, version, enhancer list</span>
+100:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">help</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">version</span>
+101:         <span class="ruby-identifier">puts</span> <span class="ruby-identifier">version</span>()         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">version</span>
+102:         <span class="ruby-identifier">puts</span> <span class="ruby-identifier">usage</span>()           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">help</span>
+103:         <span class="ruby-identifier">puts</span> <span class="ruby-identifier">show_properties</span>() <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">help</span>
+104:         <span class="ruby-identifier">puts</span> <span class="ruby-identifier">show_enhancers</span>()  <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">help</span>
+105:         <span class="ruby-keyword kw">return</span>
+106:       <span class="ruby-keyword kw">end</span>
+107: 
+108:       <span class="ruby-comment cmt">## include path</span>
+109:       <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">includes</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp re">/,/</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">path</span><span class="ruby-operator">|</span>
+110:         <span class="ruby-identifier">$:</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">path</span>
+111:       <span class="ruby-keyword kw">end</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">includes</span>
+112: 
+113:       <span class="ruby-comment cmt">## require library</span>
+114:       <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">requires</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp re">/,/</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">library</span><span class="ruby-operator">|</span>
+115:         <span class="ruby-identifier">require</span> <span class="ruby-identifier">library</span>
+116:       <span class="ruby-keyword kw">end</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">requires</span>
+117: 
+118:       <span class="ruby-comment cmt">## action</span>
+119:       <span class="ruby-identifier">action</span> = <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">action</span>
+120:       <span class="ruby-identifier">action</span> <span class="ruby-operator">||=</span> <span class="ruby-value str">'syntax'</span>  <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">syntax</span>
+121:       <span class="ruby-identifier">action</span> <span class="ruby-operator">||=</span> <span class="ruby-value str">'convert'</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">source</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">notext</span>
+122: 
+123:       <span class="ruby-comment cmt">## lang</span>
+124:       <span class="ruby-identifier">lang</span> = <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">lang</span> <span class="ruby-operator">||</span> <span class="ruby-value str">'ruby'</span>
+125:       <span class="ruby-identifier">action</span> <span class="ruby-operator">||=</span> <span class="ruby-value str">'convert'</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">lang</span>
+126: 
+127:       <span class="ruby-comment cmt">## class name of Eruby</span>
+128:       <span class="ruby-comment cmt">#classname = opts.class</span>
+129:       <span class="ruby-identifier">classname</span> = <span class="ruby-keyword kw">nil</span>
+130:       <span class="ruby-identifier">klass</span> = <span class="ruby-identifier">get_classobj</span>(<span class="ruby-identifier">classname</span>, <span class="ruby-identifier">lang</span>, <span class="ruby-identifier">properties</span>[<span class="ruby-value">:pi</span>])
+131: 
+132:       <span class="ruby-comment cmt">## kanji code</span>
+133:       <span class="ruby-identifier">$KCODE</span> = <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">kanji</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">kanji</span>
+134: 
+135:       <span class="ruby-comment cmt">## read context values from yaml file</span>
+136:       <span class="ruby-identifier">datafiles</span> = <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">datafiles</span>
+137:       <span class="ruby-identifier">context</span> = <span class="ruby-identifier">load_datafiles</span>(<span class="ruby-identifier">datafiles</span>, <span class="ruby-identifier">opts</span>)
+138: 
+139:       <span class="ruby-comment cmt">## parse context data</span>
+140:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">context</span>
+141:         <span class="ruby-identifier">context</span> = <span class="ruby-identifier">parse_context_data</span>(<span class="ruby-identifier">opts</span>.<span class="ruby-identifier">context</span>, <span class="ruby-identifier">opts</span>)
+142:       <span class="ruby-keyword kw">end</span>
+143: 
+144:       <span class="ruby-comment cmt">## properties for engine</span>
+145:       <span class="ruby-identifier">properties</span>[<span class="ruby-value">:escape</span>]   = <span class="ruby-keyword kw">true</span>         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">escape</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">properties</span>.<span class="ruby-identifier">key?</span>(<span class="ruby-value">:escape</span>)
+146:       <span class="ruby-identifier">properties</span>[<span class="ruby-value">:pattern</span>]  = <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">pattern</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">pattern</span>
+147:       <span class="ruby-comment cmt">#properties[:trim]     = false        if opts.notrim</span>
+148:       <span class="ruby-identifier">properties</span>[<span class="ruby-value">:preamble</span>] = <span class="ruby-identifier">properties</span>[<span class="ruby-value">:postamble</span>] = <span class="ruby-keyword kw">false</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">bodyonly</span>
+149:       <span class="ruby-identifier">properties</span>[<span class="ruby-value">:pi</span>]       = <span class="ruby-keyword kw">nil</span>          <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">properties</span>[<span class="ruby-value">:pi</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span>
+150: 
+151:       <span class="ruby-comment cmt">## create engine and extend enhancers</span>
+152:       <span class="ruby-identifier">engine</span> = <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">properties</span>)
+153:       <span class="ruby-identifier">enhancers</span> = <span class="ruby-identifier">get_enhancers</span>(<span class="ruby-identifier">opts</span>.<span class="ruby-identifier">enhancers</span>)
+154:       <span class="ruby-comment cmt">#enhancers.push(Erubis::EscapeEnhancer) if opts.escape</span>
+155:       <span class="ruby-identifier">enhancers</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">enhancer</span><span class="ruby-operator">|</span>
+156:         <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">extend</span>(<span class="ruby-identifier">enhancer</span>)
+157:         <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">bipattern</span> = <span class="ruby-identifier">properties</span>[<span class="ruby-value">:bipattern</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">enhancer</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Erubis</span><span class="ruby-operator">::</span><span class="ruby-constant">BiPatternEnhancer</span>
+158:       <span class="ruby-keyword kw">end</span>
+159: 
+160:       <span class="ruby-comment cmt">## no-text</span>
+161:       <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">extend</span>(<span class="ruby-constant">Erubis</span><span class="ruby-operator">::</span><span class="ruby-constant">NoTextEnhancer</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">notext</span>
+162: 
+163:       <span class="ruby-comment cmt">## convert and execute</span>
+164:       <span class="ruby-identifier">val</span> = <span class="ruby-keyword kw">nil</span>
+165:       <span class="ruby-identifier">msg</span> = <span class="ruby-value str">&quot;Syntax OK\n&quot;</span>
+166:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">filenames</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">filenames</span>.<span class="ruby-identifier">empty?</span>
+167:         <span class="ruby-identifier">filenames</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">filename</span><span class="ruby-operator">|</span>
+168:           <span class="ruby-constant">File</span>.<span class="ruby-identifier">file?</span>(<span class="ruby-identifier">filename</span>)  <span class="ruby-keyword kw">or</span>
+169:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">CommandOptionError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;#{filename}: file not found.&quot;</span>)
+170:           <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">filename</span> = <span class="ruby-identifier">filename</span>
+171:           <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">convert!</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">filename</span>))
+172:           <span class="ruby-identifier">val</span> = <span class="ruby-identifier">do_action</span>(<span class="ruby-identifier">action</span>, <span class="ruby-identifier">engine</span>, <span class="ruby-identifier">context</span>, <span class="ruby-identifier">filename</span>, <span class="ruby-identifier">opts</span>)
+173:           <span class="ruby-identifier">msg</span> = <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">val</span>
+174:         <span class="ruby-keyword kw">end</span>
+175:       <span class="ruby-keyword kw">else</span>
+176:         <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">filename</span> = <span class="ruby-identifier">filename</span> = <span class="ruby-value str">'(stdin)'</span>
+177:         <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">convert!</span>(<span class="ruby-identifier">$stdin</span>.<span class="ruby-identifier">read</span>())
+178:         <span class="ruby-identifier">val</span> = <span class="ruby-identifier">do_action</span>(<span class="ruby-identifier">action</span>, <span class="ruby-identifier">engine</span>, <span class="ruby-identifier">context</span>, <span class="ruby-identifier">filename</span>, <span class="ruby-identifier">opts</span>)
+179:         <span class="ruby-identifier">msg</span> = <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">val</span>
+180:       <span class="ruby-keyword kw">end</span>
+181:       <span class="ruby-identifier">print</span> <span class="ruby-identifier">msg</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">action</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'syntax'</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">msg</span>
+182: 
+183:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="-instance-eval-method" class="method-detail ">
+				<a name="method-i-_instance_eval"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">_instance_eval</span><span
+						class="method-args">(_context, _str)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="-instance-eval-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 430</span>
+430:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">_instance_eval</span>(<span class="ruby-identifier">_context</span>, <span class="ruby-identifier">_str</span>)
+431:       <span class="ruby-identifier">_context</span>.<span class="ruby-identifier">instance_eval</span>(<span class="ruby-identifier">_str</span>)
+432:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="check-syntax-method" class="method-detail ">
+				<a name="method-i-check_syntax"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">check_syntax</span><span
+						class="method-args">(filename, src)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="check-syntax-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 469</span>
+469:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">check_syntax</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-identifier">src</span>)
+470:       <span class="ruby-identifier">require</span> <span class="ruby-value str">'open3'</span>
+471:       <span class="ruby-comment cmt">#command = (ENV['_'] || 'ruby') + ' -wc'   # ENV['_'] stores command name</span>
+472:       <span class="ruby-identifier">bin</span> = <span class="ruby-constant">ENV</span>[<span class="ruby-value str">'_'</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">basename</span>(<span class="ruby-constant">ENV</span>[<span class="ruby-value str">'_'</span>]) <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/^ruby/</span> <span class="ruby-operator">?</span> <span class="ruby-constant">ENV</span>[<span class="ruby-value str">'_'</span>] <span class="ruby-operator">:</span> <span class="ruby-value str">'ruby'</span>
+473:       <span class="ruby-identifier">command</span> = <span class="ruby-identifier">bin</span> <span class="ruby-operator">+</span> <span class="ruby-value str">' -wc'</span>
+474:       <span class="ruby-identifier">stdin</span>, <span class="ruby-identifier">stdout</span>, <span class="ruby-identifier">stderr</span> = <span class="ruby-constant">Open3</span>.<span class="ruby-identifier">popen3</span>(<span class="ruby-identifier">command</span>)
+475:       <span class="ruby-identifier">stdin</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">src</span>)
+476:       <span class="ruby-identifier">stdin</span>.<span class="ruby-identifier">close</span>
+477:       <span class="ruby-identifier">result</span> = <span class="ruby-identifier">stdout</span>.<span class="ruby-identifier">read</span>()
+478:       <span class="ruby-identifier">stdout</span>.<span class="ruby-identifier">close</span>()
+479:       <span class="ruby-identifier">errmsg</span> = <span class="ruby-identifier">stderr</span>.<span class="ruby-identifier">read</span>()
+480:       <span class="ruby-identifier">stderr</span>.<span class="ruby-identifier">close</span>()
+481:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">errmsg</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">errmsg</span>.<span class="ruby-identifier">empty?</span>
+482:       <span class="ruby-identifier">errmsg</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/\A-:(\d+): /</span>
+483:       <span class="ruby-identifier">linenum</span>, <span class="ruby-identifier">message</span> = <span class="ruby-node">$1</span>, <span class="ruby-node">$'</span>
+484:       <span class="ruby-keyword kw">return</span> <span class="ruby-node">&quot;#{filename}:#{linenum}: #{message}&quot;</span>
+485:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="collect-supported-properties-method" class="method-detail ">
+				<a name="method-i-collect_supported_properties"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">collect_supported_properties</span><span
+						class="method-args">(erubis_klass)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="collect-supported-properties-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 253</span>
+253:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">collect_supported_properties</span>(<span class="ruby-identifier">erubis_klass</span>)
+254:       <span class="ruby-identifier">list</span> = []
+255:       <span class="ruby-identifier">erubis_klass</span>.<span class="ruby-identifier">ancestors</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">klass</span><span class="ruby-operator">|</span>
+256:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:supported_properties</span>)
+257:           <span class="ruby-identifier">list</span>.<span class="ruby-identifier">concat</span>(<span class="ruby-identifier">klass</span>.<span class="ruby-identifier">supported_properties</span>)
+258:         <span class="ruby-keyword kw">end</span>
+259:       <span class="ruby-keyword kw">end</span>
+260:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">list</span>
+261:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="do-action-method" class="method-detail ">
+				<a name="method-i-do_action"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">do_action</span><span
+						class="method-args">(action, engine, context, filename, opts)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="do-action-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 187</span>
+187:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">do_action</span>(<span class="ruby-identifier">action</span>, <span class="ruby-identifier">engine</span>, <span class="ruby-identifier">context</span>, <span class="ruby-identifier">filename</span>, <span class="ruby-identifier">opts</span>)
+188:       <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">action</span>
+189:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">'convert'</span>
+190:         <span class="ruby-identifier">s</span> = <span class="ruby-identifier">manipulate_src</span>(<span class="ruby-identifier">engine</span>.<span class="ruby-identifier">src</span>, <span class="ruby-identifier">opts</span>)
+191:       <span class="ruby-keyword kw">when</span> <span class="ruby-keyword kw">nil</span>, <span class="ruby-value str">'exec'</span>, <span class="ruby-value str">'execute'</span>
+192:         <span class="ruby-identifier">s</span> = <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">binding</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">result</span>(<span class="ruby-identifier">context</span>.<span class="ruby-identifier">to_hash</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">evaluate</span>(<span class="ruby-identifier">context</span>)
+193:       <span class="ruby-keyword kw">when</span> <span class="ruby-value str">'syntax'</span>
+194:         <span class="ruby-identifier">s</span> = <span class="ruby-identifier">check_syntax</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-identifier">engine</span>.<span class="ruby-identifier">src</span>)
+195:       <span class="ruby-keyword kw">else</span>
+196:         <span class="ruby-identifier">raise</span> <span class="ruby-value str">&quot;*** internal error&quot;</span>
+197:       <span class="ruby-keyword kw">end</span>
+198:       <span class="ruby-identifier">print</span> <span class="ruby-identifier">s</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">s</span>
+199:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">s</span>
+200:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-classobj-method" class="method-detail ">
+				<a name="method-i-get_classobj"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_classobj</span><span
+						class="method-args">(classname, lang, pi)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="get-classobj-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 369</span>
+369:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_classobj</span>(<span class="ruby-identifier">classname</span>, <span class="ruby-identifier">lang</span>, <span class="ruby-identifier">pi</span>)
+370:       <span class="ruby-identifier">classname</span> <span class="ruby-operator">||=</span> <span class="ruby-node">&quot;E#{lang}&quot;</span>
+371:       <span class="ruby-identifier">base_module</span> = <span class="ruby-identifier">pi</span> <span class="ruby-operator">?</span> <span class="ruby-constant">Erubis</span><span class="ruby-operator">::</span><span class="ruby-constant">PI</span> <span class="ruby-operator">:</span> <span class="ruby-constant">Erubis</span>
+372:       <span class="ruby-keyword kw">begin</span>
+373:         <span class="ruby-identifier">klass</span> = <span class="ruby-identifier">base_module</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-identifier">classname</span>)
+374:       <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">NameError</span>
+375:         <span class="ruby-identifier">klass</span> = <span class="ruby-keyword kw">nil</span>
+376:       <span class="ruby-keyword kw">end</span>
+377:       <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">klass</span>
+378:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">lang</span>
+379:           <span class="ruby-identifier">msg</span> = <span class="ruby-node">&quot;-l #{lang}: invalid language name (class #{base_module.name}::#{classname} not found).&quot;</span>
+380:         <span class="ruby-keyword kw">else</span>
+381:           <span class="ruby-identifier">msg</span> = <span class="ruby-node">&quot;-c #{classname}: invalid class name.&quot;</span>
+382:         <span class="ruby-keyword kw">end</span>
+383:         <span class="ruby-identifier">raise</span> <span class="ruby-constant">CommandOptionError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">msg</span>)
+384:       <span class="ruby-keyword kw">end</span>
+385:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">klass</span>
+386:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-enhancers-method" class="method-detail ">
+				<a name="method-i-get_enhancers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_enhancers</span><span
+						class="method-args">(enhancer_names)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="get-enhancers-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 388</span>
+388:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_enhancers</span>(<span class="ruby-identifier">enhancer_names</span>)
+389:       <span class="ruby-keyword kw">return</span> [] <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">enhancer_names</span>
+390:       <span class="ruby-identifier">enhancers</span> = []
+391:       <span class="ruby-identifier">shortname</span> = <span class="ruby-keyword kw">nil</span>
+392:       <span class="ruby-keyword kw">begin</span>
+393:         <span class="ruby-identifier">enhancer_names</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp re">/,/</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span><span class="ruby-operator">|</span>
+394:           <span class="ruby-identifier">shortname</span> = <span class="ruby-identifier">name</span>
+395:           <span class="ruby-identifier">enhancers</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">Erubis</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-node">&quot;#{shortname}Enhancer&quot;</span>)
+396:         <span class="ruby-keyword kw">end</span>
+397:       <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">NameError</span>
+398:         <span class="ruby-identifier">raise</span> <span class="ruby-constant">CommandOptionError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;#{shortname}: no such Enhancer (try '-h' to show all enhancers).&quot;</span>)
+399:       <span class="ruby-keyword kw">end</span>
+400:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">enhancers</span>
+401:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="intern-hash-keys-method" class="method-detail ">
+				<a name="method-i-intern_hash_keys"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">intern_hash_keys</span><span
+						class="method-args">(obj, done={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="intern-hash-keys-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 450</span>
+450:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">intern_hash_keys</span>(<span class="ruby-identifier">obj</span>, <span class="ruby-identifier">done</span>={})
+451:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">done</span>.<span class="ruby-identifier">key?</span>(<span class="ruby-identifier">obj</span>.<span class="ruby-identifier">__id__</span>)
+452:       <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">obj</span>
+453:       <span class="ruby-keyword kw">when</span> <span class="ruby-constant">Hash</span>
+454:         <span class="ruby-identifier">done</span>[<span class="ruby-identifier">obj</span>.<span class="ruby-identifier">__id__</span>] = <span class="ruby-identifier">obj</span>
+455:         <span class="ruby-identifier">obj</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span><span class="ruby-operator">|</span>
+456:           <span class="ruby-identifier">obj</span>[<span class="ruby-identifier">key</span>.<span class="ruby-identifier">intern</span>] = <span class="ruby-identifier">obj</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">key</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>)
+457:         <span class="ruby-keyword kw">end</span>
+458:         <span class="ruby-identifier">obj</span>.<span class="ruby-identifier">values</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">val</span><span class="ruby-operator">|</span>
+459:           <span class="ruby-identifier">intern_hash_keys</span>(<span class="ruby-identifier">val</span>, <span class="ruby-identifier">done</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">val</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>) <span class="ruby-operator">||</span> <span class="ruby-identifier">val</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Array</span>)
+460:         <span class="ruby-keyword kw">end</span>
+461:       <span class="ruby-keyword kw">when</span> <span class="ruby-constant">Array</span>
+462:         <span class="ruby-identifier">done</span>[<span class="ruby-identifier">obj</span>.<span class="ruby-identifier">__id__</span>] = <span class="ruby-identifier">obj</span>
+463:         <span class="ruby-identifier">obj</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">val</span><span class="ruby-operator">|</span>
+464:           <span class="ruby-identifier">intern_hash_keys</span>(<span class="ruby-identifier">val</span>, <span class="ruby-identifier">done</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">val</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>) <span class="ruby-operator">||</span> <span class="ruby-identifier">val</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Array</span>)
+465:         <span class="ruby-keyword kw">end</span>
+466:       <span class="ruby-keyword kw">end</span>
+467:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-datafiles-method" class="method-detail ">
+				<a name="method-i-load_datafiles"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_datafiles</span><span
+						class="method-args">(filenames, opts)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="load-datafiles-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 403</span>
+403:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_datafiles</span>(<span class="ruby-identifier">filenames</span>, <span class="ruby-identifier">opts</span>)
+404:       <span class="ruby-identifier">context</span> = <span class="ruby-constant">Erubis</span><span class="ruby-operator">::</span><span class="ruby-constant">Context</span>.<span class="ruby-identifier">new</span>
+405:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">context</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">filenames</span>
+406:       <span class="ruby-identifier">filenames</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp re">/,/</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">filename</span><span class="ruby-operator">|</span>
+407:         <span class="ruby-identifier">filename</span>.<span class="ruby-identifier">strip!</span>
+408:         <span class="ruby-identifier">test</span>(<span class="ruby-value">ff</span>, <span class="ruby-identifier">filename</span>) <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">CommandOptionError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;#{filename}: file not found.&quot;</span>)
+409:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">filename</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/\.ya?ml$/</span>
+410:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">unexpand</span>
+411:             <span class="ruby-identifier">ydoc</span> = <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">load_file</span>(<span class="ruby-identifier">filename</span>)
+412:           <span class="ruby-keyword kw">else</span>
+413:             <span class="ruby-identifier">ydoc</span> = <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">load</span>(<span class="ruby-identifier">untabify</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">filename</span>)))
+414:           <span class="ruby-keyword kw">end</span>
+415:           <span class="ruby-identifier">ydoc</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>) <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">CommandOptionError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;#{filename}: root object is not a mapping.&quot;</span>)
+416:           <span class="ruby-identifier">intern_hash_keys</span>(<span class="ruby-identifier">ydoc</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">intern</span>
+417:           <span class="ruby-identifier">context</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">ydoc</span>)
+418:         <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">filename</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/\.rb$/</span>
+419:           <span class="ruby-identifier">str</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">filename</span>)
+420:           <span class="ruby-identifier">context2</span> = <span class="ruby-constant">Erubis</span><span class="ruby-operator">::</span><span class="ruby-constant">Context</span>.<span class="ruby-identifier">new</span>
+421:           <span class="ruby-identifier">_instance_eval</span>(<span class="ruby-identifier">context2</span>, <span class="ruby-identifier">str</span>)
+422:           <span class="ruby-identifier">context</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">context2</span>)
+423:         <span class="ruby-keyword kw">else</span>
+424:           <span class="ruby-constant">CommandOptionError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;#{filename}: '*.yaml', '*.yml', or '*.rb' required.&quot;</span>)
+425:         <span class="ruby-keyword kw">end</span>
+426:       <span class="ruby-keyword kw">end</span>
+427:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">context</span>
+428:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="manipulate-src-method" class="method-detail ">
+				<a name="method-i-manipulate_src"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">manipulate_src</span><span
+						class="method-args">(source, opts)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="manipulate-src-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 202</span>
+202:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">manipulate_src</span>(<span class="ruby-identifier">source</span>, <span class="ruby-identifier">opts</span>)
+203:       <span class="ruby-identifier">flag_linenum</span>   = <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">linenum</span>
+204:       <span class="ruby-identifier">flag_unique</span>    = <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">unique</span>
+205:       <span class="ruby-identifier">flag_compact</span>   = <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">compact</span>
+206:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flag_linenum</span>
+207:         <span class="ruby-identifier">n</span> = <span class="ruby-value">0</span>
+208:         <span class="ruby-identifier">source</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp re">/^/</span>) { <span class="ruby-identifier">n</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>; <span class="ruby-value str">&quot;%5d:  &quot;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">n</span> }
+209:         <span class="ruby-identifier">source</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp re">/^ *\d+:\s+?\n/</span>, <span class="ruby-value str">''</span>)      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flag_compact</span>
+210:         <span class="ruby-identifier">source</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp re">/(^ *\d+:\s+?\n)+/</span>, <span class="ruby-value str">&quot;\n&quot;</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flag_unique</span>
+211:       <span class="ruby-keyword kw">else</span>
+212:         <span class="ruby-identifier">source</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp re">/^\s*?\n/</span>, <span class="ruby-value str">''</span>)      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flag_compact</span>
+213:         <span class="ruby-identifier">source</span>.<span class="ruby-identifier">gsub!</span>(<span class="ruby-regexp re">/(^\s*?\n)+/</span>, <span class="ruby-value str">&quot;\n&quot;</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flag_unique</span>
+214:       <span class="ruby-keyword kw">end</span>
+215:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">source</span>
+216:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="parse-argv-method" class="method-detail ">
+				<a name="method-i-parse_argv"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parse_argv</span><span
+						class="method-args">(argv, arg_none='', arg_required='', arg_optional='')</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="parse-argv-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 302</span>
+302:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse_argv</span>(<span class="ruby-identifier">argv</span>, <span class="ruby-identifier">arg_none</span>=<span class="ruby-value str">''</span>, <span class="ruby-identifier">arg_required</span>=<span class="ruby-value str">''</span>, <span class="ruby-identifier">arg_optional</span>=<span class="ruby-value str">''</span>)
+303:       <span class="ruby-identifier">options</span> = {}
+304:       <span class="ruby-identifier">context</span> = {}
+305:       <span class="ruby-keyword kw">while</span> <span class="ruby-identifier">argv</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">argv</span>[<span class="ruby-value">0</span>][<span class="ruby-value">0</span>] <span class="ruby-operator">==</span> <span class="ruby-value">--</span>
+306:         <span class="ruby-identifier">optstr</span> = <span class="ruby-identifier">argv</span>.<span class="ruby-identifier">shift</span>
+307:         <span class="ruby-identifier">optstr</span> = <span class="ruby-identifier">optstr</span>[<span class="ruby-value">1</span>, <span class="ruby-identifier">optstr</span>.<span class="ruby-identifier">length</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>]
+308:         <span class="ruby-comment cmt">#</span>
+309:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">optstr</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">==</span> <span class="ruby-value">--</span>    <span class="ruby-comment cmt"># context</span>
+310:           <span class="ruby-identifier">optstr</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/\A\-([-\w]+)(?:=(.*))?/</span>  <span class="ruby-keyword kw">or</span>
+311:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">CommandOptionError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;-#{optstr}: invalid context value.&quot;</span>)
+312:           <span class="ruby-identifier">name</span>, <span class="ruby-identifier">value</span> = <span class="ruby-node">$1</span>, <span class="ruby-node">$2</span>
+313:           <span class="ruby-identifier">name</span>  = <span class="ruby-identifier">name</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/-/</span>, <span class="ruby-value str">'_'</span>).<span class="ruby-identifier">intern</span>
+314:           <span class="ruby-comment cmt">#value = value.nil? ? true : YAML.load(value)   # error, why?</span>
+315:           <span class="ruby-identifier">value</span> = <span class="ruby-identifier">value</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-keyword kw">true</span> <span class="ruby-operator">:</span> <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">load</span>(<span class="ruby-node">&quot;---\n#{value}\n&quot;</span>)
+316:           <span class="ruby-identifier">context</span>[<span class="ruby-identifier">name</span>] = <span class="ruby-identifier">value</span>
+317:           <span class="ruby-comment cmt">#</span>
+318:         <span class="ruby-keyword kw">else</span>                  <span class="ruby-comment cmt"># options</span>
+319:           <span class="ruby-keyword kw">while</span> <span class="ruby-identifier">optstr</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">optstr</span>.<span class="ruby-identifier">empty?</span>
+320:             <span class="ruby-identifier">optchar</span> = <span class="ruby-identifier">optstr</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">chr</span>
+321:             <span class="ruby-identifier">optstr</span> = <span class="ruby-identifier">optstr</span>[<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">1</span>]
+322:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">arg_none</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">optchar</span>)
+323:               <span class="ruby-identifier">options</span>[<span class="ruby-identifier">optchar</span>] = <span class="ruby-keyword kw">true</span>
+324:             <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">arg_required</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">optchar</span>)
+325:               <span class="ruby-identifier">arg</span> = <span class="ruby-identifier">optstr</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">argv</span>.<span class="ruby-identifier">shift</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">optstr</span>  <span class="ruby-keyword kw">or</span>
+326:                 <span class="ruby-identifier">raise</span> <span class="ruby-constant">CommandOptionError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;-#{optchar}: #{@option_names[optchar]} required.&quot;</span>)
+327:               <span class="ruby-identifier">options</span>[<span class="ruby-identifier">optchar</span>] = <span class="ruby-identifier">arg</span>
+328:               <span class="ruby-identifier">optstr</span> = <span class="ruby-keyword kw">nil</span>
+329:             <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">arg_optional</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">optchar</span>)
+330:               <span class="ruby-identifier">arg</span> = <span class="ruby-identifier">optstr</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">?</span> <span class="ruby-keyword kw">true</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">optstr</span>
+331:               <span class="ruby-identifier">options</span>[<span class="ruby-identifier">optchar</span>] = <span class="ruby-identifier">arg</span>
+332:               <span class="ruby-identifier">optstr</span> = <span class="ruby-keyword kw">nil</span>
+333:             <span class="ruby-keyword kw">else</span>
+334:               <span class="ruby-identifier">raise</span> <span class="ruby-constant">CommandOptionError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;-#{optchar}: unknown option.&quot;</span>)
+335:             <span class="ruby-keyword kw">end</span>
+336:           <span class="ruby-keyword kw">end</span>
+337:         <span class="ruby-keyword kw">end</span>
+338:         <span class="ruby-comment cmt">#</span>
+339:       <span class="ruby-keyword kw">end</span>  <span class="ruby-comment cmt"># end of while</span>
+340: 
+341:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">options</span>, <span class="ruby-identifier">context</span>
+342:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="parse-context-data-method" class="method-detail ">
+				<a name="method-i-parse_context_data"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parse_context_data</span><span
+						class="method-args">(context_str, opts)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="parse-context-data-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 434</span>
+434:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse_context_data</span>(<span class="ruby-identifier">context_str</span>, <span class="ruby-identifier">opts</span>)
+435:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">context_str</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">==</span> <span class="ruby-value">{{</span>
+436:         <span class="ruby-identifier">require</span> <span class="ruby-value str">'yaml'</span>
+437:         <span class="ruby-identifier">ydoc</span> = <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">load</span>(<span class="ruby-identifier">context_str</span>)
+438:         <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">ydoc</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+439:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">CommandOptionError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;-c: root object is not a mapping.&quot;</span>)
+440:         <span class="ruby-keyword kw">end</span>
+441:         <span class="ruby-identifier">intern_hash_keys</span>(<span class="ruby-identifier">ydoc</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">intern</span>
+442:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">ydoc</span>
+443:       <span class="ruby-keyword kw">else</span>
+444:         <span class="ruby-identifier">context</span> = <span class="ruby-constant">Erubis</span><span class="ruby-operator">::</span><span class="ruby-constant">Context</span>.<span class="ruby-identifier">new</span>
+445:         <span class="ruby-identifier">context</span>.<span class="ruby-identifier">instance_eval</span>(<span class="ruby-identifier">context_str</span>, <span class="ruby-value str">'-c'</span>)
+446:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">context</span>
+447:       <span class="ruby-keyword kw">end</span>
+448:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="show-enhancers-method" class="method-detail ">
+				<a name="method-i-show_enhancers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">show_enhancers</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="show-enhancers-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 286</span>
+286:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show_enhancers</span>
+287:       <span class="ruby-identifier">dict</span> = {}
+288:       <span class="ruby-constant">ObjectSpace</span>.<span class="ruby-identifier">each_object</span>(<span class="ruby-constant">Module</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">mod</span><span class="ruby-operator">|</span>
+289:         <span class="ruby-identifier">dict</span>[<span class="ruby-node">$1</span>] = <span class="ruby-identifier">mod</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">mod</span>.<span class="ruby-identifier">name</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/\AErubis::(.*)Enhancer\z/</span>
+290:       <span class="ruby-keyword kw">end</span>
+291:       <span class="ruby-identifier">s</span> = <span class="ruby-value str">&quot;enhancers:\n&quot;</span>
+292:       <span class="ruby-identifier">dict</span>.<span class="ruby-identifier">sort_by</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">mod</span><span class="ruby-operator">|</span> <span class="ruby-identifier">name</span> }.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">mod</span><span class="ruby-operator">|</span>
+293:         <span class="ruby-identifier">s</span> <span class="ruby-operator">&lt;&lt;</span> (<span class="ruby-value str">&quot;  %-13s : %s\n&quot;</span> <span class="ruby-operator">%</span> [<span class="ruby-identifier">name</span>, <span class="ruby-identifier">mod</span>.<span class="ruby-identifier">desc</span>])
+294:       <span class="ruby-keyword kw">end</span>
+295:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">s</span>
+296:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="show-properties-method" class="method-detail ">
+				<a name="method-i-show_properties"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">show_properties</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="show-properties-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 263</span>
+263:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show_properties</span>
+264:       <span class="ruby-identifier">s</span> = <span class="ruby-value str">&quot;supported properties:\n&quot;</span>
+265:       <span class="ruby-identifier">basic_props</span> = <span class="ruby-identifier">collect_supported_properties</span>(<span class="ruby-constant">Erubis</span><span class="ruby-operator">::</span><span class="ruby-constant">Basic</span><span class="ruby-operator">::</span><span class="ruby-constant">Engine</span>)
+266:       <span class="ruby-identifier">pi_props</span>    = <span class="ruby-identifier">collect_supported_properties</span>(<span class="ruby-constant">Erubis</span><span class="ruby-operator">::</span><span class="ruby-constant">PI</span><span class="ruby-operator">::</span><span class="ruby-constant">Engine</span>)
+267:       <span class="ruby-identifier">list</span> = []
+268:       <span class="ruby-identifier">common_props</span> = <span class="ruby-identifier">basic_props</span> &amp; <span class="ruby-identifier">pi_props</span>
+269:       <span class="ruby-identifier">list</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-value str">'(common)'</span>, <span class="ruby-identifier">common_props</span>]
+270:       <span class="ruby-identifier">list</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-value str">'(basic)'</span>,  <span class="ruby-identifier">basic_props</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">common_props</span>]
+271:       <span class="ruby-identifier">list</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-value str">'(pi)'</span>,     <span class="ruby-identifier">pi_props</span>    <span class="ruby-operator">-</span> <span class="ruby-identifier">common_props</span>]
+272:       <span class="ruby-node">]ruby php c java scheme perl javascript]</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">lang</span><span class="ruby-operator">|</span>
+273:         <span class="ruby-identifier">klass</span> = <span class="ruby-constant">Erubis</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-node">&quot;E#{lang}&quot;</span>)
+274:         <span class="ruby-identifier">list</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-identifier">lang</span>, <span class="ruby-identifier">collect_supported_properties</span>(<span class="ruby-identifier">klass</span>) <span class="ruby-operator">-</span> <span class="ruby-identifier">basic_props</span>]
+275:       <span class="ruby-keyword kw">end</span>
+276:       <span class="ruby-identifier">list</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">lang</span>, <span class="ruby-identifier">props</span><span class="ruby-operator">|</span>
+277:         <span class="ruby-identifier">s</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;  * #{lang}\n&quot;</span>
+278:         <span class="ruby-identifier">props</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">default_val</span>, <span class="ruby-identifier">desc</span><span class="ruby-operator">|</span>
+279:           <span class="ruby-identifier">s</span> <span class="ruby-operator">&lt;&lt;</span> (<span class="ruby-value str">&quot;     --%-23s : %s\n&quot;</span> <span class="ruby-operator">%</span> [<span class="ruby-node">&quot;#{name}=#{default_val.inspect}&quot;</span>, <span class="ruby-identifier">desc</span>])
+280:         <span class="ruby-keyword kw">end</span>
+281:       <span class="ruby-keyword kw">end</span>
+282:       <span class="ruby-identifier">s</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;\n&quot;</span>
+283:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">s</span>
+284:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="untabify-method" class="method-detail ">
+				<a name="method-i-untabify"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">untabify</span><span
+						class="method-args">(str, width=8)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="untabify-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 345</span>
+345:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">untabify</span>(<span class="ruby-identifier">str</span>, <span class="ruby-identifier">width</span>=<span class="ruby-value">8</span>)
+346:       <span class="ruby-identifier">list</span> = <span class="ruby-identifier">str</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp re">/\t/</span>)
+347:       <span class="ruby-identifier">last</span> = <span class="ruby-identifier">list</span>.<span class="ruby-identifier">pop</span>
+348:       <span class="ruby-identifier">sb</span> = <span class="ruby-value str">''</span>
+349:       <span class="ruby-identifier">list</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span>
+350:         <span class="ruby-identifier">column</span> = (<span class="ruby-identifier">n</span> = <span class="ruby-identifier">s</span>.<span class="ruby-identifier">rindex</span>(<span class="ruby-value">\n\</span>)) <span class="ruby-operator">?</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">length</span>
+351:         <span class="ruby-identifier">n</span> = <span class="ruby-identifier">width</span> <span class="ruby-operator">-</span> (<span class="ruby-identifier">column</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">width</span>)
+352:         <span class="ruby-identifier">sb</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">s</span> <span class="ruby-operator">&lt;&lt;</span> (<span class="ruby-value str">' '</span> * <span class="ruby-identifier">n</span>)
+353:       <span class="ruby-keyword kw">end</span>
+354:       <span class="ruby-identifier">sb</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">last</span>
+355:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">sb</span>
+356:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="usage-method" class="method-detail ">
+				<a name="method-i-usage"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">usage</span><span
+						class="method-args">(command=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="usage-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 218</span>
+218:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">usage</span>(<span class="ruby-identifier">command</span>=<span class="ruby-keyword kw">nil</span>)
+219:       <span class="ruby-identifier">command</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">basename</span>(<span class="ruby-identifier">$0</span>)
+220:       <span class="ruby-identifier">buf</span> = []
+221:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;erubis - embedded program converter for multi-language&quot;</span>
+222:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;Usage: #{command} [..options..] [file ...]&quot;</span>
+223:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -h, --help    : help&quot;</span>
+224:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -v            : version&quot;</span>
+225:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -x            : show converted code&quot;</span>
+226:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -X            : show converted code, only ruby code and no text part&quot;</span>
+227:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -N            : numbering: add line numbers            (for '-x/-X')&quot;</span>
+228:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -U            : unique: compress empty lines to a line (for '-x/-X')&quot;</span>
+229:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -C            : compact: remove empty lines            (for '-x/-X')&quot;</span>
+230:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -b            : body only: no preamble nor postamble   (for '-x/-X')&quot;</span>
+231:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -z            : syntax checking&quot;</span>
+232:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -e            : escape (equal to '--E Escape')&quot;</span>
+233:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -p pattern    : embedded pattern (default '&lt;% %&gt;')&quot;</span>
+234:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -l lang       : convert but no execute (ruby/php/c/java/scheme/perl/js)&quot;</span>
+235:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -E e1,e2,...  : enhancer names (Escape, PercentLine, BiPattern, ...)&quot;</span>
+236:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -I path       : library include path&quot;</span>
+237:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -K kanji      : kanji code (euc/sjis/utf8) (default none)&quot;</span>
+238:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -c context    : context data string (yaml inline style or ruby code)&quot;</span>
+239:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -f datafile   : context data file ('*.yaml', '*.yml', or '*.rb')&quot;</span>
+240:       <span class="ruby-comment cmt">#buf &lt;&lt; &quot;  -t            : expand tab characters in YAML file&quot;</span>
+241:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -T            : don't expand tab characters in YAML file&quot;</span>
+242:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -S            : convert mapping key from string to symbol in YAML file&quot;</span>
+243:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  -B            : invoke 'result(binding)' instead of 'evaluate(context)'&quot;</span>
+244:       <span class="ruby-identifier">buf</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;  --pi=name     : parse '&lt;?name ... ?&gt;' instead of '&lt;% ... %&gt;'&quot;</span>
+245:       <span class="ruby-comment cmt">#'</span>
+246:       <span class="ruby-comment cmt">#  -T            : don't trim spaces around '&lt;% %&gt;'</span>
+247:       <span class="ruby-comment cmt">#  -c class      : class name (XmlEruby/PercentLineEruby/...) (default Eruby)</span>
+248:       <span class="ruby-comment cmt">#  -r library    : require library</span>
+249:       <span class="ruby-comment cmt">#  -a            : action (convert/execute)</span>
+250:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">&quot;\n&quot;</span>)
+251:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="version-method" class="method-detail ">
+				<a name="method-i-version"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">version</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="version-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/erubis/main.rb, line 298</span>
+298:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">version</span>
+299:       <span class="ruby-keyword kw">return</span> <span class="ruby-constant">Erubis</span><span class="ruby-operator">::</span><span class="ruby-constant">VERSION</span>
+300:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
