@@ -1,0 +1,45 @@
+#
+# RVM profile
+#
+# /etc/profile.d/rvm.sh # sh extension required for loading.
+#
+if [ -n "${BASH_VERSION:-}" -o -n "${ZSH_VERSION:-}" ] ; then
+
+  # Load user rvmrc configurations, if exist
+  for file in /etc/chef-rvmrc "$HOME/.chef-rvmrc" ; do
+    [[ -s "$file" ]] && source $file
+  done
+
+  # Load RVM if it is installed, try user then root install.
+  if [[ -s "$rvm_path/scripts/rvm" ]] ; then
+    source "$rvm_path/scripts/rvm"
+
+  elif [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then
+    true ${rvm_path:="$HOME/.rvm"}
+    source "$HOME/.rvm/scripts/rvm"
+
+  elif [[ -s "/usr/local/rvm/scripts/rvm" ]] ; then
+    true ${rvm_path:="/usr/local/rvm/scripts/rvm"}
+    source "/usr/local/rvm/scripts/rvm"
+  fi
+
+  #
+  # Opt-in for custom prompt through by setting:
+  #
+  #   rvm_ps1=1
+  #
+  # in either /etc/rvmrc or $HOME/.rvmrc
+  #
+  if [[ ${rvm_ps1:-0} -eq 1 ]] ; then
+    # Source RVM ps1 functions for a great prompt.
+    if [[ -s "$rvm_path/contrib/ps1_functions" ]] ; then
+      source "$rvm_path/contrib/ps1_functions"
+    elif [[ -s "/usr/local/rvm/contrib/ps1_functions" ]] ; then
+      source "/usr/local/rvm/contrib/ps1_functions"
+    fi
+
+    if command -v ps1_set >/dev/null 2>&1 ; then
+      ps1_set
+    fi
+  fi
+fi

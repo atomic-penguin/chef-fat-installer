@@ -1,0 +1,27 @@
+= ABOUT CHEF FAT INSTALLER
+
+ * Uses rvm, see http://rvm.beginrescueend.com
+ * Installs chef-client, Ruby, and gems in a self-contained distribution
+ * For limited support contact the author of this distribution.
+
+= USAGE NOTES
+
+Run 'build-installer', which should output a makeself .run file
+
+The makeself directory contains the makeself files necessary to build the .run file
+
+The buildroot directory contains the files and installer script.  Everything
+in this directory, buildroot, gets rolled up into the FAT installer.
+
+== WARNINGS
+
+Chances are this deployment could be destructive to an existing rvm environment.
+It shouldn't overwrite the default location of /usr/local/rvm, instead it installs
+in /opt/chef.  However, the installer could override your default rvm installation.
+
+I have tried to keep separate filenames from rvm to avoid conflict.  Files, and directories
+of interest.
+
+ * /opt/chef - Installation path
+ * /etc/profile.d/chef-rvm.sh - Profile script
+ * /etc/chef-rvmrc - exports rvm path for Chef
