@@ -1,0 +1,1419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+	<title>Class: RestClient::Request</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/restclient/request_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/restclient/request.rb">lib/restclient/request.rb</a></li>
+					
+						<li><a href="../lib/restclient/exceptions_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/restclient/exceptions.rb">lib/restclient/exceptions.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+			<div id="namespace-list-section" class="section">
+				<h3 class="section-header">Namespace</h3>
+				<ul class="link-list">
+					
+					<li><span class="type">CLASS</span> <a href="Redirect.html">RestClient::Redirect</a></li>
+					
+					<li><span class="type">CLASS</span> <a href="RequestFailed.html">RestClient::RequestFailed</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-decode">::decode</a></li>
+					
+					<li><a href="#method-c-execute">::execute</a></li>
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-default_headers">#default_headers</a></li>
+					
+					<li><a href="#method-i-execute">#execute</a></li>
+					
+					<li><a href="#method-i-fetch_body">#fetch_body</a></li>
+					
+					<li><a href="#method-i-log_request">#log_request</a></li>
+					
+					<li><a href="#method-i-log_response">#log_response</a></li>
+					
+					<li><a href="#method-i-make_headers">#make_headers</a></li>
+					
+					<li><a href="#method-i-net_http_class">#net_http_class</a></li>
+					
+					<li><a href="#method-i-net_http_request_class">#net_http_request_class</a></li>
+					
+					<li><a href="#method-i-parse_url">#parse_url</a></li>
+					
+					<li><a href="#method-i-parse_url_with_auth">#parse_url_with_auth</a></li>
+					
+					<li><a href="#method-i-process_get_params">#process_get_params</a></li>
+					
+					<li><a href="#method-i-process_payload">#process_payload</a></li>
+					
+					<li><a href="#method-i-process_result">#process_result</a></li>
+					
+					<li><a href="#method-i-setup_credentials">#setup_credentials</a></li>
+					
+					<li><a href="#method-i-stringify_headers">#stringify_headers</a></li>
+					
+					<li><a href="#method-i-transmit">#transmit</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../RestClient.html">RestClient</a></li>
+				
+					<li><a href="../RestClient/AbstractResponse.html">RestClient::AbstractResponse</a></li>
+				
+					<li><a href="../RestClient/Exception.html">RestClient::Exception</a></li>
+				
+					<li><a href="../RestClient/ExceptionWithResponse.html">RestClient::ExceptionWithResponse</a></li>
+				
+					<li><a href="../RestClient/Exceptions.html">RestClient::Exceptions</a></li>
+				
+					<li><a href="../RestClient/Payload.html">RestClient::Payload</a></li>
+				
+					<li><a href="../RestClient/Payload/Base.html">RestClient::Payload::Base</a></li>
+				
+					<li><a href="../RestClient/Payload/Multipart.html">RestClient::Payload::Multipart</a></li>
+				
+					<li><a href="../RestClient/Payload/Streamed.html">RestClient::Payload::Streamed</a></li>
+				
+					<li><a href="../RestClient/Payload/UrlEncoded.html">RestClient::Payload::UrlEncoded</a></li>
+				
+					<li><a href="../RestClient/RawResponse.html">RestClient::RawResponse</a></li>
+				
+					<li><a href="../RestClient/Redirect.html">RestClient::Redirect</a></li>
+				
+					<li><a href="../RestClient/Redirect.html">RestClient::Redirect</a></li>
+				
+					<li><a href="../RestClient/Request.html">RestClient::Request</a></li>
+				
+					<li><a href="../RestClient/RequestFailed.html">RestClient::RequestFailed</a></li>
+				
+					<li><a href="../RestClient/RequestFailed.html">RestClient::RequestFailed</a></li>
+				
+					<li><a href="../RestClient/Resource.html">RestClient::Resource</a></li>
+				
+					<li><a href="../RestClient/Response.html">RestClient::Response</a></li>
+				
+					<li><a href="../RestClient/ResponseForException.html">RestClient::ResponseForException</a></li>
+				
+					<li><a href="../RestClient/SSLCertificateNotVerified.html">RestClient::SSLCertificateNotVerified</a></li>
+				
+					<li><a href="../RestClient/ServerBrokeConnection.html">RestClient::ServerBrokeConnection</a></li>
+				
+					<li><a href="../MIME.html">MIME</a></li>
+				
+					<li><a href="../MIME/Types.html">MIME::Types</a></li>
+				
+					<li><a href="../Net.html">Net</a></li>
+				
+					<li><a href="../Net/HTTP.html">Net::HTTP</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">RestClient::Request</h1>
+
+		<div id="description">
+			<p>
+This class is used internally by <a
+href="../RestClient.html">RestClient</a> to send the request, but you can
+also call it directly if you&#8217;d like to use a method not supported by
+the main API.  For example:
+</p>
+<pre>
+  RestClient::Request.execute(:method =&gt; :head, :url =&gt; 'http://example.com')
+</pre>
+<p>
+Mandatory parameters:
+</p>
+<ul>
+<li><p>
+:method
+</p>
+</li>
+<li><p>
+:url
+</p>
+</li>
+</ul>
+<p>
+Optional parameters (have a look at ssl and/or uri for some explanations):
+</p>
+<ul>
+<li><p>
+:headers a hash containing the request headers
+</p>
+</li>
+<li><p>
+:cookies will replace possible cookies in the :headers
+</p>
+</li>
+<li><p>
+:user and :password for basic auth, will be replaced by a user/password
+available in the :url
+</p>
+</li>
+<li><p>
+:<a href="Request.html#raw_response">raw_response</a> return a low-level <a
+href="RawResponse.html">RawResponse</a> instead of a <a
+href="Response.html">Response</a>
+</p>
+</li>
+<li><p>
+:<a href="Request.html#verify_ssl">verify_ssl</a> enable ssl verification,
+possible values are constants from OpenSSL::SSL
+</p>
+</li>
+<li><p>
+:timeout and :<a href="Request.html#open_timeout">open_timeout</a>
+</p>
+</li>
+<li><p>
+:<a href="Request.html#ssl_client_cert">ssl_client_cert</a>, :<a
+href="Request.html#ssl_client_key">ssl_client_key</a>, :<a
+href="Request.html#ssl_ca_file">ssl_ca_file</a>
+</p>
+</li>
+</ul>
+<hr style="height: 1px"></hr><p>
+backwards compatibility
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="Redirect">Redirect</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="Unauthorized">Unauthorized</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="RequestFailed">RequestFailed</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="method-attribute-method" class="method-detail">
+				<a name="method"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">method</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="url-attribute-method" class="method-detail">
+				<a name="url"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">url</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="headers-attribute-method" class="method-detail">
+				<a name="headers"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">headers</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="cookies-attribute-method" class="method-detail">
+				<a name="cookies"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">cookies</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="payload-attribute-method" class="method-detail">
+				<a name="payload"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">payload</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="user-attribute-method" class="method-detail">
+				<a name="user"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">user</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="password-attribute-method" class="method-detail">
+				<a name="password"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">password</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="timeout-attribute-method" class="method-detail">
+				<a name="timeout"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">timeout</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="open-timeout-attribute-method" class="method-detail">
+				<a name="open_timeout"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">open_timeout</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="raw-response-attribute-method" class="method-detail">
+				<a name="raw_response"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">raw_response</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="verify-ssl-attribute-method" class="method-detail">
+				<a name="verify_ssl"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">verify_ssl</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="ssl-client-cert-attribute-method" class="method-detail">
+				<a name="ssl_client_cert"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">ssl_client_cert</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="ssl-client-key-attribute-method" class="method-detail">
+				<a name="ssl_client_key"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">ssl_client_key</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="ssl-ca-file-attribute-method" class="method-detail">
+				<a name="ssl_ca_file"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">ssl_ca_file</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="processed-headers-attribute-method" class="method-detail">
+				<a name="processed_headers"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">processed_headers</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="args-attribute-method" class="method-detail">
+				<a name="args"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">args</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="decode-method" class="method-detail ">
+				<a name="method-c-decode"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">decode</span><span
+						class="method-args">(content_encoding, body)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="decode-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 225</span>
+225:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">decode</span> <span class="ruby-identifier">content_encoding</span>, <span class="ruby-identifier">body</span>
+226:       <span class="ruby-keyword kw">if</span> (<span class="ruby-operator">!</span><span class="ruby-identifier">body</span>) <span class="ruby-operator">||</span> <span class="ruby-identifier">body</span>.<span class="ruby-identifier">empty?</span>
+227:         <span class="ruby-identifier">body</span>
+228:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">content_encoding</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'gzip'</span>
+229:         <span class="ruby-constant">Zlib</span><span class="ruby-operator">::</span><span class="ruby-constant">GzipReader</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">StringIO</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">body</span>)).<span class="ruby-identifier">read</span>
+230:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">content_encoding</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'deflate'</span>
+231:         <span class="ruby-constant">Zlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Inflate</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">inflate</span> <span class="ruby-identifier">body</span>
+232:       <span class="ruby-keyword kw">else</span>
+233:         <span class="ruby-identifier">body</span>
+234:       <span class="ruby-keyword kw">end</span>
+235:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="execute-method" class="method-detail ">
+				<a name="method-c-execute"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">execute</span><span
+						class="method-args">(args, & block)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="execute-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 30</span>
+30:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-identifier">args</span>, &amp; <span class="ruby-identifier">block</span>)
+31:       <span class="ruby-identifier">new</span>(<span class="ruby-identifier">args</span>).<span class="ruby-identifier">execute</span>(&amp; <span class="ruby-identifier">block</span>)
+32:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(args)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 34</span>
+34:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span> <span class="ruby-identifier">args</span>
+35:       <span class="ruby-ivar">@method</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:method</span>] <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-value str">&quot;must pass :method&quot;</span>
+36:       <span class="ruby-ivar">@headers</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:headers</span>] <span class="ruby-operator">||</span> {}
+37:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:url</span>]
+38:         <span class="ruby-ivar">@url</span> = <span class="ruby-identifier">process_get_params</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:url</span>], <span class="ruby-identifier">headers</span>)
+39:       <span class="ruby-keyword kw">else</span>
+40:         <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-value str">&quot;must pass :url&quot;</span>
+41:       <span class="ruby-keyword kw">end</span>
+42:       <span class="ruby-ivar">@cookies</span> = <span class="ruby-ivar">@headers</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:cookies</span>) <span class="ruby-operator">||</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:cookies</span>] <span class="ruby-operator">||</span> {}
+43:       <span class="ruby-ivar">@payload</span> = <span class="ruby-constant">Payload</span>.<span class="ruby-identifier">generate</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:payload</span>])
+44:       <span class="ruby-ivar">@user</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>]
+45:       <span class="ruby-ivar">@password</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:password</span>]
+46:       <span class="ruby-ivar">@timeout</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:timeout</span>]
+47:       <span class="ruby-ivar">@open_timeout</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:open_timeout</span>]
+48:       <span class="ruby-ivar">@raw_response</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:raw_response</span>] <span class="ruby-operator">||</span> <span class="ruby-keyword kw">false</span>
+49:       <span class="ruby-ivar">@verify_ssl</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:verify_ssl</span>] <span class="ruby-operator">||</span> <span class="ruby-keyword kw">false</span>
+50:       <span class="ruby-ivar">@ssl_client_cert</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:ssl_client_cert</span>] <span class="ruby-operator">||</span> <span class="ruby-keyword kw">nil</span>
+51:       <span class="ruby-ivar">@ssl_client_key</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:ssl_client_key</span>] <span class="ruby-operator">||</span> <span class="ruby-keyword kw">nil</span>
+52:       <span class="ruby-ivar">@ssl_ca_file</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:ssl_ca_file</span>] <span class="ruby-operator">||</span> <span class="ruby-keyword kw">nil</span>
+53:       <span class="ruby-ivar">@tf</span> = <span class="ruby-keyword kw">nil</span> <span class="ruby-comment cmt"># If you are a raw request, this is your tempfile</span>
+54:       <span class="ruby-ivar">@processed_headers</span> = <span class="ruby-identifier">make_headers</span> <span class="ruby-identifier">headers</span>
+55:       <span class="ruby-ivar">@args</span> = <span class="ruby-identifier">args</span>
+56:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="default-headers-method" class="method-detail ">
+				<a name="method-i-default_headers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">default_headers</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="default-headers-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 278</span>
+278:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">default_headers</span>
+279:       {<span class="ruby-value">:accept</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'*/*; q=0.5, application/xml'</span>, <span class="ruby-value">:accept_encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'gzip, deflate'</span>}
+280:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="execute-method" class="method-detail ">
+				<a name="method-i-execute"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">execute</span><span
+						class="method-args">(& block)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="execute-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 58</span>
+58:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">execute</span> &amp; <span class="ruby-identifier">block</span>
+59:       <span class="ruby-identifier">uri</span> = <span class="ruby-identifier">parse_url_with_auth</span>(<span class="ruby-identifier">url</span>)
+60:       <span class="ruby-identifier">transmit</span> <span class="ruby-identifier">uri</span>, <span class="ruby-identifier">net_http_request_class</span>(<span class="ruby-identifier">method</span>).<span class="ruby-identifier">new</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">request_uri</span>, <span class="ruby-identifier">processed_headers</span>), <span class="ruby-identifier">payload</span>, &amp; <span class="ruby-identifier">block</span>
+61:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="fetch-body-method" class="method-detail ">
+				<a name="method-i-fetch_body"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">fetch_body</span><span
+						class="method-args">(http_response)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="fetch-body-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 181</span>
+181:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">fetch_body</span>(<span class="ruby-identifier">http_response</span>)
+182:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@raw_response</span>
+183:         <span class="ruby-comment cmt"># Taken from Chef, which as in turn...</span>
+184:         <span class="ruby-comment cmt"># Stolen from http://www.ruby-forum.com/topic/166423</span>
+185:         <span class="ruby-comment cmt"># Kudos to _why!</span>
+186:         <span class="ruby-ivar">@tf</span> = <span class="ruby-constant">Tempfile</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;rest-client&quot;</span>)
+187:         <span class="ruby-identifier">size</span>, <span class="ruby-identifier">total</span> = <span class="ruby-value">0</span>, <span class="ruby-identifier">http_response</span>.<span class="ruby-identifier">header</span>[<span class="ruby-value str">'Content-Length'</span>].<span class="ruby-identifier">to_i</span>
+188:         <span class="ruby-identifier">http_response</span>.<span class="ruby-identifier">read_body</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">chunk</span><span class="ruby-operator">|</span>
+189:           <span class="ruby-ivar">@tf</span>.<span class="ruby-identifier">write</span> <span class="ruby-identifier">chunk</span>
+190:           <span class="ruby-identifier">size</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">chunk</span>.<span class="ruby-identifier">size</span>
+191:           <span class="ruby-keyword kw">if</span> <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">log</span>
+192:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+193:               <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">log</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{@method} #{@url} done (0 length file\n)&quot;</span>
+194:             <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">total</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+195:               <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">log</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{@method} #{@url} (zero content length)\n&quot;</span>
+196:             <span class="ruby-keyword kw">else</span>
+197:               <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">log</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{@method} #{@url} %d%% done (%d of %d)\n&quot;</span> <span class="ruby-operator">%</span> [(<span class="ruby-identifier">size</span> * <span class="ruby-value">100</span>) <span class="ruby-operator">/</span> <span class="ruby-identifier">total</span>, <span class="ruby-identifier">size</span>, <span class="ruby-identifier">total</span>]
+198:             <span class="ruby-keyword kw">end</span>
+199:           <span class="ruby-keyword kw">end</span>
+200:         <span class="ruby-keyword kw">end</span>
+201:         <span class="ruby-ivar">@tf</span>.<span class="ruby-identifier">close</span>
+202:         <span class="ruby-ivar">@tf</span>
+203:       <span class="ruby-keyword kw">else</span>
+204:         <span class="ruby-identifier">http_response</span>.<span class="ruby-identifier">read_body</span>
+205:       <span class="ruby-keyword kw">end</span>
+206:       <span class="ruby-identifier">http_response</span>
+207:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="log-request-method" class="method-detail ">
+				<a name="method-i-log_request"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">log_request</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="log-request-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 237</span>
+237:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">log_request</span>
+238:       <span class="ruby-keyword kw">if</span> <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">log</span>
+239:         <span class="ruby-identifier">out</span> = []
+240:         <span class="ruby-identifier">out</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;RestClient.#{method} #{url.inspect}&quot;</span>
+241:         <span class="ruby-identifier">out</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">payload</span>.<span class="ruby-identifier">short_inspect</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">payload</span>
+242:         <span class="ruby-identifier">out</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">processed_headers</span>.<span class="ruby-identifier">to_a</span>.<span class="ruby-identifier">sort</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span>(<span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span>)<span class="ruby-operator">|</span> [<span class="ruby-identifier">k</span>.<span class="ruby-identifier">inspect</span>, <span class="ruby-identifier">v</span>.<span class="ruby-identifier">inspect</span>].<span class="ruby-identifier">join</span>(<span class="ruby-value str">&quot;=&gt;&quot;</span>) }.<span class="ruby-identifier">join</span>(<span class="ruby-value str">&quot;, &quot;</span>)
+243:         <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">log</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">out</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">', '</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;\n&quot;</span>
+244:       <span class="ruby-keyword kw">end</span>
+245:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="log-response-method" class="method-detail ">
+				<a name="method-i-log_response"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">log_response</span><span
+						class="method-args">(res)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="log-response-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 247</span>
+247:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">log_response</span> <span class="ruby-identifier">res</span>
+248:       <span class="ruby-keyword kw">if</span> <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">log</span>
+249:         <span class="ruby-identifier">size</span> = <span class="ruby-ivar">@raw_response</span> <span class="ruby-operator">?</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">size</span>(<span class="ruby-ivar">@tf</span>.<span class="ruby-identifier">path</span>) <span class="ruby-operator">:</span> (<span class="ruby-identifier">res</span>.<span class="ruby-identifier">body</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">res</span>.<span class="ruby-identifier">body</span>.<span class="ruby-identifier">size</span>)
+250:         <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">log</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;# =&gt; #{res.code} #{res.class.to_s.gsub(/^Net::HTTP/, '')} | #{(res['Content-type'] || '').gsub(/;.*$/, '')} #{size} bytes\n&quot;</span>
+251:       <span class="ruby-keyword kw">end</span>
+252:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="make-headers-method" class="method-detail ">
+				<a name="method-i-make_headers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">make_headers</span><span
+						class="method-args">(user_headers)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="make-headers-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 86</span>
+86:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">make_headers</span> <span class="ruby-identifier">user_headers</span>
+87:       <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@cookies</span>.<span class="ruby-identifier">empty?</span>
+88:         <span class="ruby-identifier">user_headers</span>[<span class="ruby-value">:cookie</span>] = <span class="ruby-ivar">@cookies</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">val</span>)<span class="ruby-operator">|</span> <span class="ruby-node">&quot;#{key.to_s}=#{CGI::unescape(val)}&quot;</span> }.<span class="ruby-identifier">sort</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">';'</span>)
+89:       <span class="ruby-keyword kw">end</span>
+90:       <span class="ruby-identifier">headers</span> = <span class="ruby-identifier">stringify_headers</span>(<span class="ruby-identifier">default_headers</span>).<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">stringify_headers</span>(<span class="ruby-identifier">user_headers</span>))
+91:       <span class="ruby-identifier">headers</span>.<span class="ruby-identifier">merge!</span>(<span class="ruby-ivar">@payload</span>.<span class="ruby-identifier">headers</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@payload</span>
+92:       <span class="ruby-identifier">headers</span>
+93:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="net-http-class-method" class="method-detail ">
+				<a name="method-i-net_http_class"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">net_http_class</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="net-http-class-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 95</span>
+ 95:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">net_http_class</span>
+ 96:       <span class="ruby-keyword kw">if</span> <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">proxy</span>
+ 97:         <span class="ruby-identifier">proxy_uri</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">proxy</span>)
+ 98:         <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span><span class="ruby-operator">::</span><span class="ruby-constant">Proxy</span>(<span class="ruby-identifier">proxy_uri</span>.<span class="ruby-identifier">host</span>, <span class="ruby-identifier">proxy_uri</span>.<span class="ruby-identifier">port</span>, <span class="ruby-identifier">proxy_uri</span>.<span class="ruby-identifier">user</span>, <span class="ruby-identifier">proxy_uri</span>.<span class="ruby-identifier">password</span>)
+ 99:       <span class="ruby-keyword kw">else</span>
+100:         <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span>
+101:       <span class="ruby-keyword kw">end</span>
+102:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="net-http-request-class-method" class="method-detail ">
+				<a name="method-i-net_http_request_class"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">net_http_request_class</span><span
+						class="method-args">(method)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="net-http-request-class-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 104</span>
+104:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">net_http_request_class</span>(<span class="ruby-identifier">method</span>)
+105:       <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-identifier">method</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">capitalize</span>)
+106:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="parse-url-method" class="method-detail ">
+				<a name="method-i-parse_url"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parse_url</span><span
+						class="method-args">(url)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="parse-url-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 108</span>
+108:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse_url</span>(<span class="ruby-identifier">url</span>)
+109:       <span class="ruby-identifier">url</span> = <span class="ruby-node">&quot;http://#{url}&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">url</span>.<span class="ruby-identifier">match</span>(<span class="ruby-regexp re">/^http/</span>)
+110:       <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">url</span>)
+111:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="parse-url-with-auth-method" class="method-detail ">
+				<a name="method-i-parse_url_with_auth"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parse_url_with_auth</span><span
+						class="method-args">(url)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="parse-url-with-auth-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 113</span>
+113:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse_url_with_auth</span>(<span class="ruby-identifier">url</span>)
+114:       <span class="ruby-identifier">uri</span> = <span class="ruby-identifier">parse_url</span>(<span class="ruby-identifier">url</span>)
+115:       <span class="ruby-ivar">@user</span> = <span class="ruby-constant">CGI</span>.<span class="ruby-identifier">unescape</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">user</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">uri</span>.<span class="ruby-identifier">user</span>
+116:       <span class="ruby-ivar">@password</span> = <span class="ruby-constant">CGI</span>.<span class="ruby-identifier">unescape</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">password</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">uri</span>.<span class="ruby-identifier">password</span>
+117:       <span class="ruby-identifier">uri</span>
+118:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="process-get-params-method" class="method-detail ">
+				<a name="method-i-process_get_params"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">process_get_params</span><span
+						class="method-args">(url, headers)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Extract the query parameters for get request and append them to the url
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="process-get-params-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 64</span>
+64:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">process_get_params</span> <span class="ruby-identifier">url</span>, <span class="ruby-identifier">headers</span>
+65:       <span class="ruby-keyword kw">if</span> [<span class="ruby-value">:get</span>, <span class="ruby-value">:head</span>].<span class="ruby-identifier">include?</span> <span class="ruby-identifier">method</span>
+66:         <span class="ruby-identifier">get_params</span> = {}
+67:         <span class="ruby-identifier">headers</span>.<span class="ruby-identifier">delete_if</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+68:           <span class="ruby-keyword kw">if</span> <span class="ruby-value str">'params'</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">downcase</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+69:             <span class="ruby-identifier">get_params</span>.<span class="ruby-identifier">merge!</span> <span class="ruby-identifier">value</span>
+70:             <span class="ruby-keyword kw">true</span>
+71:           <span class="ruby-keyword kw">else</span>
+72:             <span class="ruby-keyword kw">false</span>
+73:           <span class="ruby-keyword kw">end</span>
+74:         <span class="ruby-keyword kw">end</span>
+75:         <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">get_params</span>.<span class="ruby-identifier">empty?</span>
+76:           <span class="ruby-identifier">query_string</span> = <span class="ruby-identifier">get_params</span>.<span class="ruby-identifier">collect</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>, <span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot;#{k.to_s}=#{CGI::escape(v.to_s)}&quot;</span> }.<span class="ruby-identifier">join</span>(<span class="ruby-value str">'&amp;'</span>)
+77:           <span class="ruby-identifier">url</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot;?#{query_string}&quot;</span>
+78:         <span class="ruby-keyword kw">else</span>
+79:           <span class="ruby-identifier">url</span>
+80:         <span class="ruby-keyword kw">end</span>
+81:       <span class="ruby-keyword kw">else</span>
+82:         <span class="ruby-identifier">url</span>
+83:       <span class="ruby-keyword kw">end</span>
+84:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="process-payload-method" class="method-detail ">
+				<a name="method-i-process_payload"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">process_payload</span><span
+						class="method-args">(p=nil, parent_key=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="process-payload-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 120</span>
+120:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">process_payload</span>(<span class="ruby-identifier">p</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">parent_key</span>=<span class="ruby-keyword kw">nil</span>)
+121:       <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">p</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+122:         <span class="ruby-identifier">p</span>
+123:       <span class="ruby-keyword kw">else</span>
+124:         <span class="ruby-ivar">@headers</span>[<span class="ruby-value">:content_type</span>] <span class="ruby-operator">||=</span> <span class="ruby-value str">'application/x-www-form-urlencoded'</span>
+125:         <span class="ruby-identifier">p</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span>
+126:           <span class="ruby-identifier">key</span> = <span class="ruby-identifier">parent_key</span> <span class="ruby-operator">?</span> <span class="ruby-node">&quot;#{parent_key}[#{k}]&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">k</span>
+127:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">p</span>[<span class="ruby-identifier">k</span>].<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Hash</span>
+128:             <span class="ruby-identifier">process_payload</span>(<span class="ruby-identifier">p</span>[<span class="ruby-identifier">k</span>], <span class="ruby-identifier">key</span>)
+129:           <span class="ruby-keyword kw">else</span>
+130:             <span class="ruby-identifier">value</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">escape</span>(<span class="ruby-identifier">p</span>[<span class="ruby-identifier">k</span>].<span class="ruby-identifier">to_s</span>, <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;[^#{URI::PATTERN::UNRESERVED}]&quot;</span>))
+131:             <span class="ruby-node">&quot;#{key}=#{value}&quot;</span>
+132:           <span class="ruby-keyword kw">end</span>
+133:         <span class="ruby-keyword kw">end</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">&quot;&amp;&quot;</span>)
+134:       <span class="ruby-keyword kw">end</span>
+135:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="process-result-method" class="method-detail ">
+				<a name="method-i-process_result"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">process_result</span><span
+						class="method-args">(res, & block)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="process-result-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 209</span>
+209:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">process_result</span> <span class="ruby-identifier">res</span>, &amp; <span class="ruby-identifier">block</span>
+210:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@raw_response</span>
+211:         <span class="ruby-comment cmt"># We don't decode raw requests</span>
+212:         <span class="ruby-identifier">response</span> = <span class="ruby-constant">RawResponse</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@tf</span>, <span class="ruby-identifier">res</span>, <span class="ruby-identifier">args</span>)
+213:       <span class="ruby-keyword kw">else</span>
+214:         <span class="ruby-identifier">response</span> = <span class="ruby-constant">Response</span>.<span class="ruby-identifier">create</span>(<span class="ruby-constant">Request</span>.<span class="ruby-identifier">decode</span>(<span class="ruby-identifier">res</span>[<span class="ruby-value str">'content-encoding'</span>], <span class="ruby-identifier">res</span>.<span class="ruby-identifier">body</span>), <span class="ruby-identifier">res</span>, <span class="ruby-identifier">args</span>)
+215:       <span class="ruby-keyword kw">end</span>
+216: 
+217:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">block_given?</span>
+218:         <span class="ruby-identifier">block</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">response</span>, <span class="ruby-keyword kw">self</span>, <span class="ruby-identifier">res</span>, &amp; <span class="ruby-identifier">block</span>)
+219:       <span class="ruby-keyword kw">else</span>
+220:         <span class="ruby-identifier">response</span>.<span class="ruby-identifier">return!</span>(<span class="ruby-keyword kw">self</span>, <span class="ruby-identifier">res</span>, &amp; <span class="ruby-identifier">block</span>)
+221:       <span class="ruby-keyword kw">end</span>
+222: 
+223:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="setup-credentials-method" class="method-detail ">
+				<a name="method-i-setup_credentials"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">setup_credentials</span><span
+						class="method-args">(req)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="setup-credentials-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 177</span>
+177:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">setup_credentials</span>(<span class="ruby-identifier">req</span>)
+178:       <span class="ruby-identifier">req</span>.<span class="ruby-identifier">basic_auth</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">password</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">user</span>
+179:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="stringify-headers-method" class="method-detail ">
+				<a name="method-i-stringify_headers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">stringify_headers</span><span
+						class="method-args">(headers)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return a hash of headers whose keys are capitalized strings
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="stringify-headers-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 255</span>
+255:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">stringify_headers</span> <span class="ruby-identifier">headers</span>
+256:       <span class="ruby-identifier">headers</span>.<span class="ruby-identifier">inject</span>({}) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">result</span>, (<span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span>)<span class="ruby-operator">|</span>
+257:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Symbol</span>
+258:           <span class="ruby-identifier">key</span> = <span class="ruby-identifier">key</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp re">/_/</span>).<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">w</span><span class="ruby-operator">|</span> <span class="ruby-identifier">w</span>.<span class="ruby-identifier">capitalize</span> }.<span class="ruby-identifier">join</span>(<span class="ruby-value str">'-'</span>)
+259:         <span class="ruby-keyword kw">end</span>
+260:         <span class="ruby-keyword kw">if</span> <span class="ruby-value str">'CONTENT-TYPE'</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">upcase</span>
+261:           <span class="ruby-identifier">target_value</span> = <span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_s</span>
+262:           <span class="ruby-identifier">result</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-constant">MIME</span><span class="ruby-operator">::</span><span class="ruby-constant">Types</span>.<span class="ruby-identifier">type_for_extension</span> <span class="ruby-identifier">target_value</span>
+263:         <span class="ruby-keyword kw">elsif</span> <span class="ruby-value str">'ACCEPT'</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">upcase</span>
+264:           <span class="ruby-comment cmt"># Accept can be composed of several comma-separated values</span>
+265:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Array</span>
+266:             <span class="ruby-identifier">target_values</span> = <span class="ruby-identifier">value</span>
+267:           <span class="ruby-keyword kw">else</span>
+268:             <span class="ruby-identifier">target_values</span> = <span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">split</span> <span class="ruby-value str">','</span>
+269:           <span class="ruby-keyword kw">end</span>
+270:           <span class="ruby-identifier">result</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">target_values</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">ext</span><span class="ruby-operator">|</span> <span class="ruby-constant">MIME</span><span class="ruby-operator">::</span><span class="ruby-constant">Types</span>.<span class="ruby-identifier">type_for_extension</span>(<span class="ruby-identifier">ext</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">strip</span>) }.<span class="ruby-identifier">join</span>(<span class="ruby-value str">', '</span>)
+271:         <span class="ruby-keyword kw">else</span>
+272:           <span class="ruby-identifier">result</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_s</span>
+273:         <span class="ruby-keyword kw">end</span>
+274:         <span class="ruby-identifier">result</span>
+275:       <span class="ruby-keyword kw">end</span>
+276:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="transmit-method" class="method-detail ">
+				<a name="method-i-transmit"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">transmit</span><span
+						class="method-args">(uri, req, payload, & block)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="transmit-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/restclient/request.rb, line 137</span>
+137:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">transmit</span> <span class="ruby-identifier">uri</span>, <span class="ruby-identifier">req</span>, <span class="ruby-identifier">payload</span>, &amp; <span class="ruby-identifier">block</span>
+138:       <span class="ruby-identifier">setup_credentials</span> <span class="ruby-identifier">req</span>
+139: 
+140:       <span class="ruby-identifier">net</span> = <span class="ruby-identifier">net_http_class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">host</span>, <span class="ruby-identifier">uri</span>.<span class="ruby-identifier">port</span>)
+141:       <span class="ruby-identifier">net</span>.<span class="ruby-identifier">use_ssl</span> = <span class="ruby-identifier">uri</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">URI</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTPS</span>)
+142:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@verify_ssl</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">false</span>
+143:         <span class="ruby-identifier">net</span>.<span class="ruby-identifier">verify_mode</span> = <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">SSL</span><span class="ruby-operator">::</span><span class="ruby-constant">VERIFY_NONE</span>
+144:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@verify_ssl</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Integer</span>
+145:         <span class="ruby-identifier">net</span>.<span class="ruby-identifier">verify_mode</span> = <span class="ruby-ivar">@verify_ssl</span>
+146:         <span class="ruby-identifier">net</span>.<span class="ruby-identifier">verify_callback</span> = <span class="ruby-identifier">lambda</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">preverify_ok</span>, <span class="ruby-identifier">ssl_context</span><span class="ruby-operator">|</span>
+147:           <span class="ruby-keyword kw">if</span> (<span class="ruby-operator">!</span><span class="ruby-identifier">preverify_ok</span>) <span class="ruby-operator">||</span> <span class="ruby-identifier">ssl_context</span>.<span class="ruby-identifier">error</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>
+148:             <span class="ruby-identifier">err_msg</span> = <span class="ruby-node">&quot;SSL Verification failed -- Preverify: #{preverify_ok}, Error: #{ssl_context.error_string} (#{ssl_context.error})&quot;</span>
+149:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">SSLCertificateNotVerified</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">err_msg</span>)
+150:           <span class="ruby-keyword kw">end</span>
+151:           <span class="ruby-keyword kw">true</span>
+152:         <span class="ruby-keyword kw">end</span>
+153:       <span class="ruby-keyword kw">end</span>
+154:       <span class="ruby-identifier">net</span>.<span class="ruby-identifier">cert</span> = <span class="ruby-ivar">@ssl_client_cert</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@ssl_client_cert</span>
+155:       <span class="ruby-identifier">net</span>.<span class="ruby-identifier">key</span> = <span class="ruby-ivar">@ssl_client_key</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@ssl_client_key</span>
+156:       <span class="ruby-identifier">net</span>.<span class="ruby-identifier">ca_file</span> = <span class="ruby-ivar">@ssl_ca_file</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@ssl_ca_file</span>
+157:       <span class="ruby-identifier">net</span>.<span class="ruby-identifier">read_timeout</span> = <span class="ruby-ivar">@timeout</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@timeout</span>
+158:       <span class="ruby-identifier">net</span>.<span class="ruby-identifier">open_timeout</span> = <span class="ruby-ivar">@open_timeout</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@open_timeout</span>
+159: 
+160:       <span class="ruby-constant">RestClient</span>.<span class="ruby-identifier">before_execution_procs</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">before_proc</span><span class="ruby-operator">|</span>
+161:         <span class="ruby-identifier">before_proc</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">req</span>, <span class="ruby-identifier">args</span>)
+162:       <span class="ruby-keyword kw">end</span>
+163: 
+164:       <span class="ruby-identifier">log_request</span>
+165: 
+166:       <span class="ruby-identifier">net</span>.<span class="ruby-identifier">start</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">http</span><span class="ruby-operator">|</span>
+167:         <span class="ruby-identifier">res</span> = <span class="ruby-identifier">http</span>.<span class="ruby-identifier">request</span>(<span class="ruby-identifier">req</span>, <span class="ruby-identifier">payload</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">http_response</span><span class="ruby-operator">|</span> <span class="ruby-identifier">fetch_body</span>(<span class="ruby-identifier">http_response</span>) }
+168:         <span class="ruby-identifier">log_response</span> <span class="ruby-identifier">res</span>
+169:         <span class="ruby-identifier">process_result</span> <span class="ruby-identifier">res</span>, &amp; <span class="ruby-identifier">block</span>
+170:       <span class="ruby-keyword kw">end</span>
+171:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">EOFError</span>
+172:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">RestClient</span><span class="ruby-operator">::</span><span class="ruby-constant">ServerBrokeConnection</span>
+173:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Timeout</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span>
+174:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">RestClient</span><span class="ruby-operator">::</span><span class="ruby-constant">RequestTimeout</span>
+175:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

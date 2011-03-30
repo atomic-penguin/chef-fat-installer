@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: securerandom.rb [uuidtools-2.1.2 Documentation]</title>
+
+	<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet" />
+
+	<script src="../../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file file-popup">
+	<div id="metadata">
+		<dl>
+			<dt class="modified-date">Last Modified</dt>
+			<dd class="modified-date">2011-03-29 20:39:17 -0400</dd>
+
+			
+			<dt class="requires">Requires</dt>
+			<dd class="requires">
+				<ul>
+				
+					<li>openssl</li>
+				
+					<li>Win32API</li>
+				
+				</ul>
+			</dd>
+			
+
+			
+		</dl>
+	</div>
+
+	<div id="documentation">
+		
+		<div class="description">
+			<h2>Description</h2>
+			<h1>Secure random number generator interface.</h1>
+<p>
+This library is an interface for secure random number generator which is
+suitable for generating session key in HTTP cookies, etc.
+</p>
+<p>
+It supports following secure random number generators.
+</p>
+<ul>
+<li><p>
+openssl
+</p>
+</li>
+<li><p>
+/dev/urandom
+</p>
+</li>
+<li><p>
+Win32
+</p>
+</li>
+</ul>
+<h2>Example</h2>
+<p>
+# random hexadecimal string. p SecureRandom.hex(10) #=>
+&#8220;52750b30ffbc7de3b362&#8221; p SecureRandom.hex(10) #=>
+&#8220;92b15d6c8dc4beb5f559&#8221; p SecureRandom.hex(11) #=>
+&#8220;6aca1b5c58e4863e6b81b8&#8221; p SecureRandom.hex(12) #=>
+&#8220;94b2fff3e7fd9b9c391a2306&#8221; p SecureRandom.hex(13) #=>
+&#8220;39b290146bea6ce975c37cfc23&#8221; &#8230;
+</p>
+<p>
+# random base64 string. p SecureRandom.base64(10) #=>
+&#8220;EcmTPZwWRAozdA==&#8221; p SecureRandom.base64(10) #=>
+&#8220;9b0nsevdwNuM/w==&#8221; p SecureRandom.base64(10) #=>
+&#8220;KO1nIU+p9DKxGg==&#8221; p SecureRandom.base64(11) #=>
+&#8220;l7XEiFja+8EKEtY=&#8221; p SecureRandom.base64(12) #=>
+&#8220;7kJSM/MzBJI+75j8&#8221; p SecureRandom.base64(13) #=>
+&#8220;vKLJ0tXBHqQOuIcSIg==&#8221; &#8230;
+</p>
+<p>
+# random binary string. p SecureRandom.random_bytes(10) #=>
+&#8220;016t{370g310pbr301&#8221; p SecureRandom.random_bytes(10) #=>
+&#8220;323U030TO234357020a\337&#8221; &#8230;
+</p>
+
+		</div>
+		
+	</div>
+</body>
+</html>
+

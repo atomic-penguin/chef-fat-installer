@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>highline-1.6.1 Documentation</title>
+
+	<link type="text/css" media="screen" href="rdoc.css" rel="stylesheet" />
+
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body class="indexpage">
+
+	
+	<h1>highline-1.6.1 Documentation</h1>
+
+	
+	<div id="main">
+		
+<p>
+by James Edward Gray II
+</p>
+<h2>Description</h2>
+<p>
+Welcome to <a href="HighLine.html">HighLine</a>.
+</p>
+<p>
+<a href="HighLine.html">HighLine</a> was designed to ease the tedious tasks
+of doing console input and output with low-level methods like gets() and
+puts().  <a href="HighLine.html">HighLine</a> provides a robust system for
+requesting data from a user, without needing to code all the error checking
+and validation rules and without needing to convert the typed Strings into
+what your program really needs.  Just tell <a
+href="HighLine.html">HighLine</a> what you&#8217;re after, and let it do
+all the work.
+</p>
+<h2>Documentation</h2>
+<p>
+See <a href="HighLine.html">HighLine</a> and <a
+href="HighLine/Question.html">HighLine::Question</a> for documentation.
+</p>
+<h2>Examples</h2>
+<p>
+Basic usage:
+</p>
+<pre>
+  ask(&quot;Company?  &quot;) { |q| q.default = &quot;none&quot; }
+</pre>
+<p>
+Validation:
+</p>
+<pre>
+  ask(&quot;Age?  &quot;, Integer) { |q| q.in = 0..105 }
+  ask(&quot;Name?  (last, first)  &quot;) { |q| q.validate = /\A\w+, ?\w+\Z/ }
+</pre>
+<p>
+Type conversion for answers:
+</p>
+<pre>
+  ask(&quot;Birthday?  &quot;, Date)
+  ask(&quot;Interests?  (comma sep list)  &quot;, lambda { |str| str.split(/,\s*/) })
+</pre>
+<p>
+Reading passwords:
+</p>
+<pre>
+  ask(&quot;Enter your password:  &quot;) { |q| q.echo = false }
+  ask(&quot;Enter your password:  &quot;) { |q| q.echo = &quot;x&quot; }
+</pre>
+<p>
+ERb based output (with HighLine&#8217;s ANSI color tools):
+</p>
+<pre>
+  say(&quot;This should be &lt;%= color('bold', BOLD) %&gt;!&quot;)
+</pre>
+<p>
+Menus:
+</p>
+<pre>
+  choose do |menu|
+    menu.prompt = &quot;Please choose your favorite programming language?  &quot;
+  
+    menu.choice(:ruby) { say(&quot;Good choice!&quot;) }
+    menu.choices(:python, :perl) { say(&quot;Not from around here, are you?&quot;) }
+  end
+  
+</pre>
+<p>
+For more examples see the examples/ directory of this project.
+</p>
+<h2>Installing</h2>
+<p>
+See the <a href="INSTALL.html">INSTALL</a> file for instructions.
+</p>
+<h2>Questions and/or Comments</h2>
+<p>
+Feel free to email <a href="mailto:james@grayproductions.net">James Edward
+Gray II</a> or <a href="mailto:gregory.t.brown@gmail.com">Gregory Brown</a>
+with any questions.
+</p>
+
+	</div>
+	
+
+	
+	
+	<h2>Files</h2>
+	<ul>
+		
+			<li class="file"><a href="CHANGELOG.html">CHANGELOG</a></li>
+		
+			<li class="file"><a href="INSTALL.html">INSTALL</a></li>
+		
+			<li class="file"><a href="LICENSE.html">LICENSE</a></li>
+		
+			<li class="file"><a href="README.html">README</a></li>
+		
+			<li class="file"><a href="TODO.html">TODO</a></li>
+		
+	</ul>
+	
+
+	<h2 id="classes">Classes/Modules</h2>
+	<ul>
+		
+		<li class="class"><a href="HighLine.html">HighLine</a></li>
+		
+		<li class="class"><a href="HighLine/ColorScheme.html">HighLine::ColorScheme</a></li>
+		
+		<li class="class"><a href="HighLine/Menu.html">HighLine::Menu</a></li>
+		
+		<li class="class"><a href="HighLine/Question.html">HighLine::Question</a></li>
+		
+		<li class="class"><a href="HighLine/Question/NoAutoCompleteMatch.html">HighLine::Question::NoAutoCompleteMatch</a></li>
+		
+		<li class="class"><a href="HighLine/QuestionError.html">HighLine::QuestionError</a></li>
+		
+		<li class="class"><a href="HighLine/SampleColorScheme.html">HighLine::SampleColorScheme</a></li>
+		
+		<li class="module"><a href="HighLine/SystemExtensions.html">HighLine::SystemExtensions</a></li>
+		
+		<li class="class"><a href="IO.html">IO</a></li>
+		
+		<li class="module"><a href="Kernel.html">Kernel</a></li>
+		
+		<li class="class"><a href="Object.html">Object</a></li>
+		
+		<li class="class"><a href="String.html">String</a></li>
+		
+		<li class="class"><a href="StringIO.html">StringIO</a></li>
+		
+	</ul>
+
+	<h2 id="methods">Methods</h2>
+	<ul>
+		
+			<li><a href="HighLine.html#method-c-color_scheme">::color_scheme &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-c-color_scheme%3D">::color_scheme= &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-c-new">::new &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine/Question.html#method-c-new">::new &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine.html#method-c-new">::new &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/SampleColorScheme.html#method-c-new">::new &mdash; HighLine::SampleColorScheme</a></li>
+		
+			<li><a href="HighLine/ColorScheme.html#method-c-new">::new &mdash; HighLine::ColorScheme</a></li>
+		
+			<li><a href="HighLine.html#method-c-track_eof%3D">::track_eof= &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-c-track_eof%3F">::track_eof? &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-c-use_color%3D">::use_color= &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-c-use_color%3F">::use_color? &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-c-using_color_scheme%3F">::using_color_scheme? &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/ColorScheme.html#method-i-%5B%5D">#[] &mdash; HighLine::ColorScheme</a></li>
+		
+			<li><a href="HighLine/ColorScheme.html#method-i-%5B%5D%3D">#[]= &mdash; HighLine::ColorScheme</a></li>
+		
+			<li><a href="HighLine.html#method-i-actual_length">#actual_length &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-i-agree">#agree &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-answer_or_default">#answer_or_default &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-append_default">#append_default &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine.html#method-i-ask">#ask &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-build_responses">#build_responses &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-change_case">#change_case &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-choice">#choice &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-choices">#choices &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine.html#method-i-choose">#choose &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-i-color">#color &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-i-continue_paging%3F">#continue_paging? &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-convert">#convert &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-expected_range">#expected_range &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine.html#method-i-explain_error">#explain_error &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-first_answer">#first_answer &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-first_answer%3F">#first_answer? &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine.html#method-i-gather">#gather &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/SystemExtensions.html#method-i-get_character">#get_character &mdash; HighLine::SystemExtensions</a></li>
+		
+			<li><a href="HighLine/SystemExtensions.html#method-i-get_character">#get_character &mdash; HighLine::SystemExtensions</a></li>
+		
+			<li><a href="HighLine/SystemExtensions.html#method-i-get_character">#get_character &mdash; HighLine::SystemExtensions</a></li>
+		
+			<li><a href="HighLine/SystemExtensions.html#method-i-get_character">#get_character &mdash; HighLine::SystemExtensions</a></li>
+		
+			<li><a href="HighLine.html#method-i-get_line">#get_line &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-i-get_response">#get_response &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-help">#help &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-hidden">#hidden &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-in_range%3F">#in_range? &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine/ColorScheme.html#method-i-include%3F">#include? &mdash; HighLine::ColorScheme</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-index%3D">#index= &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-init_help">#init_help &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-layout%3D">#layout= &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine.html#method-i-list">#list &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/ColorScheme.html#method-i-load_from_hash">#load_from_hash &mdash; HighLine::ColorScheme</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-options">#options &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="Object.html#method-i-or_ask">#or_ask &mdash; Object</a></li>
+		
+			<li><a href="HighLine.html#method-i-output_cols">#output_cols &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-i-output_rows">#output_rows &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-i-page_at%3D">#page_at= &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-i-page_print">#page_print &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/SystemExtensions.html#method-i-raw_no_echo_mode">#raw_no_echo_mode &mdash; HighLine::SystemExtensions</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-remove_whitespace">#remove_whitespace &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine/SystemExtensions.html#method-i-restore_mode">#restore_mode &mdash; HighLine::SystemExtensions</a></li>
+		
+			<li><a href="HighLine.html#method-i-say">#say &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-select">#select &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-selection">#selection &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine/SystemExtensions.html#method-i-terminal_size">#terminal_size &mdash; HighLine::SystemExtensions</a></li>
+		
+			<li><a href="HighLine/SystemExtensions.html#method-i-terminal_size">#terminal_size &mdash; HighLine::SystemExtensions</a></li>
+		
+			<li><a href="HighLine/SystemExtensions.html#method-i-terminal_size">#terminal_size &mdash; HighLine::SystemExtensions</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-to_ary">#to_ary &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine/ColorScheme.html#method-i-to_constant">#to_constant &mdash; HighLine::ColorScheme</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-to_str">#to_str &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-to_str">#to_str &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine/ColorScheme.html#method-i-to_symbol">#to_symbol &mdash; HighLine::ColorScheme</a></li>
+		
+			<li><a href="HighLine/Menu.html#method-i-update_responses">#update_responses &mdash; HighLine::Menu</a></li>
+		
+			<li><a href="HighLine/Question.html#method-i-valid_answer%3F">#valid_answer? &mdash; HighLine::Question</a></li>
+		
+			<li><a href="HighLine.html#method-i-wrap">#wrap &mdash; HighLine</a></li>
+		
+			<li><a href="HighLine.html#method-i-wrap_at%3D">#wrap_at= &mdash; HighLine</a></li>
+		
+	</ul>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>

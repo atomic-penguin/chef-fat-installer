@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+	<title>Module: Extlib::Inflection</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/extlib/inflection_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/extlib/inflection.rb">lib/extlib/inflection.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-camelize">::camelize</a></li>
+					
+					<li><a href="#method-c-classify">::classify</a></li>
+					
+					<li><a href="#method-c-clear">::clear</a></li>
+					
+					<li><a href="#method-c-constantize">::constantize</a></li>
+					
+					<li><a href="#method-c-demodulize">::demodulize</a></li>
+					
+					<li><a href="#method-c-foreign_key">::foreign_key</a></li>
+					
+					<li><a href="#method-c-humanize">::humanize</a></li>
+					
+					<li><a href="#method-c-plural">::plural</a></li>
+					
+					<li><a href="#method-c-plural_rule">::plural_rule</a></li>
+					
+					<li><a href="#method-c-plural_word">::plural_word</a></li>
+					
+					<li><a href="#method-c-pluralization_rules">::pluralization_rules</a></li>
+					
+					<li><a href="#method-c-rule">::rule</a></li>
+					
+					<li><a href="#method-c-singular">::singular</a></li>
+					
+					<li><a href="#method-c-singular_rule">::singular_rule</a></li>
+					
+					<li><a href="#method-c-singular_word">::singular_word</a></li>
+					
+					<li><a href="#method-c-singularization_rules">::singularization_rules</a></li>
+					
+					<li><a href="#method-c-tableize">::tableize</a></li>
+					
+					<li><a href="#method-c-underscore">::underscore</a></li>
+					
+					<li><a href="#method-c-word">::word</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Extlib.html">Extlib</a></li>
+				
+					<li><a href="../Extlib/Assertions.html">Extlib::Assertions</a></li>
+				
+					<li><a href="../Extlib/ByteArray.html">Extlib::ByteArray</a></li>
+				
+					<li><a href="../Extlib/Hook.html">Extlib::Hook</a></li>
+				
+					<li><a href="../Extlib/Hook/ClassMethods.html">Extlib::Hook::ClassMethods</a></li>
+				
+					<li><a href="../Extlib/Inflection.html">Extlib::Inflection</a></li>
+				
+					<li><a href="../Extlib/LocalObjectSpace.html">Extlib::LocalObjectSpace</a></li>
+				
+					<li><a href="../Extlib/Logger.html">Extlib::Logger</a></li>
+				
+					<li><a href="../Extlib/Pooling.html">Extlib::Pooling</a></li>
+				
+					<li><a href="../Extlib/Pooling/InvalidResourceError.html">Extlib::Pooling::InvalidResourceError</a></li>
+				
+					<li><a href="../Extlib/Pooling/Pool.html">Extlib::Pooling::Pool</a></li>
+				
+					<li><a href="../Extlib/SimpleSet.html">Extlib::SimpleSet</a></li>
+				
+					<li><a href="../Gem.html">Gem</a></li>
+				
+					<li><a href="../Gem/SourceIndex.html">Gem::SourceIndex</a></li>
+				
+					<li><a href="../Gem/Specification.html">Gem::Specification</a></li>
+				
+					<li><a href="../Array.html">Array</a></li>
+				
+					<li><a href="../Class.html">Class</a></li>
+				
+					<li><a href="../ClassMethods.html">ClassMethods</a></li>
+				
+					<li><a href="../DateTime.html">DateTime</a></li>
+				
+					<li><a href="../Dictionary.html">Dictionary</a></li>
+				
+					<li><a href="../FalseClass.html">FalseClass</a></li>
+				
+					<li><a href="../Hash.html">Hash</a></li>
+				
+					<li><a href="../LazyArray.html">LazyArray</a></li>
+				
+					<li><a href="../LazyModule.html">LazyModule</a></li>
+				
+					<li><a href="../Mash.html">Mash</a></li>
+				
+					<li><a href="../Module.html">Module</a></li>
+				
+					<li><a href="../NilClass.html">NilClass</a></li>
+				
+					<li><a href="../Numeric.html">Numeric</a></li>
+				
+					<li><a href="../Object.html">Object</a></li>
+				
+					<li><a href="../ObjectSpace.html">ObjectSpace</a></li>
+				
+					<li><a href="../Pathname.html">Pathname</a></li>
+				
+					<li><a href="../REXMLUtilityNode.html">REXMLUtilityNode</a></li>
+				
+					<li><a href="../String.html">String</a></li>
+				
+					<li><a href="../Struct.html">Struct</a></li>
+				
+					<li><a href="../Symbol.html">Symbol</a></li>
+				
+					<li><a href="../Time.html">Time</a></li>
+				
+					<li><a href="../TrueClass.html">TrueClass</a></li>
+				
+					<li><a href="../VirtualFile.html">VirtualFile</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">Extlib::Inflection</h1>
+
+		<div id="description">
+			<h1>English Nouns Number <a href="Inflection.html">Inflection</a>.</h1>
+<p>
+This module provides english singular <-> plural noun inflections.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="singular-of-attribute-method" class="method-detail">
+				<a name="singular_of"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">singular_of</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="plural-of-attribute-method" class="method-detail">
+				<a name="plural_of"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">plural_of</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="camelize-method" class="method-detail ">
+				<a name="method-c-camelize"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">camelize</span><span
+						class="method-args">(lower_case_and_underscored_word, *args)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+By default, camelize converts strings to UpperCamelCase.
+</p>
+<p>
+camelize will also convert &#8217;/&#8217; to &#8217;::&#8217; which is
+useful for converting paths to namespaces
+</p>
+<p>
+@example
+</p>
+<pre>
+  &quot;active_record&quot;.camelize #=&gt; &quot;ActiveRecord&quot;
+  &quot;active_record/errors&quot;.camelize #=&gt; &quot;ActiveRecord::Errors&quot;</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="camelize-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 32</span>
+32:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">camelize</span>(<span class="ruby-identifier">lower_case_and_underscored_word</span>, *<span class="ruby-identifier">args</span>)
+33:         <span class="ruby-identifier">lower_case_and_underscored_word</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/\/(.?)/</span>) { <span class="ruby-value str">&quot;::&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-node">$1</span>.<span class="ruby-identifier">upcase</span> }.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/(^|_)(.)/</span>) { <span class="ruby-node">$2</span>.<span class="ruby-identifier">upcase</span> }
+34:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="classify-method" class="method-detail ">
+				<a name="method-c-classify"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">classify</span><span
+						class="method-args">(name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Take an underscored name and make it into a camelized name
+</p>
+<p>
+@example
+</p>
+<pre>
+  &quot;egg_and_hams&quot;.classify #=&gt; &quot;EggAndHam&quot;
+  &quot;enlarged_testes&quot;.classify #=&gt; &quot;EnlargedTestis&quot;
+  &quot;post&quot;.classify #=&gt; &quot;Post&quot;</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="classify-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 18</span>
+18:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">classify</span>(<span class="ruby-identifier">name</span>)
+19:         <span class="ruby-identifier">words</span> = <span class="ruby-identifier">name</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">sub</span>(<span class="ruby-regexp re">/.*\./</span>, <span class="ruby-value str">''</span>).<span class="ruby-identifier">split</span>(<span class="ruby-value str">'_'</span>)
+20:         <span class="ruby-identifier">words</span>[<span class="ruby-value">1</span>] = <span class="ruby-identifier">singularize</span>(<span class="ruby-identifier">words</span>[<span class="ruby-value">1</span>])
+21:         <span class="ruby-identifier">words</span>.<span class="ruby-identifier">collect</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">word</span><span class="ruby-operator">|</span> <span class="ruby-identifier">word</span>.<span class="ruby-identifier">capitalize</span> }.<span class="ruby-identifier">join</span>
+22:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="clear-method" class="method-detail ">
+				<a name="method-c-clear"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">clear</span><span
+						class="method-args">(type = :all)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="clear-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 138</span>
+138:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">clear</span>(<span class="ruby-identifier">type</span> = <span class="ruby-value">:all</span>)
+139:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">type</span> <span class="ruby-operator">==</span> <span class="ruby-value">:singular</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">type</span> <span class="ruby-operator">==</span> <span class="ruby-value">:all</span>
+140:           <span class="ruby-ivar">@singular_of</span> = {}
+141:           <span class="ruby-ivar">@singular_rules</span> = []
+142:           <span class="ruby-ivar">@singularization_rules</span>, <span class="ruby-ivar">@singularization_regex</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-keyword kw">nil</span>
+143:         <span class="ruby-keyword kw">end</span>
+144:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">type</span> <span class="ruby-operator">==</span> <span class="ruby-value">:plural</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">type</span> <span class="ruby-operator">==</span> <span class="ruby-value">:all</span>
+145:           <span class="ruby-ivar">@singular_of</span> = {}
+146:           <span class="ruby-ivar">@singular_rules</span> = []
+147:           <span class="ruby-ivar">@singularization_rules</span>, <span class="ruby-ivar">@singularization_regex</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-keyword kw">nil</span>
+148:         <span class="ruby-keyword kw">end</span>
+149:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="constantize-method" class="method-detail ">
+				<a name="method-c-constantize"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">constantize</span><span
+						class="method-args">(camel_cased_word)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Constantize tries to find a declared constant with the name specified in
+the string. It raises a NameError when the name is not in CamelCase or is
+not initialized.
+</p>
+<p>
+@example
+</p>
+<pre>
+  &quot;Module&quot;.constantize #=&gt; Module
+  &quot;Class&quot;.constantize #=&gt; Class</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="constantize-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 98</span>
+ 98:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">constantize</span>(<span class="ruby-identifier">camel_cased_word</span>)
+ 99:         <span class="ruby-keyword kw">unless</span> <span class="ruby-regexp re">/\A(?:::)?([A-Z]\w*(?:::[A-Z]\w*)*)\z/</span> <span class="ruby-operator">=~</span> <span class="ruby-identifier">camel_cased_word</span>
+100:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">NameError</span>, <span class="ruby-node">&quot;#{camel_cased_word.inspect} is not a valid constant name!&quot;</span>
+101:         <span class="ruby-keyword kw">end</span>
+102: 
+103:         <span class="ruby-constant">Object</span>.<span class="ruby-identifier">module_eval</span>(<span class="ruby-node">&quot;::#{$1}&quot;</span>, <span class="ruby-keyword kw">__FILE__</span>, <span class="ruby-keyword kw">__LINE__</span>)
+104:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="demodulize-method" class="method-detail ">
+				<a name="method-c-demodulize"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">demodulize</span><span
+						class="method-args">(class_name_in_module)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Removes the module part from the expression in the string
+</p>
+<p>
+@example
+</p>
+<pre>
+  &quot;ActiveRecord::CoreExtensions::String::Inflections&quot;.demodulize #=&gt; &quot;Inflections&quot;
+  &quot;Inflections&quot;.demodulize #=&gt; &quot;Inflections&quot;</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="demodulize-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 64</span>
+64:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">demodulize</span>(<span class="ruby-identifier">class_name_in_module</span>)
+65:         <span class="ruby-identifier">class_name_in_module</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/^.*::/</span>, <span class="ruby-value str">''</span>)
+66:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="foreign-key-method" class="method-detail ">
+				<a name="method-c-foreign_key"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">foreign_key</span><span
+						class="method-args">(class_name, key = "id")</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a foreign key name from a class name.
+</p>
+<p>
+@example
+</p>
+<pre>
+  &quot;Message&quot;.foreign_key #=&gt; &quot;message_id&quot;
+  &quot;Admin::Post&quot;.foreign_key #=&gt; &quot;post_id&quot;</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="foreign-key-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 87</span>
+87:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">foreign_key</span>(<span class="ruby-identifier">class_name</span>, <span class="ruby-identifier">key</span> = <span class="ruby-value str">&quot;id&quot;</span>)
+88:         <span class="ruby-identifier">underscore</span>(<span class="ruby-identifier">demodulize</span>(<span class="ruby-identifier">class_name</span>.<span class="ruby-identifier">to_s</span>)) <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;_&quot;</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">to_s</span>
+89:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="humanize-method" class="method-detail ">
+				<a name="method-c-humanize"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">humanize</span><span
+						class="method-args">(lower_case_and_underscored_word)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Capitalizes the first word and turns underscores into spaces and strips
+_id. Like titleize, this is meant for creating pretty output.
+</p>
+<p>
+@example
+</p>
+<pre>
+  &quot;employee_salary&quot; #=&gt; &quot;Employee salary&quot;
+  &quot;author_id&quot; #=&gt; &quot;Author&quot;</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="humanize-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 55</span>
+55:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">humanize</span>(<span class="ruby-identifier">lower_case_and_underscored_word</span>)
+56:         <span class="ruby-identifier">lower_case_and_underscored_word</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/_id$/</span>, <span class="ruby-value str">''</span>).<span class="ruby-identifier">tr</span>(<span class="ruby-value str">'_'</span>, <span class="ruby-value str">' '</span>).<span class="ruby-identifier">capitalize</span>
+57:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="plural-method" class="method-detail ">
+				<a name="method-c-plural"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">plural</span><span
+						class="method-args">(word)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Convert an English word from singular to plural.
+</p>
+<pre>
+  &quot;boy&quot;.plural     #=&gt; boys
+  &quot;tomato&quot;.plural  #=&gt; tomatoes
+</pre>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">word<String></td><td><p>
+word to pluralize
+</p>
+</td></tr>
+</table>
+<h4>Returns</h4>
+<table>
+<tr><td valign="top"><String></td><td><p>
+pluralized form of word
+</p>
+</td></tr>
+</table>
+<h4>Notes</h4>
+<p>
+Aliased as pluralize (a Railism)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="plural-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 305</span>
+305:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">plural</span>(<span class="ruby-identifier">word</span>)
+306:         <span class="ruby-comment cmt"># special exceptions</span>
+307:         <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">word</span> <span class="ruby-operator">==</span> <span class="ruby-value str">&quot;&quot;</span>
+308:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">result</span> = <span class="ruby-identifier">plural_of</span>[<span class="ruby-identifier">word</span>]
+309:           <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">result</span>.<span class="ruby-identifier">dup</span>
+310:         <span class="ruby-keyword kw">end</span>
+311:         <span class="ruby-identifier">result</span> = <span class="ruby-identifier">word</span>.<span class="ruby-identifier">dup</span>
+312:         <span class="ruby-identifier">regex</span>, <span class="ruby-identifier">hash</span> = <span class="ruby-identifier">pluralization_rules</span>
+313:         <span class="ruby-identifier">result</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-identifier">regex</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">m</span><span class="ruby-operator">|</span> <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">m</span>]}
+314:         <span class="ruby-identifier">plural_of</span>[<span class="ruby-identifier">word</span>] = <span class="ruby-identifier">result</span>
+315:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">result</span>
+316:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="plural-rule-method" class="method-detail ">
+				<a name="method-c-plural_rule"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">plural_rule</span><span
+						class="method-args">(singular, plural)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Define a plurualization rule.
+</p>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">singular<String></td><td><p>
+ending of the word in singular form
+</p>
+</td></tr>
+<tr><td valign="top">plural<String></td><td><p>
+ending of the word in plural form
+</p>
+</td></tr>
+</table>
+<h4>Examples</h4>
+<p>
+Once the following rule is defined: English::Inflect.singular_rule
+&#8216;fe&#8217;, &#8216;ves&#8217;
+</p>
+<p>
+You can see the following results: irb> &#8220;wife&#8221;.plural
+</p>
+<h1>> wives</h1>
+					
+
+					
+					<div class="method-source-code"
+						id="plural-rule-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 237</span>
+237:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">plural_rule</span>(<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>)
+238:         <span class="ruby-ivar">@plural_rules</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>]
+239:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="plural-word-method" class="method-detail ">
+				<a name="method-c-plural_word"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">plural_word</span><span
+						class="method-args">(singular, plural)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Define a pluralization exception.
+</p>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">singular<String></td><td><p>
+singular form of the word
+</p>
+</td></tr>
+<tr><td valign="top">plural<String></td><td><p>
+plural form of the word
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="plural-word-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 171</span>
+171:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">plural_word</span>(<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>)
+172:         <span class="ruby-ivar">@plural_of</span>[<span class="ruby-identifier">singular</span>] = <span class="ruby-identifier">plural</span>
+173:         <span class="ruby-ivar">@plural_of</span>[<span class="ruby-identifier">singular</span>.<span class="ruby-identifier">capitalize</span>] = <span class="ruby-identifier">plural</span>.<span class="ruby-identifier">capitalize</span>
+174:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="pluralization-rules-method" class="method-detail ">
+				<a name="method-c-pluralization_rules"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">pluralization_rules</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Read prepared pluralization rules.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="pluralization-rules-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 253</span>
+253:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">pluralization_rules</span>
+254:         <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">defined?</span>(<span class="ruby-ivar">@pluralization_regex</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@pluralization_regex</span>
+255:           <span class="ruby-keyword kw">return</span> [<span class="ruby-ivar">@pluralization_regex</span>, <span class="ruby-ivar">@pluralization_hash</span>]
+256:         <span class="ruby-keyword kw">end</span>
+257:         <span class="ruby-ivar">@pluralization_regex</span> = <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;(&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@plural_rules</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">s</span>,<span class="ruby-identifier">p</span><span class="ruby-operator">|</span> <span class="ruby-identifier">s</span>}.<span class="ruby-identifier">join</span>(<span class="ruby-value str">&quot;|&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;)$&quot;</span>, <span class="ruby-value str">&quot;i&quot;</span>)
+258:         <span class="ruby-ivar">@pluralization_hash</span>  = <span class="ruby-constant">Hash</span>[*<span class="ruby-ivar">@plural_rules</span>.<span class="ruby-identifier">flatten</span>]
+259:         [<span class="ruby-ivar">@pluralization_regex</span>, <span class="ruby-ivar">@pluralization_hash</span>]
+260:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="rule-method" class="method-detail ">
+				<a name="method-c-rule"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">rule</span><span
+						class="method-args">(singular, plural, whole_word = false)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Define a general rule.
+</p>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">singular<String></td><td><p>
+ending of the word in singular form
+</p>
+</td></tr>
+<tr><td valign="top">plural<String></td><td><p>
+ending of the word in plural form
+</p>
+</td></tr>
+<tr><td valign="top">whole_word<Boolean></td><td><p>
+for capitalization, since words can be capitalized (Man => Men)      #
+</p>
+</td></tr>
+</table>
+<h4>Examples</h4>
+<p>
+Once the following rule is defined: English::Inflect.rule &#8216;y&#8217;,
+&#8216;ies&#8217;
+</p>
+<p>
+You can see the following results: irb> &#8220;fly&#8221;.plural
+</p>
+<h1>> flies</h1>
+<p>
+irb> &#8220;cry&#8221;.plural
+</p>
+<h1>> cries</h1>
+<p>
+Define a general rule.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="rule-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 197</span>
+197:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">rule</span>(<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>, <span class="ruby-identifier">whole_word</span> = <span class="ruby-keyword kw">false</span>)
+198:         <span class="ruby-identifier">singular_rule</span>(<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>)
+199:         <span class="ruby-identifier">plural_rule</span>(<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>)
+200:         <span class="ruby-identifier">word</span>(<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">whole_word</span>
+201:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="singular-method" class="method-detail ">
+				<a name="method-c-singular"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">singular</span><span
+						class="method-args">(word)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Convert an English word from plural to singular.
+</p>
+<pre>
+  &quot;boys&quot;.singular      #=&gt; boy
+  &quot;tomatoes&quot;.singular  #=&gt; tomato
+</pre>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">word<String></td><td><p>
+word to singularize
+</p>
+</td></tr>
+</table>
+<h4>Returns</h4>
+<table>
+<tr><td valign="top"><String></td><td><p>
+singularized form of word
+</p>
+</td></tr>
+</table>
+<h4>Notes</h4>
+<p>
+Aliased as singularize (a Railism)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="singular-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 277</span>
+277:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">singular</span>(<span class="ruby-identifier">word</span>)
+278:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">result</span> = <span class="ruby-identifier">singular_of</span>[<span class="ruby-identifier">word</span>]
+279:           <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">result</span>.<span class="ruby-identifier">dup</span>
+280:         <span class="ruby-keyword kw">end</span>
+281:         <span class="ruby-identifier">result</span> = <span class="ruby-identifier">word</span>.<span class="ruby-identifier">dup</span>
+282:         <span class="ruby-identifier">regex</span>, <span class="ruby-identifier">hash</span> = <span class="ruby-identifier">singularization_rules</span>
+283:         <span class="ruby-identifier">result</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-identifier">regex</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">m</span><span class="ruby-operator">|</span> <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">m</span>]}
+284:         <span class="ruby-identifier">singular_of</span>[<span class="ruby-identifier">word</span>] = <span class="ruby-identifier">result</span>
+285:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">result</span>
+286:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="singular-rule-method" class="method-detail ">
+				<a name="method-c-singular_rule"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">singular_rule</span><span
+						class="method-args">(singular, plural)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Define a singularization rule.
+</p>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">singular<String></td><td><p>
+ending of the word in singular form
+</p>
+</td></tr>
+<tr><td valign="top">plural<String></td><td><p>
+ending of the word in plural form
+</p>
+</td></tr>
+</table>
+<h4>Examples</h4>
+<p>
+Once the following rule is defined: English::Inflect.singular_rule
+&#8216;o&#8217;, &#8216;oes&#8217;
+</p>
+<p>
+You can see the following results: irb> &#8220;heroes&#8221;.singular
+</p>
+<h1>> hero</h1>
+					
+
+					
+					<div class="method-source-code"
+						id="singular-rule-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 218</span>
+218:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">singular_rule</span>(<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>)
+219:         <span class="ruby-ivar">@singular_rules</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>]
+220:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="singular-word-method" class="method-detail ">
+				<a name="method-c-singular_word"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">singular_word</span><span
+						class="method-args">(singular, plural)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Define a singularization exception.
+</p>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">singular<String></td><td><p>
+singular form of the word
+</p>
+</td></tr>
+<tr><td valign="top">plural<String></td><td><p>
+plural form of the word
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="singular-word-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 159</span>
+159:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">singular_word</span>(<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>)
+160:         <span class="ruby-ivar">@singular_of</span>[<span class="ruby-identifier">plural</span>] = <span class="ruby-identifier">singular</span>
+161:         <span class="ruby-ivar">@singular_of</span>[<span class="ruby-identifier">plural</span>.<span class="ruby-identifier">capitalize</span>] = <span class="ruby-identifier">singular</span>.<span class="ruby-identifier">capitalize</span>
+162:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="singularization-rules-method" class="method-detail ">
+				<a name="method-c-singularization_rules"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">singularization_rules</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Read prepared singularization rules.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="singularization-rules-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 242</span>
+242:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">singularization_rules</span>
+243:         <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">defined?</span>(<span class="ruby-ivar">@singularization_regex</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@singularization_regex</span>
+244:           <span class="ruby-keyword kw">return</span> [<span class="ruby-ivar">@singularization_regex</span>, <span class="ruby-ivar">@singularization_hash</span>]
+245:         <span class="ruby-keyword kw">end</span>
+246:         <span class="ruby-comment cmt"># No sorting needed: Regexen match on longest string</span>
+247:         <span class="ruby-ivar">@singularization_regex</span> = <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;(&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@singular_rules</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">s</span>,<span class="ruby-identifier">p</span><span class="ruby-operator">|</span> <span class="ruby-identifier">p</span>}.<span class="ruby-identifier">join</span>(<span class="ruby-value str">&quot;|&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;)$&quot;</span>, <span class="ruby-value str">&quot;i&quot;</span>)
+248:         <span class="ruby-ivar">@singularization_hash</span>  = <span class="ruby-constant">Hash</span>[*<span class="ruby-ivar">@singular_rules</span>.<span class="ruby-identifier">flatten</span>].<span class="ruby-identifier">invert</span>
+249:         [<span class="ruby-ivar">@singularization_regex</span>, <span class="ruby-ivar">@singularization_hash</span>]
+250:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="tableize-method" class="method-detail ">
+				<a name="method-c-tableize"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">tableize</span><span
+						class="method-args">(class_name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Create the name of a table like Rails does for models to table names. This
+method uses the pluralize method on the last word in the string.
+</p>
+<p>
+@example
+</p>
+<pre>
+  &quot;RawScaledScorer&quot;.tableize #=&gt; &quot;raw_scaled_scorers&quot;
+  &quot;EnlargedTestis&quot;.tableize #=&gt; &quot;enlarged_testes&quot;
+  &quot;egg_and_ham&quot;.tableize #=&gt; &quot;egg_and_hams&quot;
+  &quot;fancyCategory&quot;.tableize #=&gt; &quot;fancy_categories&quot;</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="tableize-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 76</span>
+76:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tableize</span>(<span class="ruby-identifier">class_name</span>)
+77:         <span class="ruby-identifier">words</span> = <span class="ruby-identifier">class_name</span>.<span class="ruby-identifier">to_const_path</span>.<span class="ruby-identifier">tr</span>(<span class="ruby-value str">'/'</span>, <span class="ruby-value str">'_'</span>).<span class="ruby-identifier">split</span>(<span class="ruby-value str">'_'</span>)
+78:         <span class="ruby-identifier">words</span>[<span class="ruby-value">1</span>] = <span class="ruby-identifier">pluralize</span>(<span class="ruby-identifier">words</span>[<span class="ruby-value">1</span>])
+79:         <span class="ruby-identifier">words</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">'_'</span>)
+80:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="underscore-method" class="method-detail ">
+				<a name="method-c-underscore"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">underscore</span><span
+						class="method-args">(camel_cased_word)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The reverse of <tt>camelize</tt>. Makes an underscored form from the
+expression in the string.
+</p>
+<p>
+Changes &#8217;::&#8217; to &#8217;/&#8217; to convert namespaces to paths.
+</p>
+<p>
+@example
+</p>
+<pre>
+  &quot;ActiveRecord&quot;.underscore #=&gt; &quot;active_record&quot;
+  &quot;ActiveRecord::Errors&quot;.underscore #=&gt; active_record/errors</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="underscore-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 45</span>
+45:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">underscore</span>(<span class="ruby-identifier">camel_cased_word</span>)
+46:         <span class="ruby-identifier">camel_cased_word</span>.<span class="ruby-identifier">to_const_path</span>
+47:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="word-method" class="method-detail ">
+				<a name="method-c-word"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">word</span><span
+						class="method-args">(singular, plural=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Defines a general inflection exception case.
+</p>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">singular<String></td><td><p>
+singular form of the word
+</p>
+</td></tr>
+<tr><td valign="top">plural<String></td><td><p>
+plural form of the word
+</p>
+</td></tr>
+</table>
+<h4>Examples</h4>
+<p>
+Here we define erratum/errata exception case:
+</p>
+<p>
+English::Inflect.word &#8220;erratum&#8221;, &#8220;errata&#8220;
+</p>
+<p>
+In case singular and plural forms are the same omit second argument on
+call:
+</p>
+<p>
+English::Inflect.word &#8216;information&#8217;
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="word-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/inflection.rb, line 132</span>
+132:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">word</span>(<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>=<span class="ruby-keyword kw">nil</span>)
+133:         <span class="ruby-identifier">plural</span> = <span class="ruby-identifier">singular</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">plural</span>
+134:         <span class="ruby-identifier">singular_word</span>(<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>)
+135:         <span class="ruby-identifier">plural_word</span>(<span class="ruby-identifier">singular</span>, <span class="ruby-identifier">plural</span>)
+136:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

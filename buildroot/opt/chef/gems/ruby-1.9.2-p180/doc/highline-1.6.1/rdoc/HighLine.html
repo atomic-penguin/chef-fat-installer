@@ -1,0 +1,2018 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: HighLine</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/highline_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/highline.rb">lib/highline.rb</a></li>
+					
+						<li><a href="./lib/highline/question_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/highline/question.rb">lib/highline/question.rb</a></li>
+					
+						<li><a href="./lib/highline/color_scheme_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/highline/color_scheme.rb">lib/highline/color_scheme.rb</a></li>
+					
+						<li><a href="./lib/highline/system_extensions_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/highline/system_extensions.rb">lib/highline/system_extensions.rb</a></li>
+					
+						<li><a href="./lib/highline/menu_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/highline/menu.rb">lib/highline/menu.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="Object.html">Object</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+			<div id="namespace-list-section" class="section">
+				<h3 class="section-header">Namespace</h3>
+				<ul class="link-list">
+					
+					<li><span class="type">MODULE</span> <a href="HighLine/SystemExtensions.html">HighLine::SystemExtensions</a></li>
+					
+					<li><span class="type">CLASS</span> <a href="HighLine/ColorScheme.html">HighLine::ColorScheme</a></li>
+					
+					<li><span class="type">CLASS</span> <a href="HighLine/Menu.html">HighLine::Menu</a></li>
+					
+					<li><span class="type">CLASS</span> <a href="HighLine/Question.html">HighLine::Question</a></li>
+					
+					<li><span class="type">CLASS</span> <a href="HighLine/QuestionError.html">HighLine::QuestionError</a></li>
+					
+					<li><span class="type">CLASS</span> <a href="HighLine/SampleColorScheme.html">HighLine::SampleColorScheme</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-color_scheme">::color_scheme</a></li>
+					
+					<li><a href="#method-c-color_scheme%3D">::color_scheme=</a></li>
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-c-track_eof%3D">::track_eof=</a></li>
+					
+					<li><a href="#method-c-track_eof%3F">::track_eof?</a></li>
+					
+					<li><a href="#method-c-use_color%3D">::use_color=</a></li>
+					
+					<li><a href="#method-c-use_color%3F">::use_color?</a></li>
+					
+					<li><a href="#method-c-using_color_scheme%3F">::using_color_scheme?</a></li>
+					
+					<li><a href="#method-i-actual_length">#actual_length</a></li>
+					
+					<li><a href="#method-i-agree">#agree</a></li>
+					
+					<li><a href="#method-i-ask">#ask</a></li>
+					
+					<li><a href="#method-i-choose">#choose</a></li>
+					
+					<li><a href="#method-i-color">#color</a></li>
+					
+					<li><a href="#method-i-continue_paging%3F">#continue_paging?</a></li>
+					
+					<li><a href="#method-i-explain_error">#explain_error</a></li>
+					
+					<li><a href="#method-i-gather">#gather</a></li>
+					
+					<li><a href="#method-i-get_line">#get_line</a></li>
+					
+					<li><a href="#method-i-get_response">#get_response</a></li>
+					
+					<li><a href="#method-i-list">#list</a></li>
+					
+					<li><a href="#method-i-output_cols">#output_cols</a></li>
+					
+					<li><a href="#method-i-output_rows">#output_rows</a></li>
+					
+					<li><a href="#method-i-page_at%3D">#page_at=</a></li>
+					
+					<li><a href="#method-i-page_print">#page_print</a></li>
+					
+					<li><a href="#method-i-say">#say</a></li>
+					
+					<li><a href="#method-i-wrap">#wrap</a></li>
+					
+					<li><a href="#method-i-wrap_at%3D">#wrap_at=</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+			<div id="includes-section" class="section">
+				<h3 class="section-header">Included Modules</h3>
+				<ul class="link-list">
+				
+				
+					<li><a class="include" href="HighLine/SystemExtensions.html">HighLine::SystemExtensions</a></li>
+				
+				
+				</ul>
+			</div>
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./CHANGELOG.html">CHANGELOG</a></li>
+				
+					<li class="file"><a href="./INSTALL.html">INSTALL</a></li>
+				
+					<li class="file"><a href="./LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="./README.html">README</a></li>
+				
+					<li class="file"><a href="./TODO.html">TODO</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./HighLine.html">HighLine</a></li>
+				
+					<li><a href="./HighLine/ColorScheme.html">HighLine::ColorScheme</a></li>
+				
+					<li><a href="./HighLine/Menu.html">HighLine::Menu</a></li>
+				
+					<li><a href="./HighLine/Question.html">HighLine::Question</a></li>
+				
+					<li><a href="./HighLine/Question/NoAutoCompleteMatch.html">HighLine::Question::NoAutoCompleteMatch</a></li>
+				
+					<li><a href="./HighLine/QuestionError.html">HighLine::QuestionError</a></li>
+				
+					<li><a href="./HighLine/SampleColorScheme.html">HighLine::SampleColorScheme</a></li>
+				
+					<li><a href="./HighLine/SystemExtensions.html">HighLine::SystemExtensions</a></li>
+				
+					<li><a href="./IO.html">IO</a></li>
+				
+					<li><a href="./Kernel.html">Kernel</a></li>
+				
+					<li><a href="./Object.html">Object</a></li>
+				
+					<li><a href="./String.html">String</a></li>
+				
+					<li><a href="./StringIO.html">StringIO</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">HighLine</h1>
+
+		<div id="description">
+			<p>
+A <a href="HighLine.html">HighLine</a> object is a &#8220;high-level line
+oriented&#8221; shell over an input and an  output stream.  <a
+href="HighLine.html">HighLine</a> simplifies common console interaction,
+effectively replacing puts() and gets().  User code can simply specify the
+question to ask and any details about user interaction, then leave the rest
+of the work to <a href="HighLine.html">HighLine</a>.  When <a
+href="HighLine.html#method-i-ask">HighLine.ask()</a> returns, you&#8217;ll
+have the answer you requested, even if <a href="HighLine.html">HighLine</a>
+had to ask many times, validate results, perform range checking, convert
+types, etc.
+</p>
+<hr style="height: 1px"></hr><p>
+color_scheme.rb
+</p>
+<p>
+Created by Jeremy Hinegardner on 2007-01-24 Copyright 2007.  All rights
+reserved
+</p>
+<p>
+This is Free Software.  See <a href="LICENSE.html">LICENSE</a> and COPYING
+for details
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="VERSION">VERSION</a></dt>
+				
+				<dd class="description"><p>
+The version of the installed library.
+</p></dd>
+				
+			
+				<dt><a name="CLEAR">CLEAR</a></dt>
+				
+				<dd class="description"><p>
+Embed in a <a href="String.html">String</a> to clear all previous ANSI
+sequences.  This <b>MUST</b> be  done before the program exits!
+</p></dd>
+				
+			
+				<dt><a name="RESET">RESET</a></dt>
+				
+				<dd class="description"><p>
+An alias for <a href="HighLine.html#CLEAR">CLEAR</a>.
+</p></dd>
+				
+			
+				<dt><a name="ERASE_LINE">ERASE_LINE</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="ERASE_CHAR">ERASE_CHAR</a></dt>
+				
+				<dd class="description"><p>
+Erase the character under the cursor.
+</p></dd>
+				
+			
+				<dt><a name="BOLD">BOLD</a></dt>
+				
+				<dd class="description"><p>
+The start of an ANSI bold sequence.
+</p></dd>
+				
+			
+				<dt><a name="DARK">DARK</a></dt>
+				
+				<dd class="description"><p>
+The start of an ANSI dark sequence.  (Terminal support uncommon.)
+</p></dd>
+				
+			
+				<dt><a name="UNDERLINE">UNDERLINE</a></dt>
+				
+				<dd class="description"><p>
+The start of an ANSI underline sequence.
+</p></dd>
+				
+			
+				<dt><a name="UNDERSCORE">UNDERSCORE</a></dt>
+				
+				<dd class="description"><p>
+An alias for <a href="HighLine.html#UNDERLINE">UNDERLINE</a>.
+</p></dd>
+				
+			
+				<dt><a name="BLINK">BLINK</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="REVERSE">REVERSE</a></dt>
+				
+				<dd class="description"><p>
+The start of an ANSI reverse sequence.
+</p></dd>
+				
+			
+				<dt><a name="CONCEALED">CONCEALED</a></dt>
+				
+				<dd class="description"><p>
+The start of an ANSI concealed sequence.  (Terminal support uncommon.)
+</p></dd>
+				
+			
+				<dt><a name="BLACK">BLACK</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s foreground ANSI color to black.
+</p></dd>
+				
+			
+				<dt><a name="RED">RED</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s foreground ANSI color to red.
+</p></dd>
+				
+			
+				<dt><a name="GREEN">GREEN</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s foreground ANSI color to green.
+</p></dd>
+				
+			
+				<dt><a name="YELLOW">YELLOW</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s foreground ANSI color to yellow.
+</p></dd>
+				
+			
+				<dt><a name="BLUE">BLUE</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s foreground ANSI color to blue.
+</p></dd>
+				
+			
+				<dt><a name="MAGENTA">MAGENTA</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s foreground ANSI color to magenta.
+</p></dd>
+				
+			
+				<dt><a name="CYAN">CYAN</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s foreground ANSI color to cyan.
+</p></dd>
+				
+			
+				<dt><a name="WHITE">WHITE</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s foreground ANSI color to white.
+</p></dd>
+				
+			
+				<dt><a name="ON_BLACK">ON_BLACK</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s background ANSI color to black.
+</p></dd>
+				
+			
+				<dt><a name="ON_RED">ON_RED</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s background ANSI color to red.
+</p></dd>
+				
+			
+				<dt><a name="ON_GREEN">ON_GREEN</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s background ANSI color to green.
+</p></dd>
+				
+			
+				<dt><a name="ON_YELLOW">ON_YELLOW</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s background ANSI color to yellow.
+</p></dd>
+				
+			
+				<dt><a name="ON_BLUE">ON_BLUE</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s background ANSI color to blue.
+</p></dd>
+				
+			
+				<dt><a name="ON_MAGENTA">ON_MAGENTA</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s background ANSI color to magenta.
+</p></dd>
+				
+			
+				<dt><a name="ON_CYAN">ON_CYAN</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s background ANSI color to cyan.
+</p></dd>
+				
+			
+				<dt><a name="ON_WHITE">ON_WHITE</a></dt>
+				
+				<dd class="description"><p>
+Set the terminal&#8217;s background ANSI color to white.
+</p></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="wrap-at-attribute-method" class="method-detail">
+				<a name="wrap_at"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">wrap_at</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+The current column setting for wrapping output.
+</p>
+				
+				</div>
+			</div>
+			
+			<div id="page-at-attribute-method" class="method-detail">
+				<a name="page_at"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">page_at</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+The current row setting for paging output.
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="color-scheme-method" class="method-detail ">
+				<a name="method-c-color_scheme"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">color_scheme</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the current color scheme.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="color-scheme-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/highline.rb, line 74</span>
+74:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">color_scheme</span>
+75:     <span class="ruby-identifier">@@color_scheme</span>
+76:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="color-scheme--method" class="method-detail ">
+				<a name="method-c-color_scheme%3D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">color_scheme=</span><span
+						class="method-args">( setting )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Pass <a href="HighLine/ColorScheme.html">ColorScheme</a> to
+<em>setting</em> to turn set a <a href="HighLine.html">HighLine</a> color
+scheme.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="color-scheme--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/highline.rb, line 69</span>
+69:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">color_scheme=</span>( <span class="ruby-identifier">setting</span> )
+70:     <span class="ruby-identifier">@@color_scheme</span> = <span class="ruby-identifier">setting</span>
+71:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">( input = $stdin, output = $stdout, wrap_at = nil, page_at = nil )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Create an instance of <a href="HighLine.html">HighLine</a>, connected to
+the streams <em>input</em> and <em>output</em>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 147</span>
+147:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>( <span class="ruby-identifier">input</span> = <span class="ruby-identifier">$stdin</span>, <span class="ruby-identifier">output</span> = <span class="ruby-identifier">$stdout</span>,
+148:                   <span class="ruby-identifier">wrap_at</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">page_at</span> = <span class="ruby-keyword kw">nil</span> )
+149:     <span class="ruby-ivar">@input</span>   = <span class="ruby-identifier">input</span>
+150:     <span class="ruby-ivar">@output</span>  = <span class="ruby-identifier">output</span>
+151:     
+152:     <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">wrap_at</span> = <span class="ruby-identifier">wrap_at</span>
+153:     <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">page_at</span> = <span class="ruby-identifier">page_at</span>
+154:     
+155:     <span class="ruby-ivar">@question</span> = <span class="ruby-keyword kw">nil</span>
+156:     <span class="ruby-ivar">@answer</span>   = <span class="ruby-keyword kw">nil</span>
+157:     <span class="ruby-ivar">@menu</span>     = <span class="ruby-keyword kw">nil</span>
+158:     <span class="ruby-ivar">@header</span>   = <span class="ruby-keyword kw">nil</span>
+159:     <span class="ruby-ivar">@prompt</span>   = <span class="ruby-keyword kw">nil</span>
+160:     <span class="ruby-ivar">@gather</span>   = <span class="ruby-keyword kw">nil</span>
+161:     <span class="ruby-ivar">@answers</span>  = <span class="ruby-keyword kw">nil</span>
+162:     <span class="ruby-ivar">@key</span>      = <span class="ruby-keyword kw">nil</span>
+163:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="track-eof--method" class="method-detail ">
+				<a name="method-c-track_eof%3D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">track_eof=</span><span
+						class="method-args">( setting )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Pass <tt>false</tt> to <em>setting</em> to turn off HighLine&#8217;s EOF
+tracking.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="track-eof--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/highline.rb, line 56</span>
+56:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">track_eof=</span>( <span class="ruby-identifier">setting</span> )
+57:     <span class="ruby-identifier">@@track_eof</span> = <span class="ruby-identifier">setting</span>
+58:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="track-eof--method" class="method-detail ">
+				<a name="method-c-track_eof%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">track_eof?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns true if <a href="HighLine.html">HighLine</a> is currently tracking
+EOF for input.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="track-eof--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/highline.rb, line 61</span>
+61:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">track_eof?</span>
+62:     <span class="ruby-identifier">@@track_eof</span>
+63:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="use-color--method" class="method-detail ">
+				<a name="method-c-use_color%3D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">use_color=</span><span
+						class="method-args">( setting )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Pass <tt>false</tt> to <em>setting</em> to turn off HighLine&#8217;s color
+escapes.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="use-color--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/highline.rb, line 43</span>
+43:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">use_color=</span>( <span class="ruby-identifier">setting</span> )
+44:     <span class="ruby-identifier">@@use_color</span> = <span class="ruby-identifier">setting</span>
+45:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="use-color--method" class="method-detail ">
+				<a name="method-c-use_color%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">use_color?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns true if <a href="HighLine.html">HighLine</a> is currently using
+color escapes.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="use-color--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/highline.rb, line 48</span>
+48:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">use_color?</span>
+49:     <span class="ruby-identifier">@@use_color</span>
+50:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="using-color-scheme--method" class="method-detail ">
+				<a name="method-c-using_color_scheme%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">using_color_scheme?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns <tt>true</tt> if <a href="HighLine.html">HighLine</a> is currently
+using a color scheme.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="using-color-scheme--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/highline.rb, line 79</span>
+79:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">using_color_scheme?</span>
+80:     <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">@@color_scheme</span>.<span class="ruby-identifier">nil?</span>
+81:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="agree-method" class="method-detail ">
+				<a name="method-i-agree"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">agree</span><span
+						class="method-args">( yes_or_no_question, character = nil )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+A shortcut to <a href="HighLine.html#method-i-ask">HighLine.ask()</a> a
+question that only accepts &#8220;yes&#8221; or &#8220;no&#8221; answers
+(&#8220;y&#8221; and &#8220;n&#8221; are allowed) and returns <tt>true</tt>
+or <tt>false</tt> (<tt>true</tt> for &#8220;yes&#8221;).  If provided a
+<tt>true</tt> value, <em>character</em> will cause <a
+href="HighLine.html">HighLine</a> to fetch a single character response. A
+block can be provided to further configure the question as in <a
+href="HighLine.html#method-i-ask">HighLine.ask()</a>
+</p>
+<p>
+Raises EOFError if input is exhausted.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="agree-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 181</span>
+181:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">agree</span>( <span class="ruby-identifier">yes_or_no_question</span>, <span class="ruby-identifier">character</span> = <span class="ruby-keyword kw">nil</span> )
+182:     <span class="ruby-identifier">ask</span>(<span class="ruby-identifier">yes_or_no_question</span>, <span class="ruby-identifier">lambda</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">yn</span><span class="ruby-operator">|</span> <span class="ruby-identifier">yn</span>.<span class="ruby-identifier">downcase</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">==</span> <span class="ruby-value">yy</span>}) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">q</span><span class="ruby-operator">|</span>
+183:       <span class="ruby-identifier">q</span>.<span class="ruby-identifier">validate</span>                 = <span class="ruby-regexp re">/\Ay(?:es)?|no?\Z/</span>
+184:       <span class="ruby-identifier">q</span>.<span class="ruby-identifier">responses</span>[<span class="ruby-value">:not_valid</span>]    = <span class="ruby-value str">'Please enter &quot;yes&quot; or &quot;no&quot;.'</span>
+185:       <span class="ruby-identifier">q</span>.<span class="ruby-identifier">responses</span>[<span class="ruby-value">:ask_on_error</span>] = <span class="ruby-value">:question</span>
+186:       <span class="ruby-identifier">q</span>.<span class="ruby-identifier">character</span>                = <span class="ruby-identifier">character</span>
+187:       
+188:       <span class="ruby-keyword kw">yield</span> <span class="ruby-identifier">q</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">block_given?</span>
+189:     <span class="ruby-keyword kw">end</span>
+190:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="ask-method" class="method-detail ">
+				<a name="method-i-ask"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">ask</span><span
+						class="method-args">( question, answer_type = String )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This method is the primary interface for user input.  Just provide a
+<em>question</em> to ask the user, the <em>answer_type</em> you want
+returned, and optionally a code block setting up details of how you want
+the question handled.  See <a
+href="HighLine.html#method-i-say">HighLine.say()</a> for details on the
+format of <em>question</em>, and <a
+href="HighLine/Question.html">HighLine::Question</a> for more information
+about <em>answer_type</em> and what&#8217;s valid in the code block.
+</p>
+<p>
+If <tt>@question</tt> is set before ask() is called, parameters are ignored
+and that object (must be a <a
+href="HighLine/Question.html">HighLine::Question</a>) is used to drive the
+process instead.
+</p>
+<p>
+Raises EOFError if input is exhausted.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="ask-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 206</span>
+206:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ask</span>( <span class="ruby-identifier">question</span>, <span class="ruby-identifier">answer_type</span> = <span class="ruby-constant">String</span>, &amp;<span class="ruby-identifier">details</span> ) <span class="ruby-comment cmt"># :yields: question</span>
+207:     <span class="ruby-ivar">@question</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Question</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">question</span>, <span class="ruby-identifier">answer_type</span>, &amp;<span class="ruby-identifier">details</span>)
+208:     
+209:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">gather</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">gather</span>
+210:   
+211:     <span class="ruby-comment cmt"># readline() needs to handle it's own output, but readline only supports </span>
+212:     <span class="ruby-comment cmt"># full line reading.  Therefore if @question.echo is anything but true, </span>
+213:     <span class="ruby-comment cmt"># the prompt will not be issued. And we have to account for that now.</span>
+214:     <span class="ruby-identifier">say</span>(<span class="ruby-ivar">@question</span>) <span class="ruby-keyword kw">unless</span> (<span class="ruby-ivar">@question</span>.<span class="ruby-identifier">readline</span> <span class="ruby-keyword kw">and</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">echo</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span>)
+215:     <span class="ruby-keyword kw">begin</span>
+216:       <span class="ruby-ivar">@answer</span> = <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">answer_or_default</span>(<span class="ruby-identifier">get_response</span>)
+217:       <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">valid_answer?</span>(<span class="ruby-ivar">@answer</span>)
+218:         <span class="ruby-identifier">explain_error</span>(<span class="ruby-value">:not_valid</span>)
+219:         <span class="ruby-identifier">raise</span> <span class="ruby-constant">QuestionError</span>
+220:       <span class="ruby-keyword kw">end</span>
+221:       
+222:       <span class="ruby-ivar">@answer</span> = <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">convert</span>(<span class="ruby-ivar">@answer</span>)
+223:       
+224:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">in_range?</span>(<span class="ruby-ivar">@answer</span>)
+225:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">confirm</span>
+226:           <span class="ruby-comment cmt"># need to add a layer of scope to ask a question inside a</span>
+227:           <span class="ruby-comment cmt"># question, without destroying instance data</span>
+228:           <span class="ruby-identifier">context_change</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@input</span>, <span class="ruby-ivar">@output</span>, <span class="ruby-ivar">@wrap_at</span>, <span class="ruby-ivar">@page_at</span>)
+229:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">confirm</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span>
+230:             <span class="ruby-identifier">confirm_question</span> = <span class="ruby-value str">&quot;Are you sure?  &quot;</span>
+231:           <span class="ruby-keyword kw">else</span>
+232:             <span class="ruby-comment cmt"># evaluate ERb under initial scope, so it will have</span>
+233:             <span class="ruby-comment cmt"># access to @question and @answer</span>
+234:             <span class="ruby-identifier">template</span>  = <span class="ruby-constant">ERB</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@question</span>.<span class="ruby-identifier">confirm</span>, <span class="ruby-keyword kw">nil</span>, <span class="ruby-value str">&quot;%&quot;</span>)
+235:             <span class="ruby-identifier">confirm_question</span> = <span class="ruby-identifier">template</span>.<span class="ruby-identifier">result</span>(<span class="ruby-identifier">binding</span>)
+236:           <span class="ruby-keyword kw">end</span>
+237:           <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">context_change</span>.<span class="ruby-identifier">agree</span>(<span class="ruby-identifier">confirm_question</span>)
+238:             <span class="ruby-identifier">explain_error</span>(<span class="ruby-keyword kw">nil</span>)
+239:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">QuestionError</span>
+240:           <span class="ruby-keyword kw">end</span>
+241:         <span class="ruby-keyword kw">end</span>
+242:         
+243:         <span class="ruby-ivar">@answer</span>
+244:       <span class="ruby-keyword kw">else</span>
+245:         <span class="ruby-identifier">explain_error</span>(<span class="ruby-value">:not_in_range</span>)
+246:         <span class="ruby-identifier">raise</span> <span class="ruby-constant">QuestionError</span>
+247:       <span class="ruby-keyword kw">end</span>
+248:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">QuestionError</span>
+249:       <span class="ruby-keyword kw">retry</span>
+250:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-constant">NameError</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">error</span>
+251:       <span class="ruby-identifier">raise</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">error</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">NoMethodError</span>)
+252:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">error</span>.<span class="ruby-identifier">message</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/ambiguous/</span>
+253:         <span class="ruby-comment cmt"># the assumption here is that OptionParser::Completion#complete</span>
+254:         <span class="ruby-comment cmt"># (used for ambiguity resolution) throws exceptions containing </span>
+255:         <span class="ruby-comment cmt"># the word 'ambiguous' whenever resolution fails</span>
+256:         <span class="ruby-identifier">explain_error</span>(<span class="ruby-value">:ambiguous_completion</span>)
+257:       <span class="ruby-keyword kw">else</span>
+258:         <span class="ruby-identifier">explain_error</span>(<span class="ruby-value">:invalid_type</span>)
+259:       <span class="ruby-keyword kw">end</span>
+260:       <span class="ruby-keyword kw">retry</span>
+261:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Question</span><span class="ruby-operator">::</span><span class="ruby-constant">NoAutoCompleteMatch</span>
+262:       <span class="ruby-identifier">explain_error</span>(<span class="ruby-value">:no_completion</span>)
+263:       <span class="ruby-keyword kw">retry</span>
+264:     <span class="ruby-keyword kw">ensure</span>
+265:       <span class="ruby-ivar">@question</span> = <span class="ruby-keyword kw">nil</span>    <span class="ruby-comment cmt"># Reset Question object.</span>
+266:     <span class="ruby-keyword kw">end</span>
+267:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="choose-method" class="method-detail ">
+				<a name="method-i-choose"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">choose</span><span
+						class="method-args">( *items, &details )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This method is HighLine&#8217;s menu handler.  For simple usage, you can
+just pass all the menu items you wish to display.  At that point, choose()
+will build and display a menu, walk the user through selection, and return
+their choice amoung the provided items.  You might use this in a case
+statement for quick and dirty menus.
+</p>
+<p>
+However, choose() is capable of much more.  If provided, a block will be
+passed a <a href="HighLine/Menu.html">HighLine::Menu</a> object to
+configure.  Using this method, you can customize all the details of menu
+handling from index display, to building a complete shell-like menuing
+system.  See <a href="HighLine/Menu.html">HighLine::Menu</a> for all the
+methods it responds to.
+</p>
+<p>
+Raises EOFError if input is exhausted.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="choose-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 284</span>
+284:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">choose</span>( *<span class="ruby-identifier">items</span>, &amp;<span class="ruby-identifier">details</span> )
+285:     <span class="ruby-ivar">@menu</span> = <span class="ruby-ivar">@question</span> = <span class="ruby-constant">Menu</span>.<span class="ruby-identifier">new</span>(&amp;<span class="ruby-identifier">details</span>)
+286:     <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">choices</span>(*<span class="ruby-identifier">items</span>) <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">items</span>.<span class="ruby-identifier">empty?</span>
+287:     
+288:     <span class="ruby-comment cmt"># Set _answer_type_ so we can double as the Question for ask().</span>
+289:     <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">answer_type</span> = <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">shell</span>
+290:       <span class="ruby-identifier">lambda</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">command</span><span class="ruby-operator">|</span>    <span class="ruby-comment cmt"># shell-style selection</span>
+291:         <span class="ruby-identifier">first_word</span> = <span class="ruby-identifier">command</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">split</span>.<span class="ruby-identifier">first</span> <span class="ruby-operator">||</span> <span class="ruby-value str">&quot;&quot;</span>
+292: 
+293:         <span class="ruby-identifier">options</span> = <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">options</span>
+294:         <span class="ruby-identifier">options</span>.<span class="ruby-identifier">extend</span>(<span class="ruby-constant">OptionParser</span><span class="ruby-operator">::</span><span class="ruby-constant">Completion</span>)
+295:         <span class="ruby-identifier">answer</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">complete</span>(<span class="ruby-identifier">first_word</span>)
+296: 
+297:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">answer</span>.<span class="ruby-identifier">nil?</span>
+298:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">Question</span><span class="ruby-operator">::</span><span class="ruby-constant">NoAutoCompleteMatch</span>
+299:         <span class="ruby-keyword kw">end</span>
+300: 
+301:         [<span class="ruby-identifier">answer</span>.<span class="ruby-identifier">last</span>, <span class="ruby-identifier">command</span>.<span class="ruby-identifier">sub</span>(<span class="ruby-node">/^\s*#{first_word}\s*/</span>, <span class="ruby-value str">&quot;&quot;</span>)]
+302:       <span class="ruby-keyword kw">end</span>
+303:     <span class="ruby-keyword kw">else</span>
+304:       <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">options</span>          <span class="ruby-comment cmt"># normal menu selection, by index or name</span>
+305:     <span class="ruby-keyword kw">end</span>
+306:     
+307:     <span class="ruby-comment cmt"># Provide hooks for ERb layouts.</span>
+308:     <span class="ruby-ivar">@header</span>   = <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">header</span>
+309:     <span class="ruby-ivar">@prompt</span>   = <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">prompt</span>
+310:     
+311:     <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">shell</span>
+312:       <span class="ruby-identifier">selected</span> = <span class="ruby-identifier">ask</span>(<span class="ruby-value str">&quot;Ignored&quot;</span>, <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">answer_type</span>)
+313:       <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">select</span>(<span class="ruby-keyword kw">self</span>, *<span class="ruby-identifier">selected</span>)
+314:     <span class="ruby-keyword kw">else</span>
+315:       <span class="ruby-identifier">selected</span> = <span class="ruby-identifier">ask</span>(<span class="ruby-value str">&quot;Ignored&quot;</span>, <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">answer_type</span>)
+316:       <span class="ruby-ivar">@menu</span>.<span class="ruby-identifier">select</span>(<span class="ruby-keyword kw">self</span>, <span class="ruby-identifier">selected</span>)
+317:     <span class="ruby-keyword kw">end</span>
+318:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="color-method" class="method-detail ">
+				<a name="method-i-color"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">color</span><span
+						class="method-args">( string, *colors )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This method provides easy access to ANSI color sequences, without the user
+needing to remember to <a href="HighLine.html#CLEAR">CLEAR</a> at the end
+of each sequence.  Just pass the <em>string</em> to color, followed by a
+list of <em>colors</em> you would like it to be affected by.  The
+<em>colors</em> can be <a href="HighLine.html">HighLine</a> class
+constants, or symbols  (:blue for <a href="HighLine.html#BLUE">BLUE</a>,
+for example).  A <a href="HighLine.html#CLEAR">CLEAR</a> will automatically
+be embedded to the end of the returned <a href="String.html">String</a>.
+</p>
+<p>
+This method returns the original <em>string</em> unchanged if <a
+href="HighLine.html#method-c-use_color%3F">HighLine::use_color?</a>  is
+<tt>false</tt>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="color-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 331</span>
+331:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">color</span>( <span class="ruby-identifier">string</span>, *<span class="ruby-identifier">colors</span> )
+332:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">string</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">use_color?</span>
+333:     
+334:     <span class="ruby-identifier">colors</span>.<span class="ruby-identifier">map!</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+335:       <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">using_color_scheme?</span> <span class="ruby-keyword kw">and</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">color_scheme</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">c</span>
+336:         <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">color_scheme</span>[<span class="ruby-identifier">c</span>]
+337:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">c</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Symbol</span>
+338:         <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-identifier">c</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">upcase</span>)
+339:       <span class="ruby-keyword kw">else</span>
+340:         <span class="ruby-identifier">c</span>
+341:       <span class="ruby-keyword kw">end</span>
+342:     <span class="ruby-keyword kw">end</span>
+343:     <span class="ruby-node">&quot;#{colors.flatten.join}#{string}#{CLEAR}&quot;</span>
+344:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="list-method" class="method-detail ">
+				<a name="method-i-list"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">list</span><span
+						class="method-args">( items, mode = :rows, option = nil )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This method is a utility for quickly and easily laying out lists.  It can
+be accessed within ERb replacements of any text that will be sent to the
+user.
+</p>
+<p>
+The only required parameter is <em>items</em>, which should be the Array of
+items to list.  A specified <em>mode</em> controls how that list is formed
+and <em>option</em> has different effects, depending on the <em>mode</em>. 
+Recognized modes are:
+</p>
+<table>
+<tr><td valign="top"><tt>:columns_across</tt></td><td><p>
+<em>items</em> will be placed in columns, flowing from left to right.  If
+given, <em>option</em> is the number of columns to be used.  When absent, 
+columns will be determined based on <em><a
+href="HighLine.html#wrap_at">wrap_at</a></em> or a default of 80
+characters.
+</p>
+</td></tr>
+<tr><td valign="top"><tt>:columns_down</tt></td><td><p>
+Identical to <tt>:columns_across</tt>, save flow goes down.
+</p>
+</td></tr>
+<tr><td valign="top"><tt>:inline</tt></td><td><p>
+All <em>items</em> are placed on a single line.  The last two
+<em>items</em> are separated by <em>option</em> or a default of &#8220; or
+&#8220;.  All other <em>items</em> are separated by &#8220;, &#8220;.
+</p>
+</td></tr>
+<tr><td valign="top"><tt>:rows</tt></td><td><p>
+The default mode.  Each of the <em>items</em> is placed on it&#8217;s own
+line.  The <em>option</em> parameter is ignored in this mode.
+</p>
+</td></tr>
+</table>
+<p>
+Each member of the <em>items</em> Array is passed through ERb and thus can
+contain their own expansions.  Color escape expansions do not contribute to
+the  final field width.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="list-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 374</span>
+374:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">list</span>( <span class="ruby-identifier">items</span>, <span class="ruby-identifier">mode</span> = <span class="ruby-value">:rows</span>, <span class="ruby-identifier">option</span> = <span class="ruby-keyword kw">nil</span> )
+375:     <span class="ruby-identifier">items</span> = <span class="ruby-identifier">items</span>.<span class="ruby-identifier">to_ary</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span>
+376:       <span class="ruby-constant">ERB</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">item</span>, <span class="ruby-keyword kw">nil</span>, <span class="ruby-value str">&quot;%&quot;</span>).<span class="ruby-identifier">result</span>(<span class="ruby-identifier">binding</span>)
+377:     <span class="ruby-keyword kw">end</span>
+378:     
+379:     <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">mode</span>
+380:     <span class="ruby-keyword kw">when</span> <span class="ruby-value">:inline</span>
+381:       <span class="ruby-identifier">option</span> = <span class="ruby-value str">&quot; or &quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">option</span>.<span class="ruby-identifier">nil?</span>
+382:       
+383:       <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">items</span>.<span class="ruby-identifier">size</span>
+384:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">0</span>
+385:         <span class="ruby-value str">&quot;&quot;</span>
+386:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">1</span>
+387:         <span class="ruby-identifier">items</span>.<span class="ruby-identifier">first</span>
+388:       <span class="ruby-keyword kw">when</span> <span class="ruby-value">2</span>
+389:         <span class="ruby-node">&quot;#{items.first}#{option}#{items.last}&quot;</span>
+390:       <span class="ruby-keyword kw">else</span>
+391:         <span class="ruby-identifier">items</span>[<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">2</span>].<span class="ruby-identifier">join</span>(<span class="ruby-value str">&quot;, &quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-node">&quot;#{option}#{items.last}&quot;</span>
+392:       <span class="ruby-keyword kw">end</span>
+393:     <span class="ruby-keyword kw">when</span> <span class="ruby-value">:columns_across</span>, <span class="ruby-value">:columns_down</span>
+394:       <span class="ruby-identifier">max_length</span> = <span class="ruby-identifier">actual_length</span>(
+395:         <span class="ruby-identifier">items</span>.<span class="ruby-identifier">max</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span><span class="ruby-operator">|</span> <span class="ruby-identifier">actual_length</span>(<span class="ruby-identifier">a</span>) <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">actual_length</span>(<span class="ruby-identifier">b</span>) }
+396:       )
+397: 
+398:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">option</span>.<span class="ruby-identifier">nil?</span>
+399:         <span class="ruby-identifier">limit</span>  = <span class="ruby-ivar">@wrap_at</span> <span class="ruby-operator">||</span> <span class="ruby-value">80</span>
+400:         <span class="ruby-identifier">option</span> = (<span class="ruby-identifier">limit</span> <span class="ruby-operator">+</span> <span class="ruby-value">2</span>) <span class="ruby-operator">/</span> (<span class="ruby-identifier">max_length</span> <span class="ruby-operator">+</span> <span class="ruby-value">2</span>)
+401:       <span class="ruby-keyword kw">end</span>
+402: 
+403:       <span class="ruby-identifier">items</span>     = <span class="ruby-identifier">items</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span>
+404:         <span class="ruby-identifier">pad</span> = <span class="ruby-identifier">max_length</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">item</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">actual_length</span>(<span class="ruby-identifier">item</span>))
+405:         <span class="ruby-node">&quot;%-#{pad}s&quot;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">item</span>
+406:       <span class="ruby-keyword kw">end</span>
+407:       <span class="ruby-identifier">row_count</span> = (<span class="ruby-identifier">items</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">option</span>.<span class="ruby-identifier">to_f</span>).<span class="ruby-identifier">ceil</span>
+408:       
+409:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">mode</span> <span class="ruby-operator">==</span> <span class="ruby-value">:columns_across</span>
+410:         <span class="ruby-identifier">rows</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">row_count</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span> }
+411:         <span class="ruby-identifier">items</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+412:           <span class="ruby-identifier">rows</span>[<span class="ruby-identifier">index</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">option</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">item</span>
+413:         <span class="ruby-keyword kw">end</span>
+414: 
+415:         <span class="ruby-identifier">rows</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">row</span><span class="ruby-operator">|</span> <span class="ruby-identifier">row</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">&quot;  &quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;\n&quot;</span> }.<span class="ruby-identifier">join</span>
+416:       <span class="ruby-keyword kw">else</span>
+417:         <span class="ruby-identifier">columns</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">option</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span> }
+418:         <span class="ruby-identifier">items</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+419:           <span class="ruby-identifier">columns</span>[<span class="ruby-identifier">index</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">row_count</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">item</span>
+420:         <span class="ruby-keyword kw">end</span>
+421:       
+422:         <span class="ruby-identifier">list</span> = <span class="ruby-value str">&quot;&quot;</span>
+423:         <span class="ruby-identifier">columns</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">size</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+424:           <span class="ruby-identifier">list</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">columns</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">column</span><span class="ruby-operator">|</span> <span class="ruby-identifier">column</span>[<span class="ruby-identifier">index</span>] }.
+425:                           <span class="ruby-identifier">compact</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">&quot;  &quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;\n&quot;</span>
+426:         <span class="ruby-keyword kw">end</span>
+427:         <span class="ruby-identifier">list</span>
+428:       <span class="ruby-keyword kw">end</span>
+429:     <span class="ruby-keyword kw">else</span>
+430:       <span class="ruby-identifier">items</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot;#{i}\n&quot;</span> }.<span class="ruby-identifier">join</span>
+431:     <span class="ruby-keyword kw">end</span>
+432:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="output-cols-method" class="method-detail ">
+				<a name="method-i-output_cols"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">output_cols</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the number of columns for the console, or a default it they cannot
+be determined.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="output-cols-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 486</span>
+486:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">output_cols</span>
+487:     <span class="ruby-keyword kw">return</span> <span class="ruby-value">80</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">tty?</span>
+488:     <span class="ruby-identifier">terminal_size</span>.<span class="ruby-identifier">first</span>
+489:   <span class="ruby-keyword kw">rescue</span>
+490:     <span class="ruby-keyword kw">return</span> <span class="ruby-value">80</span>
+491:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="output-rows-method" class="method-detail ">
+				<a name="method-i-output_rows"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">output_rows</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the number of rows for the console, or a default if they cannot be
+determined.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="output-rows-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 497</span>
+497:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">output_rows</span>
+498:     <span class="ruby-keyword kw">return</span> <span class="ruby-value">24</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">tty?</span>
+499:     <span class="ruby-identifier">terminal_size</span>.<span class="ruby-identifier">last</span>
+500:   <span class="ruby-keyword kw">rescue</span>
+501:     <span class="ruby-keyword kw">return</span> <span class="ruby-value">24</span>
+502:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="page-at--method" class="method-detail ">
+				<a name="method-i-page_at%3D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">page_at=</span><span
+						class="method-args">( setting )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Set to an integer value to cause <a href="HighLine.html">HighLine</a> to
+page output lines over the indicated line limit.  When <tt>nil</tt>, the
+default, no paging occurs.  If set to <tt>:auto</tt>, <a
+href="HighLine.html">HighLine</a> will attempt to determing the rows
+available for the <tt>@output</tt> or use a sensible default.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="page-at--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 478</span>
+478:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">page_at=</span>( <span class="ruby-identifier">setting</span> )
+479:     <span class="ruby-ivar">@page_at</span> = <span class="ruby-identifier">setting</span> <span class="ruby-operator">==</span> <span class="ruby-value">:auto</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">output_rows</span> <span class="ruby-operator">-</span> <span class="ruby-value">2</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">setting</span>
+480:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="say-method" class="method-detail ">
+				<a name="method-i-say"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">say</span><span
+						class="method-args">( statement )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+The basic output method for <a href="HighLine.html">HighLine</a> objects. 
+If the provided <em>statement</em> ends with a space or tab character, a
+newline will not be appended (output will be flush()ed).  All other cases
+are passed straight to Kernel.puts().
+</p>
+<p>
+The <em>statement</em> parameter is processed as an ERb template,
+supporting embedded Ruby code.  The template is evaluated with a binding
+inside  the <a href="HighLine.html">HighLine</a> instance, providing easy
+access to the ANSI color constants and the <a
+href="HighLine.html#method-i-color">HighLine.color()</a> method.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="say-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 444</span>
+444:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">say</span>( <span class="ruby-identifier">statement</span> )
+445:     <span class="ruby-identifier">statement</span> = <span class="ruby-identifier">statement</span>.<span class="ruby-identifier">to_str</span>
+446:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">statement</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+447:     
+448:     <span class="ruby-identifier">template</span>  = <span class="ruby-constant">ERB</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">statement</span>, <span class="ruby-keyword kw">nil</span>, <span class="ruby-value str">&quot;%&quot;</span>)
+449:     <span class="ruby-identifier">statement</span> = <span class="ruby-identifier">template</span>.<span class="ruby-identifier">result</span>(<span class="ruby-identifier">binding</span>)
+450:     
+451:     <span class="ruby-identifier">statement</span> = <span class="ruby-identifier">wrap</span>(<span class="ruby-identifier">statement</span>) <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@wrap_at</span>.<span class="ruby-identifier">nil?</span>
+452:     <span class="ruby-identifier">statement</span> = <span class="ruby-identifier">page_print</span>(<span class="ruby-identifier">statement</span>) <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@page_at</span>.<span class="ruby-identifier">nil?</span>
+453:     
+454:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">statement</span>[<span class="ruby-value">1</span>, <span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-value str">&quot; &quot;</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">statement</span>[<span class="ruby-value">1</span>, <span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-value str">&quot;\t&quot;</span>
+455:       <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">print</span>(<span class="ruby-identifier">statement</span>)
+456:       <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">flush</span>  
+457:     <span class="ruby-keyword kw">else</span>
+458:       <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">puts</span>(<span class="ruby-identifier">statement</span>)
+459:     <span class="ruby-keyword kw">end</span>
+460:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="wrap-at--method" class="method-detail ">
+				<a name="method-i-wrap_at%3D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">wrap_at=</span><span
+						class="method-args">( setting )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Set to an integer value to cause <a href="HighLine.html">HighLine</a> to
+wrap output lines at the indicated character limit.  When <tt>nil</tt>, the
+default, no wrapping occurs.  If set to <tt>:auto</tt>, <a
+href="HighLine.html">HighLine</a> will attempt to determing the columns
+available for the <tt>@output</tt> or use a sensible default.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="wrap-at--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 468</span>
+468:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">wrap_at=</span>( <span class="ruby-identifier">setting</span> )
+469:     <span class="ruby-ivar">@wrap_at</span> = <span class="ruby-identifier">setting</span> <span class="ruby-operator">==</span> <span class="ruby-value">:auto</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">output_cols</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">setting</span>
+470:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="actual-length-method" class="method-detail ">
+				<a name="method-i-actual_length"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">actual_length</span><span
+						class="method-args">( string_with_escapes )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns the length of the passed <tt>string_with_escapes</tt>, minus and
+color sequence escapes.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="actual-length-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 753</span>
+753:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">actual_length</span>( <span class="ruby-identifier">string_with_escapes</span> )
+754:     <span class="ruby-identifier">string_with_escapes</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/\e\[\d{1,2}m/</span>, <span class="ruby-value str">&quot;&quot;</span>).<span class="ruby-identifier">length</span>
+755:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="continue-paging--method" class="method-detail ">
+				<a name="method-i-continue_paging%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">continue_paging?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Ask user if they wish to continue paging output. Allows them to type
+&#8220;q&#8221; to cancel the paging process.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="continue-paging--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 718</span>
+718:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">continue_paging?</span>
+719:     <span class="ruby-identifier">command</span> = <span class="ruby-constant">HighLine</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@input</span>, <span class="ruby-ivar">@output</span>).<span class="ruby-identifier">ask</span>(
+720:       <span class="ruby-value str">&quot;-- press enter/return to continue or q to stop -- &quot;</span>
+721:     ) { <span class="ruby-operator">|</span><span class="ruby-identifier">q</span><span class="ruby-operator">|</span> <span class="ruby-identifier">q</span>.<span class="ruby-identifier">character</span> = <span class="ruby-keyword kw">true</span> }
+722:     <span class="ruby-identifier">command</span> <span class="ruby-operator">!~</span> <span class="ruby-regexp re">/\A[qQ]\Z/</span>  <span class="ruby-comment cmt"># Only continue paging if Q was not hit.</span>
+723:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="explain-error-method" class="method-detail ">
+				<a name="method-i-explain_error"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">explain_error</span><span
+						class="method-args">( error )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+A helper method for sending the output stream and error and repeat of the
+question.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="explain-error-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 510</span>
+510:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">explain_error</span>( <span class="ruby-identifier">error</span> )
+511:     <span class="ruby-identifier">say</span>(<span class="ruby-ivar">@question</span>.<span class="ruby-identifier">responses</span>[<span class="ruby-identifier">error</span>]) <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">error</span>.<span class="ruby-identifier">nil?</span>
+512:     <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">responses</span>[<span class="ruby-value">:ask_on_error</span>] <span class="ruby-operator">==</span> <span class="ruby-value">:question</span>
+513:       <span class="ruby-identifier">say</span>(<span class="ruby-ivar">@question</span>)
+514:     <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">responses</span>[<span class="ruby-value">:ask_on_error</span>]
+515:       <span class="ruby-identifier">say</span>(<span class="ruby-ivar">@question</span>.<span class="ruby-identifier">responses</span>[<span class="ruby-value">:ask_on_error</span>])
+516:     <span class="ruby-keyword kw">end</span>
+517:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="gather-method" class="method-detail ">
+				<a name="method-i-gather"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">gather</span><span
+						class="method-args">( )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Collects an Array/Hash full of answers as described in 
+HighLine::Question.gather().
+</p>
+<p>
+Raises EOFError if input is exhausted.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="gather-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 525</span>
+525:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">gather</span>(  )
+526:     <span class="ruby-ivar">@gather</span>           = <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">gather</span>
+527:     <span class="ruby-ivar">@answers</span>          = [ ]
+528:     <span class="ruby-identifier">original_question</span> = <span class="ruby-ivar">@question</span>
+529:     
+530:     <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">gather</span> = <span class="ruby-keyword kw">false</span>
+531:     
+532:     <span class="ruby-keyword kw">case</span> <span class="ruby-ivar">@gather</span>
+533:     <span class="ruby-keyword kw">when</span> <span class="ruby-constant">Integer</span>
+534:       <span class="ruby-ivar">@answers</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ask</span>(<span class="ruby-ivar">@question</span>)
+535:       <span class="ruby-ivar">@gather</span>  <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+536: 
+537:       <span class="ruby-identifier">original_question</span>.<span class="ruby-identifier">question</span> = <span class="ruby-value str">&quot;&quot;</span>
+538:       <span class="ruby-keyword kw">until</span> <span class="ruby-ivar">@gather</span>.<span class="ruby-identifier">zero?</span>
+539:         <span class="ruby-ivar">@question</span> =  <span class="ruby-identifier">original_question</span>
+540:         <span class="ruby-ivar">@answers</span>  <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ask</span>(<span class="ruby-ivar">@question</span>)
+541:         <span class="ruby-ivar">@gather</span>   <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+542:       <span class="ruby-keyword kw">end</span>
+543:     <span class="ruby-keyword kw">when</span> <span class="ruby-constant">String</span>, <span class="ruby-constant">Regexp</span>
+544:       <span class="ruby-ivar">@answers</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ask</span>(<span class="ruby-ivar">@question</span>)
+545: 
+546:       <span class="ruby-identifier">original_question</span>.<span class="ruby-identifier">question</span> = <span class="ruby-value str">&quot;&quot;</span>
+547:       <span class="ruby-keyword kw">until</span> (<span class="ruby-ivar">@gather</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>) <span class="ruby-keyword kw">and</span> <span class="ruby-ivar">@answers</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@gather</span>) <span class="ruby-keyword kw">or</span>
+548:             (<span class="ruby-ivar">@gather</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Regexp</span>) <span class="ruby-keyword kw">and</span> <span class="ruby-ivar">@answers</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">=~</span> <span class="ruby-ivar">@gather</span>)
+549:         <span class="ruby-ivar">@question</span> =  <span class="ruby-identifier">original_question</span>
+550:         <span class="ruby-ivar">@answers</span>  <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ask</span>(<span class="ruby-ivar">@question</span>)
+551:       <span class="ruby-keyword kw">end</span>
+552:       
+553:       <span class="ruby-ivar">@answers</span>.<span class="ruby-identifier">pop</span>
+554:     <span class="ruby-keyword kw">when</span> <span class="ruby-constant">Hash</span>
+555:       <span class="ruby-ivar">@answers</span> = { }
+556:       <span class="ruby-ivar">@gather</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">sort</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span><span class="ruby-operator">|</span>
+557:         <span class="ruby-ivar">@question</span>     = <span class="ruby-identifier">original_question</span>
+558:         <span class="ruby-ivar">@key</span>          = <span class="ruby-identifier">key</span>
+559:         <span class="ruby-ivar">@answers</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">ask</span>(<span class="ruby-ivar">@question</span>)
+560:       <span class="ruby-keyword kw">end</span>
+561:     <span class="ruby-keyword kw">end</span>
+562:     
+563:     <span class="ruby-ivar">@answers</span>
+564:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-line-method" class="method-detail ">
+				<a name="method-i-get_line"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_line</span><span
+						class="method-args">( )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Read a line of input from the input stream and process whitespace as
+requested by the <a href="HighLine/Question.html">Question</a> object.
+</p>
+<p>
+If Question&#8217;s <em>readline</em> property is set, that library will be
+used to fetch input.  <b>WARNING</b>:  This ignores the currently set input
+stream.
+</p>
+<p>
+Raises EOFError if input is exhausted.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-line-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 575</span>
+575:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_line</span>(  )
+576:     <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">readline</span>
+577:       <span class="ruby-identifier">require</span> <span class="ruby-value str">&quot;readline&quot;</span>    <span class="ruby-comment cmt"># load only if needed</span>
+578: 
+579:       <span class="ruby-comment cmt"># capture say()'s work in a String to feed to readline()</span>
+580:       <span class="ruby-identifier">old_output</span> = <span class="ruby-ivar">@output</span>
+581:       <span class="ruby-ivar">@output</span>    = <span class="ruby-constant">StringIO</span>.<span class="ruby-identifier">new</span>
+582:       <span class="ruby-identifier">say</span>(<span class="ruby-ivar">@question</span>)
+583:       <span class="ruby-identifier">question</span> = <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">string</span>
+584:       <span class="ruby-ivar">@output</span>  = <span class="ruby-identifier">old_output</span>
+585:       
+586:       <span class="ruby-comment cmt"># prep auto-completion</span>
+587:       <span class="ruby-constant">Readline</span>.<span class="ruby-identifier">completion_proc</span> = <span class="ruby-identifier">lambda</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">string</span><span class="ruby-operator">|</span>
+588:         <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">selection</span>.<span class="ruby-identifier">grep</span>(<span class="ruby-node">/\A#{Regexp.escape(string)}/</span>)
+589:       <span class="ruby-keyword kw">end</span>
+590:       
+591:       <span class="ruby-comment cmt"># work-around ugly readline() warnings</span>
+592:       <span class="ruby-identifier">old_verbose</span> = <span class="ruby-identifier">$VERBOSE</span>
+593:       <span class="ruby-identifier">$VERBOSE</span>    = <span class="ruby-keyword kw">nil</span>
+594:       <span class="ruby-identifier">answer</span>      = <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">change_case</span>(
+595:                         <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">remove_whitespace</span>(
+596:                             <span class="ruby-constant">Readline</span>.<span class="ruby-identifier">readline</span>(<span class="ruby-identifier">question</span>, <span class="ruby-keyword kw">true</span>) ) )
+597:       <span class="ruby-identifier">$VERBOSE</span>    = <span class="ruby-identifier">old_verbose</span>
+598: 
+599:       <span class="ruby-identifier">answer</span>
+600:     <span class="ruby-keyword kw">else</span>
+601:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">EOFError</span>, <span class="ruby-value str">&quot;The input stream is exhausted.&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">@@track_eof</span> <span class="ruby-keyword kw">and</span>
+602:                                                           <span class="ruby-ivar">@input</span>.<span class="ruby-identifier">eof?</span>
+603: 
+604:       <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">change_case</span>(<span class="ruby-ivar">@question</span>.<span class="ruby-identifier">remove_whitespace</span>(<span class="ruby-ivar">@input</span>.<span class="ruby-identifier">gets</span>))
+605:     <span class="ruby-keyword kw">end</span>
+606:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-response-method" class="method-detail ">
+				<a name="method-i-get_response"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_response</span><span
+						class="method-args">( )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return a line or character of input, as requested for this question.
+Character input will be returned as a single character <a
+href="String.html">String</a>, not an Integer.
+</p>
+<p>
+This question&#8217;s <em>first_answer</em> will be returned instead of
+input, if set.
+</p>
+<p>
+Raises EOFError if input is exhausted.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-response-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 617</span>
+617:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_response</span>(  )
+618:     <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">first_answer</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">first_answer?</span>
+619:     
+620:     <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">character</span>.<span class="ruby-identifier">nil?</span>
+621:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">echo</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span> <span class="ruby-keyword kw">and</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">limit</span>.<span class="ruby-identifier">nil?</span>
+622:         <span class="ruby-identifier">get_line</span>
+623:       <span class="ruby-keyword kw">else</span>
+624:         <span class="ruby-identifier">raw_no_echo_mode</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">stty</span> = <span class="ruby-constant">CHARACTER_MODE</span> <span class="ruby-operator">==</span> <span class="ruby-value str">&quot;stty&quot;</span>
+625:         
+626:         <span class="ruby-identifier">line</span>            = <span class="ruby-value str">&quot;&quot;</span>
+627:         <span class="ruby-identifier">backspace_limit</span> = <span class="ruby-value">0</span>
+628:         <span class="ruby-keyword kw">begin</span>
+629: 
+630:           <span class="ruby-keyword kw">while</span> <span class="ruby-identifier">character</span> = (<span class="ruby-identifier">stty</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@input</span>.<span class="ruby-identifier">getbyte</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">get_character</span>(<span class="ruby-ivar">@input</span>))
+631:             <span class="ruby-comment cmt"># honor backspace and delete</span>
+632:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">character</span> <span class="ruby-operator">==</span> <span class="ruby-value">127</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">character</span> <span class="ruby-operator">==</span> <span class="ruby-value">8</span>
+633:               <span class="ruby-identifier">line</span>.<span class="ruby-identifier">slice!</span>(<span class="ruby-value">1</span>, <span class="ruby-value">1</span>)
+634:               <span class="ruby-identifier">backspace_limit</span> <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+635:             <span class="ruby-keyword kw">else</span>
+636:               <span class="ruby-identifier">line</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">character</span>.<span class="ruby-identifier">chr</span>
+637:               <span class="ruby-identifier">backspace_limit</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">size</span>
+638:             <span class="ruby-keyword kw">end</span>
+639:             <span class="ruby-comment cmt"># looking for carriage return (decimal 13) or</span>
+640:             <span class="ruby-comment cmt"># newline (decimal 10) in raw input</span>
+641:             <span class="ruby-keyword kw">break</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">character</span> <span class="ruby-operator">==</span> <span class="ruby-value">13</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">character</span> <span class="ruby-operator">==</span> <span class="ruby-value">10</span> <span class="ruby-keyword kw">or</span>
+642:                      (<span class="ruby-ivar">@question</span>.<span class="ruby-identifier">limit</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">line</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">limit</span>)
+643:             <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">echo</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword kw">false</span>
+644:               <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">character</span> <span class="ruby-operator">==</span> <span class="ruby-value">127</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">character</span> <span class="ruby-operator">==</span> <span class="ruby-value">8</span> 
+645:                   <span class="ruby-comment cmt"># only backspace if we have characters on the line to</span>
+646:                   <span class="ruby-comment cmt"># eliminate, otherwise we'll tromp over the prompt</span>
+647:                   <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">backspace_limit</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">0</span> <span class="ruby-keyword kw">then</span>
+648:                     <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">print</span>(<span class="ruby-node">&quot;\b#{ERASE_CHAR}&quot;</span>)
+649:                   <span class="ruby-keyword kw">else</span> 
+650:                       <span class="ruby-comment cmt"># do nothing</span>
+651:                   <span class="ruby-keyword kw">end</span>
+652:               <span class="ruby-keyword kw">else</span>
+653:                 <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">echo</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span>
+654:                   <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">print</span>(<span class="ruby-identifier">character</span>.<span class="ruby-identifier">chr</span>)
+655:                 <span class="ruby-keyword kw">else</span>
+656:                   <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">print</span>(<span class="ruby-ivar">@question</span>.<span class="ruby-identifier">echo</span>)
+657:                 <span class="ruby-keyword kw">end</span>
+658:               <span class="ruby-keyword kw">end</span>
+659:               <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">flush</span>
+660:             <span class="ruby-keyword kw">end</span>
+661:           <span class="ruby-keyword kw">end</span>
+662:         <span class="ruby-keyword kw">ensure</span>
+663:           <span class="ruby-identifier">restore_mode</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">stty</span>
+664:         <span class="ruby-keyword kw">end</span>
+665:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">overwrite</span>
+666:           <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">print</span>(<span class="ruby-node">&quot;\r#{ERASE_LINE}&quot;</span>)
+667:           <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">flush</span>
+668:         <span class="ruby-keyword kw">else</span>
+669:           <span class="ruby-identifier">say</span>(<span class="ruby-value str">&quot;\n&quot;</span>)
+670:         <span class="ruby-keyword kw">end</span>
+671:         
+672:         <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">change_case</span>(<span class="ruby-ivar">@question</span>.<span class="ruby-identifier">remove_whitespace</span>(<span class="ruby-identifier">line</span>))
+673:       <span class="ruby-keyword kw">end</span>
+674:     <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">character</span> <span class="ruby-operator">==</span> <span class="ruby-value">:getc</span>
+675:       <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">change_case</span>(<span class="ruby-ivar">@input</span>.<span class="ruby-identifier">getbyte</span>.<span class="ruby-identifier">chr</span>)
+676:     <span class="ruby-keyword kw">else</span>
+677:       <span class="ruby-identifier">response</span> = <span class="ruby-identifier">get_character</span>(<span class="ruby-ivar">@input</span>).<span class="ruby-identifier">chr</span>
+678:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">overwrite</span>
+679:         <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">print</span>(<span class="ruby-node">&quot;\r#{ERASE_LINE}&quot;</span>)
+680:         <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">flush</span>
+681:       <span class="ruby-keyword kw">else</span>
+682:         <span class="ruby-identifier">echo</span> = <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">echo</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span>
+683:           <span class="ruby-identifier">response</span>
+684:         <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">echo</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword kw">false</span>
+685:           <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">echo</span>
+686:         <span class="ruby-keyword kw">else</span>
+687:           <span class="ruby-value str">&quot;&quot;</span>
+688:         <span class="ruby-keyword kw">end</span>
+689:         <span class="ruby-identifier">say</span>(<span class="ruby-node">&quot;#{echo}\n&quot;</span>)
+690:       <span class="ruby-keyword kw">end</span>
+691:       <span class="ruby-ivar">@question</span>.<span class="ruby-identifier">change_case</span>(<span class="ruby-identifier">response</span>)
+692:     <span class="ruby-keyword kw">end</span>
+693:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="page-print-method" class="method-detail ">
+				<a name="method-i-page_print"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">page_print</span><span
+						class="method-args">( output )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Page print a series of at most <em><a
+href="HighLine.html#page_at">page_at</a></em> lines for <em>output</em>. 
+After each page is printed, <a href="HighLine.html">HighLine</a> will pause
+until the user presses enter/return then display the next page of data.
+</p>
+<p>
+Note that the final page of <em>output</em> is <b>not</b> printed, but
+returned instead.  This is to support any special handling for the final
+sequence.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="page-print-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 703</span>
+703:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">page_print</span>( <span class="ruby-identifier">output</span> )
+704:     <span class="ruby-identifier">lines</span> = <span class="ruby-identifier">output</span>.<span class="ruby-identifier">scan</span>(<span class="ruby-regexp re">/[^\n]*\n?/</span>)
+705:     <span class="ruby-keyword kw">while</span> <span class="ruby-identifier">lines</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@page_at</span>
+706:       <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">puts</span> <span class="ruby-identifier">lines</span>.<span class="ruby-identifier">slice!</span>(<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-ivar">@page_at</span>).<span class="ruby-identifier">join</span>
+707:       <span class="ruby-ivar">@output</span>.<span class="ruby-identifier">puts</span>
+708:       <span class="ruby-comment cmt"># Return last line if user wants to abort paging</span>
+709:       <span class="ruby-keyword kw">return</span> ([<span class="ruby-value str">&quot;...\n&quot;</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">lines</span>.<span class="ruby-identifier">slice</span>(<span class="ruby-value">2</span>,<span class="ruby-value">1</span>)).<span class="ruby-identifier">join</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">continue_paging?</span>
+710:     <span class="ruby-keyword kw">end</span>
+711:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">lines</span>.<span class="ruby-identifier">join</span>
+712:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="wrap-method" class="method-detail ">
+				<a name="method-i-wrap"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">wrap</span><span
+						class="method-args">( text )</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Wrap a sequence of <em>lines</em> at <em><a
+href="HighLine.html#wrap_at">wrap_at</a></em> characters per line. 
+Existing newlines will not be affected by this process, but additional
+newlines may be added.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="wrap-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/highline.rb, line 730</span>
+730:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">wrap</span>( <span class="ruby-identifier">text</span> )
+731:     <span class="ruby-identifier">wrapped</span> = [ ]
+732:     <span class="ruby-identifier">text</span>.<span class="ruby-identifier">each_line</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">line</span><span class="ruby-operator">|</span>
+733:       <span class="ruby-keyword kw">while</span> <span class="ruby-identifier">line</span> <span class="ruby-operator">=~</span> <span class="ruby-node">/([^\n]{#{@wrap_at + 1},})/</span>
+734:         <span class="ruby-identifier">search</span>  = <span class="ruby-node">$1</span>.<span class="ruby-identifier">dup</span>
+735:         <span class="ruby-identifier">replace</span> = <span class="ruby-node">$1</span>.<span class="ruby-identifier">dup</span>
+736:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">index</span> = <span class="ruby-identifier">replace</span>.<span class="ruby-identifier">rindex</span>(<span class="ruby-value str">&quot; &quot;</span>, <span class="ruby-ivar">@wrap_at</span>)
+737:           <span class="ruby-identifier">replace</span>[<span class="ruby-identifier">index</span>, <span class="ruby-value">1</span>] = <span class="ruby-value str">&quot;\n&quot;</span>
+738:           <span class="ruby-identifier">replace</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-regexp re">/\n[ \t]+/</span>, <span class="ruby-value str">&quot;\n&quot;</span>)
+739:           <span class="ruby-identifier">line</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-identifier">search</span>, <span class="ruby-identifier">replace</span>)
+740:         <span class="ruby-keyword kw">else</span>
+741:           <span class="ruby-identifier">line</span>[<span class="ruby-identifier">$~</span>.<span class="ruby-identifier">begin</span>(<span class="ruby-value">1</span>) <span class="ruby-operator">+</span> <span class="ruby-ivar">@wrap_at</span>, <span class="ruby-value">0</span>] = <span class="ruby-value str">&quot;\n&quot;</span>
+742:         <span class="ruby-keyword kw">end</span>
+743:       <span class="ruby-keyword kw">end</span>
+744:       <span class="ruby-identifier">wrapped</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">line</span>
+745:     <span class="ruby-keyword kw">end</span>
+746:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">wrapped</span>.<span class="ruby-identifier">join</span>
+747:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>mime-types-1.16 Documentation</title>
+
+	<link type="text/css" media="screen" href="rdoc.css" rel="stylesheet" />
+
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body class="indexpage">
+
+	
+	<h1>mime-types-1.16 Documentation</h1>
+
+	
+	<div id="main">
+		
+<p>
+This library allows for the identification of a file&#8217;s likely <a
+href="MIME.html">MIME</a> content type. This is release 1.16. The
+identification of <a href="MIME.html">MIME</a> content type is based on a
+file&#8217;s filename extensions.
+</p>
+<p>
+<a href="MIME/Types.html">MIME::Types</a> for Ruby originally based on and
+synchronized with <a href="MIME/Types.html">MIME::Types</a> for Perl by
+Mark Overmeer, copyright 2001 - 2009. As of version 1.15, the data format
+for the <a href="MIME/Type.html">MIME::Type</a> list has changed and the
+synchronization will no longer happen.
+</p>
+<table>
+<tr><td valign="top">Homepage</td><td><p>
+<a href="http://mime-types.rubyforge.org/">mime-types.rubyforge.org/</a>
+</p>
+</td></tr>
+<tr><td valign="top">Copyright</td><td><p>
+2002 - 2009, Austin Ziegler Based in part on prior work copyright Mark
+Overmeer
+</p>
+</td></tr>
+</table>
+<h2>Licensing</h2>
+<p>
+<a href="MIME/Types.html">MIME::Types</a> is available under three
+disjunctive licences, as detailed in the <a
+href="Licence_txt.html">Licence.txt</a> file.
+</p>
+<h2>Copyright</h2>
+<pre>
+  MIME::Types
+  A Ruby implementation of a MIME Types information library. Based in spirit
+  on the Perl MIME::Types information library by Mark Overmeer.
+  http://rubyforge.org/projects/mime-types/
+
+  Licensed under the Ruby disjunctive licence with the GNU GPL or the Perl
+  Artistic licence. See Licence.txt for more information.
+
+  Copyright 2003 - 2009 Austin Ziegler</pre>
+
+	</div>
+	
+
+	
+	
+	<h2>Files</h2>
+	<ul>
+		
+			<li class="file"><a href="History_txt.html">History.txt</a></li>
+		
+			<li class="file"><a href="Install_txt.html">Install.txt</a></li>
+		
+			<li class="file"><a href="Licence_txt.html">Licence.txt</a></li>
+		
+			<li class="file"><a href="README_txt.html">README.txt</a></li>
+		
+	</ul>
+	
+
+	<h2 id="classes">Classes/Modules</h2>
+	<ul>
+		
+		<li class="module"><a href="MIME.html">MIME</a></li>
+		
+		<li class="class"><a href="MIME/InvalidContentType.html">MIME::InvalidContentType</a></li>
+		
+		<li class="class"><a href="MIME/Type.html">MIME::Type</a></li>
+		
+		<li class="class"><a href="MIME/Types.html">MIME::Types</a></li>
+		
+	</ul>
+
+	<h2 id="methods">Methods</h2>
+	<ul>
+		
+			<li><a href="MIME/Types.html#method-c-%5B%5D">::[] &mdash; MIME::Types</a></li>
+		
+			<li><a href="MIME/Types.html#method-c-add">::add &mdash; MIME::Types</a></li>
+		
+			<li><a href="MIME/Type.html#method-c-from_array">::from_array &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-c-from_hash">::from_hash &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-c-from_mime_type">::from_mime_type &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-c-new">::new &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Types.html#method-c-new">::new &mdash; MIME::Types</a></li>
+		
+			<li><a href="MIME/Types.html#method-c-of">::of &mdash; MIME::Types</a></li>
+		
+			<li><a href="MIME/Type.html#method-c-simplified">::simplified &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Types.html#method-c-type_for">::type_for &mdash; MIME::Types</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-%3C%3D%3E">#<=> &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Types.html#method-i-%5B%5D">#[] &mdash; MIME::Types</a></li>
+		
+			<li><a href="MIME/Types.html#method-i-add">#add &mdash; MIME::Types</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-ascii%3F">#ascii? &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-binary%3F">#binary? &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-complete%3F">#complete? &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-default_encoding">#default_encoding &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-docs%3D">#docs= &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-eql%3F">#eql? &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-like%3F">#like? &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-obsolete%3F">#obsolete? &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Types.html#method-i-of">#of &mdash; MIME::Types</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-platform%3F">#platform? &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-priority_compare">#priority_compare &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-registered%3F">#registered? &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-signature%3F">#signature? &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-system%3F">#system? &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-to_a">#to_a &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-to_hash">#to_hash &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-to_s">#to_s &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-to_str">#to_str &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Types.html#method-i-type_for">#type_for &mdash; MIME::Types</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-urls">#urls &mdash; MIME::Type</a></li>
+		
+			<li><a href="MIME/Type.html#method-i-use_instead">#use_instead &mdash; MIME::Type</a></li>
+		
+	</ul>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: rake-0.5.0.rdoc [rake-0.8.7 Documentation]</title>
+
+	<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet" />
+
+	<script src="../../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file">
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../../CHANGES.html">CHANGES</a></li>
+				
+					<li class="file"><a href="../../MIT-LICENSE.html">MIT-LICENSE</a></li>
+				
+					<li class="file"><a href="../../README.html">README</a></li>
+				
+					<li class="file"><a href="../../TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="../../doc/command_line_usage_rdoc.html">command_line_usage.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/glossary_rdoc.html">glossary.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/proto_rake_rdoc.html">proto_rake.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/rakefile_rdoc.html">rakefile.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/rational_rdoc.html">rational.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_4_14_rdoc.html">rake-0.4.14.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_4_15_rdoc.html">rake-0.4.15.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_5_0_rdoc.html">rake-0.5.0.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_5_3_rdoc.html">rake-0.5.3.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_5_4_rdoc.html">rake-0.5.4.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_6_0_rdoc.html">rake-0.6.0.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_7_0_rdoc.html">rake-0.7.0.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_7_1_rdoc.html">rake-0.7.1.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_7_2_rdoc.html">rake-0.7.2.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_7_3_rdoc.html">rake-0.7.3.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_0_rdoc.html">rake-0.8.0.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_2_rdoc.html">rake-0.8.2.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_3_rdoc.html">rake-0.8.3.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_4_rdoc.html">rake-0.8.4.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_5_rdoc.html">rake-0.8.5.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_6_rdoc.html">rake-0.8.6.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_7_rdoc.html">rake-0.8.7.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../../Rake/AltSystem.html">Rake::AltSystem</a></li>
+				
+					<li><a href="../../Rake/Application.html">Rake::Application</a></li>
+				
+					<li><a href="../../Rake/Cloneable.html">Rake::Cloneable</a></li>
+				
+					<li><a href="../../Rake/CompositePublisher.html">Rake::CompositePublisher</a></li>
+				
+					<li><a href="../../Rake/DefaultLoader.html">Rake::DefaultLoader</a></li>
+				
+					<li><a href="../../Rake/EarlyTime.html">Rake::EarlyTime</a></li>
+				
+					<li><a href="../../Rake/FileCreationTask.html">Rake::FileCreationTask</a></li>
+				
+					<li><a href="../../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../../Rake/FileTask.html">Rake::FileTask</a></li>
+				
+					<li><a href="../../Rake/FtpFile.html">Rake::FtpFile</a></li>
+				
+					<li><a href="../../Rake/FtpUploader.html">Rake::FtpUploader</a></li>
+				
+					<li><a href="../../Rake/GemPackageTask.html">Rake::GemPackageTask</a></li>
+				
+					<li><a href="../../Rake/InvocationChain.html">Rake::InvocationChain</a></li>
+				
+					<li><a href="../../Rake/InvocationChain/EmptyInvocationChain.html">Rake::InvocationChain::EmptyInvocationChain</a></li>
+				
+					<li><a href="../../Rake/MakefileLoader.html">Rake::MakefileLoader</a></li>
+				
+					<li><a href="../../Rake/MultiTask.html">Rake::MultiTask</a></li>
+				
+					<li><a href="../../Rake/NameSpace.html">Rake::NameSpace</a></li>
+				
+					<li><a href="../../Rake/PackageTask.html">Rake::PackageTask</a></li>
+				
+					<li><a href="../../Rake/PseudoStatus.html">Rake::PseudoStatus</a></li>
+				
+					<li><a href="../../Rake/RDocTask.html">Rake::RDocTask</a></li>
+				
+					<li><a href="../../Rake/RubyForgePublisher.html">Rake::RubyForgePublisher</a></li>
+				
+					<li><a href="../../Rake/RuleRecursionOverflowError.html">Rake::RuleRecursionOverflowError</a></li>
+				
+					<li><a href="../../Rake/SshDirPublisher.html">Rake::SshDirPublisher</a></li>
+				
+					<li><a href="../../Rake/SshFilePublisher.html">Rake::SshFilePublisher</a></li>
+				
+					<li><a href="../../Rake/SshFreshDirPublisher.html">Rake::SshFreshDirPublisher</a></li>
+				
+					<li><a href="../../Rake/Task.html">Rake::Task</a></li>
+				
+					<li><a href="../../Rake/TaskArgumentError.html">Rake::TaskArgumentError</a></li>
+				
+					<li><a href="../../Rake/TaskArguments.html">Rake::TaskArguments</a></li>
+				
+					<li><a href="../../Rake/TaskLib.html">Rake::TaskLib</a></li>
+				
+					<li><a href="../../Rake/TaskManager.html">Rake::TaskManager</a></li>
+				
+					<li><a href="../../Rake/TestTask.html">Rake::TestTask</a></li>
+				
+					<li><a href="../../Rake/Win32.html">Rake::Win32</a></li>
+				
+					<li><a href="../../Rake/Win32/Win32HomeError.html">Rake::Win32::Win32HomeError</a></li>
+				
+					<li><a href="../../Test.html">Test</a></li>
+				
+					<li><a href="../../Test/Unit.html">Test::Unit</a></li>
+				
+					<li><a href="../../Test/Unit/Collector.html">Test::Unit::Collector</a></li>
+				
+					<li><a href="../../Test/Unit/Collector/Dir.html">Test::Unit::Collector::Dir</a></li>
+				
+					<li><a href="../../CompositePublisher.html">CompositePublisher</a></li>
+				
+					<li><a href="../../FileUtils.html">FileUtils</a></li>
+				
+					<li><a href="../../Module.html">Module</a></li>
+				
+					<li><a href="../../Object.html">Object</a></li>
+				
+					<li><a href="../../RakeFileUtils.html">RakeFileUtils</a></li>
+				
+					<li><a href="../../SshDirPublisher.html">SshDirPublisher</a></li>
+				
+					<li><a href="../../SshFilePublisher.html">SshFilePublisher</a></li>
+				
+					<li><a href="../../SshFreshDirPublisher.html">SshFreshDirPublisher</a></li>
+				
+					<li><a href="../../String.html">String</a></li>
+				
+					<li><a href="../../Sys.html">Sys</a></li>
+				
+					<li><a href="../../Time.html">Time</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1>Rake 0.5.0 Released</h1>
+<p>
+It has been a long time in coming, but we finally have a new version of
+Rake available.  
+</p>
+<h2>Changes</h2>
+<ul>
+<li><p>
+Fixed bug where missing intermediate file dependencies could cause an abort
+with &#8212;trace or &#8212;dry-run.  (Brian Candler)
+</p>
+</li>
+<li><p>
+Recursive rules are now supported (Tilman Sauerbeck).
+</p>
+</li>
+<li><p>
+Added tar.gz and tar.bz2 support to package task (Tilman Sauerbeck).
+</p>
+</li>
+<li><p>
+Added warning option for the <a href="../../Test.html">Test</a> Task
+(requested by Eric Hodel).
+</p>
+</li>
+<li><p>
+The jamis rdoc template is only used if it exists.
+</p>
+</li>
+<li><p>
+Added fix for Ruby 1.8.2 test/unit and rails problem.
+</p>
+</li>
+<li><p>
+Added contributed rake man file. (Jani Monoses)
+</p>
+</li>
+<li><p>
+Fixed documentation that was lacking the Rake module name (Tilman
+Sauerbeck).
+</p>
+</li>
+</ul>
+<h2>What is Rake</h2>
+<p>
+Rake is a build tool similar to the make program in many ways.  But instead
+of cryptic make recipes, Rake uses standard Ruby code to declare tasks and
+dependencies.  You have the full power of a modern scripting language built
+right into your build tool.
+</p>
+<h2>Availability</h2>
+<p>
+The easiest way to get and install rake is via RubyGems &#8230;
+</p>
+<pre>
+  gem install rake    (you may need root/admin privileges)
+</pre>
+<p>
+Otherwise, you can get it from the more traditional places:
+</p>
+<table>
+<tr><td valign="top">Home Page</td><td><p>
+<a href="http://rake.rubyforge.org/">rake.rubyforge.org/</a>
+</p>
+</td></tr>
+<tr><td valign="top">Download</td><td><p>
+<a
+href="http://rubyforge.org/project/showfiles.php?group_id=50">rubyforge.org/project/showfiles.php?group_id=50</a>
+</p>
+</td></tr>
+</table>
+<h2>Thanks</h2>
+<p>
+Lots of people provided input to this release.  Thanks to Tilman Sauerbeck
+for numerous patches, documentation fixes and suggestions. And for also
+pushing me to get this release out.  Also, thanks to Brian Candler for the
+finding and fixing --trace/dry-run fix.  That was an obscure bug.  Also to
+Eric Hodel for some good suggestions.
+</p>
+<p>
+&#8212; Jim Weirich
+</p>
+
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
+

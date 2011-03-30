@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: RakeFileUtils</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/rake_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/rake.rb">lib/rake.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-nowrite">#nowrite</a></li>
+					
+					<li><a href="#method-i-rake_check_options">#rake_check_options</a></li>
+					
+					<li><a href="#method-i-rake_merge_option">#rake_merge_option</a></li>
+					
+					<li><a href="#method-i-rake_output_message">#rake_output_message</a></li>
+					
+					<li><a href="#method-i-verbose">#verbose</a></li>
+					
+					<li><a href="#method-i-when_writing">#when_writing</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+			<div id="includes-section" class="section">
+				<h3 class="section-header">Included Modules</h3>
+				<ul class="link-list">
+				
+				
+					<li><a class="include" href="FileUtils.html">FileUtils</a></li>
+				
+				
+				</ul>
+			</div>
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./CHANGES.html">CHANGES</a></li>
+				
+					<li class="file"><a href="./MIT-LICENSE.html">MIT-LICENSE</a></li>
+				
+					<li class="file"><a href="./README.html">README</a></li>
+				
+					<li class="file"><a href="./TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="./doc/command_line_usage_rdoc.html">command_line_usage.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/glossary_rdoc.html">glossary.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/proto_rake_rdoc.html">proto_rake.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/rakefile_rdoc.html">rakefile.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/rational_rdoc.html">rational.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_4_14_rdoc.html">rake-0.4.14.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_4_15_rdoc.html">rake-0.4.15.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_5_0_rdoc.html">rake-0.5.0.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_5_3_rdoc.html">rake-0.5.3.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_5_4_rdoc.html">rake-0.5.4.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_6_0_rdoc.html">rake-0.6.0.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_7_0_rdoc.html">rake-0.7.0.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_7_1_rdoc.html">rake-0.7.1.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_7_2_rdoc.html">rake-0.7.2.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_7_3_rdoc.html">rake-0.7.3.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_8_0_rdoc.html">rake-0.8.0.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_8_2_rdoc.html">rake-0.8.2.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_8_3_rdoc.html">rake-0.8.3.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_8_4_rdoc.html">rake-0.8.4.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_8_5_rdoc.html">rake-0.8.5.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_8_6_rdoc.html">rake-0.8.6.rdoc</a></li>
+				
+					<li class="file"><a href="./doc/release_notes/rake-0_8_7_rdoc.html">rake-0.8.7.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Rake/AltSystem.html">Rake::AltSystem</a></li>
+				
+					<li><a href="./Rake/Application.html">Rake::Application</a></li>
+				
+					<li><a href="./Rake/Cloneable.html">Rake::Cloneable</a></li>
+				
+					<li><a href="./Rake/CompositePublisher.html">Rake::CompositePublisher</a></li>
+				
+					<li><a href="./Rake/DefaultLoader.html">Rake::DefaultLoader</a></li>
+				
+					<li><a href="./Rake/EarlyTime.html">Rake::EarlyTime</a></li>
+				
+					<li><a href="./Rake/FileCreationTask.html">Rake::FileCreationTask</a></li>
+				
+					<li><a href="./Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="./Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="./Rake/FileTask.html">Rake::FileTask</a></li>
+				
+					<li><a href="./Rake/FtpFile.html">Rake::FtpFile</a></li>
+				
+					<li><a href="./Rake/FtpUploader.html">Rake::FtpUploader</a></li>
+				
+					<li><a href="./Rake/GemPackageTask.html">Rake::GemPackageTask</a></li>
+				
+					<li><a href="./Rake/InvocationChain.html">Rake::InvocationChain</a></li>
+				
+					<li><a href="./Rake/InvocationChain/EmptyInvocationChain.html">Rake::InvocationChain::EmptyInvocationChain</a></li>
+				
+					<li><a href="./Rake/MakefileLoader.html">Rake::MakefileLoader</a></li>
+				
+					<li><a href="./Rake/MultiTask.html">Rake::MultiTask</a></li>
+				
+					<li><a href="./Rake/NameSpace.html">Rake::NameSpace</a></li>
+				
+					<li><a href="./Rake/PackageTask.html">Rake::PackageTask</a></li>
+				
+					<li><a href="./Rake/PseudoStatus.html">Rake::PseudoStatus</a></li>
+				
+					<li><a href="./Rake/RDocTask.html">Rake::RDocTask</a></li>
+				
+					<li><a href="./Rake/RubyForgePublisher.html">Rake::RubyForgePublisher</a></li>
+				
+					<li><a href="./Rake/RuleRecursionOverflowError.html">Rake::RuleRecursionOverflowError</a></li>
+				
+					<li><a href="./Rake/SshDirPublisher.html">Rake::SshDirPublisher</a></li>
+				
+					<li><a href="./Rake/SshFilePublisher.html">Rake::SshFilePublisher</a></li>
+				
+					<li><a href="./Rake/SshFreshDirPublisher.html">Rake::SshFreshDirPublisher</a></li>
+				
+					<li><a href="./Rake/Task.html">Rake::Task</a></li>
+				
+					<li><a href="./Rake/TaskArgumentError.html">Rake::TaskArgumentError</a></li>
+				
+					<li><a href="./Rake/TaskArguments.html">Rake::TaskArguments</a></li>
+				
+					<li><a href="./Rake/TaskLib.html">Rake::TaskLib</a></li>
+				
+					<li><a href="./Rake/TaskManager.html">Rake::TaskManager</a></li>
+				
+					<li><a href="./Rake/TestTask.html">Rake::TestTask</a></li>
+				
+					<li><a href="./Rake/Win32.html">Rake::Win32</a></li>
+				
+					<li><a href="./Rake/Win32/Win32HomeError.html">Rake::Win32::Win32HomeError</a></li>
+				
+					<li><a href="./Test.html">Test</a></li>
+				
+					<li><a href="./Test/Unit.html">Test::Unit</a></li>
+				
+					<li><a href="./Test/Unit/Collector.html">Test::Unit::Collector</a></li>
+				
+					<li><a href="./Test/Unit/Collector/Dir.html">Test::Unit::Collector::Dir</a></li>
+				
+					<li><a href="./CompositePublisher.html">CompositePublisher</a></li>
+				
+					<li><a href="./FileUtils.html">FileUtils</a></li>
+				
+					<li><a href="./Module.html">Module</a></li>
+				
+					<li><a href="./Object.html">Object</a></li>
+				
+					<li><a href="./RakeFileUtils.html">RakeFileUtils</a></li>
+				
+					<li><a href="./SshDirPublisher.html">SshDirPublisher</a></li>
+				
+					<li><a href="./SshFilePublisher.html">SshFilePublisher</a></li>
+				
+					<li><a href="./SshFreshDirPublisher.html">SshFreshDirPublisher</a></li>
+				
+					<li><a href="./String.html">String</a></li>
+				
+					<li><a href="./Sys.html">Sys</a></li>
+				
+					<li><a href="./Time.html">Time</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">RakeFileUtils</h1>
+
+		<div id="description">
+			<pre>
+                                                                           
+</pre>
+<p>
+<a href="RakeFileUtils.html">RakeFileUtils</a> provides a custom version of
+the <a href="FileUtils.html">FileUtils</a> methods that respond to the
+<tt>verbose</tt> and <tt>nowrite</tt> commands.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="verbose-flag-attribute-method" class="method-detail">
+				<a name="verbose_flag"></a>
+				
+				<a name="verbose_flag="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">verbose_flag</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="nowrite-flag-attribute-method" class="method-detail">
+				<a name="nowrite_flag"></a>
+				
+				<a name="nowrite_flag="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">nowrite_flag</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="nowrite-method" class="method-detail ">
+				<a name="method-i-nowrite"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">nowrite</span><span
+						class="method-args">(value=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Get/set the nowrite flag controlling output from the <a
+href="FileUtils.html">FileUtils</a> utilities. If verbose is true, then the
+utility method is echoed to standard output.
+</p>
+<p>
+Examples:
+</p>
+<pre>
+   nowrite              # return the current value of the nowrite flag
+   nowrite(v)           # set the nowrite flag to _v_.
+   nowrite(v) { code }  # Execute code with the nowrite flag set temporarily to _v_.
+                        # Return to the original value when code is done.</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="nowrite-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/rake.rb, line 1128</span>
+1128:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">nowrite</span>(<span class="ruby-identifier">value</span>=<span class="ruby-keyword kw">nil</span>)
+1129:     <span class="ruby-identifier">oldvalue</span> = <span class="ruby-constant">RakeFileUtils</span>.<span class="ruby-identifier">nowrite_flag</span>
+1130:     <span class="ruby-constant">RakeFileUtils</span>.<span class="ruby-identifier">nowrite_flag</span> = <span class="ruby-identifier">value</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">nil?</span>
+1131:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">block_given?</span>
+1132:       <span class="ruby-keyword kw">begin</span>
+1133:         <span class="ruby-keyword kw">yield</span>
+1134:       <span class="ruby-keyword kw">ensure</span>
+1135:         <span class="ruby-constant">RakeFileUtils</span>.<span class="ruby-identifier">nowrite_flag</span> = <span class="ruby-identifier">oldvalue</span>
+1136:       <span class="ruby-keyword kw">end</span>
+1137:     <span class="ruby-keyword kw">end</span>
+1138:     <span class="ruby-identifier">oldvalue</span>
+1139:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="verbose-method" class="method-detail ">
+				<a name="method-i-verbose"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">verbose</span><span
+						class="method-args">(value=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Get/set the verbose flag controlling output from the <a
+href="FileUtils.html">FileUtils</a> utilities. If verbose is true, then the
+utility method is echoed to standard output.
+</p>
+<p>
+Examples:
+</p>
+<pre>
+   verbose              # return the current value of the verbose flag
+   verbose(v)           # set the verbose flag to _v_.
+   verbose(v) { code }  # Execute code with the verbose flag set temporarily to _v_.
+                        # Return to the original value when code is done.</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="verbose-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/rake.rb, line 1107</span>
+1107:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">verbose</span>(<span class="ruby-identifier">value</span>=<span class="ruby-keyword kw">nil</span>)
+1108:     <span class="ruby-identifier">oldvalue</span> = <span class="ruby-constant">RakeFileUtils</span>.<span class="ruby-identifier">verbose_flag</span>
+1109:     <span class="ruby-constant">RakeFileUtils</span>.<span class="ruby-identifier">verbose_flag</span> = <span class="ruby-identifier">value</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">nil?</span>
+1110:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">block_given?</span>
+1111:       <span class="ruby-keyword kw">begin</span>
+1112:         <span class="ruby-keyword kw">yield</span>
+1113:       <span class="ruby-keyword kw">ensure</span>
+1114:         <span class="ruby-constant">RakeFileUtils</span>.<span class="ruby-identifier">verbose_flag</span> = <span class="ruby-identifier">oldvalue</span>
+1115:       <span class="ruby-keyword kw">end</span>
+1116:     <span class="ruby-keyword kw">end</span>
+1117:     <span class="ruby-constant">RakeFileUtils</span>.<span class="ruby-identifier">verbose_flag</span>
+1118:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="when-writing-method" class="method-detail ">
+				<a name="method-i-when_writing"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">when_writing</span><span
+						class="method-args">(msg=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Use this function to prevent protentially destructive ruby code from
+running when the :nowrite flag is set.
+</p>
+<p>
+Example:
+</p>
+<pre>
+  when_writing(&quot;Building Project&quot;) do
+    project.build
+  end
+</pre>
+<p>
+The following code will build the project under normal conditions. If the
+nowrite(true) flag is set, then the example will print:
+</p>
+<pre>
+     DRYRUN: Building Project
+</pre>
+<p>
+instead of actually building the project.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="when-writing-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/rake.rb, line 1155</span>
+1155:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">when_writing</span>(<span class="ruby-identifier">msg</span>=<span class="ruby-keyword kw">nil</span>)
+1156:     <span class="ruby-keyword kw">if</span> <span class="ruby-constant">RakeFileUtils</span>.<span class="ruby-identifier">nowrite_flag</span>
+1157:       <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;DRYRUN: #{msg}&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">msg</span>
+1158:     <span class="ruby-keyword kw">else</span>
+1159:       <span class="ruby-keyword kw">yield</span>
+1160:     <span class="ruby-keyword kw">end</span>
+1161:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="rake-check-options-method" class="method-detail ">
+				<a name="method-i-rake_check_options"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">rake_check_options</span><span
+						class="method-args">(options, *optdecl)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Check that the options do not contain options not listed in
+<tt>optdecl</tt>.  An ArgumentError exception is thrown if non-declared
+options are found.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="rake-check-options-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/rake.rb, line 1182</span>
+1182:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">rake_check_options</span>(<span class="ruby-identifier">options</span>, *<span class="ruby-identifier">optdecl</span>)
+1183:     <span class="ruby-identifier">h</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">dup</span>
+1184:     <span class="ruby-identifier">optdecl</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span><span class="ruby-operator">|</span>
+1185:       <span class="ruby-identifier">h</span>.<span class="ruby-identifier">delete</span> <span class="ruby-identifier">name</span>
+1186:     <span class="ruby-keyword kw">end</span>
+1187:     <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-node">&quot;no such option: #{h.keys.join(' ')}&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">h</span>.<span class="ruby-identifier">empty?</span>
+1188:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="rake-merge-option-method" class="method-detail ">
+				<a name="method-i-rake_merge_option"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">rake_merge_option</span><span
+						class="method-args">(args, defaults)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Merge the given options with the default values.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="rake-merge-option-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/rake.rb, line 1164</span>
+1164:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">rake_merge_option</span>(<span class="ruby-identifier">args</span>, <span class="ruby-identifier">defaults</span>)
+1165:     <span class="ruby-keyword kw">if</span> <span class="ruby-constant">Hash</span> <span class="ruby-operator">===</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">last</span>
+1166:       <span class="ruby-identifier">defaults</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">args</span>.<span class="ruby-identifier">last</span>)
+1167:       <span class="ruby-identifier">args</span>.<span class="ruby-identifier">pop</span>
+1168:     <span class="ruby-keyword kw">end</span>
+1169:     <span class="ruby-identifier">args</span>.<span class="ruby-identifier">push</span> <span class="ruby-identifier">defaults</span>
+1170:     <span class="ruby-identifier">args</span>
+1171:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="rake-output-message-method" class="method-detail ">
+				<a name="method-i-rake_output_message"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">rake_output_message</span><span
+						class="method-args">(message)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Send the message to the default rake output (which is $stderr).
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="rake-output-message-source">
+<pre>
+      <span class="ruby-comment cmt"># File lib/rake.rb, line 1175</span>
+1175:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">rake_output_message</span>(<span class="ruby-identifier">message</span>)
+1176:     <span class="ruby-identifier">$stderr</span>.<span class="ruby-identifier">puts</span>(<span class="ruby-identifier">message</span>)
+1177:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

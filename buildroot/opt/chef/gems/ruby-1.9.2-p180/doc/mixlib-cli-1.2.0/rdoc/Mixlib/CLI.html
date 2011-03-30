@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+	<title>Module: Mixlib::CLI</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/mixlib/cli_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/mixlib/cli.rb">lib/mixlib/cli.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+			<div id="namespace-list-section" class="section">
+				<h3 class="section-header">Namespace</h3>
+				<ul class="link-list">
+					
+					<li><span class="type">MODULE</span> <a href="CLI/ClassMethods.html">Mixlib::CLI::ClassMethods</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-included">::included</a></li>
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-build_option_arguments">#build_option_arguments</a></li>
+					
+					<li><a href="#method-i-parse_options">#parse_options</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Mixlib.html">Mixlib</a></li>
+				
+					<li><a href="../Mixlib/CLI.html">Mixlib::CLI</a></li>
+				
+					<li><a href="../Mixlib/CLI/ClassMethods.html">Mixlib::CLI::ClassMethods</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">Mixlib::CLI</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="options-attribute-method" class="method-detail">
+				<a name="options"></a>
+				
+				<a name="options="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">options</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="config-attribute-method" class="method-detail">
+				<a name="config"></a>
+				
+				<a name="config="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">config</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="banner-attribute-method" class="method-detail">
+				<a name="banner"></a>
+				
+				<a name="banner="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">banner</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="opt-parser-attribute-method" class="method-detail">
+				<a name="opt_parser"></a>
+				
+				<a name="opt_parser="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">opt_parser</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="included-method" class="method-detail ">
+				<a name="method-c-included"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">included</span><span
+						class="method-args">(receiver)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="included-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/cli.rb, line 192</span>
+192:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">included</span>(<span class="ruby-identifier">receiver</span>)
+193:       <span class="ruby-identifier">receiver</span>.<span class="ruby-identifier">extend</span>(<span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">CLI</span><span class="ruby-operator">::</span><span class="ruby-constant">ClassMethods</span>)
+194:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(*args)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Create a new <a href="CLI.html">Mixlib::CLI</a> class.  If you override
+this, make sure you call super!
+</p>
+<h3>Parameters</h3>
+<table>
+<tr><td valign="top">*args<Array></td><td><p>
+The array of arguments passed to the initializer
+</p>
+</td></tr>
+</table>
+<h3>Returns</h3>
+<table>
+<tr><td valign="top">object<Mixlib::Config></td><td><p>
+Returns an instance of whatever you wanted :)
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/cli.rb, line 85</span>
+ 85:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(*<span class="ruby-identifier">args</span>)
+ 86:       <span class="ruby-ivar">@options</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+ 87:       <span class="ruby-ivar">@config</span>  = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+ 88:       
+ 89:       <span class="ruby-comment cmt"># Set the banner</span>
+ 90:       <span class="ruby-ivar">@banner</span>  = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">banner</span>
+ 91:       
+ 92:       <span class="ruby-comment cmt"># Dupe the class options for this instance</span>
+ 93:       <span class="ruby-identifier">klass_options</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">options</span>
+ 94:       <span class="ruby-identifier">klass_options</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-ivar">@options</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">memo</span>, <span class="ruby-identifier">key</span><span class="ruby-operator">|</span> <span class="ruby-identifier">memo</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">klass_options</span>[<span class="ruby-identifier">key</span>].<span class="ruby-identifier">dup</span>; <span class="ruby-identifier">memo</span> }
+ 95:       
+ 96:       <span class="ruby-comment cmt"># Set the default configuration values for this instance</span>
+ 97:       <span class="ruby-ivar">@options</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">config_key</span>, <span class="ruby-identifier">config_opts</span><span class="ruby-operator">|</span>
+ 98:         <span class="ruby-identifier">config_opts</span>[<span class="ruby-value">:on</span>] <span class="ruby-operator">||=</span> <span class="ruby-value">:on</span>
+ 99:         <span class="ruby-identifier">config_opts</span>[<span class="ruby-value">:boolean</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">false</span>
+100:         <span class="ruby-identifier">config_opts</span>[<span class="ruby-value">:required</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">false</span>
+101:         <span class="ruby-identifier">config_opts</span>[<span class="ruby-value">:proc</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">nil</span>
+102:         <span class="ruby-identifier">config_opts</span>[<span class="ruby-value">:show_options</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">false</span>
+103:         <span class="ruby-identifier">config_opts</span>[<span class="ruby-value">:exit</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">nil</span>
+104:         
+105:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">config_opts</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:default</span>)
+106:           <span class="ruby-ivar">@config</span>[<span class="ruby-identifier">config_key</span>] = <span class="ruby-identifier">config_opts</span>[<span class="ruby-value">:default</span>]
+107:         <span class="ruby-keyword kw">end</span>
+108:       <span class="ruby-keyword kw">end</span>
+109:       
+110:       <span class="ruby-keyword kw">super</span>(*<span class="ruby-identifier">args</span>)
+111:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="build-option-arguments-method" class="method-detail ">
+				<a name="method-i-build_option_arguments"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">build_option_arguments</span><span
+						class="method-args">(opt_setting)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="build-option-arguments-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/cli.rb, line 177</span>
+177:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">build_option_arguments</span>(<span class="ruby-identifier">opt_setting</span>)      
+178:       <span class="ruby-identifier">arguments</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+179:       
+180:       <span class="ruby-identifier">arguments</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">opt_setting</span>[<span class="ruby-value">:short</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opt_setting</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:short</span>)
+181:       <span class="ruby-identifier">arguments</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">opt_setting</span>[<span class="ruby-value">:long</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opt_setting</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:long</span>)
+182:       
+183:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opt_setting</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:description</span>)
+184:         <span class="ruby-identifier">description</span> = <span class="ruby-identifier">opt_setting</span>[<span class="ruby-value">:description</span>]
+185:         <span class="ruby-identifier">description</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot; (required)&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opt_setting</span>[<span class="ruby-value">:required</span>]
+186:         <span class="ruby-identifier">arguments</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">description</span>
+187:       <span class="ruby-keyword kw">end</span>
+188:           
+189:       <span class="ruby-identifier">arguments</span>
+190:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="parse-options-method" class="method-detail ">
+				<a name="method-i-parse_options"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">parse_options</span><span
+						class="method-args">(argv=ARGV)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Parses an array, by default ARGV, for command line options (as configured
+at  the class level).
+</p>
+<h3>Parameters</h3>
+<table>
+<tr><td valign="top">argv<Array></td><td><p>
+The array of arguments to parse; defaults to ARGV
+</p>
+</td></tr>
+</table>
+<h3>Returns</h3>
+<table>
+<tr><td valign="top">argv<Array></td><td><p>
+Returns any un-parsed elements.
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="parse-options-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/cli.rb, line 120</span>
+120:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse_options</span>(<span class="ruby-identifier">argv</span>=<span class="ruby-constant">ARGV</span>)
+121:       <span class="ruby-identifier">argv</span> = <span class="ruby-identifier">argv</span>.<span class="ruby-identifier">dup</span>
+122:       <span class="ruby-ivar">@opt_parser</span> = <span class="ruby-constant">OptionParser</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">opts</span><span class="ruby-operator">|</span>  
+123:         <span class="ruby-comment cmt"># Set the banner</span>
+124:         <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">banner</span> = <span class="ruby-identifier">banner</span>        
+125:         
+126:         <span class="ruby-comment cmt"># Create new options</span>
+127:         <span class="ruby-identifier">options</span>.<span class="ruby-identifier">sort</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">to_s</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">b</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">to_s</span> }.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">opt_key</span>, <span class="ruby-identifier">opt_val</span><span class="ruby-operator">|</span>          
+128:           <span class="ruby-identifier">opt_args</span> = <span class="ruby-identifier">build_option_arguments</span>(<span class="ruby-identifier">opt_val</span>)
+129:           
+130:           <span class="ruby-identifier">opt_method</span> = <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:on</span>]
+131:             <span class="ruby-keyword kw">when</span> <span class="ruby-value">:on</span>
+132:               <span class="ruby-value">:on</span>
+133:             <span class="ruby-keyword kw">when</span> <span class="ruby-value">:tail</span>
+134:               <span class="ruby-value">:on_tail</span>
+135:             <span class="ruby-keyword kw">when</span> <span class="ruby-value">:head</span>
+136:               <span class="ruby-value">:on_head</span>
+137:             <span class="ruby-keyword kw">else</span>
+138:               <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-value str">&quot;You must pass :on, :tail, or :head to :on&quot;</span>
+139:             <span class="ruby-keyword kw">end</span>
+140:                       
+141:           <span class="ruby-identifier">parse_block</span> = <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:boolean</span>]
+142:             <span class="ruby-keyword kw">when</span> <span class="ruby-keyword kw">true</span>
+143:               <span class="ruby-constant">Proc</span>.<span class="ruby-identifier">new</span>() <span class="ruby-keyword kw">do</span>
+144:                 <span class="ruby-identifier">config</span>[<span class="ruby-identifier">opt_key</span>] = (<span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:proc</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:proc</span>].<span class="ruby-identifier">call</span>(<span class="ruby-keyword kw">true</span>)) <span class="ruby-operator">||</span> <span class="ruby-keyword kw">true</span>
+145:                 <span class="ruby-identifier">puts</span> <span class="ruby-identifier">opts</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:show_options</span>]
+146:                 <span class="ruby-identifier">exit</span> <span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:exit</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:exit</span>]
+147:               <span class="ruby-keyword kw">end</span>
+148:             <span class="ruby-keyword kw">when</span> <span class="ruby-keyword kw">false</span>
+149:               <span class="ruby-constant">Proc</span>.<span class="ruby-identifier">new</span>() <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+150:                 <span class="ruby-identifier">config</span>[<span class="ruby-identifier">opt_key</span>] = (<span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:proc</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:proc</span>].<span class="ruby-identifier">call</span>(<span class="ruby-identifier">c</span>)) <span class="ruby-operator">||</span> <span class="ruby-identifier">c</span>
+151:                 <span class="ruby-identifier">puts</span> <span class="ruby-identifier">opts</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:show_options</span>]
+152:                 <span class="ruby-identifier">exit</span> <span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:exit</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opt_val</span>[<span class="ruby-value">:exit</span>]
+153:               <span class="ruby-keyword kw">end</span>
+154:             <span class="ruby-keyword kw">end</span>
+155:                     
+156:           <span class="ruby-identifier">full_opt</span> = [ <span class="ruby-identifier">opt_method</span> ]
+157:           <span class="ruby-identifier">opt_args</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-identifier">full_opt</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">memo</span>, <span class="ruby-identifier">arg</span><span class="ruby-operator">|</span> <span class="ruby-identifier">memo</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">arg</span>; <span class="ruby-identifier">memo</span> }
+158:           <span class="ruby-identifier">full_opt</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">parse_block</span>
+159:           <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">send</span>(*<span class="ruby-identifier">full_opt</span>)
+160:         <span class="ruby-keyword kw">end</span>
+161:       <span class="ruby-keyword kw">end</span>
+162:       <span class="ruby-ivar">@opt_parser</span>.<span class="ruby-identifier">parse!</span>(<span class="ruby-identifier">argv</span>)
+163:       
+164:       <span class="ruby-comment cmt"># Deal with any required values</span>
+165:       <span class="ruby-identifier">options</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">opt_key</span>, <span class="ruby-identifier">opt_value</span><span class="ruby-operator">|</span>
+166:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opt_value</span>[<span class="ruby-value">:required</span>]
+167:           <span class="ruby-identifier">reqarg</span> = <span class="ruby-identifier">opt_value</span>[<span class="ruby-value">:short</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">opt_value</span>[<span class="ruby-value">:long</span>]
+168:           <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;You must supply #{reqarg}!&quot;</span>
+169:           <span class="ruby-identifier">puts</span> <span class="ruby-ivar">@opt_parser</span>
+170:           <span class="ruby-identifier">exit</span> <span class="ruby-value">2</span>
+171:         <span class="ruby-keyword kw">end</span>
+172:       <span class="ruby-keyword kw">end</span>
+173:       
+174:       <span class="ruby-identifier">argv</span>
+175:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

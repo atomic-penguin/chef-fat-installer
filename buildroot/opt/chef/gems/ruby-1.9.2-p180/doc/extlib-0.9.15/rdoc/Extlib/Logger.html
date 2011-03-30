@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+	<title>Class: Extlib::Logger</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/extlib/logger_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/extlib/logger.rb">lib/extlib/logger.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="../Object.html">Object</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-%3C%3C">#<<</a></li>
+					
+					<li><a href="#method-i-close">#close</a></li>
+					
+					<li><a href="#method-i-flush">#flush</a></li>
+					
+					<li><a href="#method-i-initialize_log">#initialize_log</a></li>
+					
+					<li><a href="#method-i-push">#push</a></li>
+					
+					<li><a href="#method-i-set_log">#set_log</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Extlib.html">Extlib</a></li>
+				
+					<li><a href="../Extlib/Assertions.html">Extlib::Assertions</a></li>
+				
+					<li><a href="../Extlib/ByteArray.html">Extlib::ByteArray</a></li>
+				
+					<li><a href="../Extlib/Hook.html">Extlib::Hook</a></li>
+				
+					<li><a href="../Extlib/Hook/ClassMethods.html">Extlib::Hook::ClassMethods</a></li>
+				
+					<li><a href="../Extlib/Inflection.html">Extlib::Inflection</a></li>
+				
+					<li><a href="../Extlib/LocalObjectSpace.html">Extlib::LocalObjectSpace</a></li>
+				
+					<li><a href="../Extlib/Logger.html">Extlib::Logger</a></li>
+				
+					<li><a href="../Extlib/Pooling.html">Extlib::Pooling</a></li>
+				
+					<li><a href="../Extlib/Pooling/InvalidResourceError.html">Extlib::Pooling::InvalidResourceError</a></li>
+				
+					<li><a href="../Extlib/Pooling/Pool.html">Extlib::Pooling::Pool</a></li>
+				
+					<li><a href="../Extlib/SimpleSet.html">Extlib::SimpleSet</a></li>
+				
+					<li><a href="../Gem.html">Gem</a></li>
+				
+					<li><a href="../Gem/SourceIndex.html">Gem::SourceIndex</a></li>
+				
+					<li><a href="../Gem/Specification.html">Gem::Specification</a></li>
+				
+					<li><a href="../Array.html">Array</a></li>
+				
+					<li><a href="../Class.html">Class</a></li>
+				
+					<li><a href="../ClassMethods.html">ClassMethods</a></li>
+				
+					<li><a href="../DateTime.html">DateTime</a></li>
+				
+					<li><a href="../Dictionary.html">Dictionary</a></li>
+				
+					<li><a href="../FalseClass.html">FalseClass</a></li>
+				
+					<li><a href="../Hash.html">Hash</a></li>
+				
+					<li><a href="../LazyArray.html">LazyArray</a></li>
+				
+					<li><a href="../LazyModule.html">LazyModule</a></li>
+				
+					<li><a href="../Mash.html">Mash</a></li>
+				
+					<li><a href="../Module.html">Module</a></li>
+				
+					<li><a href="../NilClass.html">NilClass</a></li>
+				
+					<li><a href="../Numeric.html">Numeric</a></li>
+				
+					<li><a href="../Object.html">Object</a></li>
+				
+					<li><a href="../ObjectSpace.html">ObjectSpace</a></li>
+				
+					<li><a href="../Pathname.html">Pathname</a></li>
+				
+					<li><a href="../REXMLUtilityNode.html">REXMLUtilityNode</a></li>
+				
+					<li><a href="../String.html">String</a></li>
+				
+					<li><a href="../Struct.html">Struct</a></li>
+				
+					<li><a href="../Symbol.html">Symbol</a></li>
+				
+					<li><a href="../Time.html">Time</a></li>
+				
+					<li><a href="../TrueClass.html">TrueClass</a></li>
+				
+					<li><a href="../VirtualFile.html">VirtualFile</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Extlib::Logger</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="Levels">Levels</a></dt>
+				
+				<dd class="description"><h4>Notes</h4>
+<p>
+Ruby (standard) logger levels:
+</p>
+<table>
+<tr><td valign="top">:fatal</td><td><p>
+An unhandleable error that results in a program crash
+</p>
+</td></tr>
+<tr><td valign="top">:error</td><td><p>
+A handleable error condition
+</p>
+</td></tr>
+<tr><td valign="top">:warn</td><td><p>
+A warning
+</p>
+</td></tr>
+<tr><td valign="top">:info</td><td><p>
+generic (useful) information about system operation
+</p>
+</td></tr>
+<tr><td valign="top">:debug</td><td><p>
+low-level information for developers
+</p>
+</td></tr>
+</table></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="level-attribute-method" class="method-detail">
+				<a name="level"></a>
+				
+				<a name="level="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">level</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="delimiter-attribute-method" class="method-detail">
+				<a name="delimiter"></a>
+				
+				<a name="delimiter="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">delimiter</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="auto-flush-attribute-method" class="method-detail">
+				<a name="auto_flush"></a>
+				
+				<a name="auto_flush="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">auto_flush</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="buffer-attribute-method" class="method-detail">
+				<a name="buffer"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">buffer</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="log-attribute-method" class="method-detail">
+				<a name="log"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">log</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="init-args-attribute-method" class="method-detail">
+				<a name="init_args"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">init_args</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(*args)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+To initialize the logger you create a new object, proxies to set_log.
+</p>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">*args</td><td><p>
+Arguments to create the log from. See set_logs for specifics.
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/extlib/logger.rb, line 93</span>
+93:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(*<span class="ruby-identifier">args</span>)
+94:       <span class="ruby-ivar">@init_args</span> = <span class="ruby-identifier">args</span>
+95:       <span class="ruby-identifier">set_log</span>(*<span class="ruby-identifier">args</span>)
+96:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%3C%3C"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">&lt;&lt;</span><span
+						class="method-args">(string = nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Appends a message to the log. The methods yield to an optional block and
+the output of this block will be appended to the message.
+</p>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">string<String></td><td><p>
+The message to be logged. Defaults to nil.
+</p>
+</td></tr>
+</table>
+<h4>Returns</h4>
+<table>
+<tr><td valign="top"><a href="../String.html">String</a></td><td><p>
+The resulting message added to the log file.
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/logger.rb, line 144</span>
+144:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">&lt;&lt;</span>(<span class="ruby-identifier">string</span> = <span class="ruby-keyword kw">nil</span>)
+145:       <span class="ruby-identifier">message</span> = <span class="ruby-value str">&quot;&quot;</span>
+146:       <span class="ruby-identifier">message</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">delimiter</span>
+147:       <span class="ruby-identifier">message</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">string</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">string</span>
+148:       <span class="ruby-identifier">message</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value str">&quot;\n&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">message</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-value">\n\</span>
+149:       <span class="ruby-ivar">@buffer</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">message</span>
+150:       <span class="ruby-identifier">flush</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@auto_flush</span>
+151: 
+152:       <span class="ruby-identifier">message</span>
+153:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Logger.html#method-i-push">push</a>
+				</div>
+				
+
+				
+			</div>
+
+		
+			<div id="close-method" class="method-detail ">
+				<a name="method-i-close"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">close</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Close and remove the current log object.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="close-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/logger.rb, line 130</span>
+130:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">close</span>
+131:       <span class="ruby-identifier">flush</span>
+132:       <span class="ruby-ivar">@log</span>.<span class="ruby-identifier">close</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@log</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:close</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@log</span>.<span class="ruby-identifier">tty?</span>
+133:       <span class="ruby-ivar">@log</span> = <span class="ruby-keyword kw">nil</span>
+134:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="flush-method" class="method-detail ">
+				<a name="method-i-flush"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">flush</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Flush the entire buffer to the log object.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="flush-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/logger.rb, line 124</span>
+124:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">flush</span>
+125:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-ivar">@buffer</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+126:       <span class="ruby-ivar">@log</span>.<span class="ruby-identifier">write</span>(<span class="ruby-ivar">@buffer</span>.<span class="ruby-identifier">slice!</span>(<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">1</span>).<span class="ruby-identifier">join</span>)
+127:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="push-method" class="method-detail method-alias">
+				<a name="method-i-push"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">push</span><span
+						class="method-args">(string = nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+				</div>
+
+				
+
+				
+				<div class="aliases">
+          Alias for: <a href="Logger.html#method-i-%3C%3C">&lt;&lt;</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="set-log-method" class="method-detail ">
+				<a name="method-i-set_log"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">set_log</span><span
+						class="method-args">(log, log_level = nil, delimiter = " ~ ", auto_flush = false)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Replaces an existing logger with a new one.
+</p>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">log<IO, String></td><td><p>
+Either an IO object or a name of a logfile.
+</p>
+</td></tr>
+<tr><td valign="top">log_level<~to_sym></td><td><p>
+The log level from, e.g. :fatal or :info. Defaults to :error in the
+production environment and :debug otherwise.
+</p>
+</td></tr>
+<tr><td valign="top">delimiter<String></td><td><p>
+Delimiter to use between message sections. Defaults to &#8220; ~ &#8220;.
+</p>
+</td></tr>
+<tr><td valign="top"><a href="Logger.html#auto_flush">auto_flush</a><Boolean></td><td><p>
+Whether the log should automatically flush after new messages are added.
+Defaults to false.
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="set-log-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/extlib/logger.rb, line 110</span>
+110:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">set_log</span>(<span class="ruby-identifier">log</span>, <span class="ruby-identifier">log_level</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">delimiter</span> = <span class="ruby-value str">&quot; ~ &quot;</span>, <span class="ruby-identifier">auto_flush</span> = <span class="ruby-keyword kw">false</span>)
+111:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">log_level</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">Levels</span>[<span class="ruby-identifier">log_level</span>.<span class="ruby-identifier">to_sym</span>]
+112:         <span class="ruby-ivar">@level</span> = <span class="ruby-constant">Levels</span>[<span class="ruby-identifier">log_level</span>.<span class="ruby-identifier">to_sym</span>]
+113:       <span class="ruby-keyword kw">else</span>
+114:         <span class="ruby-ivar">@level</span> = <span class="ruby-constant">Levels</span>[<span class="ruby-value">:debug</span>]
+115:       <span class="ruby-keyword kw">end</span>
+116:       <span class="ruby-ivar">@buffer</span>     = []
+117:       <span class="ruby-ivar">@delimiter</span>  = <span class="ruby-identifier">delimiter</span>
+118:       <span class="ruby-ivar">@auto_flush</span> = <span class="ruby-identifier">auto_flush</span>
+119: 
+120:       <span class="ruby-identifier">initialize_log</span>(<span class="ruby-identifier">log</span>)
+121:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="initialize-log-method" class="method-detail ">
+				<a name="method-i-initialize_log"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">initialize_log</span><span
+						class="method-args">(log)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Readies a log for writing.
+</p>
+<h4>Parameters</h4>
+<table>
+<tr><td valign="top">log<IO, String></td><td><p>
+Either an IO object or a name of a logfile.
+</p>
+</td></tr>
+</table>
+					
+
+					
+					<div class="method-source-code"
+						id="initialize-log-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/extlib/logger.rb, line 71</span>
+71:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize_log</span>(<span class="ruby-identifier">log</span>)
+72:       <span class="ruby-identifier">close</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@log</span> <span class="ruby-comment cmt"># be sure that we don't leave open files laying around.</span>
+73: 
+74:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">log</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:write</span>)
+75:         <span class="ruby-ivar">@log</span> = <span class="ruby-identifier">log</span>
+76:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-identifier">log</span>)
+77:         <span class="ruby-ivar">@log</span> = <span class="ruby-identifier">open</span>(<span class="ruby-identifier">log</span>, (<span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">WRONLY</span> <span class="ruby-operator">|</span> <span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">APPEND</span>))
+78:         <span class="ruby-ivar">@log</span>.<span class="ruby-identifier">sync</span> = <span class="ruby-keyword kw">true</span>
+79:       <span class="ruby-keyword kw">else</span>
+80:         <span class="ruby-constant">FileUtils</span>.<span class="ruby-identifier">mkdir_p</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-identifier">log</span>)) <span class="ruby-keyword kw">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">directory?</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-identifier">log</span>))
+81:         <span class="ruby-ivar">@log</span> = <span class="ruby-identifier">open</span>(<span class="ruby-identifier">log</span>, (<span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">WRONLY</span> <span class="ruby-operator">|</span> <span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">APPEND</span> <span class="ruby-operator">|</span> <span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">CREAT</span>))
+82:         <span class="ruby-ivar">@log</span>.<span class="ruby-identifier">sync</span> = <span class="ruby-keyword kw">true</span>
+83:         <span class="ruby-ivar">@log</span>.<span class="ruby-identifier">write</span>(<span class="ruby-node">&quot;#{Time.now.httpdate} #{delimiter} info #{delimiter} Logfile created\n&quot;</span>)
+84:       <span class="ruby-keyword kw">end</span>
+85:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
