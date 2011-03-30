@@ -15,6 +15,8 @@ in this directory, buildroot, gets rolled up into the FAT installer.
 
 == WARNINGS
 
+=== PERTINENT TO RVM
+
 Chances are this deployment could be destructive to an existing rvm environment.
 It shouldn't overwrite the default location of /usr/local/rvm, instead it installs
 in /opt/chef.  However, the installer could override your default rvm installation.
@@ -26,6 +28,17 @@ installation, this distribution is not recommended for that machine.
  * /opt/chef - Installation path
  * /etc/rvm.sh - Profile script
  * /etc/rvmrc - exports rvm path for Chef
+
+=== INIT.D SCRIPTS
+
+The init scripts shipped with the Chef fat installer need to
+source /etc/profile.d/rvm.sh to have the proper PATH environment variables to work
+with Chef.  If your chef::client_service recipe overwrites the init scripts, then
+consider adding the following code snippet to your init cookbook_file.
+
+if [ -x /etc/profile.d/rvm.sh ]; then
+  . /etc/profile.d/rvm.sh
+fi
 
 = BUGS / FIXES
 
