@@ -8,8 +8,7 @@
 
 1. Checkout architecture-specific branch.
 
-  git checkout i386
-  git checkout x86_64
+ git checkout i386 *OR* git checkout x86_64
 
 2. Run build script, which should output a makeself .run file
 
