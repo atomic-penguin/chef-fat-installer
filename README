@@ -19,9 +19,18 @@ Chances are this deployment could be destructive to an existing rvm environment.
 It shouldn't overwrite the default location of /usr/local/rvm, instead it installs
 in /opt/chef.  However, the installer could override your default rvm installation.
 
-I have tried to keep separate filenames from rvm to avoid conflict.  Files, and directories
-of interest.
+I kept the installation in an alternate location to avoid conflict with default rvm
+directory.  Files, and directories of interest.  If you have an existing rvm
+installation, this distribution is not recommended for that machine.
 
  * /opt/chef - Installation path
- * /etc/profile.d/chef-rvm.sh - Profile script
- * /etc/chef-rvmrc - exports rvm path for Chef
+ * /etc/rvm.sh - Profile script
+ * /etc/rvmrc - exports rvm path for Chef
+
+= BUGS / FIXES
+
+Pull requests welcome via github.
+
+== WEBSITE
+
+https://github.com/atomic-penguin/chef-fat-installer
