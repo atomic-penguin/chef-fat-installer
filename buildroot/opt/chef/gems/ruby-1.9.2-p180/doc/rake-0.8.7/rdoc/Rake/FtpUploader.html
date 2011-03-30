@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Rake::FtpUploader</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/rake/contrib/ftptools_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/rake/contrib/ftptools.rb">lib/rake/contrib/ftptools.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="../Object.html">Object</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-connect">::connect</a></li>
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-close">#close</a></li>
+					
+					<li><a href="#method-i-makedirs">#makedirs</a></li>
+					
+					<li><a href="#method-i-upload">#upload</a></li>
+					
+					<li><a href="#method-i-upload_files">#upload_files</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../CHANGES.html">CHANGES</a></li>
+				
+					<li class="file"><a href="../MIT-LICENSE.html">MIT-LICENSE</a></li>
+				
+					<li class="file"><a href="../README.html">README</a></li>
+				
+					<li class="file"><a href="../TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="../doc/command_line_usage_rdoc.html">command_line_usage.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/glossary_rdoc.html">glossary.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/proto_rake_rdoc.html">proto_rake.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/rakefile_rdoc.html">rakefile.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/rational_rdoc.html">rational.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_4_14_rdoc.html">rake-0.4.14.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_4_15_rdoc.html">rake-0.4.15.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_0_rdoc.html">rake-0.5.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_3_rdoc.html">rake-0.5.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_4_rdoc.html">rake-0.5.4.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_6_0_rdoc.html">rake-0.6.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_0_rdoc.html">rake-0.7.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_1_rdoc.html">rake-0.7.1.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_2_rdoc.html">rake-0.7.2.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_3_rdoc.html">rake-0.7.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_0_rdoc.html">rake-0.8.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_2_rdoc.html">rake-0.8.2.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_3_rdoc.html">rake-0.8.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_4_rdoc.html">rake-0.8.4.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_5_rdoc.html">rake-0.8.5.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_6_rdoc.html">rake-0.8.6.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_7_rdoc.html">rake-0.8.7.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Rake/AltSystem.html">Rake::AltSystem</a></li>
+				
+					<li><a href="../Rake/Application.html">Rake::Application</a></li>
+				
+					<li><a href="../Rake/Cloneable.html">Rake::Cloneable</a></li>
+				
+					<li><a href="../Rake/CompositePublisher.html">Rake::CompositePublisher</a></li>
+				
+					<li><a href="../Rake/DefaultLoader.html">Rake::DefaultLoader</a></li>
+				
+					<li><a href="../Rake/EarlyTime.html">Rake::EarlyTime</a></li>
+				
+					<li><a href="../Rake/FileCreationTask.html">Rake::FileCreationTask</a></li>
+				
+					<li><a href="../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../Rake/FileTask.html">Rake::FileTask</a></li>
+				
+					<li><a href="../Rake/FtpFile.html">Rake::FtpFile</a></li>
+				
+					<li><a href="../Rake/FtpUploader.html">Rake::FtpUploader</a></li>
+				
+					<li><a href="../Rake/GemPackageTask.html">Rake::GemPackageTask</a></li>
+				
+					<li><a href="../Rake/InvocationChain.html">Rake::InvocationChain</a></li>
+				
+					<li><a href="../Rake/InvocationChain/EmptyInvocationChain.html">Rake::InvocationChain::EmptyInvocationChain</a></li>
+				
+					<li><a href="../Rake/MakefileLoader.html">Rake::MakefileLoader</a></li>
+				
+					<li><a href="../Rake/MultiTask.html">Rake::MultiTask</a></li>
+				
+					<li><a href="../Rake/NameSpace.html">Rake::NameSpace</a></li>
+				
+					<li><a href="../Rake/PackageTask.html">Rake::PackageTask</a></li>
+				
+					<li><a href="../Rake/PseudoStatus.html">Rake::PseudoStatus</a></li>
+				
+					<li><a href="../Rake/RDocTask.html">Rake::RDocTask</a></li>
+				
+					<li><a href="../Rake/RubyForgePublisher.html">Rake::RubyForgePublisher</a></li>
+				
+					<li><a href="../Rake/RuleRecursionOverflowError.html">Rake::RuleRecursionOverflowError</a></li>
+				
+					<li><a href="../Rake/SshDirPublisher.html">Rake::SshDirPublisher</a></li>
+				
+					<li><a href="../Rake/SshFilePublisher.html">Rake::SshFilePublisher</a></li>
+				
+					<li><a href="../Rake/SshFreshDirPublisher.html">Rake::SshFreshDirPublisher</a></li>
+				
+					<li><a href="../Rake/Task.html">Rake::Task</a></li>
+				
+					<li><a href="../Rake/TaskArgumentError.html">Rake::TaskArgumentError</a></li>
+				
+					<li><a href="../Rake/TaskArguments.html">Rake::TaskArguments</a></li>
+				
+					<li><a href="../Rake/TaskLib.html">Rake::TaskLib</a></li>
+				
+					<li><a href="../Rake/TaskManager.html">Rake::TaskManager</a></li>
+				
+					<li><a href="../Rake/TestTask.html">Rake::TestTask</a></li>
+				
+					<li><a href="../Rake/Win32.html">Rake::Win32</a></li>
+				
+					<li><a href="../Rake/Win32/Win32HomeError.html">Rake::Win32::Win32HomeError</a></li>
+				
+					<li><a href="../Test.html">Test</a></li>
+				
+					<li><a href="../Test/Unit.html">Test::Unit</a></li>
+				
+					<li><a href="../Test/Unit/Collector.html">Test::Unit::Collector</a></li>
+				
+					<li><a href="../Test/Unit/Collector/Dir.html">Test::Unit::Collector::Dir</a></li>
+				
+					<li><a href="../CompositePublisher.html">CompositePublisher</a></li>
+				
+					<li><a href="../FileUtils.html">FileUtils</a></li>
+				
+					<li><a href="../Module.html">Module</a></li>
+				
+					<li><a href="../Object.html">Object</a></li>
+				
+					<li><a href="../RakeFileUtils.html">RakeFileUtils</a></li>
+				
+					<li><a href="../SshDirPublisher.html">SshDirPublisher</a></li>
+				
+					<li><a href="../SshFilePublisher.html">SshFilePublisher</a></li>
+				
+					<li><a href="../SshFreshDirPublisher.html">SshFreshDirPublisher</a></li>
+				
+					<li><a href="../String.html">String</a></li>
+				
+					<li><a href="../Sys.html">Sys</a></li>
+				
+					<li><a href="../Time.html">Time</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Rake::FtpUploader</h1>
+
+		<div id="description">
+			<pre>
+                                                                  
+</pre>
+<p>
+Manage the uploading of files to an FTP account.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="verbose-attribute-method" class="method-detail">
+				<a name="verbose"></a>
+				
+				<a name="verbose="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">verbose</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+Log uploads to standard output when true.
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="connect-method" class="method-detail ">
+				<a name="method-c-connect"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">connect</span><span
+						class="method-args">(path, host, account, password)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Create an uploader and pass it to the given block as <tt>up</tt>. When the
+block is complete, close the uploader.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="connect-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake/contrib/ftptools.rb, line 95</span>
+ 95:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">connect</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">host</span>, <span class="ruby-identifier">account</span>, <span class="ruby-identifier">password</span>)
+ 96:         <span class="ruby-identifier">up</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">host</span>, <span class="ruby-identifier">account</span>, <span class="ruby-identifier">password</span>)
+ 97:         <span class="ruby-keyword kw">begin</span>
+ 98:           <span class="ruby-keyword kw">yield</span>(<span class="ruby-identifier">up</span>)
+ 99:         <span class="ruby-keyword kw">ensure</span>
+100:           <span class="ruby-identifier">up</span>.<span class="ruby-identifier">close</span>
+101:         <span class="ruby-keyword kw">end</span>
+102:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(path, host, account, password)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Create an FTP uploader targetting the directory <tt>path</tt> on
+<tt>host</tt> using the given account and password.  <tt>path</tt> will be
+the root path of the uploader.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake/contrib/ftptools.rb, line 108</span>
+108:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">host</span>, <span class="ruby-identifier">account</span>, <span class="ruby-identifier">password</span>)
+109:       <span class="ruby-ivar">@created</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+110:       <span class="ruby-ivar">@path</span> = <span class="ruby-identifier">path</span>
+111:       <span class="ruby-ivar">@ftp</span> = <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">FTP</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">host</span>, <span class="ruby-identifier">account</span>, <span class="ruby-identifier">password</span>)
+112:       <span class="ruby-identifier">makedirs</span>(<span class="ruby-ivar">@path</span>)
+113:       <span class="ruby-ivar">@ftp</span>.<span class="ruby-identifier">chdir</span>(<span class="ruby-ivar">@path</span>)
+114:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="close-method" class="method-detail ">
+				<a name="method-i-close"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">close</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Close the uploader.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="close-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake/contrib/ftptools.rb, line 139</span>
+139:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">close</span>
+140:       <span class="ruby-ivar">@ftp</span>.<span class="ruby-identifier">close</span>
+141:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="makedirs-method" class="method-detail ">
+				<a name="method-i-makedirs"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">makedirs</span><span
+						class="method-args">(path)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Create the directory <tt>path</tt> in the uploader root path.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="makedirs-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake/contrib/ftptools.rb, line 117</span>
+117:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">makedirs</span>(<span class="ruby-identifier">path</span>)
+118:       <span class="ruby-identifier">route</span> = []
+119:       <span class="ruby-constant">File</span>.<span class="ruby-identifier">split</span>(<span class="ruby-identifier">path</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">dir</span><span class="ruby-operator">|</span>
+120:         <span class="ruby-identifier">route</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">dir</span>
+121:         <span class="ruby-identifier">current_dir</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">route</span>)
+122:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@created</span>[<span class="ruby-identifier">current_dir</span>].<span class="ruby-identifier">nil?</span>
+123:           <span class="ruby-ivar">@created</span>[<span class="ruby-identifier">current_dir</span>] = <span class="ruby-keyword kw">true</span>
+124:           <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Creating Directory  #{current_dir}&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@verbose</span>
+125:           <span class="ruby-ivar">@ftp</span>.<span class="ruby-identifier">mkdir</span>(<span class="ruby-identifier">current_dir</span>) <span class="ruby-keyword kw">rescue</span> <span class="ruby-keyword kw">nil</span>
+126:         <span class="ruby-keyword kw">end</span>
+127:       <span class="ruby-keyword kw">end</span>
+128:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="upload-files-method" class="method-detail ">
+				<a name="method-i-upload_files"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">upload_files</span><span
+						class="method-args">(wildcard)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Upload all files matching <tt>wildcard</tt> to the uploader&#8217;s root
+path.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="upload-files-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake/contrib/ftptools.rb, line 132</span>
+132:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">upload_files</span>(<span class="ruby-identifier">wildcard</span>)
+133:       <span class="ruby-constant">Dir</span>[<span class="ruby-identifier">wildcard</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">fn</span><span class="ruby-operator">|</span>
+134:         <span class="ruby-identifier">upload</span>(<span class="ruby-identifier">fn</span>)
+135:       <span class="ruby-keyword kw">end</span>
+136:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="upload-method" class="method-detail ">
+				<a name="method-i-upload"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">upload</span><span
+						class="method-args">(file)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Upload a single file to the uploader&#8217;s root path.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="upload-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/rake/contrib/ftptools.rb, line 146</span>
+146:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">upload</span>(<span class="ruby-identifier">file</span>)
+147:       <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Uploading #{file}&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@verbose</span>
+148:       <span class="ruby-identifier">dir</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-identifier">file</span>)
+149:       <span class="ruby-identifier">makedirs</span>(<span class="ruby-identifier">dir</span>)
+150:       <span class="ruby-ivar">@ftp</span>.<span class="ruby-identifier">putbinaryfile</span>(<span class="ruby-identifier">file</span>, <span class="ruby-identifier">file</span>) <span class="ruby-keyword kw">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">directory?</span>(<span class="ruby-identifier">file</span>)
+151:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

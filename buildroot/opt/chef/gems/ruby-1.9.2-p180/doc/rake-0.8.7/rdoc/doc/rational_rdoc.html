@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: rational.rdoc [rake-0.8.7 Documentation]</title>
+
+	<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file">
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../CHANGES.html">CHANGES</a></li>
+				
+					<li class="file"><a href="../MIT-LICENSE.html">MIT-LICENSE</a></li>
+				
+					<li class="file"><a href="../README.html">README</a></li>
+				
+					<li class="file"><a href="../TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="../doc/command_line_usage_rdoc.html">command_line_usage.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/glossary_rdoc.html">glossary.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/proto_rake_rdoc.html">proto_rake.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/rakefile_rdoc.html">rakefile.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/rational_rdoc.html">rational.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_4_14_rdoc.html">rake-0.4.14.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_4_15_rdoc.html">rake-0.4.15.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_0_rdoc.html">rake-0.5.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_3_rdoc.html">rake-0.5.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_4_rdoc.html">rake-0.5.4.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_6_0_rdoc.html">rake-0.6.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_0_rdoc.html">rake-0.7.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_1_rdoc.html">rake-0.7.1.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_2_rdoc.html">rake-0.7.2.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_3_rdoc.html">rake-0.7.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_0_rdoc.html">rake-0.8.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_2_rdoc.html">rake-0.8.2.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_3_rdoc.html">rake-0.8.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_4_rdoc.html">rake-0.8.4.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_5_rdoc.html">rake-0.8.5.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_6_rdoc.html">rake-0.8.6.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_7_rdoc.html">rake-0.8.7.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Rake/AltSystem.html">Rake::AltSystem</a></li>
+				
+					<li><a href="../Rake/Application.html">Rake::Application</a></li>
+				
+					<li><a href="../Rake/Cloneable.html">Rake::Cloneable</a></li>
+				
+					<li><a href="../Rake/CompositePublisher.html">Rake::CompositePublisher</a></li>
+				
+					<li><a href="../Rake/DefaultLoader.html">Rake::DefaultLoader</a></li>
+				
+					<li><a href="../Rake/EarlyTime.html">Rake::EarlyTime</a></li>
+				
+					<li><a href="../Rake/FileCreationTask.html">Rake::FileCreationTask</a></li>
+				
+					<li><a href="../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../Rake/FileTask.html">Rake::FileTask</a></li>
+				
+					<li><a href="../Rake/FtpFile.html">Rake::FtpFile</a></li>
+				
+					<li><a href="../Rake/FtpUploader.html">Rake::FtpUploader</a></li>
+				
+					<li><a href="../Rake/GemPackageTask.html">Rake::GemPackageTask</a></li>
+				
+					<li><a href="../Rake/InvocationChain.html">Rake::InvocationChain</a></li>
+				
+					<li><a href="../Rake/InvocationChain/EmptyInvocationChain.html">Rake::InvocationChain::EmptyInvocationChain</a></li>
+				
+					<li><a href="../Rake/MakefileLoader.html">Rake::MakefileLoader</a></li>
+				
+					<li><a href="../Rake/MultiTask.html">Rake::MultiTask</a></li>
+				
+					<li><a href="../Rake/NameSpace.html">Rake::NameSpace</a></li>
+				
+					<li><a href="../Rake/PackageTask.html">Rake::PackageTask</a></li>
+				
+					<li><a href="../Rake/PseudoStatus.html">Rake::PseudoStatus</a></li>
+				
+					<li><a href="../Rake/RDocTask.html">Rake::RDocTask</a></li>
+				
+					<li><a href="../Rake/RubyForgePublisher.html">Rake::RubyForgePublisher</a></li>
+				
+					<li><a href="../Rake/RuleRecursionOverflowError.html">Rake::RuleRecursionOverflowError</a></li>
+				
+					<li><a href="../Rake/SshDirPublisher.html">Rake::SshDirPublisher</a></li>
+				
+					<li><a href="../Rake/SshFilePublisher.html">Rake::SshFilePublisher</a></li>
+				
+					<li><a href="../Rake/SshFreshDirPublisher.html">Rake::SshFreshDirPublisher</a></li>
+				
+					<li><a href="../Rake/Task.html">Rake::Task</a></li>
+				
+					<li><a href="../Rake/TaskArgumentError.html">Rake::TaskArgumentError</a></li>
+				
+					<li><a href="../Rake/TaskArguments.html">Rake::TaskArguments</a></li>
+				
+					<li><a href="../Rake/TaskLib.html">Rake::TaskLib</a></li>
+				
+					<li><a href="../Rake/TaskManager.html">Rake::TaskManager</a></li>
+				
+					<li><a href="../Rake/TestTask.html">Rake::TestTask</a></li>
+				
+					<li><a href="../Rake/Win32.html">Rake::Win32</a></li>
+				
+					<li><a href="../Rake/Win32/Win32HomeError.html">Rake::Win32::Win32HomeError</a></li>
+				
+					<li><a href="../Test.html">Test</a></li>
+				
+					<li><a href="../Test/Unit.html">Test::Unit</a></li>
+				
+					<li><a href="../Test/Unit/Collector.html">Test::Unit::Collector</a></li>
+				
+					<li><a href="../Test/Unit/Collector/Dir.html">Test::Unit::Collector::Dir</a></li>
+				
+					<li><a href="../CompositePublisher.html">CompositePublisher</a></li>
+				
+					<li><a href="../FileUtils.html">FileUtils</a></li>
+				
+					<li><a href="../Module.html">Module</a></li>
+				
+					<li><a href="../Object.html">Object</a></li>
+				
+					<li><a href="../RakeFileUtils.html">RakeFileUtils</a></li>
+				
+					<li><a href="../SshDirPublisher.html">SshDirPublisher</a></li>
+				
+					<li><a href="../SshFilePublisher.html">SshFilePublisher</a></li>
+				
+					<li><a href="../SshFreshDirPublisher.html">SshFreshDirPublisher</a></li>
+				
+					<li><a href="../String.html">String</a></li>
+				
+					<li><a href="../Sys.html">Sys</a></li>
+				
+					<li><a href="../Time.html">Time</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1>Why rake?</h1>
+<p>
+Ok, let me state from the beginning that I never intended to write this
+code.  I&#8217;m not convinced it is useful, and I&#8217;m not convinced
+anyone would even be interested in it.  All I can say is that Why&#8217;s
+onion truck must by been passing through the Ohio valley.
+</p>
+<p>
+What am I talking about? &#8230; A Ruby version of Make.
+</p>
+<p>
+See, I can sense you cringing already, and I agree.  The world certainly
+doesn&#8217;t need yet another reworking of the &#8220;make&#8221; program.
+I mean, we already have &#8220;ant&#8221;.  Isn&#8217;t that enough?
+</p>
+<p>
+It started yesterday.  I was helping a coworker fix a problem in one of the
+Makefiles we use in our project.  Not a particularly tough problem, but
+during the course of the conversation I began lamenting some of the
+shortcomings of make.  In particular, in one of my makefiles I wanted to
+determine the name of a file dynamically and had to resort to some simple
+scripting (in Ruby) to make it work.  &#8220;Wouldn&#8217;t it be nice if
+you could just use Ruby inside a Makefile&#8221; I said.
+</p>
+<p>
+My coworker (a recent convert to Ruby) agreed, but wondered what it would
+look like.  So I sketched the following on the whiteboard...
+</p>
+<pre>
+    &quot;What if you could specify the make tasks in Ruby, like this ...&quot;
+
+      task &quot;build&quot; do
+        java_compile(...args, etc ...)
+      end
+
+    &quot;The task function would register &quot;build&quot; as a target to be made,
+    and the block would be the action executed whenever the build
+    system determined that it was time to do the build target.&quot;
+</pre>
+<p>
+We agreed that would be cool, but writing make from scratch would be WAY
+too much work.  And that was the end of that!
+</p>
+<p>
+&#8230; Except I couldn&#8217;t get the thought out of my head.  What
+exactly would be needed to make the about syntax work as a make file? 
+Hmmm, you would need to register the tasks, you need some way of specifying
+dependencies between tasks, and some way of kicking off the process.  Hey! 
+What if we did &#8230; and fifteen minutes later I had a working prototype
+of Ruby make, complete with dependencies and actions.
+</p>
+<p>
+I showed the code to my coworker and we had a good laugh.  It was just
+about a page worth of code that reproduced an amazing amount of the
+functionality of make.  We were both truely stunned with the power of Ruby.
+</p>
+<p>
+But it didn&#8217;t do everything make did.  In particular, it didn&#8217;t
+have timestamp based file dependencies (where a file is rebuilt if any of
+its prerequisite files have a later timestamp).  Obviously THAT would be a
+pain to add and so Ruby Make would remain an interesting experiment.
+</p>
+<p>
+&#8230; Except as I walked back to my desk, I started thinking about what
+file based dependecies would really need.  Rats!  I was hooked again, and
+by adding a new class and two new methods, file/timestamp dependencies were
+implemented.
+</p>
+<p>
+Ok, now I was really hooked.  Last night (during CSI!) I massaged the code
+and cleaned it up a bit.  The result is a bare-bones replacement for make
+in exactly 100 lines of code.
+</p>
+<p>
+For the curious, you can see it at &#8230;
+</p>
+<ul>
+<li><p>
+<a href="proto_rake_rdoc.html">doc/proto_rake.rdoc</a>
+</p>
+</li>
+</ul>
+<p>
+Oh, about the name.  When I wrote the example Ruby Make task on my
+whiteboard, my coworker exclaimed &#8220;Oh! I have the perfect name: Rake
+&#8230; Get it?  Ruby-Make. Rake!&#8221;  He said he envisioned the tasks
+as leaves and Rake would clean them up  &#8230; or something like that. 
+Anyways, the name stuck.
+</p>
+<p>
+Some quick examples &#8230;
+</p>
+<p>
+A simple task to delete backup files &#8230;
+</p>
+<pre>
+   task :clean do
+     Dir['*~'].each {|fn| rm fn rescue nil}
+   end
+</pre>
+<p>
+Note that task names are symbols (they are slightly easier to type than
+quoted strings &#8230; but you may use quoted string if you would rather).
+Rake makes the methods of the <a href="../FileUtils.html">FileUtils</a>
+module directly available, so we take advantage of the <tt>rm</tt> command.
+Also note the use of &#8220;rescue nil&#8221; to trap and ignore errors in
+the <tt>rm</tt> command.
+</p>
+<p>
+To run it, just type &#8220;rake clean&#8221;.  Rake will automatically
+find a Rakefile in the current directory (or above!) and will invoke the
+targets named on the command line.  If there are no targets explicitly
+named, rake will invoke the task &#8220;default&#8221;.
+</p>
+<p>
+Here&#8217;s another task with dependencies &#8230;
+</p>
+<pre>
+   task :clobber =&gt; [:clean] do
+     rm_r &quot;tempdir&quot;
+   end
+</pre>
+<p>
+Task :clobber depends upon task :clean, so :clean will be run before
+:clobber is executed. 
+</p>
+<p>
+Files are specified by using the &#8220;file&#8221; command.  It is similar
+to the task command, except that the task name represents a file, and the
+task will be run only if the file doesn&#8217;t exist, or if its
+modification time is earlier than any of its prerequisites.
+</p>
+<p>
+Here is a file based dependency that will compile &#8220;hello.cc&#8220; to
+&#8220;hello.o&#8220;.
+</p>
+<pre>
+   file &quot;hello.cc&quot;
+   file &quot;hello.o&quot; =&gt; [&quot;hello.cc&quot;] do |t|
+     srcfile = t.name.sub(/\.o$/, &quot;.cc&quot;)
+     sh %{g++ #{srcfile} -c -o #{t.name}}
+   end
+</pre>
+<p>
+I normally specify file tasks with string (rather than symbols).  Some file
+names can&#8217;t be represented by symbols.  Plus it makes the distinction
+between them more clear to the casual reader.  
+</p>
+<p>
+Currently writing a task for each and every file in the project would be
+tedious at best.  I envision a set of libraries to make this job easier. 
+For instance, perhaps something like this &#8230;
+</p>
+<pre>
+   require 'rake/ctools'
+   Dir['*.c'].each do |fn|
+     c_source_file(fn)
+   end
+</pre>
+<p>
+where &#8220;c_source_file&#8220; will create all the tasks need to compile
+all the C source files in a directory.  Any number of useful libraries
+could be created for rake.
+</p>
+<p>
+That&#8217;s it.  There&#8217;s no documentation (other than whats in this
+message).  Does this sound interesting to anyone?  If so, I&#8217;ll
+continue to clean it up and write it up and publish it on RAA.  Otherwise,
+I&#8217;ll leave it as an interesting excerise and a tribute to the power
+of Ruby.
+</p>
+<p>
+Why /might/ rake be interesting to Ruby programmers.  I don&#8217;t know,
+perhaps &#8230;
+</p>
+<ul>
+<li><p>
+No weird make syntax (only weird Ruby syntax :-)
+</p>
+</li>
+<li><p>
+No need to edit or read XML (a la ant)
+</p>
+</li>
+<li><p>
+Platform independent build scripts.
+</p>
+</li>
+<li><p>
+Will run anywhere Ruby exists, so no need to have &#8220;make&#8221;
+installed. If you stay away from the &#8220;sys&#8221; command and use
+things like &#8216;ftools&#8217;, you can have a perfectly platform
+independent build script.  Also rake is only 100 lines of code, so it can
+easily be packaged along with the rest of your code.
+</p>
+</li>
+</ul>
+<p>
+So &#8230; Sorry for the long rambling message.  Like I said, I never
+intended to write this code at all.
+</p>
+
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
+

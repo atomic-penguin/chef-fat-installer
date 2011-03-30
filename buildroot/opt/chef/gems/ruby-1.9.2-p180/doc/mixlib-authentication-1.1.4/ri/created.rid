@@ -1,0 +1,9 @@
+Wed, 30 Mar 2011 15:21:20 -0400
+lib/mixlib/authentication.rb	Wed, 30 Mar 2011 15:21:14 -0400
+lib/mixlib/authentication/http_authentication_request.rb	Wed, 30 Mar 2011 15:21:14 -0400
+lib/mixlib/authentication/digester.rb	Wed, 30 Mar 2011 15:21:14 -0400
+lib/mixlib/authentication/signedheaderauth.rb	Wed, 30 Mar 2011 15:21:14 -0400
+lib/mixlib/authentication/signatureverification.rb	Wed, 30 Mar 2011 15:21:14 -0400
+README.rdoc	Wed, 30 Mar 2011 15:21:14 -0400
+LICENSE	Wed, 30 Mar 2011 15:21:14 -0400
+NOTICE	Wed, 30 Mar 2011 15:21:14 -0400

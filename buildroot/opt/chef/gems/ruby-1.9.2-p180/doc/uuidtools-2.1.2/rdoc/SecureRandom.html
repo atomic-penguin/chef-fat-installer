@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: SecureRandom</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/compat/securerandom_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/compat/securerandom.rb">lib/compat/securerandom.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-base64">::base64</a></li>
+					
+					<li><a href="#method-c-hex">::hex</a></li>
+					
+					<li><a href="#method-c-random_bytes">::random_bytes</a></li>
+					
+					<li><a href="#method-c-random_number">::random_number</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./README.html">README</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./UUID.html">UUID</a></li>
+				
+					<li><a href="./UUIDTools.html">UUIDTools</a></li>
+				
+					<li><a href="./UUIDTools/UUID.html">UUIDTools::UUID</a></li>
+				
+					<li><a href="./SecureRandom.html">SecureRandom</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">SecureRandom</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="base--method" class="method-detail ">
+				<a name="method-c-base64"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">base64</span><span
+						class="method-args">(n=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+SecureRandom.base64 generates a random base64 string.
+</p>
+<p>
+The argument n specifies the length of the random length. The length of the
+result string is about 4/3 of n.
+</p>
+<p>
+If n is not specified, 16 is assumed. It may be larger in future.
+</p>
+<p>
+If secure random number generator is not available, NotImplementedError is
+raised.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="base--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/compat/securerandom.rb, line 145</span>
+145:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">base64</span>(<span class="ruby-identifier">n</span>=<span class="ruby-keyword kw">nil</span>)
+146:       [<span class="ruby-identifier">random_bytes</span>(<span class="ruby-identifier">n</span>)].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;m*&quot;</span>).<span class="ruby-identifier">delete</span>(<span class="ruby-value str">&quot;\n&quot;</span>)
+147:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="hex-method" class="method-detail ">
+				<a name="method-c-hex"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">hex</span><span
+						class="method-args">(n=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+SecureRandom.hex generates a random hex string.
+</p>
+<p>
+The argument n specifies the length of the random length. The length of the
+result string is twice of n.
+</p>
+<p>
+If n is not specified, 16 is assumed. It may be larger in future.
+</p>
+<p>
+If secure random number generator is not available, NotImplementedError is
+raised.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="hex-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/compat/securerandom.rb, line 131</span>
+131:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">hex</span>(<span class="ruby-identifier">n</span>=<span class="ruby-keyword kw">nil</span>)
+132:       <span class="ruby-identifier">random_bytes</span>(<span class="ruby-identifier">n</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-value str">&quot;H*&quot;</span>)[<span class="ruby-value">0</span>]
+133:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="random-bytes-method" class="method-detail ">
+				<a name="method-c-random_bytes"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">random_bytes</span><span
+						class="method-args">(n=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+SecureRandom.random_bytes generates a random binary string.
+</p>
+<p>
+The argument n specifies the length of the result string.
+</p>
+<p>
+If n is not specified, 16 is assumed. It may be larger in future.
+</p>
+<p>
+If secure random number generator is not available, NotImplementedError is
+raised.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="random-bytes-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/compat/securerandom.rb, line 52</span>
+ 52:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">random_bytes</span>(<span class="ruby-identifier">n</span>=<span class="ruby-keyword kw">nil</span>)
+ 53:       <span class="ruby-identifier">n</span> <span class="ruby-operator">||=</span> <span class="ruby-value">16</span>
+ 54: 
+ 55:       <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">defined?</span> <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">Random</span>
+ 56:         <span class="ruby-keyword kw">return</span> <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">Random</span>.<span class="ruby-identifier">random_bytes</span>(<span class="ruby-identifier">n</span>)
+ 57:       <span class="ruby-keyword kw">end</span>
+ 58: 
+ 59:       <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-keyword kw">defined?</span>(<span class="ruby-ivar">@has_urandom</span>) <span class="ruby-operator">||</span> <span class="ruby-ivar">@has_urandom</span>
+ 60:         <span class="ruby-identifier">flags</span> = <span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">RDONLY</span>
+ 61:         <span class="ruby-identifier">flags</span> <span class="ruby-operator">|=</span> <span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">NONBLOCK</span> <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">defined?</span> <span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">NONBLOCK</span>
+ 62:         <span class="ruby-identifier">flags</span> <span class="ruby-operator">|=</span> <span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">NOCTTY</span> <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">defined?</span> <span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">NOCTTY</span>
+ 63:         <span class="ruby-identifier">flags</span> <span class="ruby-operator">|=</span> <span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">NOFOLLOW</span> <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">defined?</span> <span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">NOFOLLOW</span>
+ 64:         <span class="ruby-keyword kw">begin</span>
+ 65:           <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-value str">&quot;/dev/urandom&quot;</span>, <span class="ruby-identifier">flags</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+ 66:             <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">f</span>.<span class="ruby-identifier">stat</span>.<span class="ruby-identifier">chardev?</span>
+ 67:               <span class="ruby-identifier">raise</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">ENOENT</span>
+ 68:             <span class="ruby-keyword kw">end</span>
+ 69:             <span class="ruby-ivar">@has_urandom</span> = <span class="ruby-keyword kw">true</span>
+ 70:             <span class="ruby-identifier">ret</span> = <span class="ruby-identifier">f</span>.<span class="ruby-identifier">readpartial</span>(<span class="ruby-identifier">n</span>)
+ 71:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">ret</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">n</span>
+ 72:               <span class="ruby-identifier">raise</span> <span class="ruby-constant">NotImplementedError</span>,
+ 73:                 <span class="ruby-value str">&quot;Unexpected partial read from random device&quot;</span>
+ 74:             <span class="ruby-keyword kw">end</span>
+ 75:             <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">ret</span>
+ 76:           }
+ 77:         <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">ENOENT</span>
+ 78:           <span class="ruby-ivar">@has_urandom</span> = <span class="ruby-keyword kw">false</span>
+ 79:         <span class="ruby-keyword kw">end</span>
+ 80:       <span class="ruby-keyword kw">end</span>
+ 81: 
+ 82:       <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-keyword kw">defined?</span>(<span class="ruby-ivar">@has_win32</span>)
+ 83:         <span class="ruby-keyword kw">begin</span>
+ 84:           <span class="ruby-identifier">require</span> <span class="ruby-value str">'Win32API'</span>
+ 85: 
+ 86:           <span class="ruby-identifier">crypt_acquire_context</span> = <span class="ruby-constant">Win32API</span>.<span class="ruby-identifier">new</span>(
+ 87:             <span class="ruby-value str">&quot;advapi32&quot;</span>, <span class="ruby-value str">&quot;CryptAcquireContext&quot;</span>, <span class="ruby-value str">'PPPII'</span>, <span class="ruby-value str">'L'</span>
+ 88:           )
+ 89:           <span class="ruby-ivar">@crypt_gen_random</span> = <span class="ruby-constant">Win32API</span>.<span class="ruby-identifier">new</span>(
+ 90:             <span class="ruby-value str">&quot;advapi32&quot;</span>, <span class="ruby-value str">&quot;CryptGenRandom&quot;</span>, <span class="ruby-value str">'LIP'</span>, <span class="ruby-value str">'L'</span>
+ 91:           )
+ 92: 
+ 93:           <span class="ruby-identifier">hProvStr</span> = <span class="ruby-value str">&quot; &quot;</span> * <span class="ruby-value">4</span>
+ 94:           <span class="ruby-identifier">prov_rsa_full</span> = <span class="ruby-value">1</span>
+ 95:           <span class="ruby-identifier">crypt_verifycontext</span> = <span class="ruby-value">0xF0000000</span>
+ 96: 
+ 97:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">crypt_acquire_context</span>.<span class="ruby-identifier">call</span>(
+ 98:               <span class="ruby-identifier">hProvStr</span>, <span class="ruby-keyword kw">nil</span>, <span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">prov_rsa_full</span>, <span class="ruby-identifier">crypt_verifycontext</span>) <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+ 99:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">SystemCallError</span>,
+100:               <span class="ruby-node">&quot;CryptAcquireContext failed: #{lastWin32ErrorMessage}&quot;</span>
+101:           <span class="ruby-keyword kw">end</span>
+102:           <span class="ruby-ivar">@hProv</span>, = <span class="ruby-identifier">hProvStr</span>.<span class="ruby-identifier">unpack</span>(<span class="ruby-value str">'L'</span>)
+103: 
+104:           <span class="ruby-ivar">@has_win32</span> = <span class="ruby-keyword kw">true</span>
+105:         <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">LoadError</span>
+106:           <span class="ruby-ivar">@has_win32</span> = <span class="ruby-keyword kw">false</span>
+107:         <span class="ruby-keyword kw">end</span>
+108:       <span class="ruby-keyword kw">end</span>
+109:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@has_win32</span>
+110:         <span class="ruby-identifier">bytes</span> = <span class="ruby-value str">&quot; &quot;</span> * <span class="ruby-identifier">n</span>
+111:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@crypt_gen_random</span>.<span class="ruby-identifier">call</span>(<span class="ruby-ivar">@hProv</span>, <span class="ruby-identifier">bytes</span>.<span class="ruby-identifier">size</span>, <span class="ruby-identifier">bytes</span>) <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+112:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">SystemCallError</span>,
+113:             <span class="ruby-node">&quot;CryptGenRandom failed: #{lastWin32ErrorMessage}&quot;</span>
+114:         <span class="ruby-keyword kw">end</span>
+115:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">bytes</span>
+116:       <span class="ruby-keyword kw">end</span>
+117: 
+118:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">NotImplementedError</span>, <span class="ruby-value str">&quot;No random device&quot;</span>
+119:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="random-number-method" class="method-detail ">
+				<a name="method-c-random_number"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">random_number</span><span
+						class="method-args">(n=0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+SecureRandom.random_number generates a random number.
+</p>
+<p>
+If an positive integer is given as n, SecureRandom.random_number returns an
+integer: 0 <= SecureRandom.random_number(n) < n.
+</p>
+<p>
+If 0 is given or an argument is not given, SecureRandom.random_number
+returns an float: 0.0 <= SecureRandom.random_number() < 1.0.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="random-number-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/compat/securerandom.rb, line 158</span>
+158:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">random_number</span>(<span class="ruby-identifier">n</span>=<span class="ruby-value">0</span>)
+159:       <span class="ruby-keyword kw">if</span> <span class="ruby-value">0</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">n</span>
+160:         <span class="ruby-identifier">hex</span> = <span class="ruby-identifier">n</span>.<span class="ruby-identifier">to_s</span>(<span class="ruby-value">16</span>)
+161:         <span class="ruby-identifier">hex</span> = <span class="ruby-value str">'0'</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">hex</span> <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">hex</span>.<span class="ruby-identifier">length</span> &amp; <span class="ruby-value">1</span>) <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+162:         <span class="ruby-identifier">bin</span> = [<span class="ruby-identifier">hex</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">&quot;H*&quot;</span>)
+163:         <span class="ruby-identifier">first</span> = <span class="ruby-identifier">bin</span>[<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">0</span>]
+164:         <span class="ruby-identifier">mask</span> = <span class="ruby-identifier">first</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:ord</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">first</span>.<span class="ruby-identifier">ord</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">first</span>.<span class="ruby-identifier">sum</span>(<span class="ruby-value">8</span>)
+165:         <span class="ruby-identifier">mask</span> <span class="ruby-operator">|=</span> <span class="ruby-identifier">mask</span> <span class="ruby-operator">&gt;&gt;</span> <span class="ruby-value">1</span>
+166:         <span class="ruby-identifier">mask</span> <span class="ruby-operator">|=</span> <span class="ruby-identifier">mask</span> <span class="ruby-operator">&gt;&gt;</span> <span class="ruby-value">2</span>
+167:         <span class="ruby-identifier">mask</span> <span class="ruby-operator">|=</span> <span class="ruby-identifier">mask</span> <span class="ruby-operator">&gt;&gt;</span> <span class="ruby-value">4</span>
+168:         <span class="ruby-keyword kw">begin</span>
+169:           <span class="ruby-identifier">rnd</span> = <span class="ruby-constant">SecureRandom</span>.<span class="ruby-identifier">random_bytes</span>(<span class="ruby-identifier">bin</span>.<span class="ruby-identifier">length</span>)
+170:           <span class="ruby-identifier">first</span> = <span class="ruby-identifier">rnd</span>[<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">0</span>]
+171:           <span class="ruby-identifier">ordinal</span> = <span class="ruby-identifier">first</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:ord</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">first</span>.<span class="ruby-identifier">ord</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">first</span>.<span class="ruby-identifier">sum</span>(<span class="ruby-value">8</span>)
+172:           <span class="ruby-identifier">rnd</span>[<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">0</span>] = (<span class="ruby-identifier">ordinal</span> &amp; <span class="ruby-identifier">mask</span>).<span class="ruby-identifier">chr</span>
+173:         <span class="ruby-keyword kw">end</span> <span class="ruby-keyword kw">until</span> <span class="ruby-identifier">rnd</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">bin</span>
+174:         <span class="ruby-identifier">rnd</span>.<span class="ruby-identifier">unpack</span>(<span class="ruby-value str">&quot;H*&quot;</span>)[<span class="ruby-value">0</span>].<span class="ruby-identifier">hex</span>
+175:       <span class="ruby-keyword kw">else</span>
+176:         <span class="ruby-comment cmt"># assumption: Float::MANT_DIG &lt;= 64</span>
+177:         <span class="ruby-identifier">i64</span> = <span class="ruby-constant">SecureRandom</span>.<span class="ruby-identifier">random_bytes</span>(<span class="ruby-value">8</span>).<span class="ruby-identifier">unpack</span>(<span class="ruby-value str">&quot;Q&quot;</span>)[<span class="ruby-value">0</span>]
+178:         <span class="ruby-constant">Math</span>.<span class="ruby-identifier">ldexp</span>(<span class="ruby-identifier">i64</span> <span class="ruby-operator">&gt;&gt;</span> (<span class="ruby-value">64</span><span class="ruby-operator">-</span><span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">MANT_DIG</span>), <span class="ruby-operator">-</span><span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">MANT_DIG</span>)
+179:       <span class="ruby-keyword kw">end</span>
+180:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

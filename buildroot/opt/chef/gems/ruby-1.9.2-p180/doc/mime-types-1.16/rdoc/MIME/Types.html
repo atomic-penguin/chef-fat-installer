@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: MIME::Types</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/mime/types_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/mime/types.rb">lib/mime/types.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-%5B%5D">::[]</a></li>
+					
+					<li><a href="#method-c-add">::add</a></li>
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-c-of">::of</a></li>
+					
+					<li><a href="#method-c-type_for">::type_for</a></li>
+					
+					<li><a href="#method-i-%5B%5D">#[]</a></li>
+					
+					<li><a href="#method-i-add">#add</a></li>
+					
+					<li><a href="#method-i-of">#of</a></li>
+					
+					<li><a href="#method-i-type_for">#type_for</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../History_txt.html">History.txt</a></li>
+				
+					<li class="file"><a href="../Install_txt.html">Install.txt</a></li>
+				
+					<li class="file"><a href="../Licence_txt.html">Licence.txt</a></li>
+				
+					<li class="file"><a href="../README_txt.html">README.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../MIME.html">MIME</a></li>
+				
+					<li><a href="../MIME/InvalidContentType.html">MIME::InvalidContentType</a></li>
+				
+					<li><a href="../MIME/Type.html">MIME::Type</a></li>
+				
+					<li><a href="../MIME/Types.html">MIME::Types</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">MIME::Types</h1>
+
+		<div id="description">
+			<h1><a href="Types.html">MIME::Types</a></h1>
+<p>
+<a href="../MIME.html">MIME</a> types are used in MIME-compliant
+communications, as in e-mail or HTTP traffic, to indicate the type of
+content which is transmitted. <a href="Types.html">MIME::Types</a> provides
+the ability for detailed information about <a href="../MIME.html">MIME</a>
+entities (provided as a set of <a href="Type.html">MIME::Type</a> objects)
+to be determined and used programmatically. There are many types defined by
+RFCs and vendors, so the list is long but not complete; don&#8217;t
+hesitate to ask to add additional information. This library follows the
+IANA collection of <a href="../MIME.html">MIME</a> types (see below for
+reference).
+</p>
+<h2>Description</h2>
+<p>
+<a href="../MIME.html">MIME</a> types are used in <a
+href="../MIME.html">MIME</a> entities, as in email or HTTP traffic. It is
+useful at times to have information available about <a
+href="../MIME.html">MIME</a> types (or, inversely, about files). A <a
+href="Type.html">MIME::Type</a> stores the known information about one <a
+href="../MIME.html">MIME</a> type.
+</p>
+<h2>Usage</h2>
+<pre>
+ require 'mime/types'
+
+ plaintext = MIME::Types['text/plain']
+ print plaintext.media_type           # =&gt; 'text'
+ print plaintext.sub_type             # =&gt; 'plain'
+
+ puts plaintext.extensions.join(&quot; &quot;)  # =&gt; 'asc txt c cc h hh cpp'
+
+ puts plaintext.encoding              # =&gt; 8bit
+ puts plaintext.binary?               # =&gt; false
+ puts plaintext.ascii?                # =&gt; true
+ puts plaintext.obsolete?             # =&gt; false
+ puts plaintext.registered?           # =&gt; true
+ puts plaintext == 'text/plain'       # =&gt; true
+ puts MIME::Type.simplified('x-appl/x-zip') # =&gt; 'appl/zip'
+</pre>
+<p>
+This module is built to conform to the <a href="../MIME.html">MIME</a>
+types of RFCs 2045 and 2231. It follows the official IANA registry at <a
+href="http://www.iana.org/assignments/media-types/">www.iana.org/assignments/media-types/</a>
+and <a
+href="ftp://ftp.iana.org/assignments/media-types">ftp.iana.org/assignments/media-types</a>
+with some unofficial types added from the the collection at <a
+href="http://www.ltsw.se/knbase/internet/mime.htp">www.ltsw.se/knbase/internet/mime.htp</a>
+</p>
+<p>
+This is originally based on Perl <a href="Types.html">MIME::Types</a> by
+Mark Overmeer.
+</p>
+<h1>Author</h1>
+<table>
+<tr><td valign="top">Copyright</td><td><p>
+Copyright &#169; 2002 - 2009 by Austin Ziegler <austin@rubyforge.org>
+</p>
+</td></tr>
+<tr><td valign="top">Version</td><td><p>
+1.16
+</p>
+</td></tr>
+<tr><td valign="top">Based On</td><td><p>
+Perl <a
+href="http://search.cpan.org/author/MARKOV/MIME-Types-1.27/MIME/Types.pm">MIME::Types</a>,
+Copyright &#169; 2001 - 2009 by Mark Overmeer <mimetypes@overmeer.net>.
+</p>
+</td></tr>
+<tr><td valign="top">Licence</td><td><p>
+Ruby&#8217;s, Perl Artistic, or GPL version 2 (or later)
+</p>
+</td></tr>
+<tr><td valign="top">See Also</td><td><p>
+<a
+href="http://www.iana.org/assignments/media-types/">www.iana.org/assignments/media-types/</a>
+<a
+href="http://www.ltsw.se/knbase/internet/mime.htp">www.ltsw.se/knbase/internet/mime.htp</a>
+</p>
+</td></tr>
+</table>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="VERSION">VERSION</a></dt>
+				
+				<dd class="description"><p>
+The released version of Ruby <a href="Types.html">MIME::Types</a>
+</p></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="data-version-attribute-method" class="method-detail">
+				<a name="data_version"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">data_version</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+The data version.
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-c-%5B%5D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">[]</span><span
+						class="method-args">(type_id, flags = {})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a list of <a href="Type.html">MIME::Type</a> objects, which may be
+empty. The optional flag parameters are :complete (finds only complete <a
+href="Type.html">MIME::Type</a> objects) and :platform (finds only <a
+href="Types.html">MIME::Types</a> for the current platform). It is possible
+for multiple matches to be returned for either type (in the example below,
+&#8216;text/plain&#8217; returns two values &#8212; one for the general
+case, and one for VMS systems.
+</p>
+<pre>
+  puts &quot;\nMIME::Types['text/plain']&quot;
+  MIME::Types['text/plain'].each { |t| puts t.to_a.join(&quot;, &quot;) }
+
+  puts &quot;\nMIME::Types[/^image/, :complete =&gt; true]&quot;
+  MIME::Types[/^image/, :complete =&gt; true].each do |t|
+    puts t.to_a.join(&quot;, &quot;)
+  end</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mime/types.rb, line 717</span>
+717:       <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">type_id</span>, <span class="ruby-identifier">flags</span> = {})
+718:         <span class="ruby-ivar">@__types__</span>[<span class="ruby-identifier">type_id</span>, <span class="ruby-identifier">flags</span>]
+719:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="add-method" class="method-detail ">
+				<a name="method-c-add"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">add</span><span
+						class="method-args">(*types)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Add one or more <a href="Type.html">MIME::Type</a> objects to the set of
+known types. Each type should be experimental (e.g.,
+&#8216;application/x-ruby&#8217;). If the type is already known, a warning
+will be displayed.
+</p>
+<p>
+<b>Please inform the maintainer of this module when registered types are
+missing.</b>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="add-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mime/types.rb, line 744</span>
+744:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">add</span>(*<span class="ruby-identifier">types</span>)
+745:         <span class="ruby-ivar">@__types__</span>.<span class="ruby-identifier">add</span>(*<span class="ruby-identifier">types</span>)
+746:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(data_version = nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mime/types.rb, line 596</span>
+596:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">data_version</span> = <span class="ruby-keyword kw">nil</span>)
+597:       <span class="ruby-ivar">@type_variants</span>    = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">h</span>, <span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>] = [] }
+598:       <span class="ruby-ivar">@extension_index</span>  = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">h</span>, <span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>] = [] }
+599:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="of-method" class="method-detail ">
+				<a name="method-c-of"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">of</span><span
+						class="method-args">(filename, platform = false)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+A synonym for <a
+href="Types.html#method-i-type_for">MIME::Types.type_for</a>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="of-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mime/types.rb, line 734</span>
+734:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">of</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-identifier">platform</span> = <span class="ruby-keyword kw">false</span>)
+735:         <span class="ruby-ivar">@__types__</span>.<span class="ruby-identifier">type_for</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-identifier">platform</span>)
+736:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="type-for-method" class="method-detail ">
+				<a name="method-c-type_for"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">type_for</span><span
+						class="method-args">(filename, platform = false)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the list of <a href="Types.html">MIME::Types</a> which belongs to
+the file based on its filename extension. If <tt>platform</tt> is
+<tt>true</tt>, then only file types that are specific to the current
+platform will be returned.
+</p>
+<pre>
+  puts &quot;MIME::Types.type_for('citydesk.xml')
+    =&gt; &quot;#{MIME::Types.type_for('citydesk.xml')}&quot;
+  puts &quot;MIME::Types.type_for('citydesk.gif')
+    =&gt; &quot;#{MIME::Types.type_for('citydesk.gif')}&quot;</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="type-for-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mime/types.rb, line 729</span>
+729:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">type_for</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-identifier">platform</span> = <span class="ruby-keyword kw">false</span>)
+730:         <span class="ruby-ivar">@__types__</span>.<span class="ruby-identifier">type_for</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-identifier">platform</span>)
+731:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%5B%5D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">[]</span><span
+						class="method-args">(type_id, flags = {})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns a list of <a href="Type.html">MIME::Type</a> objects, which may be
+empty. The optional flag parameters are :complete (finds only complete <a
+href="Type.html">MIME::Type</a> objects) and :platform (finds only <a
+href="Types.html">MIME::Types</a> for the current platform). It is possible
+for multiple matches to be returned for either type (in the example below,
+&#8216;text/plain&#8217; returns two values &#8212; one for the general
+case, and one for VMS systems.
+</p>
+<pre>
+  puts &quot;\nMIME::Types['text/plain']&quot;
+  MIME::Types['text/plain'].each { |t| puts t.to_a.join(&quot;, &quot;) }
+
+  puts &quot;\nMIME::Types[/^image/, :complete =&gt; true]&quot;
+  MIME::Types[/^image/, :complete =&gt; true].each do |t|
+    puts t.to_a.join(&quot;, &quot;)
+  end
+</pre>
+<p>
+If multiple type definitions are returned, returns them sorted as follows:
+</p>
+<pre>
+  1. Complete definitions sort before incomplete ones;
+  2. IANA-registered definitions sort before LTSW-recorded
+     definitions.
+  3. Generic definitions sort before platform-specific ones;
+  4. Current definitions sort before obsolete ones;
+  5. Obsolete definitions with use-instead clauses sort before those
+     without;
+  6. Obsolete definitions use-instead clauses are compared.
+  7. Sort on name.</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mime/types.rb, line 637</span>
+637:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">type_id</span>, <span class="ruby-identifier">flags</span> = {})
+638:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">type_id</span>.<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Regexp</span>)
+639:         <span class="ruby-identifier">matches</span> = []
+640:         <span class="ruby-ivar">@type_variants</span>.<span class="ruby-identifier">each_key</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span>
+641:           <span class="ruby-identifier">matches</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@type_variants</span>[<span class="ruby-identifier">k</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">=~</span> <span class="ruby-identifier">type_id</span>
+642:         <span class="ruby-keyword kw">end</span>
+643:         <span class="ruby-identifier">matches</span>.<span class="ruby-identifier">flatten!</span>
+644:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">type_id</span>.<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">MIME</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span>)
+645:         <span class="ruby-identifier">matches</span> = [<span class="ruby-identifier">type_id</span>]
+646:       <span class="ruby-keyword kw">else</span>
+647:         <span class="ruby-identifier">matches</span> = <span class="ruby-ivar">@type_variants</span>[<span class="ruby-constant">MIME</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span>.<span class="ruby-identifier">simplified</span>(<span class="ruby-identifier">type_id</span>)]
+648:       <span class="ruby-keyword kw">end</span>
+649: 
+650:       <span class="ruby-identifier">matches</span>.<span class="ruby-identifier">delete_if</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">complete?</span> } <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flags</span>[<span class="ruby-value">:complete</span>]
+651:       <span class="ruby-identifier">matches</span>.<span class="ruby-identifier">delete_if</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">platform?</span> } <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">flags</span>[<span class="ruby-value">:platform</span>]
+652: 
+653:       <span class="ruby-identifier">matches</span>.<span class="ruby-identifier">sort</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">priority_compare</span>(<span class="ruby-identifier">b</span>) }
+654:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="add-method" class="method-detail ">
+				<a name="method-i-add"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">add</span><span
+						class="method-args">(*types)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Add one or more <a href="Type.html">MIME::Type</a> objects to the set of
+known types. Each type should be experimental (e.g.,
+&#8216;application/x-ruby&#8217;). If the type is already known, a warning
+will be displayed.
+</p>
+<p>
+<b>Please inform the maintainer of this module when registered types are
+missing.</b>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="add-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mime/types.rb, line 682</span>
+682:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">add</span>(*<span class="ruby-identifier">types</span>)
+683:       <span class="ruby-identifier">types</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">mime_type</span><span class="ruby-operator">|</span>
+684:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@type_variants</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">mime_type</span>.<span class="ruby-identifier">simplified</span>)
+685:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@type_variants</span>[<span class="ruby-identifier">mime_type</span>.<span class="ruby-identifier">simplified</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">mime_type</span>)
+686:             <span class="ruby-identifier">warn</span> <span class="ruby-node">&quot;Type #{mime_type} already registered as a variant of #{mime_type.simplified}.&quot;</span>
+687:           <span class="ruby-keyword kw">end</span>
+688:         <span class="ruby-keyword kw">end</span>
+689:         <span class="ruby-identifier">add_type_variant</span>(<span class="ruby-identifier">mime_type</span>)
+690:         <span class="ruby-identifier">index_extensions</span>(<span class="ruby-identifier">mime_type</span>)
+691:       <span class="ruby-keyword kw">end</span>
+692:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="of-method" class="method-detail ">
+				<a name="method-i-of"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">of</span><span
+						class="method-args">(filename, platform = false)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+A synonym for <a
+href="Types.html#method-i-type_for">MIME::Types.type_for</a>
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="of-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mime/types.rb, line 672</span>
+672:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">of</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-identifier">platform</span> = <span class="ruby-keyword kw">false</span>)
+673:       <span class="ruby-identifier">type_for</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-identifier">platform</span>)
+674:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="type-for-method" class="method-detail ">
+				<a name="method-i-type_for"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">type_for</span><span
+						class="method-args">(filename, platform = false)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the list of <a href="Types.html">MIME::Types</a> which belongs to
+the file based on its filename extension. If <tt>platform</tt> is
+<tt>true</tt>, then only file types that are specific to the current
+platform will be returned.
+</p>
+<pre>
+  puts &quot;MIME::Types.type_for('citydesk.xml')
+    =&gt; &quot;#{MIME::Types.type_for('citydesk.xml')}&quot;
+  puts &quot;MIME::Types.type_for('citydesk.gif')
+    =&gt; &quot;#{MIME::Types.type_for('citydesk.gif')}&quot;</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="type-for-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mime/types.rb, line 664</span>
+664:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">type_for</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-identifier">platform</span> = <span class="ruby-keyword kw">false</span>)
+665:       <span class="ruby-identifier">ext</span> = <span class="ruby-identifier">filename</span>.<span class="ruby-identifier">chomp</span>.<span class="ruby-identifier">downcase</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/.*\./</span>, <span class="ruby-value str">''</span>)
+666:       <span class="ruby-identifier">list</span> = <span class="ruby-ivar">@extension_index</span>[<span class="ruby-identifier">ext</span>]
+667:       <span class="ruby-identifier">list</span>.<span class="ruby-identifier">delete_if</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">platform?</span> } <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">platform</span>
+668:       <span class="ruby-identifier">list</span>
+669:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

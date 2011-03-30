@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: rake-0.8.0.rdoc [rake-0.8.7 Documentation]</title>
+
+	<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet" />
+
+	<script src="../../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file">
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../../CHANGES.html">CHANGES</a></li>
+				
+					<li class="file"><a href="../../MIT-LICENSE.html">MIT-LICENSE</a></li>
+				
+					<li class="file"><a href="../../README.html">README</a></li>
+				
+					<li class="file"><a href="../../TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="../../doc/command_line_usage_rdoc.html">command_line_usage.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/glossary_rdoc.html">glossary.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/proto_rake_rdoc.html">proto_rake.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/rakefile_rdoc.html">rakefile.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/rational_rdoc.html">rational.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_4_14_rdoc.html">rake-0.4.14.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_4_15_rdoc.html">rake-0.4.15.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_5_0_rdoc.html">rake-0.5.0.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_5_3_rdoc.html">rake-0.5.3.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_5_4_rdoc.html">rake-0.5.4.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_6_0_rdoc.html">rake-0.6.0.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_7_0_rdoc.html">rake-0.7.0.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_7_1_rdoc.html">rake-0.7.1.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_7_2_rdoc.html">rake-0.7.2.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_7_3_rdoc.html">rake-0.7.3.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_0_rdoc.html">rake-0.8.0.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_2_rdoc.html">rake-0.8.2.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_3_rdoc.html">rake-0.8.3.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_4_rdoc.html">rake-0.8.4.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_5_rdoc.html">rake-0.8.5.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_6_rdoc.html">rake-0.8.6.rdoc</a></li>
+				
+					<li class="file"><a href="../../doc/release_notes/rake-0_8_7_rdoc.html">rake-0.8.7.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../../Rake/AltSystem.html">Rake::AltSystem</a></li>
+				
+					<li><a href="../../Rake/Application.html">Rake::Application</a></li>
+				
+					<li><a href="../../Rake/Cloneable.html">Rake::Cloneable</a></li>
+				
+					<li><a href="../../Rake/CompositePublisher.html">Rake::CompositePublisher</a></li>
+				
+					<li><a href="../../Rake/DefaultLoader.html">Rake::DefaultLoader</a></li>
+				
+					<li><a href="../../Rake/EarlyTime.html">Rake::EarlyTime</a></li>
+				
+					<li><a href="../../Rake/FileCreationTask.html">Rake::FileCreationTask</a></li>
+				
+					<li><a href="../../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../../Rake/FileTask.html">Rake::FileTask</a></li>
+				
+					<li><a href="../../Rake/FtpFile.html">Rake::FtpFile</a></li>
+				
+					<li><a href="../../Rake/FtpUploader.html">Rake::FtpUploader</a></li>
+				
+					<li><a href="../../Rake/GemPackageTask.html">Rake::GemPackageTask</a></li>
+				
+					<li><a href="../../Rake/InvocationChain.html">Rake::InvocationChain</a></li>
+				
+					<li><a href="../../Rake/InvocationChain/EmptyInvocationChain.html">Rake::InvocationChain::EmptyInvocationChain</a></li>
+				
+					<li><a href="../../Rake/MakefileLoader.html">Rake::MakefileLoader</a></li>
+				
+					<li><a href="../../Rake/MultiTask.html">Rake::MultiTask</a></li>
+				
+					<li><a href="../../Rake/NameSpace.html">Rake::NameSpace</a></li>
+				
+					<li><a href="../../Rake/PackageTask.html">Rake::PackageTask</a></li>
+				
+					<li><a href="../../Rake/PseudoStatus.html">Rake::PseudoStatus</a></li>
+				
+					<li><a href="../../Rake/RDocTask.html">Rake::RDocTask</a></li>
+				
+					<li><a href="../../Rake/RubyForgePublisher.html">Rake::RubyForgePublisher</a></li>
+				
+					<li><a href="../../Rake/RuleRecursionOverflowError.html">Rake::RuleRecursionOverflowError</a></li>
+				
+					<li><a href="../../Rake/SshDirPublisher.html">Rake::SshDirPublisher</a></li>
+				
+					<li><a href="../../Rake/SshFilePublisher.html">Rake::SshFilePublisher</a></li>
+				
+					<li><a href="../../Rake/SshFreshDirPublisher.html">Rake::SshFreshDirPublisher</a></li>
+				
+					<li><a href="../../Rake/Task.html">Rake::Task</a></li>
+				
+					<li><a href="../../Rake/TaskArgumentError.html">Rake::TaskArgumentError</a></li>
+				
+					<li><a href="../../Rake/TaskArguments.html">Rake::TaskArguments</a></li>
+				
+					<li><a href="../../Rake/TaskLib.html">Rake::TaskLib</a></li>
+				
+					<li><a href="../../Rake/TaskManager.html">Rake::TaskManager</a></li>
+				
+					<li><a href="../../Rake/TestTask.html">Rake::TestTask</a></li>
+				
+					<li><a href="../../Rake/Win32.html">Rake::Win32</a></li>
+				
+					<li><a href="../../Rake/Win32/Win32HomeError.html">Rake::Win32::Win32HomeError</a></li>
+				
+					<li><a href="../../Test.html">Test</a></li>
+				
+					<li><a href="../../Test/Unit.html">Test::Unit</a></li>
+				
+					<li><a href="../../Test/Unit/Collector.html">Test::Unit::Collector</a></li>
+				
+					<li><a href="../../Test/Unit/Collector/Dir.html">Test::Unit::Collector::Dir</a></li>
+				
+					<li><a href="../../CompositePublisher.html">CompositePublisher</a></li>
+				
+					<li><a href="../../FileUtils.html">FileUtils</a></li>
+				
+					<li><a href="../../Module.html">Module</a></li>
+				
+					<li><a href="../../Object.html">Object</a></li>
+				
+					<li><a href="../../RakeFileUtils.html">RakeFileUtils</a></li>
+				
+					<li><a href="../../SshDirPublisher.html">SshDirPublisher</a></li>
+				
+					<li><a href="../../SshFilePublisher.html">SshFilePublisher</a></li>
+				
+					<li><a href="../../SshFreshDirPublisher.html">SshFreshDirPublisher</a></li>
+				
+					<li><a href="../../String.html">String</a></li>
+				
+					<li><a href="../../Sys.html">Sys</a></li>
+				
+					<li><a href="../../Time.html">Time</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1>Rake 0.8.0/0.8.1 Released</h1>
+<p>
+Rake version 0.8.0 is a new release of rake that includes serveral new
+features.  
+</p>
+<h2>Changes</h2>
+<h3>New Features in Version 0.8.0</h3>
+<ul>
+<li><p>
+Tasks can now receive command line parameters.  See the examples below for
+more details.
+</p>
+</li>
+<li><p>
+Comments are limited to 80 columns on output, but full comments can be seen
+by using the -D parameter. (feature suggested by Jamis Buck).
+</p>
+</li>
+<li><p>
+Explicit exit(n) calls will now set the exit status to n. (patch provided
+by Stephen Touset).
+</p>
+</li>
+<li><p>
+Rake is now compatible with Ruby 1.9.
+</p>
+</li>
+</ul>
+<p>
+Version 0.8.1 is a minor update that includes additional Ruby 1.9
+compatibility fixes.
+</p>
+<h2>What is Rake</h2>
+<p>
+Rake is a build tool similar to the make program in many ways. But instead
+of cryptic make recipes, Rake uses standard Ruby code to declare tasks and
+dependencies. You have the full power of a modern scripting language built
+right into your build tool.
+</p>
+<h2>Availability</h2>
+<p>
+The easiest way to get and install rake is via RubyGems &#8230;
+</p>
+<pre>
+  gem install rake    (you may need root/admin privileges)
+</pre>
+<p>
+Otherwise, you can get it from the more traditional places:
+</p>
+<table>
+<tr><td valign="top">Home Page</td><td><p>
+<a href="http://rake.rubyforge.org/">rake.rubyforge.org/</a>
+</p>
+</td></tr>
+<tr><td valign="top">Download</td><td><p>
+<a
+href="http://rubyforge.org/project/showfiles.php?group_id=50">rubyforge.org/project/showfiles.php?group_id=50</a>
+</p>
+</td></tr>
+</table>
+<h2>Task Argument Examples</h2>
+<p>
+Prior to version 0.8.0, rake was only able to handle command line arguments
+of the form NAME=VALUE that were passed into Rake via the ENV hash.  Many
+folks had asked for some kind of simple command line arguments, perhaps
+using &#8220;&#8212;&#8221; to separate regular task names from argument
+values on the command line.  The problem is that there was no easy way to
+associate positional arguments on the command line with different tasks. 
+Suppose both tasks :a and :b expect a command line argument: does the first
+value go with :a?  What if :b is run first? Should it then get the first
+command line argument.
+</p>
+<p>
+Rake 0.8.0 solves this problem by explicitly passing values directly to the
+tasks that need them.  For example, if I had a release task that required a
+version number, I could say:
+</p>
+<pre>
+   rake release[0.8.0]
+</pre>
+<p>
+And the string &#8220;0.8.0&#8220; will be passed to the :release task. 
+Multiple arguments can be passed by separating them with a comma, for
+example:
+</p>
+<pre>
+   rake name[john,doe]
+</pre>
+<p>
+Just a few words of caution.  The rake task name and its arguments need to
+be a single command line argument to rake.  This generally means no spaces.
+If spaces are needed, then the entire rake + argument string should be
+quoted.  Something like this:
+</p>
+<pre>
+   rake &quot;name[billy bob, smith]&quot;
+</pre>
+<p>
+(Quoting rules vary between operating systems and shells, so make sure you
+consult the proper docs for your OS/shell).
+</p>
+<h3>Tasks that Expect Parameters</h3>
+<p>
+Parameters are only given to tasks that are setup to expect them.  In order
+to handle named parameters, the task declaration syntax for tasks has been
+extended slightly.
+</p>
+<p>
+For example, a task that needs a first name and last name might be declared
+as:
+</p>
+<pre>
+   task :name, :first_name, :last_name
+</pre>
+<p>
+The first argument is still the name of the task (:name in this case). The
+next to argumements are the names of the parameters expected by :name
+(:first_name and :last_name in the example).
+</p>
+<p>
+To access the values of the paramters, the block defining the task
+behaviour can now accept a second parameter:
+</p>
+<pre>
+   task :name, :first_name, :last_name do |t, args|
+     puts &quot;First name is #{args.first_name}&quot;
+     puts &quot;Last  name is #{args.last_name}&quot;
+   end
+</pre>
+<p>
+The first argument of the block &#8220;t&#8221; is always bound to the
+current task object.  The second argument &#8220;args&#8221; is an
+open-struct like object that allows access to the task arguments.  Extra
+command line arguments to a task are ignored.  Missing command line
+arguments are given the nil value.
+</p>
+<h2>Thanks</h2>
+<p>
+As usual, it was input from users that drove a alot of these changes. The
+following people either contributed patches, made suggestions or made
+otherwise helpful comments.  Thanks to &#8230;
+</p>
+<ul>
+<li><p>
+Jamis Buck (for comment formatting suggestions)
+</p>
+</li>
+<li><p>
+Stephen Touset (for exit status patch).
+</p>
+</li>
+</ul>
+<p>
+&#8212; Jim Weirich
+</p>
+
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
+

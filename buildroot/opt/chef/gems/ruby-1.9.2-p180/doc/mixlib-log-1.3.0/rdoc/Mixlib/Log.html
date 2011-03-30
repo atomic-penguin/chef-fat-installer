@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: Mixlib::Log</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/mixlib/log/formatter_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/mixlib/log/formatter.rb">lib/mixlib/log/formatter.rb</a></li>
+					
+						<li><a href="../lib/mixlib/log/version_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/mixlib/log/version.rb">lib/mixlib/log/version.rb</a></li>
+					
+						<li><a href="../lib/mixlib/log_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/mixlib/log.rb">lib/mixlib/log.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+			<div id="namespace-list-section" class="section">
+				<h3 class="section-header">Namespace</h3>
+				<ul class="link-list">
+					
+					<li><span class="type">CLASS</span> <a href="Log/Formatter.html">Mixlib::Log::Formatter</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-%3C%3C">#<<</a></li>
+					
+					<li><a href="#method-i-add">#add</a></li>
+					
+					<li><a href="#method-i-init">#init</a></li>
+					
+					<li><a href="#method-i-level">#level</a></li>
+					
+					<li><a href="#method-i-level%3D">#level=</a></li>
+					
+					<li><a href="#method-i-log">#log</a></li>
+					
+					<li><a href="#method-i-logger">#logger</a></li>
+					
+					<li><a href="#method-i-logger%3D">#logger=</a></li>
+					
+					<li><a href="#method-i-logger_for">#logger_for</a></li>
+					
+					<li><a href="#method-i-loggers">#loggers</a></li>
+					
+					<li><a href="#method-i-method_missing">#method_missing</a></li>
+					
+					<li><a href="#method-i-reset%21">#reset!</a></li>
+					
+					<li><a href="#method-i-use_log_devices">#use_log_devices</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="../NOTICE.html">NOTICE</a></li>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Mixlib.html">Mixlib</a></li>
+				
+					<li><a href="../Mixlib/Log.html">Mixlib::Log</a></li>
+				
+					<li><a href="../Mixlib/Log/Formatter.html">Mixlib::Log::Formatter</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">Mixlib::Log</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="VERSION">VERSION</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="LEVELS">LEVELS</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+				<dt><a name="LEVEL_NAMES">LEVEL_NAMES</a></dt>
+				
+				<dd class="description"></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="--method" class="method-detail ">
+				<a name="method-i-%3C%3C"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">&lt;&lt;</span><span
+						class="method-args">(msg)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 131</span>
+131:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">&lt;&lt;</span>(<span class="ruby-identifier">msg</span>)
+132:       <span class="ruby-identifier">loggers</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">msg</span> }
+133:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="add-method" class="method-detail ">
+				<a name="method-i-add"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">add</span><span
+						class="method-args">(severity, message = nil, progname = nil, &block)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="add-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 135</span>
+135:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">add</span>(<span class="ruby-identifier">severity</span>, <span class="ruby-identifier">message</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">progname</span> = <span class="ruby-keyword kw">nil</span>, &amp;<span class="ruby-identifier">block</span>)
+136:       <span class="ruby-identifier">loggers</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">l</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">severity</span>, <span class="ruby-identifier">message</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">progname</span> = <span class="ruby-keyword kw">nil</span>, &amp;<span class="ruby-identifier">block</span>) }
+137:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Log.html#method-i-log">log</a>
+				</div>
+				
+
+				
+			</div>
+
+		
+			<div id="init-method" class="method-detail ">
+				<a name="method-i-init"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">init</span><span
+						class="method-args">(*opts)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Use <a href="Log.html#method-i-init">Mixlib::Log.init</a> when you want to
+set up the logger manually.  Arguments to this method get passed directly
+to Logger.new, so check out the documentation for the standard Logger class
+to understand what to do here.
+</p>
+<p>
+If this method is called with no arguments, it will log to STDOUT at the
+:info level.
+</p>
+<p>
+It also configures the Logger instance it creates to use the custom <a
+href="Log/Formatter.html">Mixlib::Log::Formatter</a> class.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="init-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 78</span>
+78:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">init</span>(*<span class="ruby-identifier">opts</span>)
+79:       <span class="ruby-identifier">reset!</span>
+80:       <span class="ruby-ivar">@logger</span> = <span class="ruby-identifier">logger_for</span>(*<span class="ruby-identifier">opts</span>)
+81:       <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-constant">Mixlib</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span><span class="ruby-operator">::</span><span class="ruby-constant">Formatter</span>.<span class="ruby-identifier">new</span>() <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:formatter=</span>)
+82:       <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">level</span> = <span class="ruby-constant">Logger</span><span class="ruby-operator">::</span><span class="ruby-constant">WARN</span>
+83:       <span class="ruby-ivar">@logger</span>
+84:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="level-method" class="method-detail ">
+				<a name="method-i-level"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">level</span><span
+						class="method-args">(new_level=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="level-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 101</span>
+101:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">level</span>(<span class="ruby-identifier">new_level</span>=<span class="ruby-keyword kw">nil</span>)
+102:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">new_level</span>.<span class="ruby-identifier">nil?</span>
+103:         <span class="ruby-constant">LEVEL_NAMES</span>[<span class="ruby-identifier">logger</span>.<span class="ruby-identifier">level</span>]
+104:       <span class="ruby-keyword kw">else</span>
+105:         <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">level</span>=(<span class="ruby-identifier">new_level</span>)
+106:       <span class="ruby-keyword kw">end</span>
+107:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="level--method" class="method-detail ">
+				<a name="method-i-level%3D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">level=</span><span
+						class="method-args">(new_level)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Sets the level for the Logger object by symbol.  Valid arguments are:
+</p>
+<pre>
+ :debug
+ :info
+ :warn
+ :error
+ :fatal
+</pre>
+<p>
+Throws an ArgumentError if you feed it a bogus log level.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="level--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 95</span>
+95:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">level=</span>(<span class="ruby-identifier">new_level</span>)
+96:       <span class="ruby-identifier">level_int</span> = <span class="ruby-constant">LEVEL_NAMES</span>.<span class="ruby-identifier">key?</span>(<span class="ruby-identifier">new_level</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">new_level</span> <span class="ruby-operator">:</span> <span class="ruby-constant">LEVELS</span>[<span class="ruby-identifier">new_level</span>]
+97:       <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-value str">&quot;Log level must be one of :debug, :info, :warn, :error, or :fatal&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">level_int</span>.<span class="ruby-identifier">nil?</span>
+98:       <span class="ruby-identifier">loggers</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">l</span>.<span class="ruby-identifier">level</span> = <span class="ruby-identifier">level_int</span> }
+99:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="log-method" class="method-detail method-alias">
+				<a name="method-i-log"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">log</span><span
+						class="method-args">(severity, message = nil, progname = nil, &block)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+				</div>
+
+				
+
+				
+				<div class="aliases">
+          Alias for: <a href="Log.html#method-i-add">add</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="logger-method" class="method-detail ">
+				<a name="method-i-logger"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">logger</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+init always returns a configured logger and creates a new one if it
+doesn&#8217;t yet exist
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="logger-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 46</span>
+46:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">logger</span>
+47:       <span class="ruby-ivar">@logger</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">init</span>
+48:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="logger--method" class="method-detail ">
+				<a name="method-i-logger%3D"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">logger=</span><span
+						class="method-args">(new_log_device)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Sets the log device to <tt>new_log_device</tt>. Any additional loggers that
+had been added to the <tt>loggers</tt> array will be cleared.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="logger--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 52</span>
+52:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">logger=</span>(<span class="ruby-identifier">new_log_device</span>)
+53:       <span class="ruby-identifier">reset!</span>
+54:       <span class="ruby-ivar">@logger</span>=<span class="ruby-identifier">new_log_device</span>
+55:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="loggers-method" class="method-detail ">
+				<a name="method-i-loggers"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">loggers</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+An Array of log devices that will be logged to. Defaults to just the
+default @logger log device, but you can push to this array to add more
+devices.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="loggers-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 38</span>
+38:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">loggers</span>
+39:       <span class="ruby-ivar">@loggers</span> <span class="ruby-operator">||=</span> [<span class="ruby-identifier">logger</span>]
+40:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="method-missing-method" class="method-detail ">
+				<a name="method-i-method_missing"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">method_missing</span><span
+						class="method-args">(method_symbol, *args, &block)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Passes any other method calls on directly to the underlying Logger object
+created with init. If this method gets hit before a call to
+Mixlib::Logger.init has been made, it will call Mixlib::Logger.init() with
+no arguments.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="method-missing-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 144</span>
+144:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">method_missing</span>(<span class="ruby-identifier">method_symbol</span>, *<span class="ruby-identifier">args</span>, &amp;<span class="ruby-identifier">block</span>)
+145:       <span class="ruby-identifier">loggers</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">l</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">method_symbol</span>, *<span class="ruby-identifier">args</span>, &amp;<span class="ruby-identifier">block</span>) }
+146:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="reset--method" class="method-detail ">
+				<a name="method-i-reset%21"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">reset!</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="reset--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 32</span>
+32:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">reset!</span>
+33:       <span class="ruby-ivar">@logger</span>, <span class="ruby-ivar">@loggers</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-keyword kw">nil</span>
+34:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="use-log-devices-method" class="method-detail ">
+				<a name="method-i-use_log_devices"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">use_log_devices</span><span
+						class="method-args">(other)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="use-log-devices-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 57</span>
+57:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">use_log_devices</span>(<span class="ruby-identifier">other</span>)
+58:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:loggers</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:logger</span>)
+59:         <span class="ruby-ivar">@loggers</span> = <span class="ruby-identifier">other</span>.<span class="ruby-identifier">loggers</span>
+60:         <span class="ruby-ivar">@logger</span> = <span class="ruby-identifier">other</span>.<span class="ruby-identifier">logger</span>
+61:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Array</span>)
+62:         <span class="ruby-ivar">@loggers</span> = <span class="ruby-identifier">other</span>
+63:         <span class="ruby-ivar">@logger</span> = <span class="ruby-identifier">other</span>.<span class="ruby-identifier">first</span>
+64:       <span class="ruby-keyword kw">else</span>
+65:         <span class="ruby-identifier">msg</span> = <span class="ruby-node">&quot;#use_log_devices takes a Mixlib::Log object or array of log devices. &quot;</span> <span class="ruby-operator">&lt;&lt;</span>
+66:               <span class="ruby-node">&quot;You gave: #{other.inspect}&quot;</span>
+67:         <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-identifier">msg</span>
+68:       <span class="ruby-keyword kw">end</span>
+69:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="logger-for-method" class="method-detail ">
+				<a name="method-i-logger_for"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">logger_for</span><span
+						class="method-args">(*opts)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="logger-for-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/mixlib/log.rb, line 150</span>
+150:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">logger_for</span>(*<span class="ruby-identifier">opts</span>)
+151:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">empty?</span>
+152:         <span class="ruby-constant">Logger</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">STDOUT</span>)
+153:       <span class="ruby-keyword kw">elsif</span> <span class="ruby-constant">LEVELS</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-keyword kw">true</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">quacks</span>, <span class="ruby-identifier">level</span><span class="ruby-operator">|</span> <span class="ruby-identifier">quacks</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-identifier">level</span>)}
+154:         <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">first</span>
+155:       <span class="ruby-keyword kw">else</span>
+156:         <span class="ruby-constant">Logger</span>.<span class="ruby-identifier">new</span>(*<span class="ruby-identifier">opts</span>)
+157:       <span class="ruby-keyword kw">end</span>
+158:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

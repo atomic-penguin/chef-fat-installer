@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Bunny::Client</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/bunny/client08_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/bunny/client08.rb">lib/bunny/client08.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="../Qrack/Client.html">Qrack::Client</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-buffer">#buffer</a></li>
+					
+					<li><a href="#method-i-check_response">#check_response</a></li>
+					
+					<li><a href="#method-i-close_connection">#close_connection</a></li>
+					
+					<li><a href="#method-i-create_channel">#create_channel</a></li>
+					
+					<li><a href="#method-i-exchange">#exchange</a></li>
+					
+					<li><a href="#method-i-init_connection">#init_connection</a></li>
+					
+					<li><a href="#method-i-next_frame">#next_frame</a></li>
+					
+					<li><a href="#method-i-open_connection">#open_connection</a></li>
+					
+					<li><a href="#method-i-qos">#qos</a></li>
+					
+					<li><a href="#method-i-queue">#queue</a></li>
+					
+					<li><a href="#method-i-recover">#recover</a></li>
+					
+					<li><a href="#method-i-request_access">#request_access</a></li>
+					
+					<li><a href="#method-i-send_frame">#send_frame</a></li>
+					
+					<li><a href="#method-i-send_heartbeat">#send_heartbeat</a></li>
+					
+					<li><a href="#method-i-start">#start</a></li>
+					
+					<li><a href="#method-i-start_session">#start_session</a></li>
+					
+					<li><a href="#method-i-tx_commit">#tx_commit</a></li>
+					
+					<li><a href="#method-i-tx_rollback">#tx_rollback</a></li>
+					
+					<li><a href="#method-i-tx_select">#tx_select</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Bunny.html">Bunny</a></li>
+				
+					<li><a href="../Bunny/AcknowledgementError.html">Bunny::AcknowledgementError</a></li>
+				
+					<li><a href="../Bunny/Channel.html">Bunny::Channel</a></li>
+				
+					<li><a href="../Bunny/Channel09.html">Bunny::Channel09</a></li>
+				
+					<li><a href="../Bunny/Client.html">Bunny::Client</a></li>
+				
+					<li><a href="../Bunny/Client09.html">Bunny::Client09</a></li>
+				
+					<li><a href="../Bunny/ConnectionError.html">Bunny::ConnectionError</a></li>
+				
+					<li><a href="../Bunny/Exchange.html">Bunny::Exchange</a></li>
+				
+					<li><a href="../Bunny/Exchange09.html">Bunny::Exchange09</a></li>
+				
+					<li><a href="../Bunny/ForcedChannelCloseError.html">Bunny::ForcedChannelCloseError</a></li>
+				
+					<li><a href="../Bunny/ForcedConnectionCloseError.html">Bunny::ForcedConnectionCloseError</a></li>
+				
+					<li><a href="../Bunny/MessageError.html">Bunny::MessageError</a></li>
+				
+					<li><a href="../Bunny/ProtocolError.html">Bunny::ProtocolError</a></li>
+				
+					<li><a href="../Bunny/Queue.html">Bunny::Queue</a></li>
+				
+					<li><a href="../Bunny/Queue09.html">Bunny::Queue09</a></li>
+				
+					<li><a href="../Bunny/ServerDownError.html">Bunny::ServerDownError</a></li>
+				
+					<li><a href="../Bunny/Subscription.html">Bunny::Subscription</a></li>
+				
+					<li><a href="../Bunny/Subscription09.html">Bunny::Subscription09</a></li>
+				
+					<li><a href="../Bunny/UnsubscribeError.html">Bunny::UnsubscribeError</a></li>
+				
+					<li><a href="../Qrack.html">Qrack</a></li>
+				
+					<li><a href="../Qrack/BufferOverflowError.html">Qrack::BufferOverflowError</a></li>
+				
+					<li><a href="../Qrack/Channel.html">Qrack::Channel</a></li>
+				
+					<li><a href="../Qrack/Client.html">Qrack::Client</a></li>
+				
+					<li><a href="../Qrack/ClientTimeout.html">Qrack::ClientTimeout</a></li>
+				
+					<li><a href="../Qrack/ConnectionTimeout.html">Qrack::ConnectionTimeout</a></li>
+				
+					<li><a href="../Qrack/InvalidTypeError.html">Qrack::InvalidTypeError</a></li>
+				
+					<li><a href="../Qrack/Queue.html">Qrack::Queue</a></li>
+				
+					<li><a href="../Qrack/Subscription.html">Qrack::Subscription</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Bunny::Client</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="ticket-attribute-method" class="method-detail">
+				<a name="ticket"></a>
+				
+				<a name="ticket="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">ticket</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(opts = {})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 49</span>
+49:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">opts</span> = {})
+50:                         <span class="ruby-keyword kw">super</span>
+51:                         <span class="ruby-ivar">@spec</span> = <span class="ruby-value str">'0-8'</span>
+52:                         <span class="ruby-ivar">@port</span> = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:port</span>] <span class="ruby-operator">||</span> (<span class="ruby-identifier">opts</span>[<span class="ruby-value">:ssl</span>] <span class="ruby-operator">?</span> <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">SSL_PORT</span> <span class="ruby-operator">:</span> <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">PORT</span>)
+53:       <span class="ruby-ivar">@insist</span> = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:insist</span>]
+54:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="check-response-method" class="method-detail ">
+				<a name="method-i-check_response"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">check_response</span><span
+						class="method-args">(received_method, expected_method, err_msg, err_class = Bunny::ProtocolError)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="check-response-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 64</span>
+64:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">check_response</span>(<span class="ruby-identifier">received_method</span>, <span class="ruby-identifier">expected_method</span>, <span class="ruby-identifier">err_msg</span>, <span class="ruby-identifier">err_class</span> = <span class="ruby-constant">Bunny</span><span class="ruby-operator">::</span><span class="ruby-constant">ProtocolError</span>)
+65:                         <span class="ruby-keyword kw">case</span>
+66:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-identifier">received_method</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Connection</span><span class="ruby-operator">::</span><span class="ruby-constant">Close</span>)
+67:                                         <span class="ruby-comment cmt"># Clean up the socket</span>
+68:                                         <span class="ruby-identifier">close_socket</span>
+69:                                         
+70:                                         <span class="ruby-identifier">raise</span> <span class="ruby-constant">Bunny</span><span class="ruby-operator">::</span><span class="ruby-constant">ForcedConnectionCloseError</span>,
+71:                                                 <span class="ruby-node">&quot;Error Reply Code: #{received_method.reply_code}\nError Reply Text: #{received_method.reply_text}&quot;</span>
+72:                                                 
+73:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-identifier">received_method</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Channel</span><span class="ruby-operator">::</span><span class="ruby-constant">Close</span>)
+74:                                         <span class="ruby-comment cmt"># Clean up the channel</span>
+75:                                         <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">active</span> = <span class="ruby-keyword kw">false</span>
+76: 
+77:                                         <span class="ruby-identifier">raise</span> <span class="ruby-constant">Bunny</span><span class="ruby-operator">::</span><span class="ruby-constant">ForcedChannelCloseError</span>,
+78:                                                 <span class="ruby-node">&quot;Error Reply Code: #{received_method.reply_code}\nError Reply Text: #{received_method.reply_text}&quot;</span>
+79:                                                 
+80:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-operator">!</span><span class="ruby-identifier">received_method</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-identifier">expected_method</span>)
+81:                                         <span class="ruby-identifier">raise</span> <span class="ruby-identifier">err_class</span>, <span class="ruby-identifier">err_msg</span>
+82:                                         
+83:                                 <span class="ruby-keyword kw">else</span>
+84:                                         <span class="ruby-value">:response_ok</span>
+85:                         <span class="ruby-keyword kw">end</span>
+86:                 <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="close-connection-method" class="method-detail ">
+				<a name="method-i-close_connection"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">close_connection</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="close-connection-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 88</span>
+ 88:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">close_connection</span>
+ 89:                         <span class="ruby-comment cmt"># Set client channel to zero</span>
+ 90:       <span class="ruby-identifier">switch_channel</span>(<span class="ruby-value">0</span>)
+ 91:                 
+ 92:                         <span class="ruby-identifier">send_frame</span>(
+ 93:               <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Connection</span><span class="ruby-operator">::</span><span class="ruby-constant">Close</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:reply_code</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>, <span class="ruby-value">:reply_text</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'Goodbye'</span>, <span class="ruby-value">:class_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>, <span class="ruby-value">:method_id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>)
+ 94:             )
+ 95:         
+ 96:                         <span class="ruby-identifier">method</span> = <span class="ruby-identifier">next_method</span>
+ 97:                         
+ 98:                         <span class="ruby-identifier">check_response</span>(<span class="ruby-identifier">method</span>, <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Connection</span><span class="ruby-operator">::</span><span class="ruby-constant">CloseOk</span>, <span class="ruby-value str">&quot;Error closing connection&quot;</span>)
+ 99:             
+100:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="create-channel-method" class="method-detail ">
+				<a name="method-i-create_channel"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">create_channel</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="create-channel-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 102</span>
+102:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create_channel</span>
+103:                         <span class="ruby-identifier">channels</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">c</span><span class="ruby-operator">|</span>
+104:                                 <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">c</span> <span class="ruby-keyword kw">if</span> (<span class="ruby-operator">!</span><span class="ruby-identifier">c</span>.<span class="ruby-identifier">open?</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">c</span>.<span class="ruby-identifier">number</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>)
+105:                         <span class="ruby-keyword kw">end</span>
+106:                         <span class="ruby-comment cmt"># If no channel to re-use instantiate new one</span>
+107:                         <span class="ruby-constant">Bunny</span><span class="ruby-operator">::</span><span class="ruby-constant">Channel</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword kw">self</span>)
+108:                 <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="exchange-method" class="method-detail ">
+				<a name="method-i-exchange"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">exchange</span><span
+						class="method-args">(name, opts = {})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="exchange-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 136</span>
+136:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">exchange</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">opts</span> = {})
+137:       <span class="ruby-identifier">exchanges</span>[<span class="ruby-identifier">name</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">Bunny</span><span class="ruby-operator">::</span><span class="ruby-constant">Exchange</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword kw">self</span>, <span class="ruby-identifier">name</span>, <span class="ruby-identifier">opts</span>)
+138:                 <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="init-connection-method" class="method-detail ">
+				<a name="method-i-init_connection"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">init_connection</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="init-connection-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 140</span>
+140:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">init_connection</span>
+141:                         <span class="ruby-identifier">write</span>(<span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">HEADER</span>)
+142:       <span class="ruby-identifier">write</span>([<span class="ruby-value">1</span>, <span class="ruby-value">1</span>, <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">VERSION_MAJOR</span>, <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">VERSION_MINOR</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">'C4'</span>))
+143: 
+144:                         <span class="ruby-identifier">frame</span> = <span class="ruby-identifier">next_frame</span>
+145:                         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">frame</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword kw">or</span> <span class="ruby-operator">!</span><span class="ruby-identifier">frame</span>.<span class="ruby-identifier">payload</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Connection</span><span class="ruby-operator">::</span><span class="ruby-constant">Start</span>)
+146:                                 <span class="ruby-identifier">raise</span> <span class="ruby-constant">Bunny</span><span class="ruby-operator">::</span><span class="ruby-constant">ProtocolError</span>, <span class="ruby-value str">'Connection initiation failed'</span>
+147:                         <span class="ruby-keyword kw">end</span>
+148:                 <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="next-frame-method" class="method-detail ">
+				<a name="method-i-next_frame"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">next_frame</span><span
+						class="method-args">(opts = {})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="next-frame-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 150</span>
+150:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">next_frame</span>(<span class="ruby-identifier">opts</span> = {})
+151:       <span class="ruby-identifier">frame</span> = <span class="ruby-keyword kw">nil</span>
+152:                         
+153:                         <span class="ruby-keyword kw">case</span>
+154:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">frame_buffer</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+155:                                         <span class="ruby-identifier">frame</span> = <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">frame_buffer</span>.<span class="ruby-identifier">shift</span>
+156:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:timeout</span>)
+157:                 <span class="ruby-constant">Timeout</span><span class="ruby-operator">::</span><span class="ruby-identifier">timeout</span>(<span class="ruby-identifier">opts</span>[<span class="ruby-value">:timeout</span>], <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">ClientTimeout</span>) <span class="ruby-keyword kw">do</span>
+158:                   <span class="ruby-identifier">frame</span> = <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Transport</span><span class="ruby-operator">::</span><span class="ruby-constant">Frame</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">buffer</span>)
+159:                 <span class="ruby-keyword kw">end</span>
+160:               <span class="ruby-keyword kw">else</span>
+161:                 <span class="ruby-identifier">frame</span> = <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Transport</span><span class="ruby-operator">::</span><span class="ruby-constant">Frame</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">buffer</span>)
+162:       <span class="ruby-keyword kw">end</span>
+163:                         
+164:                         <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">info</span>(<span class="ruby-value str">&quot;received&quot;</span>) { <span class="ruby-identifier">frame</span> } <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@logging</span>
+165:                                                 
+166:                         <span class="ruby-identifier">raise</span> <span class="ruby-constant">Bunny</span><span class="ruby-operator">::</span><span class="ruby-constant">ConnectionError</span>, <span class="ruby-value str">'No connection to server'</span> <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">frame</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword kw">and</span> <span class="ruby-operator">!</span><span class="ruby-identifier">connecting?</span>)
+167:                         
+168:                         <span class="ruby-comment cmt"># Monitor server activity and discard heartbeats</span>
+169:                         <span class="ruby-ivar">@message_in</span> = <span class="ruby-keyword kw">true</span>
+170:                         
+171:                         <span class="ruby-keyword kw">case</span>
+172:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-identifier">frame</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Transport</span><span class="ruby-operator">::</span><span class="ruby-constant">Heartbeat</span>)
+173:                                         <span class="ruby-identifier">next_frame</span>(<span class="ruby-identifier">opts</span>)
+174:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-identifier">frame</span>.<span class="ruby-identifier">nil?</span>
+175:                                         <span class="ruby-identifier">frame</span>
+176:                                 <span class="ruby-keyword kw">when</span> ((<span class="ruby-identifier">frame</span>.<span class="ruby-identifier">channel</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">number</span>) <span class="ruby-keyword kw">and</span> (<span class="ruby-identifier">frame</span>.<span class="ruby-identifier">channel</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>))
+177:                                         <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">frame_buffer</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">frame</span>
+178:                                         <span class="ruby-identifier">next_frame</span>(<span class="ruby-identifier">opts</span>)
+179:                                 <span class="ruby-keyword kw">else</span>
+180:                                         <span class="ruby-identifier">frame</span>
+181:                         <span class="ruby-keyword kw">end</span>
+182:                         
+183:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="open-connection-method" class="method-detail ">
+				<a name="method-i-open_connection"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">open_connection</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="open-connection-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 185</span>
+185:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">open_connection</span>
+186:                         <span class="ruby-identifier">send_frame</span>(
+187:         <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Connection</span><span class="ruby-operator">::</span><span class="ruby-constant">StartOk</span>.<span class="ruby-identifier">new</span>(
+188:           {<span class="ruby-value">:platform</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'Ruby'</span>, <span class="ruby-value">:product</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'Bunny'</span>, <span class="ruby-value">:information</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://github.com/celldee/bunny'</span>, <span class="ruby-value">:version</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">VERSION</span>},
+189:           <span class="ruby-value str">'AMQPLAIN'</span>,
+190:           {<span class="ruby-value">:LOGIN</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@user</span>, <span class="ruby-value">:PASSWORD</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@pass</span>},
+191:           <span class="ruby-value str">'en_US'</span>
+192:         )
+193:       )
+194: 
+195:       <span class="ruby-identifier">frame</span> = <span class="ruby-identifier">next_frame</span>
+196:                         <span class="ruby-identifier">raise</span> <span class="ruby-constant">Bunny</span><span class="ruby-operator">::</span><span class="ruby-constant">ProtocolError</span>, <span class="ruby-node">&quot;Connection failed - user: #{@user}&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">frame</span>.<span class="ruby-identifier">nil?</span>
+197:                         
+198:                         <span class="ruby-identifier">method</span> = <span class="ruby-identifier">frame</span>.<span class="ruby-identifier">payload</span>
+199: 
+200:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">method</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Connection</span><span class="ruby-operator">::</span><span class="ruby-constant">Tune</span>)
+201:         <span class="ruby-identifier">send_frame</span>(
+202:           <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Connection</span><span class="ruby-operator">::</span><span class="ruby-constant">TuneOk</span>.<span class="ruby-identifier">new</span>( <span class="ruby-value">:channel_max</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@channel_max</span>, <span class="ruby-value">:frame_max</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@frame_max</span>, <span class="ruby-value">:heartbeat</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@heartbeat</span>)
+203:         )
+204:       <span class="ruby-keyword kw">end</span>
+205: 
+206:       <span class="ruby-identifier">send_frame</span>(
+207:         <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Connection</span><span class="ruby-operator">::</span><span class="ruby-constant">Open</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:virtual_host</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@vhost</span>, <span class="ruby-value">:capabilities</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">''</span>, <span class="ruby-value">:insist</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@insist</span>)
+208:       )
+209: 
+210:       <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">method</span> = <span class="ruby-identifier">next_method</span>
+211:       <span class="ruby-keyword kw">when</span> <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Connection</span><span class="ruby-operator">::</span><span class="ruby-constant">OpenOk</span>
+212:         <span class="ruby-value">:ok</span>
+213:       <span class="ruby-keyword kw">when</span> <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Connection</span><span class="ruby-operator">::</span><span class="ruby-constant">Redirect</span>
+214:                                 <span class="ruby-identifier">raise</span> <span class="ruby-constant">Bunny</span><span class="ruby-operator">::</span><span class="ruby-constant">ConnectionError</span>, <span class="ruby-node">&quot;Cannot connect to the specified server - host: #{@host}, port: #{@port}&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@insist</span>
+215:                                 
+216:         <span class="ruby-ivar">@host</span>, <span class="ruby-ivar">@port</span> = <span class="ruby-identifier">method</span>.<span class="ruby-identifier">host</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">':'</span>)
+217:         <span class="ruby-identifier">close_socket</span>
+218:       <span class="ruby-keyword kw">else</span>
+219:         <span class="ruby-identifier">raise</span> <span class="ruby-constant">Bunny</span><span class="ruby-operator">::</span><span class="ruby-constant">ProtocolError</span>, <span class="ruby-value str">'Cannot open connection'</span>
+220:       <span class="ruby-keyword kw">end</span>
+221:                 <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="qos-method" class="method-detail ">
+				<a name="method-i-qos"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">qos</span><span
+						class="method-args">(opts = {})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="qos-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 255</span>
+255:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">qos</span>(<span class="ruby-identifier">opts</span> = {})
+256: 
+257:       <span class="ruby-identifier">send_frame</span>(
+258:         <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Basic</span><span class="ruby-operator">::</span><span class="ruby-constant">Qos</span>.<span class="ruby-identifier">new</span>({ <span class="ruby-value">:prefetch_size</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>, <span class="ruby-value">:prefetch_count</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>, <span class="ruby-value">:global</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">false</span> }.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">opts</span>))
+259:       )
+260: 
+261:                         <span class="ruby-identifier">method</span> = <span class="ruby-identifier">next_method</span>
+262:                         
+263:                         <span class="ruby-identifier">check_response</span>(<span class="ruby-identifier">method</span>, <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Basic</span><span class="ruby-operator">::</span><span class="ruby-constant">QosOk</span>, <span class="ruby-value str">&quot;Error specifying Quality of Service&quot;</span>)
+264: 
+265:       <span class="ruby-comment cmt"># return confirmation</span>
+266:       <span class="ruby-value">:qos_ok</span>
+267:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="queue-method" class="method-detail ">
+				<a name="method-i-queue"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">queue</span><span
+						class="method-args">(name = nil, opts = {})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="queue-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 303</span>
+303:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">queue</span>(<span class="ruby-identifier">name</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">opts</span> = {})
+304:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">name</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+305:         <span class="ruby-identifier">opts</span> = <span class="ruby-identifier">name</span>
+306:         <span class="ruby-identifier">name</span> = <span class="ruby-keyword kw">nil</span>
+307:       <span class="ruby-keyword kw">end</span>
+308: 
+309:       <span class="ruby-comment cmt"># Queue is responsible for placing itself in the list of queues</span>
+310:       <span class="ruby-identifier">queues</span>[<span class="ruby-identifier">name</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">Bunny</span><span class="ruby-operator">::</span><span class="ruby-constant">Queue</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword kw">self</span>, <span class="ruby-identifier">name</span>, <span class="ruby-identifier">opts</span>)
+311:           <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="recover-method" class="method-detail ">
+				<a name="method-i-recover"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">recover</span><span
+						class="method-args">(opts = {})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="recover-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 328</span>
+328:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">recover</span>(<span class="ruby-identifier">opts</span> = {})
+329: 
+330:             <span class="ruby-identifier">send_frame</span>(
+331:               <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Basic</span><span class="ruby-operator">::</span><span class="ruby-constant">Recover</span>.<span class="ruby-identifier">new</span>({ <span class="ruby-value">:requeue</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">false</span> }.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">opts</span>))
+332:             )
+333: 
+334:           <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="request-access-method" class="method-detail ">
+				<a name="method-i-request_access"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">request_access</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="request-access-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 336</span>
+336:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">request_access</span>
+337:                         <span class="ruby-identifier">send_frame</span>(
+338:         <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">Request</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:realm</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'/data'</span>, <span class="ruby-value">:read</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">true</span>, <span class="ruby-value">:write</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">true</span>, <span class="ruby-value">:active</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">true</span>, <span class="ruby-value">:passive</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">true</span>)
+339:       )
+340: 
+341:       <span class="ruby-identifier">method</span> = <span class="ruby-identifier">next_method</span>
+342:                         
+343:                         <span class="ruby-identifier">check_response</span>(<span class="ruby-identifier">method</span>, <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Access</span><span class="ruby-operator">::</span><span class="ruby-constant">RequestOk</span>, <span class="ruby-value str">&quot;Access denied&quot;</span>)
+344:       
+345:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">ticket</span> = <span class="ruby-identifier">method</span>.<span class="ruby-identifier">ticket</span>
+346:                 <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="send-frame-method" class="method-detail ">
+				<a name="method-i-send_frame"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">send_frame</span><span
+						class="method-args">(*args)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="send-frame-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 348</span>
+348:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">send_frame</span>(*<span class="ruby-identifier">args</span>)
+349:       <span class="ruby-identifier">args</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">data</span><span class="ruby-operator">|</span>
+350:         <span class="ruby-identifier">data</span>.<span class="ruby-identifier">ticket</span>  = <span class="ruby-identifier">ticket</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">ticket</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">data</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:ticket=</span>)
+351:         <span class="ruby-identifier">data</span>         = <span class="ruby-identifier">data</span>.<span class="ruby-identifier">to_frame</span>(<span class="ruby-identifier">channel</span>.<span class="ruby-identifier">number</span>) <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">data</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Transport</span><span class="ruby-operator">::</span><span class="ruby-constant">Frame</span>)
+352:         <span class="ruby-identifier">data</span>.<span class="ruby-identifier">channel</span> = <span class="ruby-identifier">channel</span>.<span class="ruby-identifier">number</span>
+353: 
+354:         <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">info</span>(<span class="ruby-value str">&quot;send&quot;</span>) { <span class="ruby-identifier">data</span> } <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@logging</span>
+355:         <span class="ruby-identifier">write</span>(<span class="ruby-identifier">data</span>.<span class="ruby-identifier">to_s</span>)
+356: 
+357:                                 <span class="ruby-comment cmt"># Monitor client activity for heartbeat purposes</span>
+358:                                 <span class="ruby-ivar">@message_out</span> = <span class="ruby-keyword kw">true</span>
+359:       <span class="ruby-keyword kw">end</span>
+360: 
+361:       <span class="ruby-keyword kw">nil</span>
+362:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="send-heartbeat-method" class="method-detail ">
+				<a name="method-i-send_heartbeat"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">send_heartbeat</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="send-heartbeat-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 364</span>
+364:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">send_heartbeat</span>
+365:                         <span class="ruby-comment cmt"># Create a new heartbeat frame</span>
+366:                         <span class="ruby-identifier">hb</span> = <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Transport</span><span class="ruby-operator">::</span><span class="ruby-constant">Heartbeat</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">''</span>)             
+367:                         <span class="ruby-comment cmt"># Channel 0 must be used</span>
+368:                         <span class="ruby-identifier">switch_channel</span>(<span class="ruby-value">0</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@channel</span>.<span class="ruby-identifier">number</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>                     
+369:                         <span class="ruby-comment cmt"># Send the heartbeat to server</span>
+370:                         <span class="ruby-identifier">send_frame</span>(<span class="ruby-identifier">hb</span>)
+371:                 <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="start-method" class="method-detail method-alias">
+				<a name="method-i-start"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">start</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+				</div>
+
+				
+
+				
+				<div class="aliases">
+          Alias for: <a href="Client.html#method-i-start_session">start_session</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="start-session-method" class="method-detail ">
+				<a name="method-i-start_session"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">start_session</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="start-session-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 386</span>
+386:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">start_session</span>
+387:                         <span class="ruby-ivar">@connecting</span> = <span class="ruby-keyword kw">true</span>
+388:                         
+389:       <span class="ruby-identifier">loop</span> <span class="ruby-keyword kw">do</span>
+390:                                 <span class="ruby-comment cmt"># Create/get socket</span>
+391:                                 <span class="ruby-identifier">socket</span>
+392:                                 
+393:                                 <span class="ruby-comment cmt"># Initiate connection</span>
+394:                                 <span class="ruby-identifier">init_connection</span>
+395: 
+396:                                 <span class="ruby-comment cmt"># Open connection</span>
+397:                                 <span class="ruby-keyword kw">break</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">open_connection</span> <span class="ruby-operator">==</span> <span class="ruby-value">:ok</span>
+398:       <span class="ruby-keyword kw">end</span>
+399: 
+400:                         <span class="ruby-comment cmt"># Open another channel because channel zero is used for specific purposes</span>
+401:                         <span class="ruby-identifier">c</span> = <span class="ruby-identifier">create_channel</span>()
+402:                         <span class="ruby-identifier">c</span>.<span class="ruby-identifier">open</span>
+403:                         
+404:                         <span class="ruby-comment cmt"># Get access ticket</span>
+405:                         <span class="ruby-identifier">request_access</span>
+406: 
+407:                         <span class="ruby-ivar">@connecting</span> = <span class="ruby-keyword kw">false</span>
+408:                         
+409:                         <span class="ruby-comment cmt"># return status</span>
+410:                         <span class="ruby-ivar">@status</span> = <span class="ruby-value">:connected</span>
+411:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="Client.html#method-i-start">start</a>
+				</div>
+				
+
+				
+			</div>
+
+		
+			<div id="tx-commit-method" class="method-detail ">
+				<a name="method-i-tx_commit"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">tx_commit</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="tx-commit-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 428</span>
+428:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tx_commit</span>
+429:                         <span class="ruby-identifier">send_frame</span>(<span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Tx</span><span class="ruby-operator">::</span><span class="ruby-constant">Commit</span>.<span class="ruby-identifier">new</span>())
+430:                         
+431:                         <span class="ruby-identifier">method</span> = <span class="ruby-identifier">next_method</span>
+432:                         
+433:                         <span class="ruby-identifier">check_response</span>(<span class="ruby-identifier">method</span>, <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Tx</span><span class="ruby-operator">::</span><span class="ruby-constant">CommitOk</span>, <span class="ruby-value str">&quot;Error commiting transaction&quot;</span>)
+434: 
+435:                         <span class="ruby-comment cmt"># return confirmation</span>
+436:                         <span class="ruby-value">:commit_ok</span>
+437:                 <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="tx-rollback-method" class="method-detail ">
+				<a name="method-i-tx_rollback"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">tx_rollback</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="tx-rollback-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 452</span>
+452:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tx_rollback</span>
+453:                         <span class="ruby-identifier">send_frame</span>(<span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Tx</span><span class="ruby-operator">::</span><span class="ruby-constant">Rollback</span>.<span class="ruby-identifier">new</span>())
+454: 
+455:                         <span class="ruby-identifier">method</span> = <span class="ruby-identifier">next_method</span>
+456:                         
+457:                         <span class="ruby-identifier">check_response</span>(<span class="ruby-identifier">method</span>, <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Tx</span><span class="ruby-operator">::</span><span class="ruby-constant">RollbackOk</span>, <span class="ruby-value str">&quot;Error rolling back transaction&quot;</span>)
+458: 
+459:                         <span class="ruby-comment cmt"># return confirmation</span>
+460:                         <span class="ruby-value">:rollback_ok</span>
+461:                 <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="tx-select-method" class="method-detail ">
+				<a name="method-i-tx_select"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">tx_select</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="tx-select-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 476</span>
+476:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tx_select</span>
+477:                         <span class="ruby-identifier">send_frame</span>(<span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Tx</span><span class="ruby-operator">::</span><span class="ruby-constant">Select</span>.<span class="ruby-identifier">new</span>())
+478: 
+479:                         <span class="ruby-identifier">method</span> = <span class="ruby-identifier">next_method</span>
+480:                         
+481:                         <span class="ruby-identifier">check_response</span>(<span class="ruby-identifier">method</span>, <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Protocol</span><span class="ruby-operator">::</span><span class="ruby-constant">Tx</span><span class="ruby-operator">::</span><span class="ruby-constant">SelectOk</span>, <span class="ruby-value str">&quot;Error initiating transactions for current channel&quot;</span>)
+482: 
+483:                         <span class="ruby-comment cmt"># return confirmation</span>
+484:                         <span class="ruby-value">:select_ok</span>
+485:                 <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="buffer-method" class="method-detail ">
+				<a name="method-i-buffer"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">buffer</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="buffer-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/bunny/client08.rb, line 489</span>
+489:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">buffer</span>
+490:       <span class="ruby-ivar">@buffer</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Qrack</span><span class="ruby-operator">::</span><span class="ruby-constant">Transport</span><span class="ruby-operator">::</span><span class="ruby-constant">Buffer</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword kw">self</span>)
+491:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: History.txt [mime-types-1.16 Documentation]</title>
+
+	<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file">
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./History_txt.html">History.txt</a></li>
+				
+					<li class="file"><a href="./Install_txt.html">Install.txt</a></li>
+				
+					<li class="file"><a href="./Licence_txt.html">Licence.txt</a></li>
+				
+					<li class="file"><a href="./README_txt.html">README.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./MIME.html">MIME</a></li>
+				
+					<li><a href="./MIME/InvalidContentType.html">MIME::InvalidContentType</a></li>
+				
+					<li><a href="./MIME/Type.html">MIME::Type</a></li>
+				
+					<li><a href="./MIME/Types.html">MIME::Types</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h2><a href="MIME/Types.html">MIME::Types</a> 1.16</h2>
+<ul>
+<li><p>
+Made compatible with Ruby 1.8.6, 1.8.7, and 1.9.1.
+</p>
+</li>
+<li><p>
+Switched to the &#8216;hoe&#8217; gem system and added a lot of build-time
+tools.
+</p>
+</li>
+<li><p>
+Updated the <a href="MIME.html">MIME</a> types to the list based on the
+values in the Perl library version 1.27. Also updated based on external
+source information and bug reports.
+</p>
+</li>
+<li><p>
+This is the last planned version of <a
+href="MIME/Types.html">MIME::Types</a> 1.x. Work will be starting soon on
+<a href="MIME/Types.html">MIME::Types</a> 2.x with richer data querying
+mechanisms and support for external data sources.
+</p>
+</li>
+</ul>
+<h2><a href="MIME/Types.html">MIME::Types</a> 1.15</h2>
+<ul>
+<li><p>
+Removed lib/mime/type.rb to form a single <a
+href="MIME/Types.html">MIME::Types</a> database source. It is unlikely that
+one will ever need <a href="MIME/Type.html">MIME::Type</a> without <a
+href="MIME/Types.html">MIME::Types</a>.
+</p>
+</li>
+<li><p>
+Re-synchronized the <a href="MIME.html">MIME</a> type list with the
+sources, focusing primarily on the IANA list.
+</p>
+</li>
+<li><p>
+Added more detailed source information for <a
+href="MIME/Type.html">MIME::Type</a> objects.
+</p>
+</li>
+<li><p>
+Changed <a href="MIME/Types.html">MIME::Types</a> from a module to a class
+with a default instance. There should be no difference in usage.
+</p>
+</li>
+<li><p>
+Removed MIME::Types::DATA_VERSION; it is now an attribute on the <a
+href="MIME/Types.html">MIME::Types</a> instance.
+</p>
+</li>
+<li><p>
+NOTE: Synchronization with the Perl version of <a
+href="MIME/Types.html">MIME::Types</a> is no longer a priority as of this
+release. The data format and information has changed.
+</p>
+</li>
+<li><p>
+Removed MIME::Types.by_suffix and MIME::Types.by_mediatype.
+</p>
+</li>
+</ul>
+<h2><a href="MIME/Types.html">MIME::Types</a> 1.13.1</h2>
+<ul>
+<li><p>
+Fixed a problem with the installer running tests. This now works.
+</p>
+</li>
+<li><p>
+Improved the implementation of <a
+href="MIME/Type.html#method-i-signature%3F">MIME::Type.signature?</a>
+</p>
+</li>
+<li><p>
+Moved code around to use the class << self idiom instead of always
+prepending the module/class name.
+</p>
+</li>
+<li><p>
+Added two new best-guess implementations of functions found in Perl&#8217;s
+<a href="MIME/Types.html">MIME::Types</a> implementation (1.13). Do not
+rely on these until the purpose and implementation is stabilised.
+</p>
+</li>
+<li><p>
+Updated the <a href="MIME.html">MIME</a> list to reflect changes noted by 
+Ville Skyttä <ville.skytta@iki.fi>.
+</p>
+</li>
+<li><p>
+Added a new constant to <a href="MIME/Types.html">MIME::Types</a>,
+DATA_VERSION. This will allow the Ruby version number to be updated
+separately from the Perl version while keeping the <a
+href="MIME.html">MIME</a> Type list version in sync.
+</p>
+</li>
+</ul>
+<h2><a href="MIME/Types.html">MIME::Types</a> 1.13</h2>
+<pre>
+  ! WARNING: This version changes the API of MIME::Types !
+  ! WARNING: This version is compatible with Ruby 1.8 and higher ONLY !
+</pre>
+<ul>
+<li><p>
+Removed dependency on InstallPackage; offering 1.13 as either .tar.gz or
+.gem.
+</p>
+</li>
+<li><p>
+Split into two files, mime/type.rb and mime/types.rb. This will make
+maintaining the list of changes easier.
+</p>
+</li>
+<li><p>
+Changed the <a href="MIME/Type.html">MIME::Type</a> construction API.
+Accepts only a single String argument (but does no named type-checking) and
+yields self.
+</p>
+</li>
+<li><p>
+Removed private methods #, #, and # and replaced with #, #, and #.
+</p>
+</li>
+<li><p>
+Added # to return &#8216;quoted-printable&#8217; or &#8216;base64&#8217;
+depending on the media type of the <a href="MIME.html">MIME</a> type.
+</p>
+</li>
+<li><p>
+Added # and # to provide the non-simplified versions of the media type and
+subtype.
+</p>
+</li>
+<li><p>
+Alternative constructors MIME::Type.from_array, MIME::Type.from_hash, and
+MIME::Type.from_mime_type added to compensate for the removal of named type
+checking in the original constructor.
+</p>
+</li>
+<li><p>
+Added #, #, and # methods. The latter two will provide output suitable for
+use in # and #.
+</p>
+</li>
+<li><p>
+Removed &#8220;binary&#8221; encoding and enforced the use of a valid
+encoding string.
+</p>
+</li>
+<li><p>
+Added # returning true if the <a href="MIME/Type.html">MIME::Type</a> is an
+OS-specific <a href="MIME/Type.html">MIME::Type</a>.
+</p>
+</li>
+<li><p>
+Added # returning true if the <a href="MIME/Type.html">MIME::Type</a> is an
+OS-specific <a href="MIME/Type.html">MIME::Type</a> for the current
+RUBY_PLATFORM.
+</p>
+</li>
+<li><p>
+Added # returning true if the simplified type matches the other value
+provided.
+#<&#8217;application/x-excel&#8217;>.like?(&#8216;application/excel&#8217;)
+is true.
+</p>
+</li>
+<li><p>
+Added # returning true if the <a href="MIME/Type.html">MIME::Type</a>
+specifies an extension list.
+</p>
+</li>
+<li><p>
+Updated the <a href="MIME.html">MIME</a> type list to reflect additions by
+Mark Overmeer for Perl&#8217;s <a href="MIME/Types.html">MIME::Types</a>
+1.12 and the official IANA list as of 2004.04.06. A number of formerly
+&#8220;registered&#8221; <a href="MIME.html">MIME</a> types are now no
+longer registered (e.g., application/excel is now application/x-excel).
+This ensures that the simplified type still works with applications, but
+does not report an unregistered type as registered.
+</p>
+</li>
+<li><p>
+Restored <a href="MIME.html">MIME</a> type list to Mark Overmeer&#8217;s
+format to facilitate easy exchange between the two projects.
+</p>
+</li>
+<li><p>
+Added additional unit tests from Mark Overmeer&#8217;s 1.12 version.
+</p>
+</li>
+</ul>
+<h2><a href="MIME/Types.html">MIME::Types</a> 1.07</h2>
+<ul>
+<li><p>
+Changed version numbering to match Perl <a
+href="MIME/Types.html">MIME::Types</a> 1.07.
+</p>
+</li>
+<li><p>
+Re-synchronized with Mark Overmeer&#8217;s list in Perl PMIME::Types 1.07.
+</p>
+</li>
+<li><dl>
+<dt>NN Poster</dt><dd><p>
+updated the attributes for the PGP types.
+</p>
+</dd>
+</dl>
+</li>
+</ul>
+<h2><a href="MIME/Types.html">MIME::Types</a> 1.005</h2>
+<ul>
+<li><p>
+Changed to Phil Thomson&#8217;s InstallPackage.
+</p>
+</li>
+<li><p>
+Added several types from Perl <a href="MIME/Types.html">MIME::Types</a>
+1.005.
+</p>
+</li>
+<li><p>
+Cleaned up data format; some data formats will show up with proper data
+now.
+</p>
+</li>
+</ul>
+<h2><a href="MIME/Types.html">MIME::Types</a> 1.004</h2>
+<ul>
+<li><p>
+Updated to match Perl <a href="MIME/Types.html">MIME::Types</a> 1.004,
+links credited to Dan Puro. Adds new reference list to <a
+href="http://www.indiana.edu/cgi-bin-local/mimetypes">www.indiana.edu/cgi-bin-local/mimetypes</a>
+</p>
+</li>
+<li><p>
+Removed InvalidType and replaced with TypeError.
+</p>
+</li>
+<li><p>
+Changed instances of # to #.
+</p>
+</li>
+<li><p>
+Cleaned up how simplified versions are created.
+</p>
+</li>
+</ul>
+<h2><a href="MIME/Types.html">MIME::Types</a> 1.003</h2>
+<ul>
+<li><p>
+Initial release based on Perl <a href="MIME/Types.html">MIME::Types</a>
+1.003.
+</p>
+</li>
+</ul>
+<h2>Copyright</h2>
+<pre>
+  MIME::Types
+  A Ruby implementation of a MIME Types information library. Based in spirit
+  on the Perl MIME::Types information library by Mark Overmeer.
+  http://rubyforge.org/projects/mime-types/
+
+  Licensed under the Ruby disjunctive licence with the GNU GPL or the Perl
+  Artistic licence. See Licence.txt for more information.
+
+  Copyright 2003 - 2009 Austin Ziegler</pre>
+
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
+

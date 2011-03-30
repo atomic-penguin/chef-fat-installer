@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Module: Ohai::Mixin::Command</title>
+
+	<link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="module">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../../lib/ohai/mixin/command_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/ohai/mixin/command.rb">lib/ohai/mixin/command.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-popen4">::popen4</a></li>
+					
+					<li><a href="#method-c-run_command">::run_command</a></li>
+					
+					<li><a href="#method-i-popen4">#popen4</a></li>
+					
+					<li><a href="#method-i-run_command">#run_command</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../../Ohai.html">Ohai</a></li>
+				
+					<li><a href="../../Ohai/Application.html">Ohai::Application</a></li>
+				
+					<li><a href="../../Ohai/Config.html">Ohai::Config</a></li>
+				
+					<li><a href="../../Ohai/Exceptions.html">Ohai::Exceptions</a></li>
+				
+					<li><a href="../../Ohai/Exceptions/Exec.html">Ohai::Exceptions::Exec</a></li>
+				
+					<li><a href="../../Ohai/Log.html">Ohai::Log</a></li>
+				
+					<li><a href="../../Ohai/Mixin.html">Ohai::Mixin</a></li>
+				
+					<li><a href="../../Ohai/Mixin/Command.html">Ohai::Mixin::Command</a></li>
+				
+					<li><a href="../../Ohai/Mixin/FromFile.html">Ohai::Mixin::FromFile</a></li>
+				
+					<li><a href="../../Ohai/System.html">Ohai::System</a></li>
+				
+					<li><a href="../../Object.html">Object</a></li>
+				
+					<li><a href="../../String.html">String</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="module">Ohai::Mixin::Command</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="popen--method" class="method-detail ">
+				<a name="method-c-popen4"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">popen4</span><span
+						class="method-args">(cmd, args={}, &b)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This is taken directly from Ara T Howard&#8217;s Open4 library, and then 
+modified to suit the needs of <a href="../../Ohai.html">Ohai</a>.  Any bugs
+here are most likely my own, and not Ara&#8217;s.
+</p>
+<p>
+The original appears in external/open4.rb in its unmodified form. 
+</p>
+<p>
+Thanks Ara!
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="popen--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/mixin/command.rb, line 99</span>
+ 99:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">popen4</span>(<span class="ruby-identifier">cmd</span>, <span class="ruby-identifier">args</span>={}, &amp;<span class="ruby-identifier">b</span>)
+100:         
+101:         <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">nil</span>
+102:         <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>].<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Integer</span>)
+103:           <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>] = <span class="ruby-constant">Etc</span>.<span class="ruby-identifier">getpwnam</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>]).<span class="ruby-identifier">uid</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>]
+104:         <span class="ruby-keyword kw">end</span>
+105:         <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">nil</span>
+106:         <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>].<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Integer</span>)
+107:           <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>] = <span class="ruby-constant">Etc</span>.<span class="ruby-identifier">getgrnam</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>]).<span class="ruby-identifier">gid</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>]
+108:         <span class="ruby-keyword kw">end</span>
+109:         <span class="ruby-identifier">args</span>[<span class="ruby-value">:environment</span>] <span class="ruby-operator">||=</span> {}
+110: 
+111:         <span class="ruby-comment cmt"># Default on C locale so parsing commands output can be done</span>
+112:         <span class="ruby-comment cmt"># independently of the node's default locale.</span>
+113:         <span class="ruby-comment cmt"># &quot;LC_ALL&quot; could be set to nil, in which case we also must ignore it.</span>
+114:         <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:environment</span>].<span class="ruby-identifier">has_key?</span>(<span class="ruby-value str">&quot;LC_ALL&quot;</span>)
+115:           <span class="ruby-identifier">args</span>[<span class="ruby-value">:environment</span>][<span class="ruby-value str">&quot;LC_ALL&quot;</span>] = <span class="ruby-value str">&quot;C&quot;</span>
+116:         <span class="ruby-keyword kw">end</span>
+117:         
+118:         <span class="ruby-identifier">pw</span>, <span class="ruby-identifier">pr</span>, <span class="ruby-identifier">pe</span>, <span class="ruby-identifier">ps</span> = <span class="ruby-constant">IO</span>.<span class="ruby-identifier">pipe</span>, <span class="ruby-constant">IO</span>.<span class="ruby-identifier">pipe</span>, <span class="ruby-constant">IO</span>.<span class="ruby-identifier">pipe</span>, <span class="ruby-constant">IO</span>.<span class="ruby-identifier">pipe</span>
+119: 
+120:         <span class="ruby-identifier">verbose</span> = <span class="ruby-identifier">$VERBOSE</span>
+121:         <span class="ruby-keyword kw">begin</span>
+122:           <span class="ruby-identifier">$VERBOSE</span> = <span class="ruby-keyword kw">nil</span>
+123:           <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">fcntl</span>(<span class="ruby-constant">Fcntl</span><span class="ruby-operator">::</span><span class="ruby-constant">F_SETFD</span>, <span class="ruby-constant">Fcntl</span><span class="ruby-operator">::</span><span class="ruby-constant">FD_CLOEXEC</span>)
+124: 
+125:           <span class="ruby-identifier">cid</span> = <span class="ruby-identifier">fork</span> {
+126:             <span class="ruby-identifier">pw</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">close</span>
+127:             <span class="ruby-constant">STDIN</span>.<span class="ruby-identifier">reopen</span> <span class="ruby-identifier">pw</span>.<span class="ruby-identifier">first</span>
+128:             <span class="ruby-identifier">pw</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">close</span>
+129: 
+130:             <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">close</span>
+131:             <span class="ruby-constant">STDOUT</span>.<span class="ruby-identifier">reopen</span> <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">last</span>
+132:             <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">close</span>
+133: 
+134:             <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">close</span>
+135:             <span class="ruby-constant">STDERR</span>.<span class="ruby-identifier">reopen</span> <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">last</span>
+136:             <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">close</span>
+137: 
+138:             <span class="ruby-constant">STDOUT</span>.<span class="ruby-identifier">sync</span> = <span class="ruby-constant">STDERR</span>.<span class="ruby-identifier">sync</span> = <span class="ruby-keyword kw">true</span>
+139: 
+140:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>]
+141:               <span class="ruby-constant">Process</span>.<span class="ruby-identifier">euid</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>]
+142:               <span class="ruby-constant">Process</span>.<span class="ruby-identifier">uid</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>]
+143:             <span class="ruby-keyword kw">end</span>
+144:             
+145:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>]
+146:               <span class="ruby-constant">Process</span>.<span class="ruby-identifier">egid</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>]
+147:               <span class="ruby-constant">Process</span>.<span class="ruby-identifier">gid</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>]
+148:             <span class="ruby-keyword kw">end</span>
+149:             
+150:             <span class="ruby-identifier">args</span>[<span class="ruby-value">:environment</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>,<span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+151:               <span class="ruby-constant">ENV</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span>
+152:             <span class="ruby-keyword kw">end</span>
+153:             
+154:             <span class="ruby-keyword kw">begin</span>
+155:               <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">cmd</span>.<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Array</span>)
+156:                 <span class="ruby-identifier">exec</span>(*<span class="ruby-identifier">cmd</span>)
+157:               <span class="ruby-keyword kw">else</span>
+158:                 <span class="ruby-identifier">exec</span>(<span class="ruby-identifier">cmd</span>)
+159:               <span class="ruby-keyword kw">end</span>
+160:               <span class="ruby-identifier">raise</span> <span class="ruby-value str">'forty-two'</span> 
+161:             <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+162:               <span class="ruby-constant">Marshal</span>.<span class="ruby-identifier">dump</span>(<span class="ruby-identifier">e</span>, <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>)
+163:               <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">flush</span>
+164:             <span class="ruby-keyword kw">end</span>
+165:             <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">close</span> <span class="ruby-keyword kw">unless</span> (<span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">closed?</span>)
+166:             <span class="ruby-identifier">exit!</span>
+167:           }
+168:         <span class="ruby-keyword kw">ensure</span>
+169:           <span class="ruby-identifier">$VERBOSE</span> = <span class="ruby-identifier">verbose</span>
+170:         <span class="ruby-keyword kw">end</span>
+171: 
+172:         [<span class="ruby-identifier">pw</span>.<span class="ruby-identifier">first</span>, <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">last</span>, <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">last</span>, <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>].<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">fd</span><span class="ruby-operator">|</span> <span class="ruby-identifier">fd</span>.<span class="ruby-identifier">close</span>}
+173: 
+174:         <span class="ruby-keyword kw">begin</span>
+175:           <span class="ruby-identifier">e</span> = <span class="ruby-constant">Marshal</span>.<span class="ruby-identifier">load</span> <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">first</span>
+176:           <span class="ruby-comment cmt"># If we get here, exec failed. Collect status of child to prevent</span>
+177:           <span class="ruby-comment cmt"># zombies.</span>
+178:           <span class="ruby-constant">Process</span>.<span class="ruby-identifier">waitpid</span>(<span class="ruby-identifier">cid</span>)
+179:           <span class="ruby-identifier">raise</span>(<span class="ruby-constant">Exception</span> <span class="ruby-operator">===</span> <span class="ruby-identifier">e</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">e</span> <span class="ruby-operator">:</span> <span class="ruby-value str">&quot;unknown failure!&quot;</span>)
+180:         <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">EOFError</span> <span class="ruby-comment cmt"># If we get an EOF error, then the exec was successful</span>
+181:           <span class="ruby-value">42</span>
+182:         <span class="ruby-keyword kw">ensure</span>
+183:           <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">close</span>
+184:         <span class="ruby-keyword kw">end</span>
+185: 
+186:         <span class="ruby-identifier">pw</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">sync</span> = <span class="ruby-keyword kw">true</span>
+187: 
+188:         <span class="ruby-identifier">pi</span> = [<span class="ruby-identifier">pw</span>.<span class="ruby-identifier">last</span>, <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">first</span>, <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">first</span>]
+189: 
+190:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">b</span> 
+191:           <span class="ruby-keyword kw">begin</span>
+192:             <span class="ruby-identifier">b</span>[<span class="ruby-identifier">cid</span>, *<span class="ruby-identifier">pi</span>]
+193:             <span class="ruby-constant">Process</span>.<span class="ruby-identifier">waitpid2</span>(<span class="ruby-identifier">cid</span>).<span class="ruby-identifier">last</span>
+194:           <span class="ruby-keyword kw">ensure</span>
+195:             <span class="ruby-identifier">pi</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">fd</span><span class="ruby-operator">|</span> <span class="ruby-identifier">fd</span>.<span class="ruby-identifier">close</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">fd</span>.<span class="ruby-identifier">closed?</span>}
+196:           <span class="ruby-keyword kw">end</span>
+197:         <span class="ruby-keyword kw">else</span>
+198:           [<span class="ruby-identifier">cid</span>, <span class="ruby-identifier">pw</span>.<span class="ruby-identifier">last</span>, <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">first</span>, <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">first</span>]
+199:         <span class="ruby-keyword kw">end</span>
+200:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="run-command-method" class="method-detail ">
+				<a name="method-c-run_command"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">run_command</span><span
+						class="method-args">(args={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="run-command-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/mixin/command.rb, line 31</span>
+31:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">run_command</span>(<span class="ruby-identifier">args</span>={})         
+32:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:creates</span>)
+33:           <span class="ruby-keyword kw">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:creates</span>])
+34:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Skipping #{args[:command]} - creates #{args[:creates]} exists.&quot;</span>)
+35:             <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+36:           <span class="ruby-keyword kw">end</span>
+37:         <span class="ruby-keyword kw">end</span>
+38:         
+39:         <span class="ruby-identifier">stdout_string</span> = <span class="ruby-keyword kw">nil</span>
+40:         <span class="ruby-identifier">stderr_string</span> = <span class="ruby-keyword kw">nil</span>
+41:                 
+42:         <span class="ruby-identifier">args</span>[<span class="ruby-value">:cwd</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">tmpdir</span>        
+43:         <span class="ruby-keyword kw">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">directory?</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:cwd</span>])
+44:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Exceptions</span><span class="ruby-operator">::</span><span class="ruby-constant">Exec</span>, <span class="ruby-node">&quot;#{args[:cwd]} does not exist or is not a directory&quot;</span>
+45:         <span class="ruby-keyword kw">end</span>
+46:         
+47:         <span class="ruby-identifier">status</span> = <span class="ruby-keyword kw">nil</span>
+48:         <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">chdir</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:cwd</span>]) <span class="ruby-keyword kw">do</span>
+49:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:timeout</span>]
+50:             <span class="ruby-keyword kw">begin</span>
+51:               <span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">timeout</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:timeout</span>]) <span class="ruby-keyword kw">do</span>
+52:                 <span class="ruby-identifier">status</span>, <span class="ruby-identifier">stdout_string</span>, <span class="ruby-identifier">stderr_string</span> = <span class="ruby-identifier">systemu</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:command</span>])
+53:               <span class="ruby-keyword kw">end</span>
+54:             <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+55:               <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">error</span>(<span class="ruby-node">&quot;#{args[:command_string]} exceeded timeout #{args[:timeout]}&quot;</span>)
+56:               <span class="ruby-identifier">raise</span>(<span class="ruby-identifier">e</span>)
+57:             <span class="ruby-keyword kw">end</span>
+58:           <span class="ruby-keyword kw">else</span>
+59:             <span class="ruby-identifier">status</span>, <span class="ruby-identifier">stdout_string</span>, <span class="ruby-identifier">stderr_string</span> = <span class="ruby-identifier">systemu</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:command</span>])
+60:           <span class="ruby-keyword kw">end</span>
+61: 
+62:           <span class="ruby-comment cmt"># systemu returns 42 when it hits unexpected errors</span>
+63:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">status</span>.<span class="ruby-identifier">exitstatus</span> <span class="ruby-operator">==</span> <span class="ruby-value">42</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">stderr_string</span> <span class="ruby-operator">==</span> <span class="ruby-value str">&quot;&quot;</span>
+64:             <span class="ruby-identifier">stderr_string</span> = <span class="ruby-node">&quot;Failed to run: #{args[:command]}, assuming command not found&quot;</span>
+65:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-identifier">stderr_string</span>)          
+66:           <span class="ruby-keyword kw">end</span>
+67: 
+68:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">stdout_string</span>
+69:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;---- Begin #{args[:command]} STDOUT ----&quot;</span>)
+70:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-identifier">stdout_string</span>.<span class="ruby-identifier">strip</span>)
+71:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;---- End #{args[:command]} STDOUT ----&quot;</span>)
+72:           <span class="ruby-keyword kw">end</span>
+73:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">stderr_string</span>
+74:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;---- Begin #{args[:command]} STDERR ----&quot;</span>)
+75:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-identifier">stderr_string</span>.<span class="ruby-identifier">strip</span>)
+76:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;---- End #{args[:command]} STDERR ----&quot;</span>)
+77:           <span class="ruby-keyword kw">end</span>
+78:         
+79:           <span class="ruby-identifier">args</span>[<span class="ruby-value">:returns</span>] <span class="ruby-operator">||=</span> <span class="ruby-value">0</span>
+80:           <span class="ruby-identifier">args</span>[<span class="ruby-value">:no_status_check</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">false</span>
+81:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">status</span>.<span class="ruby-identifier">exitstatus</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:returns</span>] <span class="ruby-keyword kw">and</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:no_status_check</span>]
+82:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Exceptions</span><span class="ruby-operator">::</span><span class="ruby-constant">Exec</span>, <span class="ruby-node">&quot;#{args[:command_string]} returned #{status.exitstatus}, expected #{args[:returns]}&quot;</span>
+83:           <span class="ruby-keyword kw">else</span>
+84:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Ran #{args[:command_string]} (#{args[:command]}) returned #{status.exitstatus}&quot;</span>)
+85:           <span class="ruby-keyword kw">end</span>
+86:         <span class="ruby-keyword kw">end</span>
+87:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">status</span>, <span class="ruby-identifier">stdout_string</span>, <span class="ruby-identifier">stderr_string</span>
+88:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="popen--method" class="method-detail ">
+				<a name="method-i-popen4"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">popen4</span><span
+						class="method-args">(cmd, args={}, &b)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+This is taken directly from Ara T Howard&#8217;s Open4 library, and then 
+modified to suit the needs of <a href="../../Ohai.html">Ohai</a>.  Any bugs
+here are most likely my own, and not Ara&#8217;s.
+</p>
+<p>
+The original appears in external/open4.rb in its unmodified form. 
+</p>
+<p>
+Thanks Ara!
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="popen--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/ohai/mixin/command.rb, line 99</span>
+ 99:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">popen4</span>(<span class="ruby-identifier">cmd</span>, <span class="ruby-identifier">args</span>={}, &amp;<span class="ruby-identifier">b</span>)
+100:         
+101:         <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">nil</span>
+102:         <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>].<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Integer</span>)
+103:           <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>] = <span class="ruby-constant">Etc</span>.<span class="ruby-identifier">getpwnam</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>]).<span class="ruby-identifier">uid</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>]
+104:         <span class="ruby-keyword kw">end</span>
+105:         <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">nil</span>
+106:         <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>].<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Integer</span>)
+107:           <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>] = <span class="ruby-constant">Etc</span>.<span class="ruby-identifier">getgrnam</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>]).<span class="ruby-identifier">gid</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>]
+108:         <span class="ruby-keyword kw">end</span>
+109:         <span class="ruby-identifier">args</span>[<span class="ruby-value">:environment</span>] <span class="ruby-operator">||=</span> {}
+110: 
+111:         <span class="ruby-comment cmt"># Default on C locale so parsing commands output can be done</span>
+112:         <span class="ruby-comment cmt"># independently of the node's default locale.</span>
+113:         <span class="ruby-comment cmt"># &quot;LC_ALL&quot; could be set to nil, in which case we also must ignore it.</span>
+114:         <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:environment</span>].<span class="ruby-identifier">has_key?</span>(<span class="ruby-value str">&quot;LC_ALL&quot;</span>)
+115:           <span class="ruby-identifier">args</span>[<span class="ruby-value">:environment</span>][<span class="ruby-value str">&quot;LC_ALL&quot;</span>] = <span class="ruby-value str">&quot;C&quot;</span>
+116:         <span class="ruby-keyword kw">end</span>
+117:         
+118:         <span class="ruby-identifier">pw</span>, <span class="ruby-identifier">pr</span>, <span class="ruby-identifier">pe</span>, <span class="ruby-identifier">ps</span> = <span class="ruby-constant">IO</span>.<span class="ruby-identifier">pipe</span>, <span class="ruby-constant">IO</span>.<span class="ruby-identifier">pipe</span>, <span class="ruby-constant">IO</span>.<span class="ruby-identifier">pipe</span>, <span class="ruby-constant">IO</span>.<span class="ruby-identifier">pipe</span>
+119: 
+120:         <span class="ruby-identifier">verbose</span> = <span class="ruby-identifier">$VERBOSE</span>
+121:         <span class="ruby-keyword kw">begin</span>
+122:           <span class="ruby-identifier">$VERBOSE</span> = <span class="ruby-keyword kw">nil</span>
+123:           <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">fcntl</span>(<span class="ruby-constant">Fcntl</span><span class="ruby-operator">::</span><span class="ruby-constant">F_SETFD</span>, <span class="ruby-constant">Fcntl</span><span class="ruby-operator">::</span><span class="ruby-constant">FD_CLOEXEC</span>)
+124: 
+125:           <span class="ruby-identifier">cid</span> = <span class="ruby-identifier">fork</span> {
+126:             <span class="ruby-identifier">pw</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">close</span>
+127:             <span class="ruby-constant">STDIN</span>.<span class="ruby-identifier">reopen</span> <span class="ruby-identifier">pw</span>.<span class="ruby-identifier">first</span>
+128:             <span class="ruby-identifier">pw</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">close</span>
+129: 
+130:             <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">close</span>
+131:             <span class="ruby-constant">STDOUT</span>.<span class="ruby-identifier">reopen</span> <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">last</span>
+132:             <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">close</span>
+133: 
+134:             <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">close</span>
+135:             <span class="ruby-constant">STDERR</span>.<span class="ruby-identifier">reopen</span> <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">last</span>
+136:             <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">close</span>
+137: 
+138:             <span class="ruby-constant">STDOUT</span>.<span class="ruby-identifier">sync</span> = <span class="ruby-constant">STDERR</span>.<span class="ruby-identifier">sync</span> = <span class="ruby-keyword kw">true</span>
+139: 
+140:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>]
+141:               <span class="ruby-constant">Process</span>.<span class="ruby-identifier">euid</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>]
+142:               <span class="ruby-constant">Process</span>.<span class="ruby-identifier">uid</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:user</span>]
+143:             <span class="ruby-keyword kw">end</span>
+144:             
+145:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>]
+146:               <span class="ruby-constant">Process</span>.<span class="ruby-identifier">egid</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>]
+147:               <span class="ruby-constant">Process</span>.<span class="ruby-identifier">gid</span> = <span class="ruby-identifier">args</span>[<span class="ruby-value">:group</span>]
+148:             <span class="ruby-keyword kw">end</span>
+149:             
+150:             <span class="ruby-identifier">args</span>[<span class="ruby-value">:environment</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>,<span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+151:               <span class="ruby-constant">ENV</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span>
+152:             <span class="ruby-keyword kw">end</span>
+153:             
+154:             <span class="ruby-keyword kw">begin</span>
+155:               <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">cmd</span>.<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Array</span>)
+156:                 <span class="ruby-identifier">exec</span>(*<span class="ruby-identifier">cmd</span>)
+157:               <span class="ruby-keyword kw">else</span>
+158:                 <span class="ruby-identifier">exec</span>(<span class="ruby-identifier">cmd</span>)
+159:               <span class="ruby-keyword kw">end</span>
+160:               <span class="ruby-identifier">raise</span> <span class="ruby-value str">'forty-two'</span> 
+161:             <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+162:               <span class="ruby-constant">Marshal</span>.<span class="ruby-identifier">dump</span>(<span class="ruby-identifier">e</span>, <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>)
+163:               <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">flush</span>
+164:             <span class="ruby-keyword kw">end</span>
+165:             <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">close</span> <span class="ruby-keyword kw">unless</span> (<span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">closed?</span>)
+166:             <span class="ruby-identifier">exit!</span>
+167:           }
+168:         <span class="ruby-keyword kw">ensure</span>
+169:           <span class="ruby-identifier">$VERBOSE</span> = <span class="ruby-identifier">verbose</span>
+170:         <span class="ruby-keyword kw">end</span>
+171: 
+172:         [<span class="ruby-identifier">pw</span>.<span class="ruby-identifier">first</span>, <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">last</span>, <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">last</span>, <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">last</span>].<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">fd</span><span class="ruby-operator">|</span> <span class="ruby-identifier">fd</span>.<span class="ruby-identifier">close</span>}
+173: 
+174:         <span class="ruby-keyword kw">begin</span>
+175:           <span class="ruby-identifier">e</span> = <span class="ruby-constant">Marshal</span>.<span class="ruby-identifier">load</span> <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">first</span>
+176:           <span class="ruby-comment cmt"># If we get here, exec failed. Collect status of child to prevent</span>
+177:           <span class="ruby-comment cmt"># zombies.</span>
+178:           <span class="ruby-constant">Process</span>.<span class="ruby-identifier">waitpid</span>(<span class="ruby-identifier">cid</span>)
+179:           <span class="ruby-identifier">raise</span>(<span class="ruby-constant">Exception</span> <span class="ruby-operator">===</span> <span class="ruby-identifier">e</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">e</span> <span class="ruby-operator">:</span> <span class="ruby-value str">&quot;unknown failure!&quot;</span>)
+180:         <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">EOFError</span> <span class="ruby-comment cmt"># If we get an EOF error, then the exec was successful</span>
+181:           <span class="ruby-value">42</span>
+182:         <span class="ruby-keyword kw">ensure</span>
+183:           <span class="ruby-identifier">ps</span>.<span class="ruby-identifier">first</span>.<span class="ruby-identifier">close</span>
+184:         <span class="ruby-keyword kw">end</span>
+185: 
+186:         <span class="ruby-identifier">pw</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">sync</span> = <span class="ruby-keyword kw">true</span>
+187: 
+188:         <span class="ruby-identifier">pi</span> = [<span class="ruby-identifier">pw</span>.<span class="ruby-identifier">last</span>, <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">first</span>, <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">first</span>]
+189: 
+190:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">b</span> 
+191:           <span class="ruby-keyword kw">begin</span>
+192:             <span class="ruby-identifier">b</span>[<span class="ruby-identifier">cid</span>, *<span class="ruby-identifier">pi</span>]
+193:             <span class="ruby-constant">Process</span>.<span class="ruby-identifier">waitpid2</span>(<span class="ruby-identifier">cid</span>).<span class="ruby-identifier">last</span>
+194:           <span class="ruby-keyword kw">ensure</span>
+195:             <span class="ruby-identifier">pi</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">fd</span><span class="ruby-operator">|</span> <span class="ruby-identifier">fd</span>.<span class="ruby-identifier">close</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">fd</span>.<span class="ruby-identifier">closed?</span>}
+196:           <span class="ruby-keyword kw">end</span>
+197:         <span class="ruby-keyword kw">else</span>
+198:           [<span class="ruby-identifier">cid</span>, <span class="ruby-identifier">pw</span>.<span class="ruby-identifier">last</span>, <span class="ruby-identifier">pr</span>.<span class="ruby-identifier">first</span>, <span class="ruby-identifier">pe</span>.<span class="ruby-identifier">first</span>]
+199:         <span class="ruby-keyword kw">end</span>
+200:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="run-command-method" class="method-detail ">
+				<a name="method-i-run_command"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">run_command</span><span
+						class="method-args">(args={})</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="run-command-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/mixin/command.rb, line 31</span>
+31:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">run_command</span>(<span class="ruby-identifier">args</span>={})         
+32:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:creates</span>)
+33:           <span class="ruby-keyword kw">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:creates</span>])
+34:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Skipping #{args[:command]} - creates #{args[:creates]} exists.&quot;</span>)
+35:             <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+36:           <span class="ruby-keyword kw">end</span>
+37:         <span class="ruby-keyword kw">end</span>
+38:         
+39:         <span class="ruby-identifier">stdout_string</span> = <span class="ruby-keyword kw">nil</span>
+40:         <span class="ruby-identifier">stderr_string</span> = <span class="ruby-keyword kw">nil</span>
+41:                 
+42:         <span class="ruby-identifier">args</span>[<span class="ruby-value">:cwd</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">tmpdir</span>        
+43:         <span class="ruby-keyword kw">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">directory?</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:cwd</span>])
+44:           <span class="ruby-identifier">raise</span> <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Exceptions</span><span class="ruby-operator">::</span><span class="ruby-constant">Exec</span>, <span class="ruby-node">&quot;#{args[:cwd]} does not exist or is not a directory&quot;</span>
+45:         <span class="ruby-keyword kw">end</span>
+46:         
+47:         <span class="ruby-identifier">status</span> = <span class="ruby-keyword kw">nil</span>
+48:         <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">chdir</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:cwd</span>]) <span class="ruby-keyword kw">do</span>
+49:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:timeout</span>]
+50:             <span class="ruby-keyword kw">begin</span>
+51:               <span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">timeout</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:timeout</span>]) <span class="ruby-keyword kw">do</span>
+52:                 <span class="ruby-identifier">status</span>, <span class="ruby-identifier">stdout_string</span>, <span class="ruby-identifier">stderr_string</span> = <span class="ruby-identifier">systemu</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:command</span>])
+53:               <span class="ruby-keyword kw">end</span>
+54:             <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+55:               <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">error</span>(<span class="ruby-node">&quot;#{args[:command_string]} exceeded timeout #{args[:timeout]}&quot;</span>)
+56:               <span class="ruby-identifier">raise</span>(<span class="ruby-identifier">e</span>)
+57:             <span class="ruby-keyword kw">end</span>
+58:           <span class="ruby-keyword kw">else</span>
+59:             <span class="ruby-identifier">status</span>, <span class="ruby-identifier">stdout_string</span>, <span class="ruby-identifier">stderr_string</span> = <span class="ruby-identifier">systemu</span>(<span class="ruby-identifier">args</span>[<span class="ruby-value">:command</span>])
+60:           <span class="ruby-keyword kw">end</span>
+61: 
+62:           <span class="ruby-comment cmt"># systemu returns 42 when it hits unexpected errors</span>
+63:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">status</span>.<span class="ruby-identifier">exitstatus</span> <span class="ruby-operator">==</span> <span class="ruby-value">42</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">stderr_string</span> <span class="ruby-operator">==</span> <span class="ruby-value str">&quot;&quot;</span>
+64:             <span class="ruby-identifier">stderr_string</span> = <span class="ruby-node">&quot;Failed to run: #{args[:command]}, assuming command not found&quot;</span>
+65:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-identifier">stderr_string</span>)          
+66:           <span class="ruby-keyword kw">end</span>
+67: 
+68:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">stdout_string</span>
+69:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;---- Begin #{args[:command]} STDOUT ----&quot;</span>)
+70:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-identifier">stdout_string</span>.<span class="ruby-identifier">strip</span>)
+71:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;---- End #{args[:command]} STDOUT ----&quot;</span>)
+72:           <span class="ruby-keyword kw">end</span>
+73:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">stderr_string</span>
+74:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;---- Begin #{args[:command]} STDERR ----&quot;</span>)
+75:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-identifier">stderr_string</span>.<span class="ruby-identifier">strip</span>)
+76:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;---- End #{args[:command]} STDERR ----&quot;</span>)
+77:           <span class="ruby-keyword kw">end</span>
+78:         
+79:           <span class="ruby-identifier">args</span>[<span class="ruby-value">:returns</span>] <span class="ruby-operator">||=</span> <span class="ruby-value">0</span>
+80:           <span class="ruby-identifier">args</span>[<span class="ruby-value">:no_status_check</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword kw">false</span>
+81:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">status</span>.<span class="ruby-identifier">exitstatus</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:returns</span>] <span class="ruby-keyword kw">and</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">args</span>[<span class="ruby-value">:no_status_check</span>]
+82:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Exceptions</span><span class="ruby-operator">::</span><span class="ruby-constant">Exec</span>, <span class="ruby-node">&quot;#{args[:command_string]} returned #{status.exitstatus}, expected #{args[:returns]}&quot;</span>
+83:           <span class="ruby-keyword kw">else</span>
+84:             <span class="ruby-constant">Ohai</span><span class="ruby-operator">::</span><span class="ruby-constant">Log</span>.<span class="ruby-identifier">debug</span>(<span class="ruby-node">&quot;Ran #{args[:command_string]} (#{args[:command]}) returned #{status.exitstatus}&quot;</span>)
+85:           <span class="ruby-keyword kw">end</span>
+86:         <span class="ruby-keyword kw">end</span>
+87:         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">status</span>, <span class="ruby-identifier">stdout_string</span>, <span class="ruby-identifier">stderr_string</span>
+88:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: JSON::Editor::EditMenu</title>
+
+	<link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../../lib/json/editor_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/json/editor.rb">lib/json/editor.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link"><a href="../../Object.html">Object</a></p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-copy">#copy</a></li>
+					
+					<li><a href="#method-i-create">#create</a></li>
+					
+					<li><a href="#method-i-find">#find</a></li>
+					
+					<li><a href="#method-i-find_again">#find_again</a></li>
+					
+					<li><a href="#method-i-paste">#paste</a></li>
+					
+					<li><a href="#method-i-sort">#sort</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+			<div id="includes-section" class="section">
+				<h3 class="section-header">Included Modules</h3>
+				<ul class="link-list">
+				
+				
+					<li><span class="include">MenuExtension</span></li>
+				
+				
+				</ul>
+			</div>
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../../README.html">README</a></li>
+				
+					<li class="file"><a href="../../ext/json/ext/generator/Makefile.html">Makefile</a></li>
+				
+					<li class="file"><a href="../../ext/json/ext/parser/Makefile.html">Makefile</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../../JSON.html">JSON</a></li>
+				
+					<li><a href="../../JSON/Editor.html">JSON::Editor</a></li>
+				
+					<li><a href="../../JSON/Editor/EditMenu.html">JSON::Editor::EditMenu</a></li>
+				
+					<li><a href="../../JSON/Editor/FileMenu.html">JSON::Editor::FileMenu</a></li>
+				
+					<li><a href="../../JSON/Editor/Gtk.html">JSON::Editor::Gtk</a></li>
+				
+					<li><a href="../../JSON/Editor/Gtk/TreeIter.html">JSON::Editor::Gtk::TreeIter</a></li>
+				
+					<li><a href="../../JSON/Editor/JSONTreeView.html">JSON::Editor::JSONTreeView</a></li>
+				
+					<li><a href="../../JSON/Editor/MainWindow.html">JSON::Editor::MainWindow</a></li>
+				
+					<li><a href="../../JSON/Editor/MenuExtension.html">JSON::Editor::MenuExtension</a></li>
+				
+					<li><a href="../../JSON/Editor/OptionsMenu.html">JSON::Editor::OptionsMenu</a></li>
+				
+					<li><a href="../../JSON/Editor/PopUpMenu.html">JSON::Editor::PopUpMenu</a></li>
+				
+					<li><a href="../../JSON/Ext.html">JSON::Ext</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator.html">JSON::Ext::Generator</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods.html">JSON::Ext::Generator::GeneratorMethods</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods/Array.html">JSON::Ext::Generator::GeneratorMethods::Array</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods/Bignum.html">JSON::Ext::Generator::GeneratorMethods::Bignum</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods/FalseClass.html">JSON::Ext::Generator::GeneratorMethods::FalseClass</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods/Fixnum.html">JSON::Ext::Generator::GeneratorMethods::Fixnum</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods/Float.html">JSON::Ext::Generator::GeneratorMethods::Float</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods/Hash.html">JSON::Ext::Generator::GeneratorMethods::Hash</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods/NilClass.html">JSON::Ext::Generator::GeneratorMethods::NilClass</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods/Object.html">JSON::Ext::Generator::GeneratorMethods::Object</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods/String.html">JSON::Ext::Generator::GeneratorMethods::String</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods/String/Extend.html">JSON::Ext::Generator::GeneratorMethods::String::Extend</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/GeneratorMethods/TrueClass.html">JSON::Ext::Generator::GeneratorMethods::TrueClass</a></li>
+				
+					<li><a href="../../JSON/Ext/Generator/State.html">JSON::Ext::Generator::State</a></li>
+				
+					<li><a href="../../JSON/Ext/Parser.html">JSON::Ext::Parser</a></li>
+				
+					<li><a href="../../JSON/GeneratorError.html">JSON::GeneratorError</a></li>
+				
+					<li><a href="../../JSON/GeneratorError.html">JSON::GeneratorError</a></li>
+				
+					<li><a href="../../JSON/JSONError.html">JSON::JSONError</a></li>
+				
+					<li><a href="../../JSON/MissingUnicodeSupport.html">JSON::MissingUnicodeSupport</a></li>
+				
+					<li><a href="../../JSON/NestingError.html">JSON::NestingError</a></li>
+				
+					<li><a href="../../JSON/ParserError.html">JSON::ParserError</a></li>
+				
+					<li><a href="../../JSON/Pure.html">JSON::Pure</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator.html">JSON::Pure::Generator</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/GeneratorMethods.html">JSON::Pure::Generator::GeneratorMethods</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/GeneratorMethods/Array.html">JSON::Pure::Generator::GeneratorMethods::Array</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/GeneratorMethods/FalseClass.html">JSON::Pure::Generator::GeneratorMethods::FalseClass</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/GeneratorMethods/Float.html">JSON::Pure::Generator::GeneratorMethods::Float</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/GeneratorMethods/Hash.html">JSON::Pure::Generator::GeneratorMethods::Hash</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/GeneratorMethods/Integer.html">JSON::Pure::Generator::GeneratorMethods::Integer</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/GeneratorMethods/NilClass.html">JSON::Pure::Generator::GeneratorMethods::NilClass</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/GeneratorMethods/Object.html">JSON::Pure::Generator::GeneratorMethods::Object</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/GeneratorMethods/String.html">JSON::Pure::Generator::GeneratorMethods::String</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/GeneratorMethods/String/Extend.html">JSON::Pure::Generator::GeneratorMethods::String::Extend</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/GeneratorMethods/TrueClass.html">JSON::Pure::Generator::GeneratorMethods::TrueClass</a></li>
+				
+					<li><a href="../../JSON/Pure/Generator/State.html">JSON::Pure::Generator::State</a></li>
+				
+					<li><a href="../../JSON/Pure/Parser.html">JSON::Pure::Parser</a></li>
+				
+					<li><a href="../../Class.html">Class</a></li>
+				
+					<li><a href="../../Date.html">Date</a></li>
+				
+					<li><a href="../../DateTime.html">DateTime</a></li>
+				
+					<li><a href="../../Enumerable.html">Enumerable</a></li>
+				
+					<li><a href="../../Exception.html">Exception</a></li>
+				
+					<li><a href="../../Kernel.html">Kernel</a></li>
+				
+					<li><a href="../../Object.html">Object</a></li>
+				
+					<li><a href="../../Range.html">Range</a></li>
+				
+					<li><a href="../../Regexp.html">Regexp</a></li>
+				
+					<li><a href="../../Struct.html">Struct</a></li>
+				
+					<li><a href="../../Symbol.html">Symbol</a></li>
+				
+					<li><a href="../../Time.html">Time</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">JSON::Editor::EditMenu</h1>
+
+		<div id="description">
+			<p>
+This class creates the Edit pulldown menu.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="copy-method" class="method-detail ">
+				<a name="method-i-copy"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">copy</span><span
+						class="method-args">(item)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Copy data from model into primary clipboard.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="copy-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/json/editor.rb, line 548</span>
+548:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">copy</span>(<span class="ruby-identifier">item</span>)
+549:         <span class="ruby-identifier">data</span> = <span class="ruby-constant">Editor</span>.<span class="ruby-identifier">model2data</span>(<span class="ruby-identifier">model</span>.<span class="ruby-identifier">iter_first</span>)
+550:         <span class="ruby-identifier">json</span> = <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">pretty_generate</span>(<span class="ruby-identifier">data</span>, <span class="ruby-value">:max_nesting</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">false</span>)
+551:         <span class="ruby-identifier">c</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Clipboard</span>.<span class="ruby-identifier">get</span>(<span class="ruby-constant">Gdk</span><span class="ruby-operator">::</span><span class="ruby-constant">Selection</span><span class="ruby-operator">::</span><span class="ruby-constant">PRIMARY</span>)
+552:         <span class="ruby-identifier">c</span>.<span class="ruby-identifier">text</span> = <span class="ruby-identifier">json</span>
+553:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="create-method" class="method-detail ">
+				<a name="method-i-create"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">create</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Create the menu.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="create-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/json/editor.rb, line 645</span>
+645:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create</span>
+646:         <span class="ruby-identifier">title</span> = <span class="ruby-constant">MenuItem</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">'Edit'</span>)
+647:         <span class="ruby-identifier">title</span>.<span class="ruby-identifier">submenu</span> = <span class="ruby-identifier">menu</span>
+648:         <span class="ruby-identifier">add_item</span>(<span class="ruby-value str">'Copy'</span>, <span class="ruby-value">cc</span>, &amp;<span class="ruby-identifier">method</span>(<span class="ruby-value">:copy</span>))
+649:         <span class="ruby-identifier">add_item</span>(<span class="ruby-value str">'Paste'</span>, <span class="ruby-value">vv</span>, &amp;<span class="ruby-identifier">method</span>(<span class="ruby-value">:paste</span>))
+650:         <span class="ruby-identifier">add_separator</span>
+651:         <span class="ruby-identifier">add_item</span>(<span class="ruby-value str">'Find'</span>, <span class="ruby-value">ff</span>, &amp;<span class="ruby-identifier">method</span>(<span class="ruby-value">:find</span>))
+652:         <span class="ruby-identifier">add_item</span>(<span class="ruby-value str">'Find Again'</span>, <span class="ruby-value">gg</span>, &amp;<span class="ruby-identifier">method</span>(<span class="ruby-value">:find_again</span>))
+653:         <span class="ruby-identifier">add_separator</span>
+654:         <span class="ruby-identifier">add_item</span>(<span class="ruby-value str">'Sort'</span>, <span class="ruby-value">SS</span>, &amp;<span class="ruby-identifier">method</span>(<span class="ruby-value">:sort</span>))
+655:         <span class="ruby-identifier">title</span>
+656:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="find-method" class="method-detail ">
+				<a name="method-i-find"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">find</span><span
+						class="method-args">(item)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Find a string in all nodes&#8217; contents and select the found node in the
+treeview.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="find-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/json/editor.rb, line 570</span>
+570:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">find</span>(<span class="ruby-identifier">item</span>)
+571:         <span class="ruby-ivar">@search</span> = <span class="ruby-identifier">ask_for_find_term</span>(<span class="ruby-ivar">@search</span>) <span class="ruby-keyword kw">or</span> <span class="ruby-keyword kw">return</span>
+572:         <span class="ruby-identifier">iter</span> = <span class="ruby-identifier">model</span>.<span class="ruby-identifier">get_iter</span>(<span class="ruby-value str">'0'</span>) <span class="ruby-keyword kw">or</span> <span class="ruby-keyword kw">return</span>
+573:         <span class="ruby-identifier">iter</span>.<span class="ruby-identifier">recursive_each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+574:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@iter</span>
+575:             <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@iter</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span>
+576:               <span class="ruby-keyword kw">next</span>
+577:             <span class="ruby-keyword kw">else</span>
+578:               <span class="ruby-ivar">@iter</span> = <span class="ruby-keyword kw">nil</span>
+579:               <span class="ruby-keyword kw">next</span>
+580:             <span class="ruby-keyword kw">end</span>
+581:           <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">i</span>[<span class="ruby-constant">CONTENT_COL</span>])
+582:              <span class="ruby-identifier">set_cursor</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">path</span>, <span class="ruby-keyword kw">nil</span>, <span class="ruby-keyword kw">false</span>)
+583:              <span class="ruby-ivar">@iter</span> = <span class="ruby-identifier">i</span>
+584:              <span class="ruby-keyword kw">break</span>
+585:           <span class="ruby-keyword kw">end</span>
+586:         <span class="ruby-keyword kw">end</span>
+587:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="find-again-method" class="method-detail ">
+				<a name="method-i-find_again"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">find_again</span><span
+						class="method-args">(item)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Repeat the last search given by <a
+href="EditMenu.html#method-i-find">#</a>.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="find-again-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/json/editor.rb, line 590</span>
+590:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">find_again</span>(<span class="ruby-identifier">item</span>)
+591:         <span class="ruby-ivar">@search</span> <span class="ruby-keyword kw">or</span> <span class="ruby-keyword kw">return</span>
+592:         <span class="ruby-identifier">iter</span> = <span class="ruby-identifier">model</span>.<span class="ruby-identifier">get_iter</span>(<span class="ruby-value str">'0'</span>)
+593:         <span class="ruby-identifier">iter</span>.<span class="ruby-identifier">recursive_each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+594:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@iter</span>
+595:             <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@iter</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">i</span>
+596:               <span class="ruby-keyword kw">next</span>
+597:             <span class="ruby-keyword kw">else</span>
+598:               <span class="ruby-ivar">@iter</span> = <span class="ruby-keyword kw">nil</span>
+599:               <span class="ruby-keyword kw">next</span>
+600:             <span class="ruby-keyword kw">end</span>
+601:           <span class="ruby-keyword kw">elsif</span> <span class="ruby-ivar">@search</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">i</span>[<span class="ruby-constant">CONTENT_COL</span>])
+602:              <span class="ruby-identifier">set_cursor</span>(<span class="ruby-identifier">i</span>.<span class="ruby-identifier">path</span>, <span class="ruby-keyword kw">nil</span>, <span class="ruby-keyword kw">false</span>)
+603:              <span class="ruby-ivar">@iter</span> = <span class="ruby-identifier">i</span>
+604:              <span class="ruby-keyword kw">break</span>
+605:           <span class="ruby-keyword kw">end</span>
+606:         <span class="ruby-keyword kw">end</span>
+607:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="paste-method" class="method-detail ">
+				<a name="method-i-paste"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">paste</span><span
+						class="method-args">(item)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Copy json text from primary clipboard into model.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="paste-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/json/editor.rb, line 556</span>
+556:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">paste</span>(<span class="ruby-identifier">item</span>)
+557:         <span class="ruby-identifier">c</span> = <span class="ruby-constant">Gtk</span><span class="ruby-operator">::</span><span class="ruby-constant">Clipboard</span>.<span class="ruby-identifier">get</span>(<span class="ruby-constant">Gdk</span><span class="ruby-operator">::</span><span class="ruby-constant">Selection</span><span class="ruby-operator">::</span><span class="ruby-constant">PRIMARY</span>)
+558:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">json</span> = <span class="ruby-identifier">c</span>.<span class="ruby-identifier">wait_for_text</span>
+559:           <span class="ruby-identifier">window</span>.<span class="ruby-identifier">ask_save</span> <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@changed</span>
+560:           <span class="ruby-keyword kw">begin</span>
+561:             <span class="ruby-identifier">window</span>.<span class="ruby-identifier">edit</span> <span class="ruby-identifier">json</span>
+562:           <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">JSON</span><span class="ruby-operator">::</span><span class="ruby-constant">ParserError</span>
+563:             <span class="ruby-identifier">window</span>.<span class="ruby-identifier">clear</span>
+564:           <span class="ruby-keyword kw">end</span>
+565:         <span class="ruby-keyword kw">end</span>
+566:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="sort-method" class="method-detail ">
+				<a name="method-i-sort"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">sort</span><span
+						class="method-args">(item)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Sort (Reverse sort) all elements of the selected array by the given
+expression. <em>x</em> is the element in question.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="sort-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/json/editor.rb, line 611</span>
+611:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sort</span>(<span class="ruby-identifier">item</span>)
+612:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">current</span> = <span class="ruby-identifier">selection</span>.<span class="ruby-identifier">selected</span>
+613:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">current</span>.<span class="ruby-identifier">type</span> <span class="ruby-operator">==</span> <span class="ruby-value str">'Array'</span>
+614:             <span class="ruby-identifier">parent</span> = <span class="ruby-identifier">current</span>.<span class="ruby-identifier">parent</span>
+615:             <span class="ruby-identifier">ary</span> = <span class="ruby-constant">Editor</span>.<span class="ruby-identifier">model2data</span>(<span class="ruby-identifier">current</span>)
+616:             <span class="ruby-identifier">order</span>, <span class="ruby-identifier">reverse</span> = <span class="ruby-identifier">ask_for_order</span>
+617:             <span class="ruby-identifier">order</span> <span class="ruby-keyword kw">or</span> <span class="ruby-keyword kw">return</span>
+618:             <span class="ruby-keyword kw">begin</span>
+619:               <span class="ruby-identifier">block</span> = <span class="ruby-identifier">eval</span> <span class="ruby-node">&quot;lambda { |x| #{order} }&quot;</span>
+620:               <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">reverse</span>
+621:                 <span class="ruby-identifier">ary</span>.<span class="ruby-identifier">sort!</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span><span class="ruby-operator">|</span> <span class="ruby-identifier">block</span>[<span class="ruby-identifier">b</span>] <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">block</span>[<span class="ruby-identifier">a</span>] }
+622:               <span class="ruby-keyword kw">else</span>
+623:                 <span class="ruby-identifier">ary</span>.<span class="ruby-identifier">sort!</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span><span class="ruby-operator">|</span> <span class="ruby-identifier">block</span>[<span class="ruby-identifier">a</span>] <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">block</span>[<span class="ruby-identifier">b</span>] }
+624:               <span class="ruby-keyword kw">end</span>
+625:             <span class="ruby-keyword kw">rescue</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+626:               <span class="ruby-constant">Editor</span>.<span class="ruby-identifier">error_dialog</span>(<span class="ruby-keyword kw">self</span>, <span class="ruby-node">&quot;Failed to sort Array with #{order}: #{e}!&quot;</span>)
+627:             <span class="ruby-keyword kw">else</span>
+628:               <span class="ruby-constant">Editor</span>.<span class="ruby-identifier">data2model</span>(<span class="ruby-identifier">ary</span>, <span class="ruby-identifier">model</span>, <span class="ruby-identifier">parent</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">m</span><span class="ruby-operator">|</span>
+629:                 <span class="ruby-identifier">m</span>.<span class="ruby-identifier">insert_before</span>(<span class="ruby-identifier">parent</span>, <span class="ruby-identifier">current</span>)
+630:               <span class="ruby-keyword kw">end</span>
+631:               <span class="ruby-identifier">model</span>.<span class="ruby-identifier">remove</span>(<span class="ruby-identifier">current</span>)
+632:               <span class="ruby-identifier">expand_collapse</span>(<span class="ruby-identifier">parent</span>)
+633:               <span class="ruby-identifier">window</span>.<span class="ruby-identifier">change</span>
+634:               <span class="ruby-identifier">toplevel</span>.<span class="ruby-identifier">display_status</span>(<span class="ruby-value str">&quot;Array has been sorted.&quot;</span>)
+635:             <span class="ruby-keyword kw">end</span>
+636:           <span class="ruby-keyword kw">else</span>
+637:             <span class="ruby-identifier">toplevel</span>.<span class="ruby-identifier">display_status</span>(<span class="ruby-value str">&quot;Only Array nodes can be sorted!&quot;</span>)
+638:           <span class="ruby-keyword kw">end</span>
+639:         <span class="ruby-keyword kw">else</span>
+640:             <span class="ruby-identifier">toplevel</span>.<span class="ruby-identifier">display_status</span>(<span class="ruby-value str">&quot;Select an Array to sort first!&quot;</span>)
+641:         <span class="ruby-keyword kw">end</span>
+642:       <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: command_line_usage.rdoc [rake-0.8.7 Documentation]</title>
+
+	<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file">
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../CHANGES.html">CHANGES</a></li>
+				
+					<li class="file"><a href="../MIT-LICENSE.html">MIT-LICENSE</a></li>
+				
+					<li class="file"><a href="../README.html">README</a></li>
+				
+					<li class="file"><a href="../TODO.html">TODO</a></li>
+				
+					<li class="file"><a href="../doc/command_line_usage_rdoc.html">command_line_usage.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/glossary_rdoc.html">glossary.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/proto_rake_rdoc.html">proto_rake.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/rakefile_rdoc.html">rakefile.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/rational_rdoc.html">rational.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_4_14_rdoc.html">rake-0.4.14.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_4_15_rdoc.html">rake-0.4.15.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_0_rdoc.html">rake-0.5.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_3_rdoc.html">rake-0.5.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_5_4_rdoc.html">rake-0.5.4.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_6_0_rdoc.html">rake-0.6.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_0_rdoc.html">rake-0.7.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_1_rdoc.html">rake-0.7.1.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_2_rdoc.html">rake-0.7.2.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_7_3_rdoc.html">rake-0.7.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_0_rdoc.html">rake-0.8.0.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_2_rdoc.html">rake-0.8.2.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_3_rdoc.html">rake-0.8.3.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_4_rdoc.html">rake-0.8.4.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_5_rdoc.html">rake-0.8.5.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_6_rdoc.html">rake-0.8.6.rdoc</a></li>
+				
+					<li class="file"><a href="../doc/release_notes/rake-0_8_7_rdoc.html">rake-0.8.7.rdoc</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../Rake/AltSystem.html">Rake::AltSystem</a></li>
+				
+					<li><a href="../Rake/Application.html">Rake::Application</a></li>
+				
+					<li><a href="../Rake/Cloneable.html">Rake::Cloneable</a></li>
+				
+					<li><a href="../Rake/CompositePublisher.html">Rake::CompositePublisher</a></li>
+				
+					<li><a href="../Rake/DefaultLoader.html">Rake::DefaultLoader</a></li>
+				
+					<li><a href="../Rake/EarlyTime.html">Rake::EarlyTime</a></li>
+				
+					<li><a href="../Rake/FileCreationTask.html">Rake::FileCreationTask</a></li>
+				
+					<li><a href="../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../Rake/FileList.html">Rake::FileList</a></li>
+				
+					<li><a href="../Rake/FileTask.html">Rake::FileTask</a></li>
+				
+					<li><a href="../Rake/FtpFile.html">Rake::FtpFile</a></li>
+				
+					<li><a href="../Rake/FtpUploader.html">Rake::FtpUploader</a></li>
+				
+					<li><a href="../Rake/GemPackageTask.html">Rake::GemPackageTask</a></li>
+				
+					<li><a href="../Rake/InvocationChain.html">Rake::InvocationChain</a></li>
+				
+					<li><a href="../Rake/InvocationChain/EmptyInvocationChain.html">Rake::InvocationChain::EmptyInvocationChain</a></li>
+				
+					<li><a href="../Rake/MakefileLoader.html">Rake::MakefileLoader</a></li>
+				
+					<li><a href="../Rake/MultiTask.html">Rake::MultiTask</a></li>
+				
+					<li><a href="../Rake/NameSpace.html">Rake::NameSpace</a></li>
+				
+					<li><a href="../Rake/PackageTask.html">Rake::PackageTask</a></li>
+				
+					<li><a href="../Rake/PseudoStatus.html">Rake::PseudoStatus</a></li>
+				
+					<li><a href="../Rake/RDocTask.html">Rake::RDocTask</a></li>
+				
+					<li><a href="../Rake/RubyForgePublisher.html">Rake::RubyForgePublisher</a></li>
+				
+					<li><a href="../Rake/RuleRecursionOverflowError.html">Rake::RuleRecursionOverflowError</a></li>
+				
+					<li><a href="../Rake/SshDirPublisher.html">Rake::SshDirPublisher</a></li>
+				
+					<li><a href="../Rake/SshFilePublisher.html">Rake::SshFilePublisher</a></li>
+				
+					<li><a href="../Rake/SshFreshDirPublisher.html">Rake::SshFreshDirPublisher</a></li>
+				
+					<li><a href="../Rake/Task.html">Rake::Task</a></li>
+				
+					<li><a href="../Rake/TaskArgumentError.html">Rake::TaskArgumentError</a></li>
+				
+					<li><a href="../Rake/TaskArguments.html">Rake::TaskArguments</a></li>
+				
+					<li><a href="../Rake/TaskLib.html">Rake::TaskLib</a></li>
+				
+					<li><a href="../Rake/TaskManager.html">Rake::TaskManager</a></li>
+				
+					<li><a href="../Rake/TestTask.html">Rake::TestTask</a></li>
+				
+					<li><a href="../Rake/Win32.html">Rake::Win32</a></li>
+				
+					<li><a href="../Rake/Win32/Win32HomeError.html">Rake::Win32::Win32HomeError</a></li>
+				
+					<li><a href="../Test.html">Test</a></li>
+				
+					<li><a href="../Test/Unit.html">Test::Unit</a></li>
+				
+					<li><a href="../Test/Unit/Collector.html">Test::Unit::Collector</a></li>
+				
+					<li><a href="../Test/Unit/Collector/Dir.html">Test::Unit::Collector::Dir</a></li>
+				
+					<li><a href="../CompositePublisher.html">CompositePublisher</a></li>
+				
+					<li><a href="../FileUtils.html">FileUtils</a></li>
+				
+					<li><a href="../Module.html">Module</a></li>
+				
+					<li><a href="../Object.html">Object</a></li>
+				
+					<li><a href="../RakeFileUtils.html">RakeFileUtils</a></li>
+				
+					<li><a href="../SshDirPublisher.html">SshDirPublisher</a></li>
+				
+					<li><a href="../SshFilePublisher.html">SshFilePublisher</a></li>
+				
+					<li><a href="../SshFreshDirPublisher.html">SshFreshDirPublisher</a></li>
+				
+					<li><a href="../String.html">String</a></li>
+				
+					<li><a href="../Sys.html">Sys</a></li>
+				
+					<li><a href="../Time.html">Time</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1>Rake Command Line Usage</h1>
+<p>
+Rake is invoked from the command line using:
+</p>
+<pre>
+   % rake [&lt;em&gt;options&lt;/em&gt; ...]  [&lt;em&gt;VAR&lt;/em&gt;=&lt;em&gt;VALUE&lt;/em&gt;]  [&lt;em&gt;targets&lt;/em&gt; ...]
+</pre>
+<p>
+Options are:
+</p>
+<dl>
+<dt><tt><em>name</em>=<em>value</em></tt></dt><dd><p>
+Set the environment variable <em>name</em> to <em>value</em> during the
+execution of the <b>rake</b> command.  You can access the value by using
+ENV[&#8216;<em>name</em>&#8217;].  
+</p>
+</dd>
+<dt><tt>--classic-namespace</tt> (-n)</dt><dd><p>
+Import the Task, FileTask, and FileCreateTask into the top-level scope to
+be compatible with older versions of Rake.  Alternatively you can include
+the line <tt>require 'rake/classic_namespace'</tt> in your Rakefile to get
+the classic behavior.
+</p>
+</dd>
+<dt><tt>--describe</tt> <em>pattern</em> (-D)</dt><dd><p>
+Describe the tasks (matching optional PATTERN), then exit.
+</p>
+</dd>
+<dt><tt>--dry-run</tt> (-n)</dt><dd><p>
+Do a dry run.  Print the tasks invoked and executed, but do not actually
+execute any of the actions.
+</p>
+</dd>
+<dt><tt>--execute</tt> <em>code</em> (-e)</dt><dd><p>
+Execute some Ruby code and exit.
+</p>
+</dd>
+<dt><tt>--execute-print</tt> <em>code</em> (-p)</dt><dd><p>
+Execute some Ruby code, print the result, and exit.
+</p>
+</dd>
+<dt><tt>--execute-continue</tt> <em>code</em> (-p)</dt><dd><p>
+Execute some Ruby code, then continue with normal task processing.
+</p>
+</dd>
+<dt><tt>--help</tt>  (-H)</dt><dd><p>
+Display some help text and exit.
+</p>
+</dd>
+<dt><tt>--libdir</tt> <em>directory</em>  (-I)</dt><dd><p>
+Add <em>directory</em> to the list of directories searched for require.
+</p>
+</dd>
+<dt><tt>--nosearch</tt>  (-N)</dt><dd><p>
+Do not search for a Rakefile in parent directories.
+</p>
+</dd>
+<dt><tt>--prereqs</tt>  (-P)</dt><dd><p>
+Display a list of all tasks and their immediate prerequisites.
+</p>
+</dd>
+<dt><tt>--quiet</tt> (-q)</dt><dd><p>
+Do not echo commands from <a href="../FileUtils.html">FileUtils</a>.
+</p>
+</dd>
+<dt><tt>--rakefile</tt> <em>filename</em> (-f)</dt><dd><p>
+Use <em>filename</em> as the name of the rakefile. The default rakefile
+names are <tt>rakefile</tt> and <tt>Rakefile</tt> (with <tt>rakefile</tt>
+taking precedence). If the rakefile is not found in the current directory,
+<tt>rake</tt> will search parent directories for a match. The directory
+where the Rakefile is found will become the current directory for the
+actions executed in the Rakefile.
+</p>
+</dd>
+<dt><tt>--rakelibdir</tt> <em>rakelibdir</em> (-R)</dt><dd><p>
+Auto-import any .rake files in RAKELIBDIR. (default is
+&#8216;rakelib&#8217;)
+</p>
+</dd>
+<dt><tt>--require</tt> <em>name</em> (-r)</dt><dd><p>
+Require <em>name</em> before executing the Rakefile.
+</p>
+</dd>
+<dt><tt>--rules</tt></dt><dd><p>
+Trace the rules resolution.
+</p>
+</dd>
+<dt><tt>--silent (-s)</tt></dt><dd><p>
+Like &#8212;quiet, but also suppresses the &#8216;in directory&#8217;
+announcement.
+</p>
+</dd>
+<dt><tt>--system</tt> (-g)</dt><dd><p>
+Use the system wide (global) rakefiles. The project Rakefile is ignored. By
+default, the system wide rakefiles are used only if no project Rakefile is
+found. On Unix-like system, the system wide rake files are located in
+$HOME/.rake. On a windows system they are stored in $APPDATA/Rake.
+</p>
+</dd>
+<dt><tt>--no-system</tt> (-G)</dt><dd><p>
+Use the project level Rakefile, ignoring the system-wide (global)
+rakefiles.
+</p>
+</dd>
+<dt><tt>--tasks</tt> (-T)</dt><dd><p>
+Display a list of the major tasks and their comments.  Comments are defined
+using the &#8220;desc&#8221; command.
+</p>
+</dd>
+<dt><tt>--trace</tt> (-t)</dt><dd><p>
+Turn on invoke/execute tracing. Also enable full backtrace on errors.
+</p>
+</dd>
+<dt><tt>--usage</tt> (-h)</dt><dd><p>
+Display a usage message and exit.
+</p>
+</dd>
+<dt><tt>--verbose</tt> (-v)</dt><dd><p>
+Echo the <a href="../Sys.html">Sys</a> commands to standard output.
+</p>
+</dd>
+<dt><tt>--version</tt> (-V)</dt><dd><p>
+Display the program version and exit.
+</p>
+</dd>
+</dl>
+<p>
+In addition, any command line option of the form
+<em>VAR</em>=<em>VALUE</em> will be added to the environment hash
+<tt>ENV</tt> and may be tested in the Rakefile.
+</p>
+
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
+
