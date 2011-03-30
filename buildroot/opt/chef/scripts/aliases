@@ -1,4 +1,0 @@
-alias rubydo="rvm ruby"
-alias gemdo="rvm gem"
-alias rakedo="rvm rake"
-alias multiruby="rvm ruby"
