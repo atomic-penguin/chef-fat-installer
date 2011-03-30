@@ -167,7 +167,6 @@
 #define HAVE_FTRUNCATE 1
 #define HAVE_TIMES 1
 #define HAVE_UTIMES 1
-#define HAVE_UTIMENSAT 1
 #define HAVE_FCNTL 1
 #define HAVE_LOCKF 1
 #define HAVE_LSTAT 1

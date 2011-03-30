@@ -1,7 +1,7 @@
-Tue, 29 Mar 2011 15:01:32 -0400
-lib/mixlib/log.rb	Tue, 29 Mar 2011 15:01:08 -0400
-lib/mixlib/log/version.rb	Tue, 29 Mar 2011 15:01:08 -0400
-lib/mixlib/log/formatter.rb	Tue, 29 Mar 2011 15:01:08 -0400
-README.rdoc	Tue, 29 Mar 2011 15:01:08 -0400
-LICENSE	Tue, 29 Mar 2011 15:01:08 -0400
-NOTICE	Tue, 29 Mar 2011 15:01:08 -0400
+Wed, 30 Mar 2011 13:41:12 -0400
+lib/mixlib/log/formatter.rb	Wed, 30 Mar 2011 13:40:48 -0400
+lib/mixlib/log/version.rb	Wed, 30 Mar 2011 13:40:48 -0400
+lib/mixlib/log.rb	Wed, 30 Mar 2011 13:40:48 -0400
+README.rdoc	Wed, 30 Mar 2011 13:40:48 -0400
+LICENSE	Wed, 30 Mar 2011 13:40:48 -0400
+NOTICE	Wed, 30 Mar 2011 13:40:48 -0400

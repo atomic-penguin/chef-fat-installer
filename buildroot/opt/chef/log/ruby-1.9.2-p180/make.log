@@ -1,0 +1,589 @@
+[2011-03-30 13:36:12] make 
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o main.o -c main.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o dln.o -c dln.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o dmydln.o -c dmydln.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o dmyencoding.o -c dmyencoding.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o version.o -c version.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o dmyversion.o -c dmyversion.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o miniprelude.o -c miniprelude.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o array.o -c array.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o bignum.o -c bignum.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o class.o -c class.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o compar.o -c compar.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o complex.o -c complex.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o dir.o -c dir.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o dln_find.o -c dln_find.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o enum.o -c enum.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o enumerator.o -c enumerator.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o error.o -c error.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o eval.o -c eval.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o load.o -c load.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o proc.o -c proc.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o file.o -c file.c
+file.c: In function ‘file_expand_path’:
+file.c:2852: warning: ‘b’ may be used uninitialized in this function
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o gc.o -c gc.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o hash.o -c hash.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o inits.o -c inits.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o io.o -c io.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o marshal.o -c marshal.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o math.o -c math.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o node.o -c node.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o numeric.o -c numeric.c
+numeric.c: In function ‘int_chr’:
+numeric.c:2075: warning: comparison of unsigned expression < 0 is always false
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o object.o -c object.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o pack.o -c pack.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o parse.o -c parse.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o process.o -c process.c
+process.c: In function ‘p_uid_change_privilege’:
+process.c:4111: warning: signed and unsigned type in conditional expression
+process.c:4112: warning: signed and unsigned type in conditional expression
+process.c:4113: warning: signed and unsigned type in conditional expression
+process.c: In function ‘p_gid_change_privilege’:
+process.c:4730: warning: signed and unsigned type in conditional expression
+process.c:4731: warning: signed and unsigned type in conditional expression
+process.c:4732: warning: signed and unsigned type in conditional expression
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o random.o -c random.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o range.o -c range.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o rational.o -c rational.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o re.o -c re.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o regcomp.o -c regcomp.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o regenc.o -c regenc.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o regerror.o -c regerror.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o regexec.o -c regexec.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o regparse.o -c regparse.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o regsyntax.o -c regsyntax.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o ruby.o -c ruby.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o safe.o -c safe.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o signal.o -c signal.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o sprintf.o -c sprintf.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o st.o -c st.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o strftime.o -c strftime.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o string.o -c string.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o struct.o -c struct.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o time.o -c time.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o transcode.o -c transcode.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o util.o -c util.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o variable.o -c variable.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o compile.o -c compile.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o debug.o -c debug.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o iseq.o -c iseq.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o vm.o -c vm.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o vm_dump.o -c vm_dump.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o thread.o -c thread.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o cont.o -c cont.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o ascii.o -c ./enc/ascii.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o us_ascii.o -c ./enc/us_ascii.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o unicode.o -c ./enc/unicode.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o utf_8.o -c ./enc/utf_8.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o newline.o -c newline.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o strlcpy.o -c ./missing/strlcpy.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o strlcat.o -c ./missing/strlcat.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o dmyext.o -c dmyext.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -L.  -rdynamic -Wl,-export-dynamic   main.o dmydln.o dmyencoding.o dmyversion.o miniprelude.o array.o bignum.o class.o compar.o complex.o dir.o dln_find.o enum.o enumerator.o error.o eval.o load.o proc.o file.o gc.o hash.o inits.o io.o marshal.o math.o node.o numeric.o object.o pack.o parse.o process.o random.o range.o rational.o re.o regcomp.o regenc.o regerror.o regexec.o regparse.o regsyntax.o ruby.o safe.o signal.o sprintf.o st.o strftime.o string.o struct.o time.o transcode.o util.o variable.o compile.o debug.o iseq.o vm.o vm_dump.o thread.o cont.o ascii.o us_ascii.o unicode.o utf_8.o newline.o strlcpy.o strlcat.o  dmyext.o -lpthread -lrt -ldl -lcrypt -lm   -o miniruby
+rbconfig.rb updated
+./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb  ./enc/make_encmake.rb --builtin-encs="ascii.o us_ascii.o unicode.o utf_8.o" --builtin-transes="newline.o" enc.mk 
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o encoding.o -c encoding.c
+./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb  -I. ./tool/compile_prelude.rb ./prelude.rb ./enc/prelude.rb ./gem_prelude.rb prelude.c
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -I. -I.ext/include/i686-linux -I./include -I. -DRUBY_EXPORT   -o prelude.o -c prelude.c
+ar rcu libruby-static.a dln.o encoding.o version.o array.o bignum.o class.o compar.o complex.o dir.o dln_find.o enum.o enumerator.o error.o eval.o load.o proc.o file.o gc.o hash.o inits.o io.o marshal.o math.o node.o numeric.o object.o pack.o parse.o process.o random.o range.o rational.o re.o regcomp.o regenc.o regerror.o regexec.o regparse.o regsyntax.o ruby.o safe.o signal.o sprintf.o st.o strftime.o string.o struct.o time.o transcode.o util.o variable.o compile.o debug.o iseq.o vm.o vm_dump.o thread.o cont.o ascii.o us_ascii.o unicode.o utf_8.o newline.o strlcpy.o strlcat.o  prelude.o dmyext.o
+gcc -shared -Wl,-soname,libruby.so.1.9   dln.o encoding.o version.o array.o bignum.o class.o compar.o complex.o dir.o dln_find.o enum.o enumerator.o error.o eval.o load.o proc.o file.o gc.o hash.o inits.o io.o marshal.o math.o node.o numeric.o object.o pack.o parse.o process.o random.o range.o rational.o re.o regcomp.o regenc.o regerror.o regexec.o regparse.o regsyntax.o ruby.o safe.o signal.o sprintf.o st.o strftime.o string.o struct.o time.o transcode.o util.o variable.o compile.o debug.o iseq.o vm.o vm_dump.o thread.o cont.o ascii.o us_ascii.o unicode.o utf_8.o newline.o strlcpy.o strlcat.o  prelude.o dmyext.o -lpthread -lrt -ldl -lcrypt -lm   -o libruby.so.1.9.1
+objcopy -w -L 'Init_*' -L '*_threadptr_*' libruby.so.1.9.1
+./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb  ./tool/generic_erb.rb -c -o encdb.h ./template/encdb.h.tmpl ./enc enc
+encdb.h unchanged
+make -f enc.mk RUBY="./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb " MINIRUBY="./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb "  enc
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180'
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/encdb.o -c ./enc/encdb.c
+gcc -shared -o .ext/i686-linux/enc/encdb.so enc/encdb.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/big5.o -c ./enc/big5.c
+gcc -shared -o .ext/i686-linux/enc/big5.so enc/big5.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/cp949.o -c ./enc/cp949.c
+gcc -shared -o .ext/i686-linux/enc/cp949.so enc/cp949.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/emacs_mule.o -c ./enc/emacs_mule.c
+gcc -shared -o .ext/i686-linux/enc/emacs_mule.so enc/emacs_mule.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/euc_jp.o -c ./enc/euc_jp.c
+gcc -shared -o .ext/i686-linux/enc/euc_jp.so enc/euc_jp.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/euc_kr.o -c ./enc/euc_kr.c
+gcc -shared -o .ext/i686-linux/enc/euc_kr.so enc/euc_kr.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/euc_tw.o -c ./enc/euc_tw.c
+gcc -shared -o .ext/i686-linux/enc/euc_tw.so enc/euc_tw.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/gb2312.o -c ./enc/gb2312.c
+gcc -shared -o .ext/i686-linux/enc/gb2312.so enc/gb2312.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/gb18030.o -c ./enc/gb18030.c
+gcc -shared -o .ext/i686-linux/enc/gb18030.so enc/gb18030.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/gbk.o -c ./enc/gbk.c
+gcc -shared -o .ext/i686-linux/enc/gbk.so enc/gbk.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_1.o -c ./enc/iso_8859_1.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_1.so enc/iso_8859_1.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_2.o -c ./enc/iso_8859_2.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_2.so enc/iso_8859_2.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_3.o -c ./enc/iso_8859_3.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_3.so enc/iso_8859_3.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_4.o -c ./enc/iso_8859_4.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_4.so enc/iso_8859_4.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_5.o -c ./enc/iso_8859_5.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_5.so enc/iso_8859_5.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_6.o -c ./enc/iso_8859_6.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_6.so enc/iso_8859_6.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_7.o -c ./enc/iso_8859_7.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_7.so enc/iso_8859_7.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_8.o -c ./enc/iso_8859_8.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_8.so enc/iso_8859_8.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_9.o -c ./enc/iso_8859_9.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_9.so enc/iso_8859_9.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_10.o -c ./enc/iso_8859_10.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_10.so enc/iso_8859_10.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_11.o -c ./enc/iso_8859_11.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_11.so enc/iso_8859_11.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_13.o -c ./enc/iso_8859_13.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_13.so enc/iso_8859_13.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_14.o -c ./enc/iso_8859_14.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_14.so enc/iso_8859_14.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_15.o -c ./enc/iso_8859_15.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_15.so enc/iso_8859_15.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/iso_8859_16.o -c ./enc/iso_8859_16.c
+gcc -shared -o .ext/i686-linux/enc/iso_8859_16.so enc/iso_8859_16.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/koi8_r.o -c ./enc/koi8_r.c
+gcc -shared -o .ext/i686-linux/enc/koi8_r.so enc/koi8_r.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/koi8_u.o -c ./enc/koi8_u.c
+gcc -shared -o .ext/i686-linux/enc/koi8_u.so enc/koi8_u.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/shift_jis.o -c ./enc/shift_jis.c
+gcc -shared -o .ext/i686-linux/enc/shift_jis.so enc/shift_jis.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/utf_16be.o -c ./enc/utf_16be.c
+gcc -shared -o .ext/i686-linux/enc/utf_16be.so enc/utf_16be.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/utf_16le.o -c ./enc/utf_16le.c
+gcc -shared -o .ext/i686-linux/enc/utf_16le.so enc/utf_16le.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/utf_32be.o -c ./enc/utf_32be.c
+gcc -shared -o .ext/i686-linux/enc/utf_32be.so enc/utf_32be.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/utf_32le.o -c ./enc/utf_32le.c
+gcc -shared -o .ext/i686-linux/enc/utf_32le.so enc/utf_32le.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/windows_1251.o -c ./enc/windows_1251.c
+gcc -shared -o .ext/i686-linux/enc/windows_1251.so enc/windows_1251.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180'
+make -f enc.mk RUBY="./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb " MINIRUBY="./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb "  srcs
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180'
+make[1]: Nothing to be done for `srcs'.
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180'
+./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb  ./tool/generic_erb.rb -c -o transdb.h ./template/transdb.h.tmpl ./enc/trans enc/trans
+transdb.h unchanged
+make -f enc.mk RUBY="./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb " MINIRUBY="./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb "  trans
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180'
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/transdb.o -c ./enc/trans/transdb.c
+gcc -shared -o .ext/i686-linux/enc/trans/transdb.so enc/trans/transdb.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/big5.o -c ./enc/trans/big5.c
+gcc -shared -o .ext/i686-linux/enc/trans/big5.so enc/trans/big5.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/chinese.o -c ./enc/trans/chinese.c
+gcc -shared -o .ext/i686-linux/enc/trans/chinese.so enc/trans/chinese.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/emoji.o -c ./enc/trans/emoji.c
+gcc -shared -o .ext/i686-linux/enc/trans/emoji.so enc/trans/emoji.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/emoji_iso2022_kddi.o -c ./enc/trans/emoji_iso2022_kddi.c
+gcc -shared -o .ext/i686-linux/enc/trans/emoji_iso2022_kddi.so enc/trans/emoji_iso2022_kddi.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/emoji_sjis_docomo.o -c ./enc/trans/emoji_sjis_docomo.c
+gcc -shared -o .ext/i686-linux/enc/trans/emoji_sjis_docomo.so enc/trans/emoji_sjis_docomo.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/emoji_sjis_kddi.o -c ./enc/trans/emoji_sjis_kddi.c
+gcc -shared -o .ext/i686-linux/enc/trans/emoji_sjis_kddi.so enc/trans/emoji_sjis_kddi.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/emoji_sjis_softbank.o -c ./enc/trans/emoji_sjis_softbank.c
+gcc -shared -o .ext/i686-linux/enc/trans/emoji_sjis_softbank.so enc/trans/emoji_sjis_softbank.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/escape.o -c ./enc/trans/escape.c
+gcc -shared -o .ext/i686-linux/enc/trans/escape.so enc/trans/escape.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/gb18030.o -c ./enc/trans/gb18030.c
+gcc -shared -o .ext/i686-linux/enc/trans/gb18030.so enc/trans/gb18030.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/gbk.o -c ./enc/trans/gbk.c
+gcc -shared -o .ext/i686-linux/enc/trans/gbk.so enc/trans/gbk.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/iso2022.o -c ./enc/trans/iso2022.c
+gcc -shared -o .ext/i686-linux/enc/trans/iso2022.so enc/trans/iso2022.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/japanese.o -c ./enc/trans/japanese.c
+gcc -shared -o .ext/i686-linux/enc/trans/japanese.so enc/trans/japanese.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/japanese_euc.o -c ./enc/trans/japanese_euc.c
+gcc -shared -o .ext/i686-linux/enc/trans/japanese_euc.so enc/trans/japanese_euc.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/japanese_sjis.o -c ./enc/trans/japanese_sjis.c
+gcc -shared -o .ext/i686-linux/enc/trans/japanese_sjis.so enc/trans/japanese_sjis.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/korean.o -c ./enc/trans/korean.c
+gcc -shared -o .ext/i686-linux/enc/trans/korean.so enc/trans/korean.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/single_byte.o -c ./enc/trans/single_byte.c
+gcc -shared -o .ext/i686-linux/enc/trans/single_byte.so enc/trans/single_byte.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/utf8_mac.o -c ./enc/trans/utf8_mac.c
+gcc -shared -o .ext/i686-linux/enc/trans/utf8_mac.so enc/trans/utf8_mac.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+gcc -I. -I.ext/include/i686-linux -I./include -I. -D_FILE_OFFSET_BITS=64  -DONIG_ENC_REGISTER=rb_enc_register -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o enc/trans/utf_16_32.o -c ./enc/trans/utf_16_32.c
+gcc -shared -o .ext/i686-linux/enc/trans/utf_16_32.so enc/trans/utf_16_32.o -L. -L. -L.  -rdynamic -Wl,-export-dynamic    -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm  
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180'
+make -f enc.mk RUBY="./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb " MINIRUBY="./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb "  encs
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180'
+/bin/mkdir -p .ext/i686-linux/enc .ext/i686-linux/enc/trans enc enc/trans
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180'
+compiling -test-/bug-3662
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/-test-/bug-3662'
+/bin/mkdir -p ../../../.ext/i686-linux/-test-/bug-3662
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/-test-/bug-3662 -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o bug.o -c bug.c
+gcc -shared -o ../../../.ext/i686-linux/-test-/bug-3662/bug.so bug.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/-test-/bug-3662'
+compiling bigdecimal
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/bigdecimal'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/bigdecimal -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o bigdecimal.o -c bigdecimal.c
+gcc -shared -o ../../.ext/i686-linux/bigdecimal.so bigdecimal.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+/bin/mkdir -p ../../.ext/common/bigdecimal
+cp ../.././ext/bigdecimal/lib/bigdecimal/util.rb ../../.ext/common/bigdecimal
+cp ../.././ext/bigdecimal/lib/bigdecimal/math.rb ../../.ext/common/bigdecimal
+cp ../.././ext/bigdecimal/lib/bigdecimal/newton.rb ../../.ext/common/bigdecimal
+cp ../.././ext/bigdecimal/lib/bigdecimal/ludcmp.rb ../../.ext/common/bigdecimal
+cp ../.././ext/bigdecimal/lib/bigdecimal/jacobian.rb ../../.ext/common/bigdecimal
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/bigdecimal'
+compiling continuation
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/continuation'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/continuation -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o continuation.o -c continuation.c
+gcc -shared -o ../../.ext/i686-linux/continuation.so continuation.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/continuation'
+compiling coverage
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/coverage'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/coverage -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o coverage.o -c coverage.c
+gcc -shared -o ../../.ext/i686-linux/coverage.so coverage.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/coverage'
+compiling curses
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/curses'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/curses -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o curses.o -c curses.c
+gcc -shared -o ../../.ext/i686-linux/curses.so curses.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lncursesw -ltermcap  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/curses'
+compiling dbm
+compiling digest
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/digest -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o digest.o -c digest.c
+gcc -shared -o ../../.ext/i686-linux/digest.so digest.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+/bin/mkdir -p ../../.ext/include/ruby
+/bin/mkdir -p ../../.ext/common/digest
+cp ../.././ext/digest/lib/digest.rb ../../.ext/common
+cp ../.././ext/digest/lib/digest/hmac.rb ../../.ext/common/digest
+cp ../.././ext/digest/digest.h ../../.ext/include/ruby
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest'
+compiling digest/bubblebabble
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest/bubblebabble'
+/bin/mkdir -p ../../../.ext/i686-linux/digest
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/digest/bubblebabble -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o bubblebabble.o -c bubblebabble.c
+gcc -shared -o ../../../.ext/i686-linux/digest/bubblebabble.so bubblebabble.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest/bubblebabble'
+compiling digest/md5
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest/md5'
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/digest/md5 -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o md5init.o -c md5init.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/digest/md5 -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o md5ossl.o -c md5ossl.c
+gcc -shared -o ../../../.ext/i686-linux/digest/md5.so md5init.o md5ossl.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lcrypto  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest/md5'
+compiling digest/rmd160
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest/rmd160'
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/digest/rmd160 -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o rmd160init.o -c rmd160init.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/digest/rmd160 -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o rmd160ossl.o -c rmd160ossl.c
+gcc -shared -o ../../../.ext/i686-linux/digest/rmd160.so rmd160init.o rmd160ossl.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lcrypto  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest/rmd160'
+compiling digest/sha1
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest/sha1'
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/digest/sha1 -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o sha1init.o -c sha1init.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/digest/sha1 -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o sha1ossl.o -c sha1ossl.c
+gcc -shared -o ../../../.ext/i686-linux/digest/sha1.so sha1init.o sha1ossl.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lcrypto  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest/sha1'
+compiling digest/sha2
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest/sha2'
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/digest/sha2 -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o sha2init.o -c sha2init.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/digest/sha2 -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o sha2ossl.o -c sha2ossl.c
+gcc -shared -o ../../../.ext/i686-linux/digest/sha2.so sha2init.o sha2ossl.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lcrypto  -lpthread -lrt -ldl -lcrypt -lm   -lc
+cp ../../.././ext/digest/sha2/lib/sha2.rb ../../../.ext/common/digest
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/digest/sha2'
+compiling dl
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/dl'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/dl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -fno-defer-pop -fno-omit-frame-pointer  -o dl.o -c dl.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/dl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -fno-defer-pop -fno-omit-frame-pointer  -o cptr.o -c cptr.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/dl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -fno-defer-pop -fno-omit-frame-pointer  -o handle.o -c handle.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/dl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -fno-defer-pop -fno-omit-frame-pointer  -o cfunc.o -c cfunc.c
+gcc -shared -o ../../.ext/i686-linux/dl.so dl.o cptr.o handle.o cfunc.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -ldl  -lpthread -lrt -ldl -lcrypt -lm   -lc
+/bin/mkdir -p ../../.ext/common/dl
+cp ../.././ext/dl/lib/dl.rb ../../.ext/common
+cp ../.././ext/dl/lib/dl/import.rb ../../.ext/common/dl
+cp ../.././ext/dl/lib/dl/cparser.rb ../../.ext/common/dl
+cp ../.././ext/dl/lib/dl/stack.rb ../../.ext/common/dl
+cp ../.././ext/dl/lib/dl/types.rb ../../.ext/common/dl
+cp ../.././ext/dl/lib/dl/func.rb ../../.ext/common/dl
+cp ../.././ext/dl/lib/dl/callback.rb ../../.ext/common/dl
+cp ../.././ext/dl/lib/dl/pack.rb ../../.ext/common/dl
+cp ../.././ext/dl/lib/dl/struct.rb ../../.ext/common/dl
+cp ../.././ext/dl/lib/dl/value.rb ../../.ext/common/dl
+cp ../.././ext/dl/dl.h ../../.ext/include/ruby
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/dl'
+compiling dl/callback
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/dl/callback'
+/bin/mkdir -p ../../../.ext/i686-linux/dl
+generating callback.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/dl/callback -I../../.././ext/dl/callback/.. -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o callback.o -c callback.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/dl/callback -I../../.././ext/dl/callback/.. -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o callback-0.o -c callback-0.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/dl/callback -I../../.././ext/dl/callback/.. -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o callback-1.o -c callback-1.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/dl/callback -I../../.././ext/dl/callback/.. -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o callback-2.o -c callback-2.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/dl/callback -I../../.././ext/dl/callback/.. -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o callback-3.o -c callback-3.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/dl/callback -I../../.././ext/dl/callback/.. -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o callback-4.o -c callback-4.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/dl/callback -I../../.././ext/dl/callback/.. -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o callback-5.o -c callback-5.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/dl/callback -I../../.././ext/dl/callback/.. -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o callback-6.o -c callback-6.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/dl/callback -I../../.././ext/dl/callback/.. -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o callback-7.o -c callback-7.c
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/dl/callback -I../../.././ext/dl/callback/.. -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o callback-8.o -c callback-8.c
+gcc -shared -o ../../../.ext/i686-linux/dl/callback.so callback.o callback-0.o callback-1.o callback-2.o callback-3.o callback-4.o callback-5.o callback-6.o callback-7.o callback-8.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/dl/callback'
+compiling dl/win32
+compiling etc
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/etc'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/etc -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o etc.o -c etc.c
+gcc -shared -o ../../.ext/i686-linux/etc.so etc.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/etc'
+compiling fcntl
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/fcntl'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/fcntl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o fcntl.o -c fcntl.c
+gcc -shared -o ../../.ext/i686-linux/fcntl.so fcntl.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/fcntl'
+compiling fiber
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/fiber'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/fiber -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o fiber.o -c fiber.c
+gcc -shared -o ../../.ext/i686-linux/fiber.so fiber.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/fiber'
+compiling fiddle
+ffi.h is missing. Please install libffi.
+compiling gdbm
+compiling iconv
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/iconv'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/iconv -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o iconv.o -c iconv.c
+gcc -shared -o ../../.ext/i686-linux/iconv.so iconv.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/iconv'
+compiling io/nonblock
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/io/nonblock'
+/bin/mkdir -p ../../../.ext/i686-linux/io
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/io/nonblock -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o nonblock.o -c nonblock.c
+gcc -shared -o ../../../.ext/i686-linux/io/nonblock.so nonblock.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/io/nonblock'
+compiling io/wait
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/io/wait'
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/io/wait -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o wait.o -c wait.c
+gcc -shared -o ../../../.ext/i686-linux/io/wait.so wait.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/io/wait'
+compiling json
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/json'
+/bin/mkdir -p ../../.ext/common/json
+/bin/mkdir -p ../../.ext/common/json/add
+cp ../.././ext/json/lib/json.rb ../../.ext/common
+cp ../.././ext/json/lib/json/common.rb ../../.ext/common/json
+cp ../.././ext/json/lib/json/ext.rb ../../.ext/common/json
+cp ../.././ext/json/lib/json/editor.rb ../../.ext/common/json
+cp ../.././ext/json/lib/json/version.rb ../../.ext/common/json
+cp ../.././ext/json/lib/json/add/rails.rb ../../.ext/common/json/add
+cp ../.././ext/json/lib/json/add/core.rb ../../.ext/common/json/add
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/json'
+compiling json/generator
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/json/generator'
+/bin/mkdir -p ../../../.ext/i686-linux/json/ext
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/json/generator -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o generator.o -c generator.c
+gcc -shared -o ../../../.ext/i686-linux/json/ext/generator.so generator.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/json/generator'
+compiling json/parser
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/json/parser'
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/json/parser -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o parser.o -c parser.c
+gcc -shared -o ../../../.ext/i686-linux/json/ext/parser.so parser.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/json/parser'
+compiling mathn/complex
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/mathn/complex'
+/bin/mkdir -p ../../../.ext/i686-linux/mathn
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/mathn/complex -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o complex.o -c complex.c
+gcc -shared -o ../../../.ext/i686-linux/mathn/complex.so complex.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/mathn/complex'
+compiling mathn/rational
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/mathn/rational'
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/mathn/rational -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o rational.o -c rational.c
+gcc -shared -o ../../../.ext/i686-linux/mathn/rational.so rational.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/mathn/rational'
+compiling nkf
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/nkf'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/nkf -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o nkf.o -c nkf.c
+gcc -shared -o ../../.ext/i686-linux/nkf.so nkf.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+cp ../.././ext/nkf/lib/kconv.rb ../../.ext/common
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/nkf'
+compiling objspace
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/objspace'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/objspace -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o objspace.o -c objspace.c
+gcc -shared -o ../../.ext/i686-linux/objspace.so objspace.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/objspace'
+compiling openssl
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/openssl'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_config.o -c ossl_config.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl.o -c ossl.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_pkey_ec.o -c ossl_pkey_ec.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_asn1.o -c ossl_asn1.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_hmac.o -c ossl_hmac.c
+ossl_hmac.c: In function ‘ossl_hmac_hexdigest’:
+ossl_hmac.c:162: warning: comparison between signed and unsigned
+ossl_hmac.c: In function ‘ossl_hmac_s_hexdigest’:
+ossl_hmac.c:225: warning: comparison between signed and unsigned
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_pkey_rsa.o -c ossl_pkey_rsa.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_x509revoked.o -c ossl_x509revoked.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_ns_spki.o -c ossl_ns_spki.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_engine.o -c ossl_engine.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_pkcs12.o -c ossl_pkcs12.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_x509cert.o -c ossl_x509cert.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_x509req.o -c ossl_x509req.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_bio.o -c ossl_bio.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_pkey_dsa.o -c ossl_pkey_dsa.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_ocsp.o -c ossl_ocsp.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_x509name.o -c ossl_x509name.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_x509ext.o -c ossl_x509ext.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_pkey_dh.o -c ossl_pkey_dh.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_x509store.o -c ossl_x509store.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o openssl_missing.o -c openssl_missing.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_pkey.o -c ossl_pkey.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_ssl.o -c ossl_ssl.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_bn.o -c ossl_bn.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_x509crl.o -c ossl_x509crl.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_x509attr.o -c ossl_x509attr.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_rand.o -c ossl_rand.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_digest.o -c ossl_digest.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_cipher.o -c ossl_cipher.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_ssl_session.o -c ossl_ssl_session.c
+ossl_ssl_session.c: In function ‘ossl_ssl_session_to_der’:
+ossl_ssl_session.c:208: warning: comparison between signed and unsigned
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_pkcs5.o -c ossl_pkcs5.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_pkcs7.o -c ossl_pkcs7.c
+ossl_pkcs7.c: In function ‘ossl_pkcs7_sym2typeid’:
+ossl_pkcs7.c:376: warning: comparison between signed and unsigned
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/openssl -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ossl_x509.o -c ossl_x509.c
+gcc -shared -o ../../.ext/i686-linux/openssl.so ossl_config.o ossl.o ossl_pkey_ec.o ossl_asn1.o ossl_hmac.o ossl_pkey_rsa.o ossl_x509revoked.o ossl_ns_spki.o ossl_engine.o ossl_pkcs12.o ossl_x509cert.o ossl_x509req.o ossl_bio.o ossl_pkey_dsa.o ossl_ocsp.o ossl_x509name.o ossl_x509ext.o ossl_pkey_dh.o ossl_x509store.o openssl_missing.o ossl_pkey.o ossl_ssl.o ossl_bn.o ossl_x509crl.o ossl_x509attr.o ossl_rand.o ossl_digest.o ossl_cipher.o ossl_ssl_session.o ossl_pkcs5.o ossl_pkcs7.o ossl_x509.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lssl -lcrypto  -lpthread -lrt -ldl -lcrypt -lm   -lc
+/bin/mkdir -p ../../.ext/common/openssl
+cp ../.././ext/openssl/lib/openssl.rb ../../.ext/common
+cp ../.././ext/openssl/lib/openssl/ssl.rb ../../.ext/common/openssl
+cp ../.././ext/openssl/lib/openssl/ssl-internal.rb ../../.ext/common/openssl
+cp ../.././ext/openssl/lib/openssl/x509-internal.rb ../../.ext/common/openssl
+cp ../.././ext/openssl/lib/openssl/bn.rb ../../.ext/common/openssl
+cp ../.././ext/openssl/lib/openssl/cipher.rb ../../.ext/common/openssl
+cp ../.././ext/openssl/lib/openssl/digest.rb ../../.ext/common/openssl
+cp ../.././ext/openssl/lib/openssl/x509.rb ../../.ext/common/openssl
+cp ../.././ext/openssl/lib/openssl/buffering.rb ../../.ext/common/openssl
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/openssl'
+compiling psych
+yaml.h is missing. Please install libyaml.
+compiling pty
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/pty'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/pty -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o pty.o -c pty.c
+gcc -shared -o ../../.ext/i686-linux/pty.so pty.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lutil  -lpthread -lrt -ldl -lcrypt -lm   -lc
+cp ../.././ext/pty/lib/expect.rb ../../.ext/common
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/pty'
+compiling racc/cparse
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/racc/cparse'
+/bin/mkdir -p ../../../.ext/i686-linux/racc
+gcc -I. -I../../../.ext/include/i686-linux -I../../.././include -I../../.././ext/racc/cparse -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o cparse.o -c cparse.c
+gcc -shared -o ../../../.ext/i686-linux/racc/cparse.so cparse.o -L. -L../../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/racc/cparse'
+compiling readline
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/readline'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/readline -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o readline.o -c readline.c
+gcc -shared -o ../../.ext/i686-linux/readline.so readline.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lreadline -lncurses  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/readline'
+compiling ripper
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/ripper'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/ripper -I../.. -I../../. -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ripper.o -c ripper.c
+gcc -shared -o ../../.ext/i686-linux/ripper.so ripper.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+/bin/mkdir -p ../../.ext/common/ripper
+cp ../.././ext/ripper/lib/ripper/lexer.rb ../../.ext/common/ripper
+cp ../.././ext/ripper/lib/ripper/core.rb ../../.ext/common/ripper
+cp ../.././ext/ripper/lib/ripper/sexp.rb ../../.ext/common/ripper
+cp ../.././ext/ripper/lib/ripper/filter.rb ../../.ext/common/ripper
+cp ../.././ext/ripper/lib/ripper.rb ../../.ext/common
+../../miniruby -I'../..' -I'../.././lib' -I'../../.ext/i686-linux' -I'../../.ext/common' -I./- -I'../.././ext' -rpurelib.rb ../.././ext/ripper/tools/generate.rb --mode=check --ids1src=../.././parse.y --ids2src=../.././ext/ripper/eventids2.c
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/ripper'
+compiling sdbm
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/sdbm'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/sdbm -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o _sdbm.o -c _sdbm.c
+_sdbm.c: In function ‘chkpage’:
+_sdbm.c:864: warning: comparison between signed and unsigned
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/sdbm -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o init.o -c init.c
+gcc -shared -o ../../.ext/i686-linux/sdbm.so _sdbm.o init.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/sdbm'
+compiling socket
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/socket'
+generating constant definitions
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o init.o -c init.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o constants.o -c constants.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o basicsocket.o -c basicsocket.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o socket.o -c socket.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ipsocket.o -c ipsocket.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o tcpsocket.o -c tcpsocket.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o tcpserver.o -c tcpserver.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o sockssocket.o -c sockssocket.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o udpsocket.o -c udpsocket.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o unixsocket.o -c unixsocket.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o unixserver.o -c unixserver.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o option.o -c option.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o ancdata.o -c ancdata.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/socket -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o raddrinfo.o -c raddrinfo.c
+raddrinfo.c: In function ‘get_afamily’:
+raddrinfo.c:910: warning: comparison between signed and unsigned
+gcc -shared -o ../../.ext/i686-linux/socket.so init.o constants.o basicsocket.o socket.o ipsocket.o tcpsocket.o tcpserver.o sockssocket.o udpsocket.o unixsocket.o unixserver.o option.o ancdata.o raddrinfo.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+cp ../.././ext/socket/lib/socket.rb ../../.ext/common
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/socket'
+compiling stringio
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/stringio'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/stringio -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o stringio.o -c stringio.c
+gcc -shared -o ../../.ext/i686-linux/stringio.so stringio.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/stringio'
+compiling strscan
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/strscan'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/strscan -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o strscan.o -c strscan.c
+gcc -shared -o ../../.ext/i686-linux/strscan.so strscan.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/strscan'
+compiling syck
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/syck'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/syck -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o implicit.o -c implicit.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/syck -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o emitter.o -c emitter.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/syck -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o node.o -c node.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/syck -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o token.o -c token.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/syck -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o syck.o -c syck.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/syck -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o handler.o -c handler.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/syck -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o gram.o -c gram.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/syck -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o bytecode.o -c bytecode.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/syck -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o yaml2byte.o -c yaml2byte.c
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/syck -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o rubyext.o -c rubyext.c
+rubyext.c: In function ‘mktime_do’:
+rubyext.c:278: warning: comparison between signed and unsigned
+gcc -shared -o ../../.ext/i686-linux/syck.so implicit.o emitter.o node.o token.o syck.o handler.o gram.o bytecode.o yaml2byte.o rubyext.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+/bin/mkdir -p ../../.ext/common/syck
+/bin/mkdir -p ../../.ext/common/yaml
+cp ../.././ext/syck/lib/syck/tag.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/error.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/encoding.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/stringio.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/stream.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/types.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/ypath.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/rubytypes.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/syck.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/constants.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/loader.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/basenode.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/yamlnode.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck/baseemitter.rb ../../.ext/common/syck
+cp ../.././ext/syck/lib/syck.rb ../../.ext/common
+cp ../.././ext/syck/lib/yaml/syck.rb ../../.ext/common/yaml
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/syck'
+compiling syslog
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/syslog'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/syslog -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o syslog.o -c syslog.c
+gcc -shared -o ../../.ext/i686-linux/syslog.so syslog.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/syslog'
+compiling tk
+check functions.........
+check struct members..
+check libraries....
+Use ActiveTcl libraries (if available).
+Search tclConfig.sh and tkConfig.sh....................
+Fail to find [tclConfig.sh, tkConfig.sh]
+Use X11 libraries.
+Warning:: cannot find X11 library. tcltklib will not be compiled (tcltklib is disabled on your Ruby == Ruby/Tk will not work). Please check configure options. If your Tcl/Tk don't require X11, please try --without-X11.
+Can't find X11 libraries. So, can't make tcltklib.so which is required by Ruby/Tk.
+compiling tk/tkutil
+compiling win32ole
+compiling zlib
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180/ext/zlib'
+gcc -I. -I../../.ext/include/i686-linux -I../.././include -I../.././ext/zlib -DRUBY_EXTCONF_H=\"extconf.h\"  -D_FILE_OFFSET_BITS=64  -fPIC -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC  -o zlib.o -c zlib.c
+gcc -shared -o ../../.ext/i686-linux/zlib.so zlib.o -L. -L../.. -L.  -rdynamic -Wl,-export-dynamic   -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lz  -lpthread -lrt -ldl -lcrypt -lm   -lc
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180/ext/zlib'
+making ruby
+make[1]: Entering directory `/opt/chef/src/ruby-1.9.2-p180'
+gcc -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long  -fPIC -L.  -rdynamic -Wl,-export-dynamic   main.o  -Wl,-R -Wl,/opt/chef/rubies/ruby-1.9.2-p180/lib -L/opt/chef/rubies/ruby-1.9.2-p180/lib -lruby -lpthread -lrt -ldl -lcrypt -lm   -o ruby
+make[1]: Leaving directory `/opt/chef/src/ruby-1.9.2-p180'

@@ -1,0 +1,21 @@
+[2011-03-30 13:38:24] make install
+./miniruby -I./lib -I.ext/common -I./- -r./ext/purelib.rb  ./tool/rbinstall.rb --make="make" --dest-dir="" --extout=".ext" --mflags="" --make-flags="" --data-mode=0644 --prog-mode=0755 --installed-list .installed.list --mantype="doc"
+installing binary commands:   /opt/chef/rubies/ruby-1.9.2-p180/bin
+installing base libraries:    /opt/chef/rubies/ruby-1.9.2-p180/lib
+installing arch files:        /opt/chef/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/i686-linux
+installing command scripts:   /opt/chef/rubies/ruby-1.9.2-p180/bin
+installing library scripts:   /opt/chef/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1
+installing common headers:    /opt/chef/rubies/ruby-1.9.2-p180/include/ruby-1.9.1
+installing manpages:          /opt/chef/rubies/ruby-1.9.2-p180/share/man/man1
+installing extension objects: /opt/chef/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/i686-linux
+installing extension objects: /opt/chef/rubies/ruby-1.9.2-p180/lib/ruby/site_ruby/1.9.1/i686-linux
+installing extension objects: /opt/chef/rubies/ruby-1.9.2-p180/lib/ruby/vendor_ruby/1.9.1/i686-linux
+installing extension headers: /opt/chef/rubies/ruby-1.9.2-p180/include/ruby-1.9.1/i686-linux
+installing extension scripts: /opt/chef/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1
+installing extension scripts: /opt/chef/rubies/ruby-1.9.2-p180/lib/ruby/site_ruby/1.9.1
+installing extension scripts: /opt/chef/rubies/ruby-1.9.2-p180/lib/ruby/vendor_ruby/1.9.1
+installing extension headers: /opt/chef/rubies/ruby-1.9.2-p180/include/ruby-1.9.1/ruby
+installing default gems:      /opt/chef/rubies/ruby-1.9.2-p180/lib/ruby/gems/1.9.1 (cache, doc, gems, specifications)
+                              rake 0.8.7
+                              rdoc 2.5.8
+                              minitest 1.6.0

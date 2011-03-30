@@ -146,7 +146,7 @@ module RbConfig
   CONFIG["RUBY_BASE_NAME"] = "ruby"
   CONFIG["RUBY_RELEASE_DATE"] = "2011-02-18"
   CONFIG["RUBY_PROGRAM_VERSION"] = "1.9.2"
-  CONFIG["BASERUBY"] = "echo executable host ruby is required.  use --with-baseruby option.; false"
+  CONFIG["BASERUBY"] = "ruby"
   CONFIG["target_alias"] = ""
   CONFIG["host_alias"] = ""
   CONFIG["build_alias"] = ""

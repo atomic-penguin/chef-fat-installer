@@ -1,0 +1,20 @@
+[2011-03-30 13:38:25] '/opt/chef/scripts/gemsets' initial # under ruby-1.9.2-p180
+Importing initial gemsets for ruby-1.9.2-p180.
+paths: /opt/chef/gemsets /opt/chef/gemsets/ruby /opt/chef/gemsets/ruby/1.9.2 /opt/chef/gemsets/ruby/1.9.2/p180
+
+Installing gems listed in /opt/chef/gemsets/default.gems file...
+
+installing rake ...
+rake  installed.
+
+Processing of /opt/chef/gemsets/default.gems is complete.
+
+
+Installing gems listed in /opt/chef/gemsets/global.gems file...
+
+installing rake ...
+rake  installed.
+
+Processing of /opt/chef/gemsets/global.gems is complete.
+
+Installation of gems for ruby-1.9.2-p180 is complete.

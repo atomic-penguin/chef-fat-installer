@@ -1,4 +1,4 @@
-export PATH="/opt/chef/gems/ruby-1.9.2-p180/bin:/opt/chef/gems/ruby-1.9.2-p180@global/bin:/opt/chef/rubies/ruby-1.9.2-p180/bin:/usr/local/bin:$PATH"
+export PATH="/opt/chef/gems/ruby-1.9.2-p180/bin:/opt/chef/gems/ruby-1.9.2-p180@global/bin:/opt/chef/rubies/ruby-1.9.2-p180/bin:/opt/chef/bin:$PATH"
 rvm_path='/opt/chef'
 export rvm_path
 RUBY_VERSION='ruby-1.9.2-p180'

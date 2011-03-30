@@ -1,0 +1,1 @@
+[2011-03-30 13:35:56] bunzip2 < '/opt/chef/archives/ruby-1.9.2-p180.tar.bz2' | tar xf - -C /opt/chef/tmp/rvm_src_27149
