@@ -6,12 +6,22 @@
 
 = USAGE NOTES
 
-Run 'build-installer', which should output a makeself .run file
+1. Checkout architecture-specific branch.
+
+ git checkout i386 *OR* git checkout x86_64
+
+2. Run build script, which should output a makeself .run file
+
+  ./build-installer
 
 The makeself directory contains the makeself files necessary to build the .run file
 
 The buildroot directory contains the files and installer script.  Everything
 in this directory, buildroot, gets rolled up into the FAT installer.
+
+== INSTALLATION
+
+1. Simply execute the chef-fat-installer.i386.run, or chef-fat-installer.x86_64.run.
 
 == WARNINGS
 
