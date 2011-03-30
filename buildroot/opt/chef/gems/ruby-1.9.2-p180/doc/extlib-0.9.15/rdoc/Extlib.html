@@ -38,32 +38,32 @@
 				<div class="section-body">
 					<ul>
 					
-						<li><a href="./lib/extlib_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/extlib.rb">lib/extlib.rb</a></li>
-					
-						<li><a href="./lib/extlib/simple_set_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/extlib/simple_set.rb">lib/extlib/simple_set.rb</a></li>
-					
-						<li><a href="./lib/extlib/logger_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/extlib/logger.rb">lib/extlib/logger.rb</a></li>
-					
-						<li><a href="./lib/extlib/byte_array_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/extlib/byte_array.rb">lib/extlib/byte_array.rb</a></li>
-					
-						<li><a href="./lib/extlib/pooling_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/extlib/pooling.rb">lib/extlib/pooling.rb</a></li>
+						<li><a href="./lib/extlib/inflection_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/extlib/inflection.rb">lib/extlib/inflection.rb</a></li>
 					
 						<li><a href="./lib/extlib/assertions_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
 							class="thickbox" title="lib/extlib/assertions.rb">lib/extlib/assertions.rb</a></li>
 					
-						<li><a href="./lib/extlib/inflection_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/extlib/inflection.rb">lib/extlib/inflection.rb</a></li>
+						<li><a href="./lib/extlib/byte_array_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/extlib/byte_array.rb">lib/extlib/byte_array.rb</a></li>
+					
+						<li><a href="./lib/extlib/simple_set_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/extlib/simple_set.rb">lib/extlib/simple_set.rb</a></li>
 					
 						<li><a href="./lib/extlib/local_object_space_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
 							class="thickbox" title="lib/extlib/local_object_space.rb">lib/extlib/local_object_space.rb</a></li>
 					
+						<li><a href="./lib/extlib/logger_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/extlib/logger.rb">lib/extlib/logger.rb</a></li>
+					
+						<li><a href="./lib/extlib/pooling_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/extlib/pooling.rb">lib/extlib/pooling.rb</a></li>
+					
 						<li><a href="./lib/extlib/hook_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
 							class="thickbox" title="lib/extlib/hook.rb">lib/extlib/hook.rb</a></li>
+					
+						<li><a href="./lib/extlib_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/extlib.rb">lib/extlib.rb</a></li>
 					
 					</ul>
 				</div>
@@ -241,7 +241,12 @@
 		<h1 class="module">Extlib</h1>
 
 		<div id="description">
-			<h4>Public <a href="Extlib.html">Extlib</a> <a href="Extlib/Logger.html">Logger</a> API</h4>
+			<p>
+This class has exists to represent binary data. This is mainly used by
+DataObjects. Binary data sometimes needs to be quoted differently than
+regular string data (even if the string is just plain ASCII).
+</p>
+<hr style="height: 1px"></hr><h4>Public <a href="Extlib.html">Extlib</a> <a href="Extlib/Logger.html">Logger</a> API</h4>
 <p>
 To replace an existing logger with a new one:
 </p>
@@ -291,13 +296,7 @@ Remove the current log object
 To initialize the logger you create a new object, proxies to set_log.
 </p>
 <pre>
-  Extlib::Logger.new(log{String, IO},level{Symbol, String})
-</pre>
-<hr style="height: 1px"></hr><p>
-This class has exists to represent binary data. This is mainly used by
-DataObjects. Binary data sometimes needs to be quoted differently than
-regular string data (even if the string is just plain ASCII).
-</p>
+  Extlib::Logger.new(log{String, IO},level{Symbol, String})</pre>
 
 		</div>
 

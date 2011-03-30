@@ -510,6 +510,81 @@ Make top-level cloud hashes
 				<div class="method-heading">
 				
 					<span class="method-name">encaps_lookup</span><span
+						class="method-args">(encap)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="encaps-lookup-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/plugins/windows/network.rb, line 21</span>
+21: <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">encaps_lookup</span>(<span class="ruby-identifier">encap</span>)
+22:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;Ethernet&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;Ethernet 802.3&quot;</span>)
+23:   <span class="ruby-identifier">encap</span>
+24: <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="encaps-lookup-method" class="method-detail ">
+				<a name="method-i-encaps_lookup"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">encaps_lookup</span><span
+						class="method-args">(encap)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="encaps-lookup-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/ohai/plugins/sigar/network.rb, line 33</span>
+33: <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">encaps_lookup</span>(<span class="ruby-identifier">encap</span>)
+34:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;Loopback&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;Local Loopback&quot;</span>)
+35:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;PPP&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;Point-to-Point Protocol&quot;</span>)
+36:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;SLIP&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;Serial Line IP&quot;</span>)
+37:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;VJSLIP&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;VJ Serial Line IP&quot;</span>)
+38:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;IPIP&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;IPIP Tunnel&quot;</span>)
+39:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;6to4&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;IPv6-in-IPv4&quot;</span>)
+40:   <span class="ruby-identifier">encap</span>
+41: <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="encaps-lookup-method" class="method-detail ">
+				<a name="method-i-encaps_lookup"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">encaps_lookup</span><span
 						class="method-args">(ifname)</span>
 					<span class="method-click-advice">click to toggle source</span>
 				
@@ -563,41 +638,6 @@ Make top-level cloud hashes
 					<div class="method-source-code"
 						id="encaps-lookup-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/ohai/plugins/windows/network.rb, line 21</span>
-21: <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">encaps_lookup</span>(<span class="ruby-identifier">encap</span>)
-22:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;Ethernet&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;Ethernet 802.3&quot;</span>)
-23:   <span class="ruby-identifier">encap</span>
-24: <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-
-				
-			</div>
-
-		
-			<div id="encaps-lookup-method" class="method-detail ">
-				<a name="method-i-encaps_lookup"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">encaps_lookup</span><span
-						class="method-args">(encap)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					
-					
-
-					
-					<div class="method-source-code"
-						id="encaps-lookup-source">
-<pre>
     <span class="ruby-comment cmt"># File lib/ohai/plugins/linux/network.rb, line 23</span>
 23: <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">encaps_lookup</span>(<span class="ruby-identifier">encap</span>)
 24:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;Loopback&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;Local Loopback&quot;</span>)
@@ -608,46 +648,6 @@ Make top-level cloud hashes
 29:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;6to4&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;IPv6-in-IPv4&quot;</span>)
 30:   <span class="ruby-identifier">encap</span>
 31: <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-
-				
-			</div>
-
-		
-			<div id="encaps-lookup-method" class="method-detail ">
-				<a name="method-i-encaps_lookup"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">encaps_lookup</span><span
-						class="method-args">(encap)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					
-					
-
-					
-					<div class="method-source-code"
-						id="encaps-lookup-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/ohai/plugins/sigar/network.rb, line 33</span>
-33: <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">encaps_lookup</span>(<span class="ruby-identifier">encap</span>)
-34:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;Loopback&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;Local Loopback&quot;</span>)
-35:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;PPP&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;Point-to-Point Protocol&quot;</span>)
-36:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;SLIP&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;Serial Line IP&quot;</span>)
-37:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;VJSLIP&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;VJ Serial Line IP&quot;</span>)
-38:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;IPIP&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;IPIP Tunnel&quot;</span>)
-39:   <span class="ruby-keyword kw">return</span> <span class="ruby-value str">&quot;6to4&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">encap</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-value str">&quot;IPv6-in-IPv4&quot;</span>)
-40:   <span class="ruby-identifier">encap</span>
-41: <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>

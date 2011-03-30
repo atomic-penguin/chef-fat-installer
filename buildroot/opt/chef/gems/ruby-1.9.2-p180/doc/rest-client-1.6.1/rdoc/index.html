@@ -113,21 +113,21 @@
 		
 			<li><a href="RestClient.html#method-c-log%3D">::log= &mdash; RestClient</a></li>
 		
+			<li><a href="RestClient/Redirect.html#method-c-new">::new &mdash; RestClient::Redirect</a></li>
+		
 			<li><a href="RestClient/Resource.html#method-c-new">::new &mdash; RestClient::Resource</a></li>
 		
-			<li><a href="RestClient/RawResponse.html#method-c-new">::new &mdash; RestClient::RawResponse</a></li>
+			<li><a href="RestClient/Exception.html#method-c-new">::new &mdash; RestClient::Exception</a></li>
 		
 			<li><a href="RestClient/Redirect.html#method-c-new">::new &mdash; RestClient::Redirect</a></li>
-		
-			<li><a href="RestClient/SSLCertificateNotVerified.html#method-c-new">::new &mdash; RestClient::SSLCertificateNotVerified</a></li>
-		
-			<li><a href="RestClient/Redirect.html#method-c-new">::new &mdash; RestClient::Redirect</a></li>
-		
-			<li><a href="RestClient/Request.html#method-c-new">::new &mdash; RestClient::Request</a></li>
 		
 			<li><a href="RestClient/Payload/Base.html#method-c-new">::new &mdash; RestClient::Payload::Base</a></li>
 		
-			<li><a href="RestClient/Exception.html#method-c-new">::new &mdash; RestClient::Exception</a></li>
+			<li><a href="RestClient/SSLCertificateNotVerified.html#method-c-new">::new &mdash; RestClient::SSLCertificateNotVerified</a></li>
+		
+			<li><a href="RestClient/Request.html#method-c-new">::new &mdash; RestClient::Request</a></li>
+		
+			<li><a href="RestClient/RawResponse.html#method-c-new">::new &mdash; RestClient::RawResponse</a></li>
 		
 			<li><a href="RestClient.html#method-c-options">::options &mdash; RestClient</a></li>
 		
@@ -155,11 +155,11 @@
 		
 			<li><a href="RestClient/Payload/Streamed.html#method-i-build_stream">#build_stream &mdash; RestClient::Payload::Streamed</a></li>
 		
-			<li><a href="RestClient/Payload/UrlEncoded.html#method-i-build_stream">#build_stream &mdash; RestClient::Payload::UrlEncoded</a></li>
+			<li><a href="RestClient/Payload/Base.html#method-i-build_stream">#build_stream &mdash; RestClient::Payload::Base</a></li>
 		
 			<li><a href="RestClient/Payload/Multipart.html#method-i-build_stream">#build_stream &mdash; RestClient::Payload::Multipart</a></li>
 		
-			<li><a href="RestClient/Payload/Base.html#method-i-build_stream">#build_stream &mdash; RestClient::Payload::Base</a></li>
+			<li><a href="RestClient/Payload/UrlEncoded.html#method-i-build_stream">#build_stream &mdash; RestClient::Payload::UrlEncoded</a></li>
 		
 			<li><a href="RestClient/Payload/Multipart.html#method-i-close">#close &mdash; RestClient::Payload::Multipart</a></li>
 		
@@ -193,11 +193,15 @@
 		
 			<li><a href="RestClient/Resource.html#method-i-get">#get &mdash; RestClient::Resource</a></li>
 		
-			<li><a href="RestClient/Payload/Multipart.html#method-i-handle_key">#handle_key &mdash; RestClient::Payload::Multipart</a></li>
-		
 			<li><a href="RestClient/Payload/UrlEncoded.html#method-i-handle_key">#handle_key &mdash; RestClient::Payload::UrlEncoded</a></li>
 		
+			<li><a href="RestClient/Payload/Multipart.html#method-i-handle_key">#handle_key &mdash; RestClient::Payload::Multipart</a></li>
+		
 			<li><a href="RestClient/Payload.html#method-i-has_file%3F">#has_file? &mdash; RestClient::Payload</a></li>
+		
+			<li><a href="RestClient/Payload/Multipart.html#method-i-headers">#headers &mdash; RestClient::Payload::Multipart</a></li>
+		
+			<li><a href="RestClient/Payload/Base.html#method-i-headers">#headers &mdash; RestClient::Payload::Base</a></li>
 		
 			<li><a href="RestClient/AbstractResponse.html#method-i-headers">#headers &mdash; RestClient::AbstractResponse</a></li>
 		
@@ -205,17 +209,13 @@
 		
 			<li><a href="RestClient/Resource.html#method-i-headers">#headers &mdash; RestClient::Resource</a></li>
 		
-			<li><a href="RestClient/Payload/Base.html#method-i-headers">#headers &mdash; RestClient::Payload::Base</a></li>
-		
-			<li><a href="RestClient/Payload/Multipart.html#method-i-headers">#headers &mdash; RestClient::Payload::Multipart</a></li>
-		
 			<li><a href="RestClient/Exception.html#method-i-http_body">#http_body &mdash; RestClient::Exception</a></li>
 		
 			<li><a href="RestClient/Exception.html#method-i-http_code">#http_code &mdash; RestClient::Exception</a></li>
 		
-			<li><a href="RestClient/Exception.html#method-i-inspect">#inspect &mdash; RestClient::Exception</a></li>
-		
 			<li><a href="RestClient/Payload/Base.html#method-i-inspect">#inspect &mdash; RestClient::Payload::Base</a></li>
+		
+			<li><a href="RestClient/Exception.html#method-i-inspect">#inspect &mdash; RestClient::Exception</a></li>
 		
 			<li><a href="RestClient/Payload/Base.html#method-i-length">#length &mdash; RestClient::Payload::Base</a></li>
 		
@@ -285,13 +285,13 @@
 		
 			<li><a href="RestClient/RequestFailed.html#method-i-to_s">#to_s &mdash; RestClient::RequestFailed</a></li>
 		
-			<li><a href="RestClient/RequestFailed.html#method-i-to_s">#to_s &mdash; RestClient::RequestFailed</a></li>
-		
-			<li><a href="RestClient/Resource.html#method-i-to_s">#to_s &mdash; RestClient::Resource</a></li>
-		
 			<li><a href="RestClient/RawResponse.html#method-i-to_s">#to_s &mdash; RestClient::RawResponse</a></li>
 		
 			<li><a href="RestClient/Exception.html#method-i-to_s">#to_s &mdash; RestClient::Exception</a></li>
+		
+			<li><a href="RestClient/Resource.html#method-i-to_s">#to_s &mdash; RestClient::Resource</a></li>
+		
+			<li><a href="RestClient/RequestFailed.html#method-i-to_s">#to_s &mdash; RestClient::RequestFailed</a></li>
 		
 			<li><a href="RestClient/Payload/Base.html#method-i-to_s">#to_s &mdash; RestClient::Payload::Base</a></li>
 		
