@@ -57,7 +57,3 @@ Pull requests welcome via github.
 == WEBSITE
 
 https://github.com/atomic-penguin/chef-fat-installer
-<<<<<<< HEAD
-=======
-
->>>>>>> 5a2b127ecebf6e3a60b128245164421893fff664
