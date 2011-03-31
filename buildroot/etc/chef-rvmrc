@@ -1,2 +1,0 @@
-umask g+w
-export rvm_path="/opt/chef"
