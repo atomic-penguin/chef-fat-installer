@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ARCH="x86_64"
+RH_RELEASE="rhel6"
 CHEF_VERSION="0.9.14"
 
-makeself/makeself.sh buildroot chef-fat-installer-$ARCH.run "chef-client FAT Installer $CHEF_VERSION ($ARCH)" ./rvm-chef-install.sh
+makeself/makeself.sh buildroot chef-fat-installer-$RH_RELEASE.$ARCH.run "chef-client FAT Installer $CHEF_VERSION ($ARCH)" ./rvm-chef-install.sh
