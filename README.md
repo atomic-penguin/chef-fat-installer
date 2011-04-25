@@ -1,32 +1,49 @@
-= ABOUT CHEF FAT INSTALLER
+ABOUT CHEF JIT (JUST-IN-TIME) INSTALLER
+=======================================
 
- * Uses rvm, see http://rvm.beginrescueend.com
- * Installs chef-client, Ruby, and gems in a self-contained distribution
- * For limited support contact the author of this distribution.
+* Uses rvm, see http://rvm.beginrescueend.com
 
-= USAGE NOTES
+* Compiles Ruby 1.9.2-p180 on the fly
+  - Installs chef-client and gems in a self-contained directory (/opt/chef)
 
-1. Checkout architecture-specific branch.
+* Installs 0.9.16 by default
+  - You should be able to override the default install like so:
+    ./chef-jit-installer.run -- 0.9.14
 
-  git checkout i386
-  git checkout x86_64
+* Deprecating pre-compiled FAT installer in favor of a compile just-in-time installation
+  - It only takes 3 to 5 minutes for the installer to run on my laptop.  So its
+    really not a bad tradeoff, for not having to compile and bundle dynamic linked Ruby
+    for different platforms.
+  - If someone can build statically linked Ruby in RVM, and show me how they did this,
+    then I may re-visit the FAT installer.  I could not get a static Ruby built, however.
+
+USAGE NOTES
+-----------
+
+1. Checkout branch.
+
+  * git clone git://github.com/atomic-penguin/chef-fat-installer.git
+  * git checkout chef-jit-installer
 
 2. Run build script, which should output a makeself .run file
 
-  ./build-installer
+  * ./build-installer
 
 The makeself directory contains the makeself files necessary to build the .run file
 
 The buildroot directory contains the files and installer script.  Everything
 in this directory, buildroot, gets rolled up into the FAT installer.
 
-== INSTALLATION
+INSTALLATION
+------------
 
-1. Simply execute the chef-fat-installer.i386.run, or chef-fat-installer.x86_64.run.
+1. Simply execute the chef-jit-installer.run.
 
-== WARNINGS
+WARNINGS
+========
 
-=== PERTINENT TO RVM
+PERTINENT TO RVM
+----------------
 
 Chances are this deployment could be destructive to an existing rvm environment.
 It shouldn't overwrite the default location of /usr/local/rvm, instead it installs
@@ -40,7 +57,8 @@ installation, this distribution is not recommended for that machine.
  * /etc/rvm.sh - Profile script
  * /etc/rvmrc - exports rvm path for Chef
 
-=== INIT.D SCRIPTS
+INIT.D SCRIPTS
+--------------
 
 The init scripts shipped with the Chef fat installer need to
 source /etc/profile.d/rvm.sh to have the proper PATH environment variables to work
@@ -51,10 +69,12 @@ if [ -x /etc/profile.d/rvm.sh ]; then
   . /etc/profile.d/rvm.sh
 fi
 
-= BUGS / FIXES
+BUGS / FIXES
+============
 
 Pull requests welcome via github.
 
-== WEBSITE
+WEBSITE
+=======
 
-https://github.com/atomic-penguin/chef-fat-installer
+See https://github.com/atomic-penguin/chef-fat-installer/tree/chef-jit-installer
