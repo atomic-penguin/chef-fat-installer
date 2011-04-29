@@ -28,7 +28,7 @@ fi
 
 if [ -e /etc/redhat-release ]; then
   echo -en "Installing rvm pre-requisites for RHEL/CentOS/Fedora\n"
-  yum -y install gcc-c++ patch readline readline-devel zlib zlib-devel openssl-devel rsync git
+  yum -y install gcc-c++ patch readline readline-devel zlib zlib-devel openssl-devel rsync git libxml-devel libxslt-devel
 
   # rsync the rvm-chef installation into place
   echo -en "Deploying rvm and chef-client config files\n"
@@ -46,7 +46,7 @@ if [ -e /etc/redhat-release ]; then
 
 elif [ -e /etc/debian_version ]; then
   echo -en "Installing rvm pre-requisites for Debian/Ubuntu\n"
-  apt-get -y install build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev rsync
+  apt-get -y install build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev rsync libxml2-dev libxslt1-dev
 
   # rsync the rvm-chef installation into place
   echo -en "Deploying rvm and chef-client config files\n"
@@ -74,6 +74,7 @@ $RVM install $RUBY_VERSION
 $RVM use $RUBY_VERSION
 $RVM --default $RUBY_VERSION
 $RVM gem install --no-ri --no-rdoc chef -v $CHEF_VERSION
+$RVM gem install --no-ri --no-rdoc net-ssh net-ssh-multi fog highline
 $RVM cleanup all
 
 # Symlink chef-client for init script
