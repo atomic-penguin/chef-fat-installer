@@ -39,6 +39,10 @@ INSTALLATION
 
 1. Simply execute the chef-jit-installer.run.
 
+```code
+wget -O /tmp/chef-jit http://opensource.marshall.edu/chef/chef-jit-installer-0.10.0.noarch.run && bash /tmp/chef-jit
+```
+
 WARNINGS
 ========
 
