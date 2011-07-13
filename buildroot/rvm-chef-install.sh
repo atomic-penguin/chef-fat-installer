@@ -23,7 +23,7 @@ INIT_DIR="./distro"
 if [ $1 ]; then
   CHEF_VERSION=$1
 else
-  CHEF_VERSION=0.10.0
+  CHEF_VERSION=0.10.2
 fi
 
 if [ -e /etc/redhat-release ]; then
@@ -68,14 +68,14 @@ fi
 # Just-in-time install
 echo -en "Beginning the Just-In-Time install process\n"
 bash < <(curl -s https://rvm.beginrescueend.com/install/rvm) 2>&1 > /dev/null
+chmod 700 /etc/profile.d/rvm.sh
 . /etc/profile.d/rvm.sh
-RVM=`which rvm`
-$RVM install $RUBY_VERSION 
-$RVM use $RUBY_VERSION
-$RVM --default $RUBY_VERSION
-$RVM gem install --no-ri --no-rdoc chef -v $CHEF_VERSION
-$RVM gem install --no-ri --no-rdoc net-ssh net-ssh-multi fog highline
-$RVM cleanup all
+rvm install $RUBY_VERSION 
+rvm use $RUBY_VERSION
+rvm --default $RUBY_VERSION
+rvm gem install --no-ri --no-rdoc chef -v $CHEF_VERSION
+rvm gem install --no-ri --no-rdoc net-ssh net-ssh-multi fog highline
+rvm cleanup all
 
 # Symlink chef-client for init script
 if [ -f /usr/bin/chef-client ]; then
