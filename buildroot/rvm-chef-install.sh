@@ -23,7 +23,7 @@ INIT_DIR="./distro"
 if [ $1 ]; then
   CHEF_VERSION=$1
 else
-  CHEF_VERSION=0.10.2
+  CHEF_VERSION=0.10.4
 fi
 
 if [ -e /etc/redhat-release ]; then

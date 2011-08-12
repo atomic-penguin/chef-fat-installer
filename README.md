@@ -6,9 +6,9 @@ ABOUT CHEF JIT (JUST-IN-TIME) INSTALLER
 * Compiles Ruby 1.9.2-p180 on the fly
   - Installs chef-client and gems in a self-contained directory (/opt/chef)
 
-* Installs 0.9.16 by default
-  - You should be able to override the default install like so:
-    ./chef-jit-installer.run -- 0.9.14
+* Follows the most recent stable version of chef-client by default
+  - You should be able to override the default install by providing a version like so:
+    ./chef-jit-installer.run -- 0.10.4
 
 * Deprecating pre-compiled FAT installer in favor of a compile just-in-time installation
   - It only takes 3 to 5 minutes for the installer to run on my laptop.  So its
