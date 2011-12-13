@@ -73,8 +73,8 @@ chmod 700 /etc/profile.d/rvm.sh
 rvm install $RUBY_VERSION 
 rvm use $RUBY_VERSION
 rvm --default $RUBY_VERSION
-rvm gem install --no-ri --no-rdoc chef -v $CHEF_VERSION
-rvm gem install --no-ri --no-rdoc net-ssh net-ssh-multi fog highline
+rvm all do gem install --no-ri --no-rdoc chef -v $CHEF_VERSION
+rvm all do gem install --no-ri --no-rdoc net-ssh net-ssh-multi fog highline
 rvm cleanup all
 
 # Symlink chef-client for init script
