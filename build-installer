@@ -1,6 +1,5 @@
 #!/bin/bash
 
 ARCH="noarch"
-CHEF_VERSION="0.10.4"
 
-makeself/makeself.sh buildroot chef-jit-installer-$CHEF_VERSION.$ARCH.run "chef-client Just-In-Time Installer $CHEF_VERSION ($ARCH)" ./rvm-chef-install.sh
+makeself/makeself.sh buildroot chef-jit-installer-$ARCH.run "chef-client Just-In-Time Installer ($ARCH)" ./rvm-chef-install

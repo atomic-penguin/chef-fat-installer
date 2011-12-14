@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./rvm-pre-install
+./rvm-installer
+./rvm-gem-install
+./rvm-post-install

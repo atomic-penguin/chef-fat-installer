@@ -1,0 +1,6 @@
+#!/bin/bash
+RVM_DIR="/opt/chef"
+RUBY_VERSION="1.9.2-p290"
+CHEF_PATH="$RVM_DIR/gems/ruby-$RUBY_VERSION/bin"
+INIT_DIR="./distro"
+export RVM_DIR RUBY_VERSION CHEF_PATH INIT_DIR
