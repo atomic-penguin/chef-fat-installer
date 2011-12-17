@@ -3,12 +3,10 @@ ABOUT CHEF JIT (JUST-IN-TIME) INSTALLER
 
 * Uses rvm, see http://rvm.beginrescueend.com
 
-* Compiles Ruby 1.9.2-p180 on the fly
+* Compiles Ruby 1.9.2 on the fly
   - Installs chef-client and gems in a self-contained directory (/opt/chef)
 
 * Follows the most recent stable version of chef-client by default
-  - You should be able to override the default install by providing a version like so:
-    ./chef-jit-installer.run -- 0.10.4
 
 * Deprecating pre-compiled FAT installer in favor of a compile just-in-time installation
   - It only takes 3 to 5 minutes for the installer to run on my laptop.  So its
@@ -40,7 +38,7 @@ INSTALLATION
 1. Simply execute the chef-jit-installer.run.
 
 ```code
-wget -O /tmp/chef-jit http://opensource.marshall.edu/chef/chef-jit-installer-0.10.0.noarch.run && bash /tmp/chef-jit
+wget -O /tmp/chef-jit http://opensource.marshall.edu/chef/chef-jit-installer-noarch.run && bash /tmp/chef-jit
 ```
 
 WARNINGS
@@ -66,7 +64,7 @@ INIT.D SCRIPTS
 
 The init scripts shipped with the Chef fat installer need to
 source /etc/profile.d/rvm.sh to have the proper PATH environment variables to work
-with Chef.  If your chef::client_service recipe overwrites the init scripts, then
+with Chef.  If your chef-client::service recipe overwrites the init scripts, then
 consider adding the following code snippet to your init cookbook_file.
 
 if [ -x /etc/profile.d/rvm.sh ]; then
